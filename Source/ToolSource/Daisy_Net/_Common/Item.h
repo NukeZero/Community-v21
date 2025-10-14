@@ -1,0 +1,879 @@
+#if !defined(AFX_ITEM_H__80E88B36_BD6B_449B_BE76_34F2B5B77552__INCLUDED_)
+#define AFX_ITEM_H__80E88B36_BD6B_449B_BE76_34F2B5B77552__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#if defined(__DBSERVER) || defined(__CORESERVER)
+#include "..\_Network\Objects\Obj.h"
+#else
+#include "Ctrl.h"
+#endif
+#ifdef __BEAST
+#include "Respawn.h"
+#endif
+#include "ProjectCmn.h"
+#include "lang.h"
+
+
+class CItemBase
+{
+public:
+	OBJID       m_dwObjId;		// 아이템 콘테이너 안에서의 ID (아이템의 ID로 사용)
+	DWORD		m_dwObjIndex;	// 아이템 콘테이너 안에서의 Index
+	DWORD		m_dwItemId;		// 아이템 식별 인덱스( Property에서 사용 )
+	int 		m_nExtra;		// 거래시 물품개수 or 개인상점에 등록한 갯수 
+	TCHAR       m_szItemText[ 32 ];
+	DWORD		m_dwSerialNumber;
+	int			m_nCost;
+
+#ifdef __CLIENT
+	CTexture*   m_pTexture;
+#endif
+
+	CItemBase();
+	virtual ~CItemBase()	{}
+	virtual	CItemBase&	operator = ( CItemBase & ib );
+	virtual void	Serialize( CAr & ar );
+	BOOL			IsEmpty() { return m_dwItemId ? FALSE : TRUE; }
+	BOOL			IsQuest();
+
+	ItemProp*		GetProp(); 
+	void			Empty();
+	void			SetTexture();
+	void			SetTexture( CTexture* pTexture );
+	CTexture*		GetTexture();						
+	int				GetCost();							// 가격을 얻는다.
+	void			SetExtra( int nExtra );			// 확장 데이타를 세팅 
+	int				GetExtra();							// 확장 데이타를 얻기 
+};
+
+inline void CItemBase::SetExtra( int nExtra )
+{
+	m_nExtra = nExtra;
+}
+
+inline int CItemBase::GetExtra()
+{
+	return m_nExtra;
+}
+
+
+inline void CItemBase::SetTexture( CTexture* pTexture )
+{
+#ifdef __CLIENT
+	m_pTexture = pTexture;
+#endif
+}
+
+inline CTexture* CItemBase::GetTexture() 
+{ 
+#ifdef __CLIENT
+	return m_pTexture;
+#else
+	return NULL;
+#endif
+}
+
+#ifdef __PIERCING_SM_TIME
+#define	MAX_PIERCING	4
+typedef	struct	_PIERCINGINFO
+{
+	int		nPiercedSize;
+	DWORD	adwItemId[MAX_PIERCING];
+}	PIERCINGINFO, *PPIERCINGINFO;
+#endif	// __PIERCING_SM_TIME
+
+class CItemElem : public CItemBase
+{
+private:
+	int			m_nAbilityOption ;	// 추가 능력치 가변 옵션
+
+public:
+	enum	{	expired	= 0x01,		};
+
+	int			m_nHitPoint;
+	short		m_nItemNum; 
+	BYTE		m_nRepairNumber;
+	BYTE		m_byFlag;
+	DWORD		m_idGuild;			// 아이템에 길드 번호가 붙는 경우(망토)
+	
+#ifdef __CLIENT
+	BOOL		m_bRepair;
+#endif	// __CLIENT
+
+	BYTE   	    m_bItemResist;				// 어느 속성 인가? / TEXT형태로 궤스트를 작동시키는 아이템에서 TRUE이면 더이상 퀘스트를 작동할 수 없게 된다.
+	int			m_nResistAbilityOption;		// 속성 추가 능력치 가변 옵션
+	int			m_nResistSMItemId;	
+
+#ifdef __J0519
+#ifdef __WORLDSERVER
+	BOOL		m_bOnQuerying;
+#endif	// __WORLDSERVER
+#endif	// __J0519
+
+#ifdef __RANDOMOPTITEM0628
+	int			m_nRandomOptItemId;
+#endif	// __RANDOMOPTITEM0628
+
+#ifdef __XPET2
+	int	m_nMaxLevel;	// 수명
+	int m_nLevel;		// 레벨(나이)
+	int m_nStr, m_nDex, m_nInt, m_nSta;		// 스탯
+	int m_nHungry;		// 배고픈정도 -10 ~ 10		-10이하는 존내배고픔 / -10 ~ -5 배고픔 / -5 ~ 5 보통 / 5이상 배부름
+	int m_nFeeling;		// 기분. -10 ~ 10			
+	int m_nHealth;		// 건강 -10 ~ 10
+	int m_nConstitution;	// 체질(영양상태) -10 ~ 10
+#endif
+	
+
+public:
+//	Constructions
+	CItemElem();
+	virtual	~CItemElem();
+
+//	Attributes
+	ItemProp*	GetProp()	{	return prj.GetItemProp( m_dwItemId );	}
+	int			GetAttrOption();		// 아이템의 +옵션값과 속성/속성레벨값을 합쳐서 리턴.
+	int			GetAbilityOption() { return m_nAbilityOption; }
+	int*		GetAbilityOptionPtr() { return &m_nAbilityOption; }
+	void		SetAbilityOption( int nAbilityOption ) { m_nAbilityOption = nAbilityOption; }
+	int			GetGold();
+
+#ifdef __PIERCING_SM_TIME
+	PIERCINGINFO	m_piercingInfo;
+	void	GetPiercingAvail( PPIERCINGAVAIL pPiercingAvail/*input, output*/ );
+	BOOL	m_bCharged;			// 상용화 아이템인지 확인
+	DWORD	m_dwKeepTime;		// 지속시간
+#endif	// __PIERCING_SM_TIME
+
+#ifdef __FINITEITEM0705
+	BOOL	IsExpiring( void )
+		{	
+			if( m_dwKeepTime )
+			{
+				if( time( NULL ) > (time_t)m_dwKeepTime )
+					return TRUE;
+			}
+			return FALSE;
+		}
+	void	ResetFlag( BYTE byFlag )	{	m_byFlag	&= ~byFlag;		}
+	void	SetFlag( BYTE byFlag )		{	m_byFlag	|= byFlag;		}
+	BOOL	IsFlag( BYTE byFlag )	{	return ( m_byFlag & byFlag ) ? TRUE: FALSE;		}
+#endif	// __FINITEITEM0705
+	BOOL	IsBinds();
+	BOOL	IsCharged();
+	
+	static BOOL	IsDiceRefineryAble( ItemProp* pProp );
+	static BOOL	IsEleRefineryAble( ItemProp* pProp );
+	
+//	Operations
+	void		UseItem();
+	virtual	CItemElem&	operator = ( CItemElem & ie );
+	virtual	void		Serialize( CAr & ar );
+};
+
+inline int CItemElem::GetAttrOption()		// 아이템의 +옵션값과 속성/속성레벨값을 합쳐서 리턴.
+{
+#ifdef __XEFFECT1006
+	int nAttr = (int)m_bItemResist;
+	int nOption = m_nResistAbilityOption;
+	int nRet = m_nAbilityOption;
+	
+	nRet |= (nAttr << 16);		// D16~D23 : 속성
+	nRet |= (nOption << 24);	// D24~D31 : 속성레벨
+	return nRet;
+#else
+	return m_nAbilityOption;
+#endif
+}
+
+typedef struct tagSkill
+{
+	DWORD dwSkill;
+	DWORD dwExp;
+	DWORD dwLevel;
+	BOOL  bStop;
+	ItemProp* GetProp()	{ return prj.GetSkillProp( dwSkill ); }
+	
+} SKILL,* LPSKILL;
+
+
+#ifdef __XPET2
+class CPetElem : public CItemBase
+{
+	int m_nMaxLevel;	// 수명
+	int m_nLevel;		// 레벨(나이)
+	int m_dwHungry;		// 배고픈정도 -10 ~ 10		-10이하는 존내배고픔 / -10 ~ -5 배고픔 / -5 ~ 5 보통 / 5이상 배부름
+	int m_dwFeeling;	// 기분. -10 ~ 10			
+
+	void Init();
+	void Destroy();
+public:
+	CPetElem();
+	~CPetElem();
+	ItemProp* GetProp()	{	return prj.GetItemProp( m_dwItemId );	}
+	virtual	CPetElem&	operator = ( CPetElem & pe );
+	virtual void	Serialize( CAr & ar );
+};
+#endif // xPet2
+
+//////////////////////////////////////////////////////////////////////
+// 이것은 아이템 하나하나의 요소를 배열로 만들어 추가, 삭제 등의 
+// 편집이 가능한 컨테이너 클래스다.
+//////////////////////////////////////////////////////////////////////
+template <class T> class CItemContainer  
+{
+public:
+	LPDWORD    m_apIndex;
+	DWORD      m_dwIndexNum; // equp을 제외한 순수 콘테이너 사이즈 
+	DWORD      m_dwItemMax;  // equp을 포함한 전체 사이즈 
+	T*         m_apItem;
+
+	void SetItemContainer( DWORD dwItemType, DWORD dwItemMax, DWORD dwExtra = NULL_ID );
+	CItemContainer();
+	CItemContainer( DWORD dwItemType, DWORD dwItemMax, DWORD dwExtra = NULL_ID );
+	virtual ~CItemContainer();
+
+	void Clear();
+
+	T* GetAt( DWORD dwIndex );
+#ifdef __CLIENT
+	void SetAt( DWORD dwIndex, DWORD dwItemId );
+	void SetAt( DWORD dwIndex, T* pItemElem );
+	void InsertAt( DWORD dwIndex, DWORD dwItemId );
+	void InsertAt( DWORD dwIndex, T* pItemElem );
+	void RemoveAt( DWORD dwIndex );
+#endif
+
+	// Equip 관련 
+	BOOL DoEquip( DWORD dwSrcIndex, DWORD dwDstIndex );
+	BOOL UnEquip( DWORD dwIndex );
+	BOOL IsEquip( DWORD dwObjId );
+	T* GetEquip( DWORD dwIndex );
+
+	void	Swap( DWORD dwSrcIndex, DWORD dwDstIndex );
+	BOOL	Add( T* pElem, BYTE* pnId = NULL, short* pnNum = NULL, BYTE* pnCount = NULL );
+	BOOL	IsFull( ItemProp* pItemProp, short nNum );
+	void	SetAtId( OBJID dwObjId, T* pItemElem );
+
+	T*	GetAtId( OBJID dwObjId );
+	T* GetAtItemId( DWORD dwItemId );
+	int		GetAtItemNum( DWORD dwItemId );
+	void	RemoveAtId( OBJID dwObjId );
+
+	int		GetSize() { return int( m_dwIndexNum ); }
+	int		GetMax() { return int( m_dwItemMax ); }
+	void	Copy( CItemContainer<T> & rItemContainer );
+	void	Serialize( CAr & ar );
+
+	int		GetEmptyCount()
+		{
+			int nCount	= 0;
+			for( int i = 0; i < m_dwItemMax; i++ )
+			{
+				if( m_apItem[i].IsEmpty() && m_apItem[i].m_dwObjIndex < m_dwIndexNum )
+					nCount++;
+			}
+			return( nCount );
+		}
+	int		GetCount()
+		{
+			int nCount	= 0;
+			for( int i = 0; i < m_dwItemMax; i++ )
+			{
+				if( m_apItem[i].IsEmpty() == FALSE && m_apItem[i].m_dwObjIndex < m_dwIndexNum )
+					nCount++;
+			}
+			return( nCount );
+		}
+	int		GetCountByIK3( DWORD dwItemKind3 )
+		{
+			int nCount	= 0;
+			for( int i = 0; i < m_dwItemMax; i++ )
+			{
+				if( m_apItem[i].IsEmpty() == FALSE && m_apItem[i].GetProp()->dwItemKind3 == dwItemKind3 )
+					nCount++;
+			}
+			return( nCount );
+		}
+	int		GetCount( DWORD dwItemId )
+		{
+			int nCount	= 0;
+			for( int i = 0; i < m_dwItemMax; i++ )
+			{
+				if( m_apItem[i].IsEmpty() == FALSE && m_apItem[i].m_dwItemId == dwItemId )
+					nCount++;
+			}
+			return( nCount );
+		}
+private:
+	void	Swap2( DWORD dwSrcIndex, DWORD dwDstIndex );
+};
+
+template <class T> CItemContainer<T>::CItemContainer()
+{
+	m_dwIndexNum = 0;
+	m_dwItemMax = 0;
+
+	m_apItem = NULL;
+	m_apIndex = NULL;
+}
+
+
+template <class T> CItemContainer<T>::CItemContainer( DWORD dwItemType, DWORD dwItemMax, DWORD dwExtra )
+{
+	SetItemContainer( dwItemType, dwItemMax, dwExtra );
+}
+
+template <class T> CItemContainer<T>::~CItemContainer()
+{
+	SAFE_DELETE_ARRAY( m_apItem );
+	SAFE_DELETE_ARRAY( m_apIndex );
+}
+
+template <class T> void CItemContainer<T>::Clear()
+{
+	for( int i = 0; i < m_dwItemMax; i++ )
+	{
+		m_apItem[ i ].Empty();
+		m_apItem[ i ].m_dwObjId = i;
+		if( i < m_dwIndexNum )
+		{
+			m_apItem[ i ].m_dwObjIndex = i;
+			m_apIndex[ i ] = i;
+		}
+		else 
+		{
+			m_apIndex[ i ] = NULL_ID;
+		}
+	}
+}
+
+template <class T> void CItemContainer<T>::SetItemContainer( DWORD dwItemType, DWORD dwItemMax, DWORD dwExtra )
+{
+	m_dwIndexNum = dwItemMax;
+	m_dwItemMax = dwItemMax;
+	if( dwExtra != NULL_ID )
+		m_dwItemMax += dwExtra;
+	m_apItem = new T[ m_dwItemMax ];
+	m_apIndex = new DWORD[ m_dwItemMax ];
+	Clear();
+}
+
+// 인수를 오브젝트 아이디를 사용해서 얻는다.
+// 오브젝트 아이디는 배열에 한번 추가할 때 생성되며 삭제되지 않는 한 절대 바뀌지 않는다.
+template <class T> T* CItemContainer<T>::GetAtId( DWORD dwId )
+{
+	if( dwId >= GetMax() ) return NULL;
+	T* pItemElem = &m_apItem[ dwId ];
+	if( pItemElem->IsEmpty() ) 
+		return NULL;
+	return pItemElem;
+}
+
+template <class T> T* CItemContainer<T>::GetAtItemId( DWORD dwItemId )
+{
+	for( int i = 0; i < m_dwItemMax; i++ )
+	{
+		if( m_apItem[i].m_dwItemId == dwItemId )
+			return &m_apItem[i];
+	}
+	return NULL;
+}
+
+template <class T> int CItemContainer<T>::GetAtItemNum( DWORD dwItemId )
+{
+	int nResult = 0;
+	for( int i = 0; i < m_dwItemMax; i++ )
+	{
+		if( m_apItem[i].m_dwItemId == dwItemId )
+			nResult += m_apItem[i].m_nItemNum;
+	}
+	return nResult;
+}
+
+template <class T> BOOL CItemContainer<T>::DoEquip( DWORD dwSrcIndex, DWORD dwDstIndex )
+{ 
+	dwDstIndex += m_dwIndexNum;		// dwDstIndex = 가방크기(42) + PARTS_???;
+
+	if( dwSrcIndex == dwDstIndex )
+		return FALSE;
+
+	if( dwSrcIndex >= m_dwItemMax || dwDstIndex >= m_dwItemMax )
+		return FALSE;
+
+	for( int i = 0; i < m_dwItemMax; i++ )
+	{
+		if( m_apItem[ i ].IsEmpty() && m_apItem[ i ].m_dwObjIndex == NULL_ID )
+		{
+			if( m_apIndex[dwSrcIndex] >= m_dwItemMax )
+				return FALSE;
+			m_apIndex[ dwDstIndex ] = m_apIndex[ dwSrcIndex ];		// 가방에 있던 index값을 장착부위(dwDstIndex)로 옮김.
+			m_apIndex[ dwSrcIndex ] = i;							// 원래 아템이 있던곳(dwSrcIndex)은 비어있게(i) 만든다.
+			m_apItem[ m_apIndex[ dwSrcIndex ] ].m_dwObjIndex = dwSrcIndex;	// 옮겨져서 비게된곳의 m_dwObjIndex에는 왜 dwSrcIndex를 넣어주는가?
+			m_apItem[ m_apIndex[ dwDstIndex ] ].m_dwObjIndex = dwDstIndex;	// dwObjIndex는 apItem에서 역으로 apIndex의 index를 알기위함인가?
+			return TRUE;
+		}
+	}
+	return FALSE;
+}
+
+template <class T> BOOL CItemContainer<T>::UnEquip( DWORD dwIndex )
+{ 
+	dwIndex += m_dwIndexNum;
+	if( dwIndex >= m_dwItemMax )
+		return FALSE;
+
+	DWORD dwId = m_apIndex[ dwIndex ];
+
+	if( dwId >= m_dwItemMax )
+		return FALSE;
+
+	for( int i = 0; i < m_dwIndexNum; i++ )
+	{
+		if( m_apIndex[i] >= m_dwItemMax )
+			continue;
+
+		if( m_apItem[ m_apIndex[ i ] ].IsEmpty() )
+		{
+			m_apItem[ m_apIndex[ i ] ].m_dwObjIndex = NULL_ID;
+			m_apIndex[ dwIndex ] = NULL_ID;
+			m_apItem[ dwId ].m_dwObjIndex = i;
+			m_apIndex[ i ] = dwId;
+			return TRUE;
+		}
+	}
+	return FALSE;
+}
+
+template <class T> BOOL CItemContainer<T>::IsEquip( DWORD dwObjId )
+{
+	if( !m_apItem )
+	{
+		WriteError( "CONTAINER//0" );
+		return FALSE;
+	}
+
+	if( dwObjId >= m_dwItemMax )
+		return FALSE;
+
+	if( m_apItem[ dwObjId ].m_dwObjIndex >= m_dwIndexNum )
+		return TRUE;
+	return FALSE;
+}
+
+template <class T> T* CItemContainer<T>::GetEquip( DWORD dwIndex )
+{
+	if( m_dwIndexNum )
+	{
+		if( dwIndex < 0 || dwIndex >= ( m_dwItemMax - m_dwIndexNum ) )
+		{
+			WriteError( "GETEQUIP//%d, %d, %d", m_dwIndexNum, m_dwItemMax - m_dwIndexNum, dwIndex );
+			return NULL;
+		}
+		return GetAt( m_dwIndexNum + dwIndex );
+	}
+	return NULL;
+}
+
+template <class T> BOOL CItemContainer<T>::IsFull( ItemProp* pItemProp, short nNum )
+{
+	int nId;
+	short nNumtmp	= nNum;
+	CItemElem* pElemtmp;
+	for( int i = 0; i < m_dwIndexNum; i++ )
+	{
+		nId	= m_apIndex[i];
+		if( nId < 0 || nId >= m_dwItemMax )
+			continue;
+		pElemtmp	= (CItemElem*)&m_apItem[nId];
+		if( pElemtmp->IsEmpty() )
+		{
+			if( nNumtmp > (short)pItemProp->dwPackMax )
+				nNumtmp		-= (short)pItemProp->dwPackMax;
+			else
+				return FALSE;
+		}
+		else if( pElemtmp->m_dwItemId == pItemProp->dwID )
+		{
+			if( pElemtmp->m_nItemNum + nNumtmp > (short)pItemProp->dwPackMax )
+				nNumtmp	-= ( (short)pItemProp->dwPackMax - pElemtmp->m_nItemNum );
+			else
+				return FALSE;
+		}
+	}
+
+	return TRUE;
+}
+
+template <class T> BOOL CItemContainer<T>::Add( T* pElem, BYTE* pnId, short* pnNum, BYTE* pnCount )
+{
+	if( pnId )
+		*pnCount	= 0;
+	ItemProp* pItemProp		= pElem->GetProp();
+	if( !pItemProp )
+		return FALSE;
+	BOOL bPackItem = TRUE;
+	int nId;
+
+#ifdef __PIERCING_SM_TIME
+	if( prj.m_nLanguage != LANG_JAP && prj.m_nLanguage != LANG_KOR )
+		( (CItemElem*)pElem )->m_bCharged = pItemProp->bCharged;
+#endif // __PIERCING_SM_TIME
+	short nNumtmp	= ( (CItemElem*)pElem )->m_nItemNum;
+	if( IsFull( pItemProp, nNumtmp ) )	// 아이템을 넣을수 있는지 검사
+		return FALSE;
+
+	if( pItemProp->dwPackMax == 1 )
+		bPackItem = FALSE;
+
+	CItemElem* pElemtmp;
+	if( bPackItem )
+	{
+		for( int i = 0; i < m_dwIndexNum; i++ )
+		{
+			nId	= m_apIndex[i];
+			if( nId < 0 || nId >= m_dwItemMax )
+				continue;
+			pElemtmp	= (CItemElem*)&m_apItem[nId];
+			
+			if( pElemtmp->IsEmpty() == FALSE && pElemtmp->m_dwItemId == pElem->m_dwItemId && pElemtmp->m_nItemNum < (short)pItemProp->dwPackMax )
+			{
+				if( pElemtmp->m_nItemNum + nNumtmp > (short)pItemProp->dwPackMax )
+				{
+					nNumtmp	-= ( (short)pItemProp->dwPackMax - pElemtmp->m_nItemNum );
+					pElemtmp->m_nItemNum	= (short)pItemProp->dwPackMax;
+					if( pnId )
+					{
+						pnId[*pnCount]	= nId;
+						pnNum[*pnCount]	= pElemtmp->m_nItemNum;
+						( *pnCount )++;
+					}
+				}
+				else {
+					pElemtmp->m_nItemNum	+= nNumtmp;
+					if( pnId ) {
+						pnId[*pnCount]	= nId;
+						pnNum[*pnCount]		= pElemtmp->m_nItemNum;	
+						( *pnCount )++;
+					}
+					nNumtmp = 0;
+					break;
+				}
+			}
+			
+		}
+	}
+
+	if( nNumtmp > 0 )
+	{
+		for( int i = 0 ; i < m_dwIndexNum ; i++ )
+		{
+			nId	= m_apIndex[i];
+			if( nId < 0 || nId >= m_dwItemMax )
+				continue;
+			pElemtmp	= (CItemElem*)&m_apItem[nId];
+			if( pElemtmp->IsEmpty() )	// 빈공간인지 검사
+			{
+				*pElemtmp	= *( (CItemElem*)pElem );
+				pElemtmp->m_dwObjId	= nId;
+				pElemtmp->m_dwObjIndex		= i;
+				pElemtmp->SetTexture();
+
+
+#ifdef __PIERCING_SM_TIME
+				memcpy( &pElemtmp->m_piercingInfo, &pElem->m_piercingInfo, sizeof(PIERCINGINFO) );
+				pElemtmp->m_bCharged	= pElem->m_bCharged;
+#endif	// __PIERCING_SM_TIME
+
+#ifdef __RANDOMOPTITEM0628
+				pElemtmp->m_nRandomOptItemId	= pElem->m_nRandomOptItemId;
+#endif	// __RANDOMOPTITEM0628
+				
+				if( nNumtmp > (short)pItemProp->dwPackMax )
+				{
+					pElemtmp->m_nItemNum	= (short)pItemProp->dwPackMax;
+					nNumtmp		-= (short)pItemProp->dwPackMax;
+					if( pnId ) {
+						pnId[*pnCount]	= nId;
+						pnNum[*pnCount]	= pElemtmp->m_nItemNum;
+						( *pnCount )++;
+					}
+				}
+				else
+				{
+					pElemtmp->m_nItemNum	= nNumtmp;
+					if( pnId )
+					{
+						pnId[*pnCount]	= nId;
+						pnNum[*pnCount]		= pElemtmp->m_nItemNum;
+						( *pnCount )++;
+					}
+					break;
+				}
+			}
+		}
+	}
+
+	return TRUE;
+}
+
+template <class T> void CItemContainer<T>::RemoveAtId( OBJID dwObjId )
+{
+	if( dwObjId >= m_dwItemMax )
+		return;
+	if( m_apItem[ dwObjId ].m_dwObjIndex >= m_dwItemMax )
+		return;
+	m_apItem[ dwObjId ].Empty();
+	if( m_apItem[ dwObjId ].m_dwObjIndex >= m_dwIndexNum )
+	{
+		m_apIndex[ m_apItem[ dwObjId ].m_dwObjIndex ] = NULL_ID;
+		m_apItem[ dwObjId ].m_dwObjIndex = NULL_ID;
+	}
+}
+
+
+template <class T> void CItemContainer<T>::SetAtId( OBJID dwObjId, T* pItemElem )
+{
+	if( dwObjId >= m_dwItemMax )
+		return;
+	m_apItem[dwObjId]	= *pItemElem;
+	m_apItem[dwObjId].m_dwObjId	= dwObjId;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// client 전용 
+#ifdef __CLIENT
+
+template <class T> void CItemContainer<T>::RemoveAt( DWORD dwIndex )
+{
+	m_apItem[ m_apIndex[ dwIndex ] ].Empty();
+	if( dwIndex >= m_dwIndexNum )
+	{
+		m_apItem[ m_apIndex[ dwIndex ] ].m_dwObjIndex = NULL_ID;
+		m_apIndex[ dwIndex ] = NULL_ID;
+	}
+}
+template <class T> void CItemContainer<T>::SetAt( DWORD dwIndex, DWORD dwItemId )
+{
+	// 인덱스가 비어있나?
+	T* pItemElem = &m_apItem[ m_apIndex[ dwIndex ] ];
+	pItemElem->m_dwItemId = dwItemId;
+	pItemElem->m_dwObjId = m_apIndex[ dwIndex ];
+	pItemElem->m_dwObjIndex = dwIndex;
+}
+template <class T> void CItemContainer<T>::SetAt( DWORD dwIndex, T* pItemElem )
+{
+	CItemElem* pItemElem2 = &m_apItem[ m_apIndex[ dwIndex ] ];
+	*pItemElem2	= *pItemElem;
+	pItemElem2->m_dwObjId = m_apIndex[ dwIndex ];
+	pItemElem2->m_dwObjIndex = dwIndex;
+}
+
+#endif // __CLIENT
+
+
+
+// 순수하게 인덱스 배열에서 CItemElem을 꺼낸다.
+template <class T> T* CItemContainer<T>::GetAt( DWORD dwIndex )
+{
+	DWORD dwIdx = m_apIndex[ dwIndex ];
+	if( dwIdx == NULL_ID )
+		return NULL;
+	T* pItemElem = &m_apItem[ dwIdx ];
+	if( pItemElem->IsEmpty() ) 
+		return NULL;
+	return pItemElem;
+}
+
+template<class T> void CItemContainer<T>::Swap2( DWORD dwSrcIndex, DWORD dwDstIndex )
+{
+	DWORD dwItem = m_apIndex[ dwSrcIndex ];
+	m_apIndex[ dwSrcIndex ] = m_apIndex[ dwDstIndex ];
+	m_apIndex[ dwDstIndex ] = dwItem;
+
+	DWORD dwSrcItem	= m_apIndex[dwSrcIndex];
+	DWORD dwDstItem	= m_apIndex[dwDstIndex];
+	if( dwSrcItem != NULL_ID )
+		m_apItem[dwSrcItem].m_dwObjIndex	= dwSrcIndex;
+	if( dwDstItem != NULL_ID )
+		m_apItem[dwDstItem].m_dwObjIndex	= dwDstIndex;
+}
+
+template <class T> void CItemContainer<T>::Swap( DWORD dwSrcIndex, DWORD dwDstIndex )
+{
+	if( dwSrcIndex == dwDstIndex || dwSrcIndex >= m_dwItemMax || dwDstIndex >= m_dwItemMax )
+		return;
+
+	CItemElem* pItemElemSrc, *pItemElemDst;
+	pItemElemSrc	= (CItemElem*)GetAtId( m_apIndex[dwSrcIndex] );
+	pItemElemDst	= (CItemElem*)GetAtId( m_apIndex[dwDstIndex] );
+
+	if( pItemElemSrc && pItemElemDst && pItemElemSrc->m_dwItemId == pItemElemDst->m_dwItemId )
+	{
+		ItemProp* pItemProp;
+		int nPackMax;
+		if( ( pItemProp = pItemElemSrc->GetProp() ) && ( nPackMax = pItemProp->dwPackMax ) > 1 )
+		{
+			short nRemnant	= (short)nPackMax - pItemElemDst->m_nItemNum;
+			if( nRemnant >= pItemElemSrc->m_nItemNum )
+			{
+				pItemElemDst->m_nItemNum	+= pItemElemSrc->m_nItemNum;
+				RemoveAtId( m_apIndex[dwSrcIndex] );
+			}
+			else
+			{
+				pItemElemDst->m_nItemNum	+= nRemnant;
+				pItemElemSrc->m_nItemNum	-= nRemnant;
+			}
+			return;
+		}
+	}
+	Swap2( dwSrcIndex, dwDstIndex );
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+template <class T> void CItemContainer<T>::Copy( CItemContainer<T> & rItemContainer )
+{
+	m_dwIndexNum	= rItemContainer.m_dwIndexNum;
+	memcpy( (void*)m_apIndex, (void*)rItemContainer.m_apIndex, sizeof(DWORD) * m_dwItemMax );
+	for( u_long i = 0; i < m_dwItemMax; i++ )
+	{
+		if( rItemContainer.m_apItem[i].IsEmpty() == FALSE )
+			m_apItem[i]		= rItemContainer.m_apItem[i];
+		else
+			m_apItem[i].Empty();
+	}
+}
+
+template <class T> void CItemContainer<T>::Serialize( CAr & ar )	// 0-673	// 466-631
+{
+	DWORD	adwObjIndex[128];
+
+	unsigned char chSize	= 0;
+
+	if( ar.IsStoring() )
+	{
+		
+		ar.Write( m_apIndex, sizeof(DWORD) * m_dwItemMax );
+		
+		u_long uOffset	= ar.GetOffset();
+		ar << chSize;
+
+		for( u_char ch = 0; ch < m_dwItemMax; ch++ )	// 0-504
+		{
+			if( m_apItem[ch].IsEmpty() == FALSE )
+			{
+				ar << ch;
+				m_apItem[ch].Serialize( ar );
+				chSize++;
+			}
+			adwObjIndex[ch]		= m_apItem[ch].m_dwObjIndex;
+		}
+
+		ar.Write( adwObjIndex, sizeof(DWORD) * m_dwItemMax );
+
+		int nBufSize;
+		LPBYTE lpBuf	= ar.GetBuffer( &nBufSize );
+		*( lpBuf + uOffset )	= chSize;
+	}
+	else
+	{
+		ar.Read( m_apIndex, sizeof(DWORD) * m_dwItemMax );
+		// Clear
+		for( u_long i = 0; i < m_dwItemMax; i++ )
+			m_apItem[i].Empty();
+
+		ar >> chSize;
+
+		unsigned char ch;
+		for( i = 0; i < chSize; i++ )
+		{
+			ar >> ch;
+			m_apItem[ch].Serialize( ar );
+		}
+
+		ar.Read( adwObjIndex, sizeof(DWORD) * m_dwItemMax );
+		for( i = 0; i < m_dwItemMax; i++ )
+		{
+			m_apItem[i].m_dwObjIndex	= adwObjIndex[i];
+		}
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////
+//
+//
+//
+//
+//////////////////////////////////////////////////////////////////////////
+#ifndef __BEAST
+#include "mempooler.h"
+typedef		MemPooler<CItem>	\
+	CItemPool;
+#endif
+
+//
+class CItem  : public CCtrl
+{
+private:
+#ifdef __XITEMDROP0908
+	float	m_fGroundY;		// 아이템이 생성될당시 그 위치의 Y좌표를 미리 구해놓자.
+	D3DXVECTOR3	 m_vDelta;	// 
+#endif
+	
+public:
+	CItemBase* m_pItemBase;
+	u_long	m_idHolder;
+	OBJID	m_idOwn;		// 누가 이아이템을 가질 권리가 있는가.
+	DWORD	m_dwDropTime;	// 드랍했을때의 시간.
+	BOOL	m_bDropMob;		// 몬스터가 죽어서 드랍한것이냐?.
+#if !defined(__NPP_050308)						
+	OBJID	m_idFrom;		// 누가 떨어트린건가.
+#endif
+
+public:
+	CItem();
+	virtual ~CItem();
+
+	void SetOwner( OBJID id );
+	DWORD GetItemType() const { return 0; }
+	void SetItemBase( CItemBase* pItemBase ) { m_pItemBase = pItemBase; }
+
+	CItemBase* GetItemBase() const { return m_pItemBase; }
+	ItemProp* GetProp() { return prj.GetItemProp( GetIndex() ); }
+	
+	virtual void Serialize( CAr & ar );
+	virtual void Process( FLOAT fElapsedTime );
+	virtual void Render( LPDIRECT3DDEVICE9 pd3dDevice );
+	virtual void RenderName( LPDIRECT3DDEVICE9 pd3dDevice, CD3DFont* pFont, DWORD dwColor = 0xffffffff );
+	virtual BOOL Read( CFileIO* pFile );
+	virtual BOOL Write( CFileIO* pFile );
+		
+#ifdef __XITEMDROP0908
+	void SetDelta( float fGroundY, D3DXVECTOR3 &vDelta );
+#endif
+
+#ifdef __BEAST
+	CRespawnInfo m_respawnInfo;
+	BOOL IsRespawn() { return m_respawnInfo.m_dwIndex ? TRUE : FALSE; }
+#endif
+
+public:
+#ifndef __BEAST
+	static	CItemPool*		m_pPool;
+	void*	operator new( size_t nSize )	{	return CItem::m_pPool->Alloc();	}
+	void*	operator new( size_t nSize, LPCSTR lpszFileName, int nLine )	{	return CItem::m_pPool->Alloc();	}
+	void	operator delete( void* lpMem )	{	CItem::m_pPool->Free( (CItem*)lpMem );	}
+	void	operator delete( void* lpMem, LPCSTR lpszFileName, int nLine )	{	CItem::m_pPool->Free( (CItem*)lpMem );	}
+#endif
+};
+
+
+extern BOOL IsUsableItem( CItemBase* pItem );
+extern BOOL IsUsingItem( CItemBase* pItem );
+
+#endif // !defined(AFX_ITEM_H__80E88B36_BD6B_449B_BE76_34F2B5B77552__INCLUDED_)

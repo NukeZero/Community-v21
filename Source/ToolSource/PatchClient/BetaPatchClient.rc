@@ -1,0 +1,438 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_FRA_SEARCHLIST  "Recherche de mises ?jour"
+    IDS_STR_FRA_PATCHCOMP   "Mise ?jour termin?"
+    IDS_STR_FRA_RUN         "Mise ?jour en cours..."
+    IDS_STR_FRA_PATCHPROCESS "Mise ?jour"
+    IDS_STR_FRA_DOWNLOADING "T??hargement..."
+    IDS_STR_FRA_DECOMPRESS  "D?ompression"
+END
+#endif    // French (France) resources
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_POR)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(860)
+#endif //_WIN32
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STR_POR_PATCHCOMP   "Patch Conclu?o"
+END
+#endif
+/////////////////////////////////////////////////////////////////////////////
+// Vietnamese resources
+/*
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_VTN)
+#ifdef _WIN32
+LANGUAGE LANG_VIETNAMESE, SUBLANG_DEFAULT
+#pragma code_page(1258)
+#endif //_WIN32
+
+#endif
+*/
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+#include "VersionCommon.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//	혹시 나중에 국가별로 이미지가 바뀔가능성이 있으니까 미리 나눔 
+//  .bmp이름만 통일하고 지정 국가 폴더에 넣고 빌드
+//  DEFAULT 폴더는 기본으로 넣어놓은 버튼 리소스 
+#if   __CURRENT_LANG == LANG_RUS
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_RUS\\Registr00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_RUS\\Registr01.bmp"
+#elif __CURRENT_LANG == LANG_FRA
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Ok_FR00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Ok_FR01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Cancel_FR00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Cancel_FR01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Close_FR00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Close_FR01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Option_FR00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Option_FR01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Start_FR00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Start_FR01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_FRA\\Register_FR00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_FRA\\Register_FR01.bmp"
+#elif __CURRENT_LANG == LANG_POR
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_POR\\Ok_POR00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_POR\\Ok_POR01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_POR\\Cancel_POR00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_POR\\Cancel_POR01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_POR\\Close_POR00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_POR\\Close_POR01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_POR\\Option_POR00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_POR\\Option_POR01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_POR\\Start_POR00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_POR\\Start_POR01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_POR\\Register_POR00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_POR\\Register_POR01.bmp"
+#elif __CURRENT_LANG == LANG_GER
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_GER\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_GER\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_GER\\Cancel_GER00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_GER\\Cancel_GER01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_GER\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_GER\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_GER\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_GER\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_GER\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_GER\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_GER\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_GER\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_KOR
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_KOR\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_KOR\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_ENG
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_ENG\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_ENG\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_JAP
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_JAP\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_JAP\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_CHI
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_CHI\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_CHI\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_THA
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_THA\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_THA\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_THA\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_THA\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_THA\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_THA\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_THA\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_THA\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_THA\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_THA\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_THA\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_THA\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_TWN
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_TWN\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_TWN\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_SPA
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_SPA\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_SPA\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_VTN
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_VTN\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_VTN\\Register01.bmp"
+#elif __CURRENT_LANG == LANG_FWC
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_FWC\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_FWC\\Register01.bmp"
+#else 
+IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\DEFAULT\\Ok00.bmp"
+IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\DEFAULT\\Ok01.bmp"
+IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\DEFAULT\\Cancel00.bmp"
+IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\DEFAULT\\Cancel01.bmp"
+IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\DEFAULT\\Close00.bmp"
+IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\DEFAULT\\Close01.bmp"
+IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\DEFAULT\\Option00.bmp"
+IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\DEFAULT\\Option01.bmp"
+IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\DEFAULT\\Start00.bmp"
+IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\DEFAULT\\Start01.bmp"
+IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\DEFAULT\\Register00.bmp"
+IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\DEFAULT\\Register01.bmp"
+#endif
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BETAPATCHCLIENT_DIALOG DIALOGEX 0, 0, 279, 406
+STYLE DS_CENTER | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDC_BUTTON_START,14,318,57,13,NOT WS_VISIBLE
+	PUSHBUTTON      "",IDC_BUTTON_REGISTER,77,317,57,13
+    PUSHBUTTON      "",IDC_EXIT,203,317,57,13
+    CONTROL         "Progress1",IDC_FILEPROGRESS,"msctls_progress32",0x0,13,
+                    349,248,10,WS_EX_TRANSPARENT
+    CONTROL         "Progress2",IDC_TOTALPROGRESS,"msctls_progress32",0x0,13,
+                    363,248,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPTION,142,317,57,13
+    CTEXT           "",IDC_FILE_NUMBER,208,337,53,8,SS_CENTERIMAGE | NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CTEXT           "",IDC_DOWN_SPEED,93,336,89,8,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "",IDC_CURRENT_STATE,14,337,92,8,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "Flyff Patch Version X.X",IDC_MASQUERADEVERSION,16,379,
+                    129,11,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    RTEXT           "http://www.flyffonline.in.th",IDC_HOME,150,65,113,8,
+                    SS_CENTERIMAGE,WS_EX_TRANSPARENT
+END
+
+IDD_OPTION DIALOGEX 0, 0, 221, 253
+STYLE WS_POPUP
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDOK,36,69,50,14
+    PUSHBUTTON      "",IDCANCEL,36,87,50,14
+    LTEXT           "",IDC_STATIC,7,34,39,8
+    COMBOBOX        IDC_RES_COMBO,49,33,80,55,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_TQ_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,117,157,25,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_TQ_RADIO2,"Button",BS_AUTORADIOBUTTON,147,157,25,
+                    10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_TQ_RADIO3,"Button",BS_AUTORADIOBUTTON,174,157,35,
+                    10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_VIEW_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,16,158,25,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_VIEW_RADIO2,"Button",BS_AUTORADIOBUTTON,43,158,25,
+                    10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_VIEW_RADIO3,"Button",BS_AUTORADIOBUTTON,71,158,35,
+                    10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_OD_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,117,203,25,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_OD_RADIO2,"Button",BS_AUTORADIOBUTTON,147,203,25,
+                    10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_OD_RADIO3,"Button",BS_AUTORADIOBUTTON,175,203,35,
+                    10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SHD_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,16,205,25,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SHD_RADIO2,"Button",BS_AUTORADIOBUTTON,46,205,25,
+                    10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SHD_RADIO3,"Button",BS_AUTORADIOBUTTON,76,205,35,
+                    10,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_STATIC2,22,139,67,8
+    LTEXT           "",IDC_STATIC3,120,139,75,8
+    LTEXT           "",IDC_STATIC4,22,187,75,8
+    LTEXT           "",IDC_STATIC5,121,187,73,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "\0"
+            VALUE "FileVersion", "\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_BETAPATCHCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 276
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\Hand.cur"
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#define IDR_RT_MANIFEST1     1
+IDR_RT_MANIFEST1 RT_MANIFEST DISCARDABLE PURE "Flyff.exe.manifest"
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#include "res\BetaPatchClient.rc2"  // 
+#include "afxres.rc"          // Standard components
+#endif
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

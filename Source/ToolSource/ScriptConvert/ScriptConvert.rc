@@ -1,0 +1,712 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SCRIPTCONVERT_DIALOG DIALOGEX 0, 0, 303, 409
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ScriptConvert"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,180,25,24,7,NOT WS_VISIBLE
+    PUSHBUTTON      "취소",IDCANCEL,180,33,24,7,NOT WS_VISIBLE
+    PUSHBUTTON      "Script(TXT) -> XLS",IDC_SCRIPT_LOAD,21,133,125,17
+    PUSHBUTTON      "XLS -> Script(TXT)",IDC_TEXT_LOAD,154,132,125,17
+    LISTBOX         IDC_SCRIPT_LIST1,21,55,125,77,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "XLS File List",IDC_STATIC,23,47,42,8
+    LTEXT           "",IDC_STATIC1,91,44,51,8
+    LTEXT           "",IDC_STATIC2,220,45,58,8
+    LISTBOX         IDC_CONVERT_DONE,154,55,125,77,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CTEXT           "TXT File List",IDC_STATIC,155,47,42,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO1,215,33,62,122,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Merge Language",IDC_STATIC,215,23,56,8
+    CONTROL         " Ver 3.37",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_CENTERIMAGE | WS_BORDER | WS_GROUP,133,24,35,14
+    GROUPBOX        "NPC Dialog Version Convert",IDC_STATIC,18,162,263,89
+    PUSHBUTTON      "...",IDC_BUTTON1,213,177,12,14
+    PUSHBUTTON      "...",IDC_BUTTON2,213,191,12,14
+    EDITTEXT        IDC_EDIT1,66,177,146,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT2,66,191,146,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "...",IDC_BUTTON3,213,205,12,14
+    EDITTEXT        IDC_EDIT3,66,205,147,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "NewXLS(K)",IDC_STATIC,23,180,41,8
+    LTEXT           "OldXLS(K)",IDC_STATIC,27,193,35,8
+    LTEXT           "OldXLS(F)",IDC_STATIC,27,208,35,8
+    PUSHBUTTON      "Version Convert",IDC_BUTTON4,115,225,66,19
+    PUSHBUTTON      "Resdata Merge",IDC_RES_LOAD1,38,286,107,28,WS_DISABLED,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "TextClient Merge",IDC_TEXTCLIENT_BUTTON,159,286,107,28,
+                    WS_DISABLED,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "PropQuest Merge",IDC_PROPQUEST_BUTTON2,38,319,107,28,
+                    WS_DISABLED,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Character Merge",IDC_CHARACTER_BUTTON,159,319,107,28,
+                    WS_DISABLED,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    GROUPBOX        "NPC Dialog",IDC_STATIC,11,11,281,252
+    GROUPBOX        "INC Script",IDC_STATIC,11,272,281,117
+    PUSHBUTTON      "Help Merge",IDC_HELP_BUTTON3,38,351,107,28,WS_DISABLED,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "TreeHelp Merge",IDC_TREEHELP_BUTTON2,158,352,107,28,
+                    WS_DISABLED,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "FileCompare",IDC_FILECOMPARE,229,191,47,29
+END
+
+IDD_RESDATA_DIALOG DIALOGEX 0, 0, 344, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Resdata Merge Dialog"
+FONT 10, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "최신 Resdata INC",IDC_RES_BUTTON1,258,19,73,19
+    PUSHBUTTON      "외국 Resdata INC",IDC_RES_BUTTON2,258,61,73,19
+    COMBOBOX        IDC_COMBO1,258,79,73,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "합치기 시작",IDC_RES_BUTTON3,129,101,88,20
+    EDITTEXT        IDC_SRCEDIT,13,19,245,19,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESTEDIT,13,61,245,19,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "공백문자 넘기기",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,82,89,10
+    COMBOBOX        IDC_COMBO2,258,37,73,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_TEXTCLIENT_DIALOG DIALOGEX 0, 0, 345, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "TextClient Merge Dialog"
+FONT 10, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "최신 TextClient INC",IDC_TCLIENT_BUTTON1,256,19,82,18
+    PUSHBUTTON      "외국 TextClient INC",IDC_TCLIENT_BUTTON2,256,59,82,18
+    COMBOBOX        IDC_COMBO1,256,76,82,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "합치기 시작",IDC_TCLIENT_MSTART,127,104,88,20
+    EDITTEXT        IDC_SRCEDIT,11,19,245,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESTEDIT,11,59,245,18,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "공백문자 넘기기",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,80,89,10
+    COMBOBOX        IDC_COMBO2,256,36,82,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_QUEST_DIALOG DIALOGEX 0, 0, 351, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "QuestDialog"
+FONT 10, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "최신 PropQuest INC",IDC_QUEST_BUTTON1,256,19,82,18
+    PUSHBUTTON      "외국 PropQuest INC",IDC_TCLIENT_BUTTON2,256,58,82,18
+    COMBOBOX        IDC_COMBO1,256,75,82,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "합치기 시작",IDC_QUEST_MSTART,127,98,88,20
+    EDITTEXT        IDC_SRCEDIT,11,19,245,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESTEDIT,11,58,245,18,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "공백문자 넘기기",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,79,89,10
+    COMBOBOX        IDC_COMBO2,256,36,82,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_CHARACTER_DIALOG DIALOGEX 0, 0, 349, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "CharacterDialog"
+FONT 10, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "최신 Character INC",IDC_CHAR_BUTTON1,256,19,82,18
+    PUSHBUTTON      "외국 Character INC",IDC_CHAR_BUTTON2,256,58,82,18
+    COMBOBOX        IDC_COMBO1,256,75,82,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "합치기 시작",IDC_CHAR_MSTART,127,98,88,20
+    EDITTEXT        IDC_SRCEDIT,11,19,245,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESTEDIT,11,58,245,18,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "공백문자 넘기기",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,79,89,10
+    COMBOBOX        IDC_COMBO2,256,36,82,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_HELP_DIALOG DIALOG DISCARDABLE  0, 0, 350, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Help Merge Dialog"
+FONT 10, "굴림"
+BEGIN
+    PUSHBUTTON      "최신 Help INC",IDC_HELP_BUTTON1,258,16,73,16
+    PUSHBUTTON      "외국 Help INC",IDC_HELP_BUTTON2,258,50,73,16
+    COMBOBOX        IDC_COMBO1,258,64,73,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "합치기 시작",IDC_MERGE,129,82,88,17
+    EDITTEXT        IDC_SRCEDIT,13,16,245,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESTEDIT,13,50,245,16,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "공백문자 넘기기",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,67,89,8
+    COMBOBOX        IDC_COMBO2,258,30,73,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_TREEHELP_DIALOG DIALOG DISCARDABLE  0, 0, 350, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TreeHelp Dialog"
+FONT 10, "굴림"
+BEGIN
+    PUSHBUTTON      "최신 TreeHelp INC",IDC_TREEHELP_BUTTON1,258,13,73,17
+    PUSHBUTTON      "외국 TreeHelp INC",IDC_TREEHELP_BUTTON3,258,54,73,17
+    COMBOBOX        IDC_COMBO1,258,71,73,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "합치기 시작",IDC_MERGE,129,89,88,17
+    EDITTEXT        IDC_SRCEDIT,13,13,245,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESTEDIT,13,54,245,17,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "공백문자 넘기기",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,74,89,8
+    COMBOBOX        IDC_COMBO2,258,30,73,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SCRIPTCONVERT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 402
+    END
+
+    IDD_RESDATA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_TEXTCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_QUEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_CHARACTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_HELP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_TREEHELP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SCRIPTCONVERT_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0x4f4b, 0x4552, 0x4e41, "\000" 
+    IDC_COMBO1, 0x403, 8, 0
+0x4e45, 0x4c47, 0x5349, 0x0048, 
+    IDC_COMBO1, 0x403, 9, 0
+0x414a, 0x4150, 0x454e, 0x4553, "\000" 
+    IDC_COMBO1, 0x403, 8, 0
+0x4843, 0x4e49, 0x5345, 0x0045, 
+    IDC_COMBO1, 0x403, 5, 0
+0x4854, 0x4941, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x4154, 0x5749, 0x4e41, "\000" 
+    0
+END
+
+IDD_RESDATA_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    0
+END
+
+IDD_TEXTCLIENT_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    0
+END
+
+IDD_QUEST_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    0
+END
+
+IDD_CHARACTER_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    0
+END
+
+IDD_HELP_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    0
+END
+
+IDD_TREEHELP_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO1, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4b5f, 0x524f, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x455f, 0x474e, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x4a5f, 0x5041, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x435f, 0x4948, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4148, 0x0020, 
+    IDC_COMBO2, 0x403, 10, 0
+0x414c, 0x474e, 0x545f, 0x4e57, 0x0020, 
+    0
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ScriptConvert 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ScriptConvert 버전 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,69,58,50,14
+    CONTROL         "MessageBox Hide",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,81,76,10
+END
+
+IDD_FILE_COUNTER_DIALOG DIALOGEX 0, 0, 463, 321
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Counter Manager"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,9,52,125,85,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "OldKorea Xls",IDC_STATIC,7,7,449,136
+    LISTBOX         IDC_LIST2,134,52,160,85,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST3,294,52,160,85,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "File Open",IDC_BUTTON1,296,22,50,14
+    EDITTEXT        IDC_EDIT1,11,22,285,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT2,9,40,125,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT4,134,40,150,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT3,295,40,150,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    PUSHBUTTON      "☆",IDC_BUTTON2,284,40,11,12,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "☆",IDC_BUTTON4,444,40,11,12,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    LISTBOX         IDC_LIST4,9,192,125,85,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "OldForeign XLS(TXT)",IDC_STATIC,7,147,449,136
+    LISTBOX         IDC_LIST5,134,192,160,85,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST6,294,192,160,85,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "File Open",IDC_BUTTON5,296,162,50,14
+    EDITTEXT        IDC_EDIT5,11,162,285,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT6,9,180,125,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT7,134,180,150,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT8,295,180,150,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    PUSHBUTTON      "☆",IDC_BUTTON6,284,180,11,12,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "☆",IDC_BUTTON7,444,180,11,12,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "OK&&OF Compare",IDC_BUTTON8,196,291,70,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_FILE_COUNTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 315
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ScriptConvert.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ScriptConvert.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ScriptConvert MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ScriptConvert\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ScriptConvert.EXE\0"
+            VALUE "ProductName", "ScriptConvert 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "ScriptConvert 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\ScriptConvert.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

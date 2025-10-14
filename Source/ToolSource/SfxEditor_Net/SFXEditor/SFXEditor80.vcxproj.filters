@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{365b7aa6-15a2-4f88-8902-ace1591dd863}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\SFX">
+      <UniqueIdentifier>{9e8d711a-7299-4182-be10-5a817eb556f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SFX\aaa">
+      <UniqueIdentifier>{30c3bb4a-c71d-473c-b427-c3189d2dee4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{44d682b5-a6f6-4945-a7f4-a742acbedb8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\DirectX">
+      <UniqueIdentifier>{072b5a55-ac63-44fa-a3a7-70f83594c35e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Panel">
+      <UniqueIdentifier>{b4876c6a-686d-4f15-a54e-561376a6f282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b831eb7d-00b8-4572-a6c1-52bdeee89e01}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{631fa131-a4b2-49f7-95a9-d187b9964b81}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXEditorDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXEditorView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueChange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Model.cpp">
+      <Filter>Source Files\SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\sfxbase.cpp">
+      <Filter>Source Files\SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Bone.cpp">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\graphic3d.cpp">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Material.cpp">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\modelglobal.cpp">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\modelobject.cpp">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\object3d.cpp">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\2DRender.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\debug.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_UnhandledException\exceptionhandler.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\File.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\path.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\scanner.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Script.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\targa.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\timer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\vUtil.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\xutil.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\xutil3d.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3dapp.cpp">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3denumeration.cpp">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3dfont.cpp">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3dsettings.cpp">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3dutil.cpp">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\dsutil.cpp">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\dxutil.cpp">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogAddPart.cpp">
+      <Filter>Source Files\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="FramePanel.cpp">
+      <Filter>Source Files\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjPanel.cpp">
+      <Filter>Source Files\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="TexPanel.cpp">
+      <Filter>Source Files\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkPanel.cpp">
+      <Filter>Source Files\Panel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\_UnhandledException\neuzd.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SFXEditor.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_Common\Model.h">
+      <Filter>Source Files\SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\sfxbase.h">
+      <Filter>Source Files\SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Bone.h">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\graphic3d.h">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Material.h">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\modelglobal.h">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\modelobject.h">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\object3d.h">
+      <Filter>Source Files\SFX\aaa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\2DRender.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\data.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\debug.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_UnhandledException\ExceptionHandler.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\File.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RESOURCE\lang.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\path.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\scanner.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Script.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\targa.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\timer.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\vUtil.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\xutil.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\xutil3d.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dapp.h">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3denumeration.h">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dfont.h">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dres.h">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dsettings.h">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dutil.h">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\dsutil.h">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\dxutil.h">
+      <Filter>Source Files\Common\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogAddPart.h">
+      <Filter>Source Files\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="FramePanel.h">
+      <Filter>Source Files\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjPanel.h">
+      <Filter>Source Files\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="TexPanel.h">
+      <Filter>Source Files\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkPanel.h">
+      <Filter>Source Files\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditorDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditorView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueChange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\SFXEditor.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SFXEditorDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SFXEditor.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="gmpbigsun_Note.txt" />
+  </ItemGroup>
+</Project>

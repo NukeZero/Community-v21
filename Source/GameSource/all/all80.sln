@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccountServer", "..\AccountServer\AccountServer80.vcxproj", "{F8FC1895-D939-4A19-A2BF-56E8F9F870B9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CacheServer", "..\CacheServer\CacheServer80.vcxproj", "{1E40EBFA-1833-411D-854C-265A4A67C42A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Certifier", "..\Certifier\Certifier80.vcxproj", "{A425F62A-22FF-4904-BFFB-6831D6DC897F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreServer", "..\CoreServer\CoreServer80.vcxproj", "{AA2D9C30-2AF0-4CB7-8329-84FE59EAB752}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DatabaseServer", "..\DatabaseServer\DatabaseServer80.vcxproj", "{7E317D3C-CBBF-42FD-8A33-EFB923BED47D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoginServer", "..\LoginServer\LoginServer80.vcxproj", "{47CDE42E-06C4-4D71-924A-1EB7DEEC5FE6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Neuz", "..\Neuz\Neuz80.vcxproj", "{4C758B03-22AF-4006-ACCE-99B6681C0D38}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WorldServer", "..\WorldServer\WorldServer80.vcxproj", "{A64D197A-67C7-4F5D-A4E4-0CFC499FC645}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{45DFDD8E-5377-471C-821E-86FEA3A84E44}"
+	ProjectSection(SolutionItems) = preProject
+		Dekane.hpp = Dekane.hpp
+		Lexer.hpp = Lexer.hpp
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8FC1895-D939-4A19-A2BF-56E8F9F870B9}.Release|Win32.ActiveCfg = Release|Win32
+		{F8FC1895-D939-4A19-A2BF-56E8F9F870B9}.Release|Win32.Build.0 = Release|Win32
+		{1E40EBFA-1833-411D-854C-265A4A67C42A}.Release|Win32.ActiveCfg = Release|Win32
+		{1E40EBFA-1833-411D-854C-265A4A67C42A}.Release|Win32.Build.0 = Release|Win32
+		{A425F62A-22FF-4904-BFFB-6831D6DC897F}.Release|Win32.ActiveCfg = Release|Win32
+		{A425F62A-22FF-4904-BFFB-6831D6DC897F}.Release|Win32.Build.0 = Release|Win32
+		{AA2D9C30-2AF0-4CB7-8329-84FE59EAB752}.Release|Win32.ActiveCfg = Release|Win32
+		{AA2D9C30-2AF0-4CB7-8329-84FE59EAB752}.Release|Win32.Build.0 = Release|Win32
+		{7E317D3C-CBBF-42FD-8A33-EFB923BED47D}.Release|Win32.ActiveCfg = Release|Win32
+		{7E317D3C-CBBF-42FD-8A33-EFB923BED47D}.Release|Win32.Build.0 = Release|Win32
+		{47CDE42E-06C4-4D71-924A-1EB7DEEC5FE6}.Release|Win32.ActiveCfg = Release|Win32
+		{47CDE42E-06C4-4D71-924A-1EB7DEEC5FE6}.Release|Win32.Build.0 = Release|Win32
+		{4C758B03-22AF-4006-ACCE-99B6681C0D38}.Release|Win32.ActiveCfg = Release|Win32
+		{4C758B03-22AF-4006-ACCE-99B6681C0D38}.Release|Win32.Build.0 = Release|Win32
+		{A64D197A-67C7-4F5D-A4E4-0CFC499FC645}.Release|Win32.ActiveCfg = Release|Win32
+		{A64D197A-67C7-4F5D-A4E4-0CFC499FC645}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBEC0539-BF5A-44C0-BC8B-303DE9A579AA}
+	EndGlobalSection
+EndGlobal

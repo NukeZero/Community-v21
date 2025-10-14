@@ -1,0 +1,2836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{97401552-42d6-41ec-b2e1-b10002dfbb94}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\_DirectX">
+      <UniqueIdentifier>{b3223c7b-8b41-49a8-9f38-c002bfda063f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_DirectX\열거자">
+      <UniqueIdentifier>{4595eb8b-a736-44fa-9221-51f75e9a1039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_DirectX\폰트">
+      <UniqueIdentifier>{5b92d71b-2169-4434-ba69-7c722a030e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_DirectX\리소스">
+      <UniqueIdentifier>{aa47a842-0b47-4686-808d-92c26eaa147b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_DirectX\설정">
+      <UniqueIdentifier>{aa85583b-51f7-44e5-8452-4ae2c12b464a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_DirectX\유틸리티">
+      <UniqueIdentifier>{4380cce2-af7b-494c-99c1-26450c02cd45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface">
+      <UniqueIdentifier>{ee15cadc-33ce-4ad6-b6dd-ab877e61feaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본">
+      <UniqueIdentifier>{7104a6d9-77c7-4c1b-aff5-6b82a4992cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\폰트색상">
+      <UniqueIdentifier>{caca16a1-b06f-4381-b102-eaa99353ed2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤">
+      <UniqueIdentifier>{3ee2f9a8-2e93-4086-a587-1f2aed4a12c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\버튼">
+      <UniqueIdentifier>{d5a32d98-1c11-458b-b4dd-7cc650f8c2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\콤보박스">
+      <UniqueIdentifier>{10746f5e-82ed-4e34-87f9-d76116c0c809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\리스트박스">
+      <UniqueIdentifier>{8f3fa172-3871-4534-b03e-0d92f90c9262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\메뉴">
+      <UniqueIdentifier>{a4243dbd-9c75-4315-a158-a97bd45fb93b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\스크롤바">
+      <UniqueIdentifier>{fe3fba3c-10f7-4180-91c6-b237d41178b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\탭">
+      <UniqueIdentifier>{074a5679-302f-4f95-8277-853a01ceec08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\텍스트">
+      <UniqueIdentifier>{f2b25fad-d43f-45ee-ab13-2bcf1388af85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\에디트">
+      <UniqueIdentifier>{65dfb2e8-4349-4743-a0fc-f41da844cf08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\컨트롤\트리">
+      <UniqueIdentifier>{995aedb8-eb2f-4a6a-9e58-86d2805176ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\리소스 메니져">
+      <UniqueIdentifier>{27a2121e-e6c9-4f9b-9ca0-50d2ee9830be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\색상">
+      <UniqueIdentifier>{872b0f0b-e1ee-418b-a8e8-6c6c8ff7aad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\기본\툴팁">
+      <UniqueIdentifier>{90da4dd6-a0d9-4fdf-98c2-1cd685059a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\Misc">
+      <UniqueIdentifier>{955c954e-2cd2-4100-bf93-55abd16b2ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿">
+      <UniqueIdentifier>{2a259270-eb68-4818-8d1c-f7dc8c97242e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠">
+      <UniqueIdentifier>{49352e2b-5a4a-408c-ae4f-89486282a15e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\2차 비밀번호">
+      <UniqueIdentifier>{1bd2c8b3-23bb-4376-9b0e-5bdf6ce6a6af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\PVP">
+      <UniqueIdentifier>{4c17ff9c-0fec-42a6-9469-e517a9f89e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\하우징">
+      <UniqueIdentifier>{49837835-a6d4-4394-b612-8620cc2af972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\가방">
+      <UniqueIdentifier>{140bc625-fad7-428e-8bbe-3e2cd3634505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\각성">
+      <UniqueIdentifier>{7f8cbed2-c803-499e-9c9b-254fc831b565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\공지사항">
+      <UniqueIdentifier>{35635b8f-4320-4e4a-83f3-4f155151f401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\군주">
+      <UniqueIdentifier>{f11550a1-6a0d-480e-b319-3dbe34aac213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\귀속 해제">
+      <UniqueIdentifier>{ea8aa42c-28a0-42ab-b75f-94dd94d46b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\길드">
+      <UniqueIdentifier>{0cfd9ef3-9da2-4eaa-bbd8-2f752b0687f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\길드\길드 하우스">
+      <UniqueIdentifier>{5bb87875-0ee9-4a06-9a9e-33125cc03613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\길드\길드 은행">
+      <UniqueIdentifier>{1482f8f7-088b-49ee-878d-fd563f75cc1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\네비게이터">
+      <UniqueIdentifier>{9c1979fa-a901-443e-82e4-66099c275109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\도움말">
+      <UniqueIdentifier>{e1aadebe-504e-4e63-816d-01b3dc446210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\동작%28Motion%29">
+      <UniqueIdentifier>{016a9fe1-86ca-4574-894d-da56f3e2959a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\랭킹">
+      <UniqueIdentifier>{55665595-dacb-4215-bd65-15d8b5499e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\레인보우 레이스">
+      <UniqueIdentifier>{7b5f3fb0-e52f-4b57-834b-918574be043c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\로그인">
+      <UniqueIdentifier>{8d4fa6fa-bbe4-49e3-8fb6-2c4f5f595268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\마드리갈의 선물">
+      <UniqueIdentifier>{08b7d13f-e2b2-4b37-9d29-1a14e865a3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\만든사람들">
+      <UniqueIdentifier>{31a5a4b1-5718-4795-b245-06a4ae86f319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\맵">
+      <UniqueIdentifier>{828e7c85-fc6a-43ff-b26a-110761b08360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\메신져">
+      <UniqueIdentifier>{0ad37bdf-e548-4d30-8251-ad1264c435c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\미니게임">
+      <UniqueIdentifier>{5d3edaf5-1fd1-4a0d-9c56-af8af9420156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\바루나">
+      <UniqueIdentifier>{8bf62aa2-05af-45c1-a3c3-7813caafd02c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\보물상자">
+      <UniqueIdentifier>{4a63c170-91ef-4d62-b77f-08e350a53ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\비밀의 방">
+      <UniqueIdentifier>{59cfb15e-efb1-47a6-af99-f037c873118e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\상점">
+      <UniqueIdentifier>{03966863-bc4b-4a91-9658-30841188ad1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점">
+      <UniqueIdentifier>{80f9b9b1-056b-4a0d-b557-30554c624cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\소환">
+      <UniqueIdentifier>{b8b59e66-0e91-43ca-bdff-aa7c35d2dadb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\아이템 수리%28 Not Used %29">
+      <UniqueIdentifier>{c4debbf8-e9d8-4535-9cb5-a798ed6af425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\엘딘의 항아리">
+      <UniqueIdentifier>{3e2a0029-29bd-4442-80af-ed13bb1ae639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\옵션">
+      <UniqueIdentifier>{eb3ba822-d856-4da0-a0ce-10dca3c55961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\외형변경">
+      <UniqueIdentifier>{200c4e16-4f14-42a9-9012-04588a8427b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\월드">
+      <UniqueIdentifier>{1e9622dd-06a0-4f2d-9349-7008f619715f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\웹 박스">
+      <UniqueIdentifier>{7effb325-1b60-461d-b206-9a88504a6c51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\은행">
+      <UniqueIdentifier>{8170e5df-ac86-4a97-b5fe-07d22d41bc67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\이름변경">
+      <UniqueIdentifier>{66a3e0c2-5909-444d-bf61-4035cd8bd19f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\인벤토리">
+      <UniqueIdentifier>{9c93b39f-2509-4e60-ab36-66346aa63fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\인포팡">
+      <UniqueIdentifier>{19a8acf1-e0a8-40bc-b3f4-28ba131dd316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\작업바">
+      <UniqueIdentifier>{d5647dfd-7fec-41af-8ba1-781cfa996da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\채집">
+      <UniqueIdentifier>{0cdecb40-6550-47d4-8b69-4df7e302b425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\채팅">
+      <UniqueIdentifier>{d3ac1c41-5c64-4ce7-a0e4-7c75a644b1f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\채팅차단 리스트">
+      <UniqueIdentifier>{ee93ce82-e83f-4534-b124-38a2aecfc221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\축복">
+      <UniqueIdentifier>{38179a1e-adcc-4940-8bf5-89b1328aaa33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\친구">
+      <UniqueIdentifier>{8ca10088-5783-46df-93df-421eeff8b030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\코스튬">
+      <UniqueIdentifier>{61d350fb-fad6-4111-99fe-098bc3d2a4e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\퀘스트">
+      <UniqueIdentifier>{ed6bfd6e-4061-45e3-ba71-05ae0279ad7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\퀴즈 이벤트">
+      <UniqueIdentifier>{016d9d4a-c257-4f18-abec-5d689437928a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\텔레포터">
+      <UniqueIdentifier>{bbd7027d-66e9-41be-9d5d-5bc574e4b5fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\튜토리얼">
+      <UniqueIdentifier>{15be842f-9fa8-4ce2-b4ed-6ee054a89d6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\파티">
+      <UniqueIdentifier>{eda27954-f5f3-417f-ac95-cdccb4e57ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\펫">
+      <UniqueIdentifier>{229c8744-6c0e-4ec8-b8a4-a231074b0bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\프리프 조각 시스템">
+      <UniqueIdentifier>{1e087fad-5ccd-4b27-995a-1d0bb96217d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\피어싱">
+      <UniqueIdentifier>{0ae301e1-b452-4b7f-9dec-a66e28e7d4f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\컨텐츠\돈">
+      <UniqueIdentifier>{ec6993c6-ac28-459d-af56-0503d15c4f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\범용">
+      <UniqueIdentifier>{73cb3820-0107-422f-8f45-1deba6a7ae12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\범용\개수 입력 메시지 박스">
+      <UniqueIdentifier>{588d5eba-e00e-4304-9c88-12fd9ccc0faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\범용\아이템 교환 리스트">
+      <UniqueIdentifier>{819d2b0b-185f-4d88-b004-70662e748fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\범용\메시지 박스">
+      <UniqueIdentifier>{c1d38ac8-793f-427d-a2c6-7fa120f55119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\범용\아이템 컨트롤">
+      <UniqueIdentifier>{fc99258d-c1fc-4ccc-8944-245708c7ddef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\범용\거래 컨트롤">
+      <UniqueIdentifier>{6025a720-6470-48d5-ba1a-41fa3c11d6ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\애플릿\관리자">
+      <UniqueIdentifier>{c259fa0a-48f9-4433-a9fa-25dda2a38908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\정의">
+      <UniqueIdentifier>{a676182b-6d1b-45a8-865d-956fa2a287d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Interface\메니져">
+      <UniqueIdentifier>{702c0194-8b11-436c-a1b0-23f222542626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Network">
+      <UniqueIdentifier>{7da6970f-6447-4b8a-91b7-4eddaa59cc75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Network\Mics">
+      <UniqueIdentifier>{2eea2d4a-3d0a-4fd9-8563-16e8a461ad75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Multimedia">
+      <UniqueIdentifier>{26335ff9-69d3-471b-9731-0dca722cf904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_ObjSubClass">
+      <UniqueIdentifier>{eec43ec2-cec0-4d3f-a17a-4a58fa1788fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_ObjSubClass\Action">
+      <UniqueIdentifier>{d1428565-505d-455b-bcfb-069bd1a62c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_ExceptionHandler">
+      <UniqueIdentifier>{3108413c-5543-4665-af50-e3e7b584ec8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common">
+      <UniqueIdentifier>{746e5e5f-533b-4ced-9a3e-4ae5728054af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Model No. 1">
+      <UniqueIdentifier>{485f2739-3a7f-49dc-b82a-f32ea3254030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\LOW">
+      <UniqueIdentifier>{126e9a1a-eccc-43f2-82d3-a666613e55c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\LOW\Targa">
+      <UniqueIdentifier>{fc674052-e41d-4c1f-a6ff-104d2e81e2b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine">
+      <UniqueIdentifier>{2d788240-b200-4fff-a38d-95cbdba0641c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\유틸리티">
+      <UniqueIdentifier>{5f3073f4-22e9-48c1-bea2-b01e8ce6397c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\유틸리티\키 생성기">
+      <UniqueIdentifier>{6d7ee056-a7a3-4fbb-8d32-f58f3662996e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\유틸리티\파일 비교">
+      <UniqueIdentifier>{2a6326de-05e7-4aab-b6df-117c90621a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\유틸리티\암호화">
+      <UniqueIdentifier>{8ed521cd-dd9d-4ae4-abb0-b33a80f1036a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\유틸리티\파일">
+      <UniqueIdentifier>{e1e8dcd2-b194-4170-8b47-29622ac07587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\유틸리티\날짜 타이머">
+      <UniqueIdentifier>{6d0d9bbe-4dff-44db-aea9-ad23ecd55f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷">
+      <UniqueIdentifier>{d5372389-e8a5-463e-b042-05500226e358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\텔레포트 지도">
+      <UniqueIdentifier>{42b76051-8f01-468e-a3f7-767d2ffc7dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\이벤트용 아레나">
+      <UniqueIdentifier>{3f17b663-a1cb-4145-ac97-b2281fa807c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\아이템 업그레이드">
+      <UniqueIdentifier>{f64dfba0-ba91-4730-98f7-b78bc44ded2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\유료지역입장권">
+      <UniqueIdentifier>{3d260a52-d18b-497b-a06e-9d3f6996a4b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\보물상자 아이템">
+      <UniqueIdentifier>{0dfa0724-d9dc-4dad-b7c1-8e510d253854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\전체알림메시지">
+      <UniqueIdentifier>{f0d875dc-9b87-46ff-ba4a-c21aa3ec10dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\거래 중개">
+      <UniqueIdentifier>{739c9684-c189-47e9-ae15-174d4d2f917e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\Server Description">
+      <UniqueIdentifier>{dbbd39eb-888e-4c85-bf05-3e39b037c49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\캐릭터 서버군 이동">
+      <UniqueIdentifier>{f8e631ff-9d55-409e-ad32-5458a3138fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\캐릭터 권한 설정">
+      <UniqueIdentifier>{03877c95-de85-434b-bbd5-26323270a7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\마드리갈의 선물">
+      <UniqueIdentifier>{b705c191-ea9e-442d-9eb5-f5a0dea0e6e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\프리프 조각 시스템">
+      <UniqueIdentifier>{7d83fb41-48af-4d81-ab83-ce38d8fab93e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\아이템 옵션">
+      <UniqueIdentifier>{e18fd68c-804d-406d-9c87-6aba30138837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\패킷\아이템 교환">
+      <UniqueIdentifier>{fb73cb3d-17f7-494a-b69f-0ff01e9e14a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\아이템">
+      <UniqueIdentifier>{9b47e202-17ce-4edc-96f4-2f9d19750a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\아이템\스펙">
+      <UniqueIdentifier>{849b4992-cd63-4619-96e9-145fc5fe4635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\아이템\컨테이너">
+      <UniqueIdentifier>{d51c4156-8545-4574-86e5-cef29f83d7bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\정의">
+      <UniqueIdentifier>{e63423d2-c21a-4f0a-b23c-b1ee8d8bb6fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\설정">
+      <UniqueIdentifier>{142c7719-ac10-4dc4-a922-70272ccfbcb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_CommonDefine\아이템 교환">
+      <UniqueIdentifier>{8e2f56f8-e76c-45b2-8d4b-29d92f71eb4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Neuz">
+      <UniqueIdentifier>{c94b6ba6-4204-4ac8-9fa1-a0302d53d46a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Neuz\프리 컴파일 헤더">
+      <UniqueIdentifier>{0d5e2eb8-8bce-474c-9ada-d858ec4d79a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Neuz\웹">
+      <UniqueIdentifier>{23fe660a-5853-4112-8087-6d803f00f082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Neuz\DPClient">
+      <UniqueIdentifier>{66e487f2-0152-4a46-9193-6ba8be480f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Neuz\보안">
+      <UniqueIdentifier>{38262fad-89b2-41ff-8a8b-971dd372c415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Neuz\보안\X-Trap">
+      <UniqueIdentifier>{cacccda1-6580-4ad8-a42d-4ae85527a6fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Neuz\보안\N Protect">
+      <UniqueIdentifier>{33de9a63-4fd0-4677-ae2f-d0f70d49dfc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Neuz\메시지 프로시져">
+      <UniqueIdentifier>{942d4c44-b94a-4c8e-824c-1acd5b2b46d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_AIInterface">
+      <UniqueIdentifier>{653436e7-52c2-438d-b9a3-047f44b29749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ec3dad7f-2304-49f0-bda4-8b58549e1502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Data">
+      <UniqueIdentifier>{623fdd27-9854-4949-8ec2-ab73ae732f8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Data\Music">
+      <UniqueIdentifier>{f18b7232-994e-4e13-93ce-9cea915d9831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Script">
+      <UniqueIdentifier>{552031f6-6598-44a1-8bcf-31a434e54fe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System">
+      <UniqueIdentifier>{26b75c21-4013-496c-ba52-22909093afb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Struct">
+      <UniqueIdentifier>{805f5d7e-1b2b-47d0-9235-fc294880c386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Manager">
+      <UniqueIdentifier>{2b7c94b0-b9f8-42f7-9789-f7368b47c776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Manager\ShortcutKey">
+      <UniqueIdentifier>{3e8096cc-6c9c-4926-b6bc-23d634674f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Manager\Language">
+      <UniqueIdentifier>{42e95ec4-77d7-402e-bb9d-765cf6e54297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Manager\Global Tick">
+      <UniqueIdentifier>{3723ee15-3fd2-4dc9-a733-7b1d6661510c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Manager\Cooltime">
+      <UniqueIdentifier>{70c5a0b0-1dfd-4d31-93a0-6ff0a29a8124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Manager\Texture">
+      <UniqueIdentifier>{d97b15f8-87bf-4159-98ae-70fd949fffd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Serial Number">
+      <UniqueIdentifier>{2639f86b-fee4-40d2-b382-8cc5051ddc46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Option Setting">
+      <UniqueIdentifier>{2603c8b7-ecdd-40ab-bd34-c7aa28f52cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Content Switch">
+      <UniqueIdentifier>{91fc519a-2098-4144-90d3-98cb9647424b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Text Message">
+      <UniqueIdentifier>{c9adb5b0-02b3-481b-96fe-f84e137364b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\System\Tree Information">
+      <UniqueIdentifier>{72577f0d-27d2-41fc-86bb-0e9e3ac90351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Object">
+      <UniqueIdentifier>{d67319fc-acdf-4654-9903-3d6cff457c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Object\SFX">
+      <UniqueIdentifier>{0dbbd52e-5c24-4be5-ac30-a9371e1f3350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\World">
+      <UniqueIdentifier>{7d9e58e6-0a2a-4b62-b2b5-3e9f8a5ab027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\World\스카이 박스">
+      <UniqueIdentifier>{6d5b357f-2e02-40b8-8868-732ebd9abe76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\World\카메라">
+      <UniqueIdentifier>{90376af6-1e47-44e5-abce-4019c8197538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\World\환경">
+      <UniqueIdentifier>{fffcaee3-68c9-41b8-b0e3-f1da2cc194c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\World\파일">
+      <UniqueIdentifier>{a26002ae-dd70-4843-9ad2-c294bc1a526d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\World\LOD">
+      <UniqueIdentifier>{3c741f41-da07-4746-9fd1-7561ed8fa1e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\World\리스폰">
+      <UniqueIdentifier>{4def327a-1bdd-415d-8e88-8d62158273fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\World\메니져">
+      <UniqueIdentifier>{453984da-b1aa-4edf-b10d-d76f02077232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Utility">
+      <UniqueIdentifier>{a4c24a15-6a7f-4c1a-b2c2-6e846f8ddd4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Utility\Lua">
+      <UniqueIdentifier>{e676acaa-3f7d-470e-b645-1bdf04f6efb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Utility\Console">
+      <UniqueIdentifier>{b960e643-a5d8-4ecd-87c1-3d9b8029aa89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Justice">
+      <UniqueIdentifier>{40f2ff63-9791-465b-a0e3-c90fdcc1e9fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Justice\Common">
+      <UniqueIdentifier>{b8cb3e8a-a03a-434a-aa81-5b49c20c6c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Justice\Certification">
+      <UniqueIdentifier>{6faeb0fd-b109-41ac-9ce8-c52c4f2aaf8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents">
+      <UniqueIdentifier>{13491f96-cba2-40f4-a944-403e7ac1af42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\채팅">
+      <UniqueIdentifier>{abf87123-291b-440d-9cc5-98c232b26eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\버프">
+      <UniqueIdentifier>{0845bbf2-3f26-45ad-a150-9192908b7f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\하우징">
+      <UniqueIdentifier>{a227199d-55b4-4f6d-a6aa-1e24579cd85e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\비밀의 방">
+      <UniqueIdentifier>{a9c6aa5e-37a1-4bb4-8dc3-0f67f43100c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\스킬">
+      <UniqueIdentifier>{e5bb74a7-3bf4-4121-800e-c965f23896f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\아이템">
+      <UniqueIdentifier>{5f944d5a-93cb-4351-b64f-59ad92ca4f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\커플">
+      <UniqueIdentifier>{25a7ccbe-c361-4b33-b130-2229ed8a5528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\피어싱 옵션">
+      <UniqueIdentifier>{bca3b77f-d26c-402e-b3f3-b8c95b49a887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\이벤트">
+      <UniqueIdentifier>{036a9943-4cf7-4424-b566-f768ecd837ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\우편">
+      <UniqueIdentifier>{4e767b7b-5930-4e9d-bec5-46c4293fdccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\미니게임">
+      <UniqueIdentifier>{3cc6867d-33bf-494b-89f6-a43ffbf69c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\명예">
+      <UniqueIdentifier>{b7ee988b-e389-4777-b3f6-670742730956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\퀴즈">
+      <UniqueIdentifier>{051863fa-5cea-47cc-b030-bb5e09eaed54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\세금">
+      <UniqueIdentifier>{8488f925-2fba-493f-9998-de4a1c1cbf63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\텔레포트">
+      <UniqueIdentifier>{2cd83208-16a4-464a-aa00-df9495980324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\캠퍼스">
+      <UniqueIdentifier>{6e9f890e-ca29-4a15-81ce-38d0c94148db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\협동 기부">
+      <UniqueIdentifier>{6cd71009-0f72-4b70-b88c-02f9c7ad4170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\채집">
+      <UniqueIdentifier>{d0a85c7f-c160-4afb-bec6-4262291640a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\메신져">
+      <UniqueIdentifier>{a93bf59d-e66c-4570-8b51-e1e1a4cf0b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\주머니">
+      <UniqueIdentifier>{cc50dda6-f048-43cf-92ac-075e20bcdcd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Particle">
+      <UniqueIdentifier>{9159b014-2062-4b04-a314-c7e85993c0df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\PCRoom">
+      <UniqueIdentifier>{2a7bf48c-9bf2-4cb1-a061-b6d09221585d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\Utimate Weapon">
+      <UniqueIdentifier>{0812e017-2e87-4a57-9278-b2e9bbaffb29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\Party">
+      <UniqueIdentifier>{9963ed21-131d-4d5b-877b-b2b2afac37ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\Lord">
+      <UniqueIdentifier>{c1ee86df-b745-42e8-b6cd-242f8e66588d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\Guild">
+      <UniqueIdentifier>{ec973a1e-73e3-4f0e-871f-86a60317eff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\Random Option">
+      <UniqueIdentifier>{e18e9601-4330-41b7-aaf3-c36a3d91d04c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Contents\Raindbow">
+      <UniqueIdentifier>{b30744ce-1172-44f3-93fa-6f2f9614b666}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_DirectX\d3dapp.cpp">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3denumeration.cpp">
+      <Filter>Source Files\_DirectX\열거자</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3dfont.cpp">
+      <Filter>Source Files\_DirectX\폰트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3dsettings.cpp">
+      <Filter>Source Files\_DirectX\설정</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\d3dutil.cpp">
+      <Filter>Source Files\_DirectX\유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\dsutil.cpp">
+      <Filter>Source Files\_DirectX\유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\dxutil.cpp">
+      <Filter>Source Files\_DirectX\유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FuncApplet.cpp">
+      <Filter>Source Files\_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FuncTextCmd.cpp">
+      <Filter>Source Files\_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndBase.cpp">
+      <Filter>Source Files\_Interface\기본</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndNeuz.cpp">
+      <Filter>Source Files\_Interface\기본</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndFontColorInfo.cpp">
+      <Filter>Source Files\_Interface\기본\폰트색상</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndFontColorManager.cpp">
+      <Filter>Source Files\_Interface\기본\폰트색상</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl_Button.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\버튼</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl_ComboBox.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\콤보박스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl_ListBox.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\리스트박스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl_Menu.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\메뉴</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl_ScrollBar.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\스크롤바</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl_Tab.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\탭</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl_Text.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\텍스트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndEditCtrl.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\에디트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndControl_Tree.cpp">
+      <Filter>Source Files\_Interface\기본\컨트롤\트리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ResManager.cpp">
+      <Filter>Source Files\_Interface\기본\리소스 메니져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLColorInfo.cpp">
+      <Filter>Source Files\_Interface\기본\색상</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLColorManager.cpp">
+      <Filter>Source Files\_Interface\기본\색상</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndTooltip.cpp">
+      <Filter>Source Files\_Interface\기본\툴팁</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\Clipboard.cpp">
+      <Filter>Source Files\_Interface\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\ITheme.cpp">
+      <Filter>Source Files\_Interface\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\tooltip.cpp">
+      <Filter>Source Files\_Interface\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLWndCharServerMovement.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLWndInventorySlotProc.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_interface\WndCloseExistingConnection.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndCommand.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndCommItem.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndDialog.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndDuelConfirm.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndExtra.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndField.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndField2.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndField3.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndInvenRemoveItem.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndLvReqDown.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMailRequestingBox.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMessengerSearch.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPetLootOption.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndRoomList.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndSealChar.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndSelectCh.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndSelectVillage.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndText.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndUpgradeBase.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndUserMarkNameChanger.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndWorldControlPlayer.cpp">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\Wnd2ndPassword.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\2차 비밀번호</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPvp.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndHousing.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\하우징</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndQuitRoom.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\하우징</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndBagEx.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\가방</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndAwakening.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\각성</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndNotice.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\공지사항</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndLord.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\군주</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLWndCancellation.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\귀속 해제</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuild.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildCombat1to1.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildMerit.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildName.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildTabApp.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildTabInfo.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildTabMember.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildTabPower.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildTabWar.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildVote.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildWarDecl.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildWarGiveUp.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildWarPeace.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildWarPeaceConfirm.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildWarRequest.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildHouse.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드\길드 하우스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_interface\WndGuildBank.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드\길드 은행</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndNavigator.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\네비게이터</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndHelp.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\도움말</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMotion.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\동작%28Motion%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndRankGuild.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\랭킹</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndRankInfo.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\랭킹</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndRankWar.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\랭킹</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndRainbowRace.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\레인보우 레이스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndTitle.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\로그인</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMadrigalGift.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\마드리갈의 선물</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndCredit.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\만든사람들</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMap.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\맵</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMapEx.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\맵</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndFriendCtrl.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuildCtrl.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMessenger.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMessengerCtrl.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPartyCtrl.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMiniGame.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\미니게임</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndEnchantBaruna.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\바루나</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLWndTreasurechest.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\보물상자</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndSecretRoom.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\비밀의 방</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndShop.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_interface\WndRegVend.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_interface\WndVendor.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_interface\WndVendorBuy.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_interface\WndVendorCtrl.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndSummonAngel.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\소환</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndSummonFriend.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\소환</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndRepairItem.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\아이템 수리%28 Not Used %29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndRepairItemCtrl.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\아이템 수리%28 Not Used %29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndElldinsJar.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\엘딘의 항아리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndOption.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\옵션</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndOptionGame.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\옵션</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_interface\WndChangeFace.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\외형변경</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndWorld.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\월드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndHelperWebBox.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\웹 박스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndWebBox.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\웹 박스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndBank.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\은행</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndChangeName.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\이름변경</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndInventoryItem.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\인벤토리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndInventoryWear.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\인벤토리</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGuideSystem.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\인포팡</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndTaskBar.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\작업바</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndCollecting.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\채집</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_interface\WndChatFilter.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\채팅</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndCommunication.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\채팅</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndChattingBlockingList.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\채팅차단 리스트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndBlessingCancel.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\축복</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndFriendConFirm.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\친구</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLWndCostume.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\코스튬</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndQuest.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\퀘스트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndQuestQuickInfo.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\퀘스트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndQuizEvent.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\퀴즈 이벤트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLWndTeleporter_General.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\텔레포터</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLWndTeleporter_Use.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\텔레포터</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\FLWndTeleporterMng.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\텔레포터</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndTutorial.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\튜토리얼</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndParty.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\파티</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPartyChangeTroup.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\파티</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPartyConfirm.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\파티</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPartyQuick.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\파티</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPetRes.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\펫</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPetSys.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\펫</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndFlyffPieceSystem.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\프리프 조각 시스템</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndPiercing.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\피어싱</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndGold.cpp">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\돈</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndCommonInputCount.cpp">
+      <Filter>Source Files\_Interface\애플릿\범용\개수 입력 메시지 박스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndCommonItemExchange.cpp">
+      <Filter>Source Files\_Interface\애플릿\범용\아이템 교환 리스트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndCommonItemExchangeConfirm.cpp">
+      <Filter>Source Files\_Interface\애플릿\범용\아이템 교환 리스트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndMessageBox.cpp">
+      <Filter>Source Files\_Interface\애플릿\범용\메시지 박스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndItemCtrl.cpp">
+      <Filter>Source Files\_Interface\애플릿\범용\아이템 컨트롤</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndTradeCtrl.cpp">
+      <Filter>Source Files\_Interface\애플릿\범용\거래 컨트롤</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndAdminCreateItem.cpp">
+      <Filter>Source Files\_Interface\애플릿\관리자</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndDebugInfo.cpp">
+      <Filter>Source Files\_Interface\애플릿\관리자</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndIndirectTalk.cpp">
+      <Filter>Source Files\_Interface\애플릿\관리자</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\WndManager.cpp">
+      <Filter>Source Files\_Interface\메니져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Network\tools.cpp">
+      <Filter>Source Files\_Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Multimedia\WRITEAVI.CPP">
+      <Filter>Source Files\_Multimedia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\Action.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionMover.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionMoverCollision.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionMoverCtrl.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionMoverDmg.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionMoverMsg.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionMoverMsg2.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionMoverState.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionMoverState2.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\ActionShip.cpp">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_UnhandledException\ExceptionHandler.cpp">
+      <Filter>Source Files\_ExceptionHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\accessory.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLCommonFunction.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\playerdata.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\LuaBase.cpp">
+      <Filter>Source Files\_Common\Utility\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Console.cpp">
+      <Filter>Source Files\_Common\Utility\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ConsoleFunc.cpp">
+      <Filter>Source Files\_Common\Utility\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\CommonCtrl.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\CreateObj.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Ctrl.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Item.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Light.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Mover.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverActEvent.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverAttack.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\moverbuff.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverEquip.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverItem.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverMove.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverMsg.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverParam.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverRender.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MoverSkill.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Obj.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ObjSerialize.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\ObjSerializeOpt.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\PathObj.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\pet.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Ship.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Stat.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Synchronizer.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\weather.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Sfx.cpp">
+      <Filter>Source Files\_Common\Object\SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\sfxbase.cpp">
+      <Filter>Source Files\_Common\Object\SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\SfxObj.cpp">
+      <Filter>Source Files\_Common\Object\SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\billboard.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Bone.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Material.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Model.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ModelGlobal.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ModelMng.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ModelObject.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Object3D.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ParticleMng.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Shader.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\TailEffectMng.cpp">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\DefineCommon.cpp">
+      <Filter>Source Files\_Common\Justice\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\eveschool.cpp">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\guild.cpp">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\GuildCombat1to1.cpp">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\GuildHouse.cpp">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\guildquest.cpp">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\GuildRender.cpp">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\guildwar.cpp">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\party.cpp">
+      <Filter>Source Files\_Common\Contents\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\partyquest.cpp">
+      <Filter>Source Files\_Common\Contents\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Chatting.cpp">
+      <Filter>Source Files\_Common\Contents\채팅</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\buff.cpp">
+      <Filter>Source Files\_Common\Contents\버프</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Housing.cpp">
+      <Filter>Source Files\_Common\Contents\하우징</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\SecretRoom.cpp">
+      <Filter>Source Files\_Common\Contents\비밀의 방</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\RainbowNPCInformation.cpp">
+      <Filter>Source Files\_Common\Contents\Raindbow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\RainbowNPCInformationPack.cpp">
+      <Filter>Source Files\_Common\Contents\Raindbow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\RainbowRace.cpp">
+      <Filter>Source Files\_Common\Contents\Raindbow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLSkillSystem.cpp">
+      <Filter>Source Files\_Common\Contents\스킬</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLItemBase.cpp">
+      <Filter>Source Files\_Common\Contents\아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLItemElem.cpp">
+      <Filter>Source Files\_Common\Contents\아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\couple.cpp">
+      <Filter>Source Files\_Common\Contents\커플</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLRandomOption.cpp">
+      <Filter>Source Files\_Common\Contents\Random Option</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLPiercingOption.cpp">
+      <Filter>Source Files\_Common\Contents\피어싱 옵션</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\flyffevent.cpp">
+      <Filter>Source Files\_Common\Contents\이벤트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\spevent.cpp">
+      <Filter>Source Files\_Common\Contents\이벤트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\post.cpp">
+      <Filter>Source Files\_Common\Contents\우편</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MiniGame.cpp">
+      <Filter>Source Files\_Common\Contents\미니게임</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MiniGameBase.cpp">
+      <Filter>Source Files\_Common\Contents\미니게임</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\PCBang.cpp">
+      <Filter>Source Files\_Common\Contents\PCRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\honor.cpp">
+      <Filter>Source Files\_Common\Contents\명예</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\lord.cpp">
+      <Filter>Source Files\_Common\Contents\Lord</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\lordskill.cpp">
+      <Filter>Source Files\_Common\Contents\Lord</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Quiz.cpp">
+      <Filter>Source Files\_Common\Contents\퀴즈</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Tax.cpp">
+      <Filter>Source Files\_Common\Contents\세금</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\TeleportationIconInfo.cpp">
+      <Filter>Source Files\_Common\Contents\텔레포트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\UltimateWeapon.cpp">
+      <Filter>Source Files\_Common\Contents\Utimate Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Campus.cpp">
+      <Filter>Source Files\_Common\Contents\캠퍼스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLCooperativeContributions_Common.cpp">
+      <Filter>Source Files\_Common\Contents\협동 기부</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\collecting.cpp">
+      <Filter>Source Files\_Common\Contents\채집</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\rtmessenger.cpp">
+      <Filter>Source Files\_Common\Contents\메신져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\pocket.cpp">
+      <Filter>Source Files\_Common\Contents\주머니</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Continent.cpp">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MapComboBoxData.cpp">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MapMonsterInformation.cpp">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MapMonsterInformationPack.cpp">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\UserMarkPositionInfo.cpp">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\World.cpp">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\World3D.cpp">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\WorldIntersect.cpp">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\SkyBox.cpp">
+      <Filter>Source Files\_Common\World\스카이 박스</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Camera.cpp">
+      <Filter>Source Files\_Common\World\카메라</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\SeasonEffect.cpp">
+      <Filter>Source Files\_Common\World\환경</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\WorldEnvironment.cpp">
+      <Filter>Source Files\_Common\World\환경</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\WorldFile.cpp">
+      <Filter>Source Files\_Common\World\파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\lod.cpp">
+      <Filter>Source Files\_Common\World\LOD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Respawn.cpp">
+      <Filter>Source Files\_Common\World\리스폰</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\MapInformationManager.cpp">
+      <Filter>Source Files\_Common\World\메니져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\TerrainMng.cpp">
+      <Filter>Source Files\_Common\World\메니져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\worldmng.cpp">
+      <Filter>Source Files\_Common\World\메니져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Project.cpp">
+      <Filter>Source Files\_Common\System\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ProjectCmn.cpp">
+      <Filter>Source Files\_Common\System\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ProjectLux.cpp">
+      <Filter>Source Files\_Common\System\Struct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\HwOption.cpp">
+      <Filter>Source Files\_Common\System\Option Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\serialnumber.cpp">
+      <Filter>Source Files\_Common\System\Serial Number</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\TreeInformation.cpp">
+      <Filter>Source Files\_Common\System\Tree Information</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ClientMsg.cpp">
+      <Filter>Source Files\_Common\System\Text Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\DialogMsg.cpp">
+      <Filter>Source Files\_Common\System\Text Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLContentSwitch.cpp">
+      <Filter>Source Files\_Common\System\Content Switch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLShortcutKeyManager.cpp">
+      <Filter>Source Files\_Common\System\Manager\ShortcutKey</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\langman.cpp">
+      <Filter>Source Files\_Common\System\Manager\Language</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\TextureManager.cpp">
+      <Filter>Source Files\_Common\System\Manager\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturePool.cpp">
+      <Filter>Source Files\_Common\System\Manager\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\CooltimeMgr.cpp">
+      <Filter>Source Files\_Common\System\Manager\Cooltime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\GlobalTickManager.cpp">
+      <Filter>Source Files\_Common\System\Manager\Global Tick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\scanner.cpp">
+      <Filter>Source Files\_Common\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Script.cpp">
+      <Filter>Source Files\_Common\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Particle.cpp">
+      <Filter>Source Files\_Common\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\2DRender.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\EditString.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\File.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLGameTimer.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Graphic3D.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Music.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Music2.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\path.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\timer.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\vutil.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\xUtil.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\xUtil3D.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\yUtil.cpp">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\targa.cpp">
+      <Filter>Source Files\_Common\LOW\Targa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLServerDescription.cpp">
+      <Filter>Source Files\_CommonDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.cpp">
+      <Filter>Source Files\_CommonDefine\유틸리티\키 생성기</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\UTIL\FLKeyGenerator.cpp">
+      <Filter>Source Files\_CommonDefine\유틸리티\키 생성기</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLFileCompare.cpp">
+      <Filter>Source Files\_CommonDefine\유틸리티\파일 비교</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLFileEncryption.cpp">
+      <Filter>Source Files\_CommonDefine\유틸리티\암호화</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLMakeFileData.cpp">
+      <Filter>Source Files\_CommonDefine\유틸리티\파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLTm.cpp">
+      <Filter>Source Files\_CommonDefine\유틸리티\날짜 타이머</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket.cpp">
+      <Filter>Source Files\_CommonDefine\패킷</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketTeleportMap.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\텔레포트 지도</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketEventArena.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\이벤트용 아레나</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemUpgrade.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\아이템 업그레이드</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketChargeZoneTicket.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\유료지역입장권</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketTreasureChest.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\보물상자 아이템</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketBroadCastMessage.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\전체알림메시지</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\거래 중개</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketServerDescription.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\Server Description</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\캐릭터 서버군 이동</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketUserAuth.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\캐릭터 권한 설정</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketMadrigalGift.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\마드리갈의 선물</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketFlyffPieceEvent.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\프리프 조각 시스템</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemOption.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\아이템 옵션</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemExchange.cpp">
+      <Filter>Source Files\_CommonDefine\패킷\아이템 교환</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager.cpp">
+      <Filter>Source Files\_CommonDefine\아이템\스펙</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager_Load.cpp">
+      <Filter>Source Files\_CommonDefine\아이템\스펙</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecStruct.cpp">
+      <Filter>Source Files\_CommonDefine\아이템\스펙</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLFlyffConfig.cpp">
+      <Filter>Source Files\_CommonDefine\설정</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLExchange.cpp">
+      <Filter>Source Files\_CommonDefine\아이템 교환</Filter>
+    </ClCompile>
+    <ClCompile Include="FLExchangeEvent.cpp">
+      <Filter>Source Files\_CommonDefine\아이템 교환</Filter>
+    </ClCompile>
+    <ClCompile Include="CampusHelper.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="clord.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="Cloth.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="couplehelper.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="FLApplyItemEffect.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="Neuz.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuzEnemy.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeLimit.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMap.cpp">
+      <Filter>Source Files\Neuz</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files\Neuz\프리 컴파일 헤더</Filter>
+    </ClCompile>
+    <ClCompile Include="HelperWebBox.cpp">
+      <Filter>Source Files\Neuz\웹</Filter>
+    </ClCompile>
+    <ClCompile Include="WebBox.cpp">
+      <Filter>Source Files\Neuz\웹</Filter>
+    </ClCompile>
+    <ClCompile Include="WebCtrl.cpp">
+      <Filter>Source Files\Neuz\웹</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCertified.cpp">
+      <Filter>Source Files\Neuz\DPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="DPClient.cpp">
+      <Filter>Source Files\Neuz\DPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="DPClientGuildWar.cpp">
+      <Filter>Source Files\Neuz\DPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="DPLoginClient.cpp">
+      <Filter>Source Files\Neuz\DPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="NPGameLib.cpp">
+      <Filter>Source Files\Neuz\보안\N Protect</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuzMsgProc.cpp">
+      <Filter>Source Files\Neuz\메시지 프로시져</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_AIInterface\AIInterface.cpp">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_DirectX\d3dapp.h">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3denumeration.h">
+      <Filter>Source Files\_DirectX\열거자</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dfont.h">
+      <Filter>Source Files\_DirectX\폰트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dres.h">
+      <Filter>Source Files\_DirectX\리소스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dsettings.h">
+      <Filter>Source Files\_DirectX\설정</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\d3dutil.h">
+      <Filter>Source Files\_DirectX\유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\dsutil.h">
+      <Filter>Source Files\_DirectX\유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\dxutil.h">
+      <Filter>Source Files\_DirectX\유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FuncTextCmd.h">
+      <Filter>Source Files\_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndBase.h">
+      <Filter>Source Files\_Interface\기본</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndNeuz.h">
+      <Filter>Source Files\_Interface\기본</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndFontColor.h">
+      <Filter>Source Files\_Interface\기본\폰트색상</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndFontColorInfo.h">
+      <Filter>Source Files\_Interface\기본\폰트색상</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndFontColorManager.h">
+      <Filter>Source Files\_Interface\기본\폰트색상</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl.h">
+      <Filter>Source Files\_Interface\기본\컨트롤</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl_Button.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\버튼</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl_ComboBox.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\콤보박스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl_ListBox.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\리스트박스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl_Menu.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\메뉴</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl_ScrollBar.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\스크롤바</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl_Tab.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\탭</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl_Text.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\텍스트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndEditCtrl.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\에디트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndControl_Tree.h">
+      <Filter>Source Files\_Interface\기본\컨트롤\트리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ResManager.h">
+      <Filter>Source Files\_Interface\기본\리소스 메니져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLColor.h">
+      <Filter>Source Files\_Interface\기본\색상</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLColorInfo.h">
+      <Filter>Source Files\_Interface\기본\색상</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLColorManager.h">
+      <Filter>Source Files\_Interface\기본\색상</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndTooltip.h">
+      <Filter>Source Files\_Interface\기본\툴팁</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\Clipboard.h">
+      <Filter>Source Files\_Interface\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\ITheme.h">
+      <Filter>Source Files\_Interface\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\tooltip.h">
+      <Filter>Source Files\_Interface\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLWndCharServerMovement.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLWndInventorySlotProc.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\WndCloseExistingConnection.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndCommand.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndCommItem.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndDialog.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndDuelConfirm.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndExtra.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndField.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndField2.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndField3.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndInvenRemoveItem.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndLvReqDown.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMailRequestingBox.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMessengerSearch.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPetLootOption.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndRoomList.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndSealChar.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndSelectCh.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndSelectVillage.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndText.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndUpgradeBase.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndUserMarkNameChanger.h">
+      <Filter>Source Files\_Interface\애플릿</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\Wnd2ndPassword.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\2차 비밀번호</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPvp.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndHousing.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\하우징</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndQuitRoom.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\하우징</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndBagEx.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\가방</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndAwakening.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\각성</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndNotice.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\공지사항</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndLord.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\군주</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLWndCancellation.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\귀속 해제</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuild.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildCombat1to1.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildMerit.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildName.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildTabApp.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildTabInfo.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildTabMember.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildTabPower.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildTabWar.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildVote.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildWarDecl.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildWarGiveUp.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildWarPeace.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildWarPeaceConfirm.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildWarRequest.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildHouse.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드\길드 하우스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\WndGuildBank.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\길드\길드 은행</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndNavigator.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\네비게이터</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndHelp.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\도움말</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMotion.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\동작%28Motion%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndRankGuild.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\랭킹</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndRankInfo.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\랭킹</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndRankWar.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\랭킹</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndRainbowRace.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\레인보우 레이스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndTitle.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\로그인</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMadrigalGift.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\마드리갈의 선물</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndCredit.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\만든사람들</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMap.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\맵</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMapEx.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\맵</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndFriendCtrl.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuildCtrl.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMessenger.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMessengerCtrl.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPartyCtrl.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\메신져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMiniGame.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\미니게임</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndEnchantBaruna.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\바루나</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLWndTreasurechest.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\보물상자</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndSecretRoom.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\비밀의 방</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndShop.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\WndRegVend.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\WndVendor.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\WndVendorBuy.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\WndVendorCtrl.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\상점\개인 상점</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndSummonAngel.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\소환</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndSummonFriend.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\소환</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndRepairItem.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\아이템 수리%28 Not Used %29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndRepairItemCtrl.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\아이템 수리%28 Not Used %29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndElldinsJar.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\엘딘의 항아리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndOption.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\옵션</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndOptionGame.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\옵션</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\WndChangeFace.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\외형변경</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndWorld.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\월드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndHelperWebBox.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\웹 박스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndWebBox.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\웹 박스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndBank.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\은행</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndChangeName.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\이름변경</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndInventoryItem.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\인벤토리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndInventoryWear.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\인벤토리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGuideSystem.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\인포팡</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndTaskBar.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\작업바</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndCollecting.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\채집</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\WndChatFilter.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\채팅</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndCommunication.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\채팅</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndChattingBlockingList.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\채팅차단 리스트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndBlessingCancel.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\축복</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndFriendConFirm.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\친구</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLWndCostume.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\코스튬</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndQuest.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\퀘스트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndQuestQuickInfo.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\퀘스트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndQuizEvent.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\퀴즈 이벤트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLWndTeleporter_General.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\텔레포터</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLWndTeleporter_Use.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\텔레포터</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\FLWndTeleporterMng.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\텔레포터</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndTutorial.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\튜토리얼</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndParty.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\파티</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPartyChangeTroup.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\파티</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPartyConfirm.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\파티</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPartyQuick.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\파티</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPetRes.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\펫</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPetSys.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\펫</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndFlyffPieceSystem.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\프리프 조각 시스템</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndPiercing.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\피어싱</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndGold.h">
+      <Filter>Source Files\_Interface\애플릿\컨텐츠\돈</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndCommonInputCount.h">
+      <Filter>Source Files\_Interface\애플릿\범용\개수 입력 메시지 박스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndCommonItemExchange.h">
+      <Filter>Source Files\_Interface\애플릿\범용\아이템 교환 리스트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndCommonItemExchangeConfirm.h">
+      <Filter>Source Files\_Interface\애플릿\범용\아이템 교환 리스트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndMessageBox.h">
+      <Filter>Source Files\_Interface\애플릿\범용\메시지 박스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndItemCtrl.h">
+      <Filter>Source Files\_Interface\애플릿\범용\아이템 컨트롤</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndTradeCtrl.h">
+      <Filter>Source Files\_Interface\애플릿\범용\거래 컨트롤</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndAdminCreateItem.h">
+      <Filter>Source Files\_Interface\애플릿\관리자</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndDebugInfo.h">
+      <Filter>Source Files\_Interface\애플릿\관리자</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndIndirectTalk.h">
+      <Filter>Source Files\_Interface\애플릿\관리자</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\AppDefine.h">
+      <Filter>Source Files\_Interface\정의</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\WndManager.h">
+      <Filter>Source Files\_Interface\메니져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_network\CmnHdr.h">
+      <Filter>Source Files\_Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Network\ErrorCode.h">
+      <Filter>Source Files\_Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_network\MsgHdr.h">
+      <Filter>Source Files\_Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Network\tools.h">
+      <Filter>Source Files\_Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_network\misc\include\Misc.h">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_network\misc\include\ObjMap.h">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Multimedia\WriteAVI.h">
+      <Filter>Source Files\_Multimedia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_AIInterface\Action.h">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_AIInterface\ActionMover.h">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_AIInterface\ActionShip.h">
+      <Filter>Source Files\_ObjSubClass\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_UnhandledException\ExceptionHandler.h">
+      <Filter>Source Files\_ExceptionHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\accessory.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLCommonFunction.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\playerdata.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\xuzhu.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\LuaBase.h">
+      <Filter>Source Files\_Common\Utility\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\BsCommon.h">
+      <Filter>Source Files\_Common\Utility\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Console.h">
+      <Filter>Source Files\_Common\Utility\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ConsoleCommon.h">
+      <Filter>Source Files\_Common\Utility\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\CommonCtrl.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\CreateObj.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Ctrl.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Item.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Light.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Mover.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\MoverMsg.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Obj.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\PathObj.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Region.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Ship.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\SkillInfluence.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Stat.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Synchronizer.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\weather.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Sfx.h">
+      <Filter>Source Files\_Common\Object\SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\sfxbase.h">
+      <Filter>Source Files\_Common\Object\SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\billboard.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Bone.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Material.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Model.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ModelGlobal.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ModelMng.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ModelObject.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Object3D.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ParticleMng.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Shader.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\TailEffectMng.h">
+      <Filter>Source Files\_Common\Model No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\authorization.h">
+      <Filter>Source Files\_Common\Justice\Certification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\DefineCommon.h">
+      <Filter>Source Files\_Common\Justice\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\eveschool.h">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\guild.h">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\GuildCombat1to1.h">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\GuildHouse.h">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\guildquest.h">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\GuildRender.h">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\guildwar.h">
+      <Filter>Source Files\_Common\Contents\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\party.h">
+      <Filter>Source Files\_Common\Contents\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\partyquest.h">
+      <Filter>Source Files\_Common\Contents\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Chatting.h">
+      <Filter>Source Files\_Common\Contents\채팅</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\buff.h">
+      <Filter>Source Files\_Common\Contents\버프</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Housing.h">
+      <Filter>Source Files\_Common\Contents\하우징</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\SecretRoom.h">
+      <Filter>Source Files\_Common\Contents\비밀의 방</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\RainbowNPCInformation.h">
+      <Filter>Source Files\_Common\Contents\Raindbow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\RainbowNPCInformationPack.h">
+      <Filter>Source Files\_Common\Contents\Raindbow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLSkillSystem.h">
+      <Filter>Source Files\_Common\Contents\스킬</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLItemBase.h">
+      <Filter>Source Files\_Common\Contents\아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLItemElem.h">
+      <Filter>Source Files\_Common\Contents\아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\couple.h">
+      <Filter>Source Files\_Common\Contents\커플</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLRandomOption.h">
+      <Filter>Source Files\_Common\Contents\Random Option</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLPiercingOption.h">
+      <Filter>Source Files\_Common\Contents\피어싱 옵션</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\flyffevent.h">
+      <Filter>Source Files\_Common\Contents\이벤트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\spevent.h">
+      <Filter>Source Files\_Common\Contents\이벤트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\post.h">
+      <Filter>Source Files\_Common\Contents\우편</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\MiniGame.h">
+      <Filter>Source Files\_Common\Contents\미니게임</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\PCBang.h">
+      <Filter>Source Files\_Common\Contents\PCRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\honor.h">
+      <Filter>Source Files\_Common\Contents\명예</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\lord.h">
+      <Filter>Source Files\_Common\Contents\Lord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\lordskill.h">
+      <Filter>Source Files\_Common\Contents\Lord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Tax.h">
+      <Filter>Source Files\_Common\Contents\세금</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\TeleportationIconInfo.h">
+      <Filter>Source Files\_Common\Contents\텔레포트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\UltimateWeapon.h">
+      <Filter>Source Files\_Common\Contents\Utimate Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Campus.h">
+      <Filter>Source Files\_Common\Contents\캠퍼스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLCooperativeContributions_Common.h">
+      <Filter>Source Files\_Common\Contents\협동 기부</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\collecting.h">
+      <Filter>Source Files\_Common\Contents\채집</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\rtmessenger.h">
+      <Filter>Source Files\_Common\Contents\메신져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\pocket.h">
+      <Filter>Source Files\_Common\Contents\주머니</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Continent.h">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\MapComboBoxData.h">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\MapMonsterInformation.h">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\MapMonsterInformationPack.h">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\UserMarkPositionInfo.h">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\World.h">
+      <Filter>Source Files\_Common\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\SkyBox.h">
+      <Filter>Source Files\_Common\World\스카이 박스</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Camera.h">
+      <Filter>Source Files\_Common\World\카메라</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\SeasonEffect.h">
+      <Filter>Source Files\_Common\World\환경</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\landscape.h">
+      <Filter>Source Files\_Common\World\LOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\patch.h">
+      <Filter>Source Files\_Common\World\LOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Respawn.h">
+      <Filter>Source Files\_Common\World\리스폰</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\MapInformationManager.h">
+      <Filter>Source Files\_Common\World\메니져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\TerrainMng.h">
+      <Filter>Source Files\_Common\World\메니져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\worldmng.h">
+      <Filter>Source Files\_Common\World\메니져</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Project.h">
+      <Filter>Source Files\_Common\System\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ProjectCmn.h">
+      <Filter>Source Files\_Common\System\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\HwOption.h">
+      <Filter>Source Files\_Common\System\Option Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\serialnumber.h">
+      <Filter>Source Files\_Common\System\Serial Number</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\TreeInformation.h">
+      <Filter>Source Files\_Common\System\Tree Information</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ClientMsg.h">
+      <Filter>Source Files\_Common\System\Text Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\DialogMsg.h">
+      <Filter>Source Files\_Common\System\Text Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLContentSwitch.h">
+      <Filter>Source Files\_Common\System\Content Switch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLShortcutKeyManager.h">
+      <Filter>Source Files\_Common\System\Manager\ShortcutKey</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\langman.h">
+      <Filter>Source Files\_Common\System\Manager\Language</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\TextureManager.h">
+      <Filter>Source Files\_Common\System\Manager\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturePool.h">
+      <Filter>Source Files\_Common\System\Manager\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\CooltimeMgr.h">
+      <Filter>Source Files\_Common\System\Manager\Cooltime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\GlobalTickManager.h">
+      <Filter>Source Files\_Common\System\Manager\Global Tick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\scanner.h">
+      <Filter>Source Files\_Common\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Script.h">
+      <Filter>Source Files\_Common\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Particle.h">
+      <Filter>Source Files\_Common\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\2DRender.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\data.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\EditString.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\File.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLGameTimer.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Graphic3D.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Music.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\path.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\timer.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\vutil.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\xUtil.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\xUtil3D.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\yUtil.h">
+      <Filter>Source Files\_Common\LOW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\targa.h">
+      <Filter>Source Files\_Common\LOW\Targa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLServerDescription.h">
+      <Filter>Source Files\_CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.h">
+      <Filter>Source Files\_CommonDefine\유틸리티\키 생성기</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\UTIL\FLKeyGenerator.h">
+      <Filter>Source Files\_CommonDefine\유틸리티\키 생성기</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLFileCompare.h">
+      <Filter>Source Files\_CommonDefine\유틸리티\파일 비교</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLFileEncryption.h">
+      <Filter>Source Files\_CommonDefine\유틸리티\암호화</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLFileData.h">
+      <Filter>Source Files\_CommonDefine\유틸리티\파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLMakeFileData.h">
+      <Filter>Source Files\_CommonDefine\유틸리티\파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLTm.h">
+      <Filter>Source Files\_CommonDefine\유틸리티\날짜 타이머</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket.h">
+      <Filter>Source Files\_CommonDefine\패킷</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketAllDefine.h">
+      <Filter>Source Files\_CommonDefine\패킷</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLPacketStruct.h">
+      <Filter>Source Files\_CommonDefine\패킷</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketTeleportMap.h">
+      <Filter>Source Files\_CommonDefine\패킷\텔레포트 지도</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketEventArena.h">
+      <Filter>Source Files\_CommonDefine\패킷\이벤트용 아레나</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemUpgrade.h">
+      <Filter>Source Files\_CommonDefine\패킷\아이템 업그레이드</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketChargeZoneTicket.h">
+      <Filter>Source Files\_CommonDefine\패킷\유료지역입장권</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketTreasureChest.h">
+      <Filter>Source Files\_CommonDefine\패킷\보물상자 아이템</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketBroadCastMessage.h">
+      <Filter>Source Files\_CommonDefine\패킷\전체알림메시지</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.h">
+      <Filter>Source Files\_CommonDefine\패킷\거래 중개</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketWBD_ConsignmentSale.h">
+      <Filter>Source Files\_CommonDefine\패킷\거래 중개</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketServerDescription.h">
+      <Filter>Source Files\_CommonDefine\패킷\Server Description</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.h">
+      <Filter>Source Files\_CommonDefine\패킷\캐릭터 서버군 이동</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketUserAuth.h">
+      <Filter>Source Files\_CommonDefine\패킷\캐릭터 권한 설정</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketMadrigalGift.h">
+      <Filter>Source Files\_CommonDefine\패킷\마드리갈의 선물</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketFlyffPieceEvent.h">
+      <Filter>Source Files\_CommonDefine\패킷\프리프 조각 시스템</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemOption.h">
+      <Filter>Source Files\_CommonDefine\패킷\아이템 옵션</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemExchange.h">
+      <Filter>Source Files\_CommonDefine\패킷\아이템 교환</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecManager.h">
+      <Filter>Source Files\_CommonDefine\아이템\스펙</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecStruct.h">
+      <Filter>Source Files\_CommonDefine\아이템\스펙</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLItemContainer.h">
+      <Filter>Source Files\_CommonDefine\아이템\컨테이너</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLResourceDefines.h">
+      <Filter>Source Files\_CommonDefine\정의</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLReturnStateCode.h">
+      <Filter>Source Files\_CommonDefine\정의</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLTypes.h">
+      <Filter>Source Files\_CommonDefine\정의</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FlyffCommonDefine.h">
+      <Filter>Source Files\_CommonDefine\정의</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLFlyffConfig.h">
+      <Filter>Source Files\_CommonDefine\설정</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLExchange.h">
+      <Filter>Source Files\_CommonDefine\아이템 교환</Filter>
+    </ClInclude>
+    <ClInclude Include="FLExchangeEvent.h">
+      <Filter>Source Files\_CommonDefine\아이템 교환</Filter>
+    </ClInclude>
+    <ClInclude Include="CampusHelper.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="clord.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloth.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="CNTREVNT.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="couplehelper.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="FLApplyItemEffect.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="Neuz.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuzEnemy.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeLimit.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionCommon.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMap.h">
+      <Filter>Source Files\Neuz</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Source Files\Neuz\프리 컴파일 헤더</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperWebBox.h">
+      <Filter>Source Files\Neuz\웹</Filter>
+    </ClInclude>
+    <ClInclude Include="WebBox.h">
+      <Filter>Source Files\Neuz\웹</Filter>
+    </ClInclude>
+    <ClInclude Include="WebCtrl.h">
+      <Filter>Source Files\Neuz\웹</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCertified.h">
+      <Filter>Source Files\Neuz\DPClient</Filter>
+    </ClInclude>
+    <ClInclude Include="DPClient.h">
+      <Filter>Source Files\Neuz\DPClient</Filter>
+    </ClInclude>
+    <ClInclude Include="DPLoginClient.h">
+      <Filter>Source Files\Neuz\DPClient</Filter>
+    </ClInclude>
+    <ClInclude Include="XTrapLib.h">
+      <Filter>Source Files\Neuz\보안\X-Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="NPGameLib.h">
+      <Filter>Source Files\Neuz\보안\N Protect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_AIInterface\AIInterface.h">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\_UnhandledException\neuzd.lib">
+      <Filter>Source Files\_ExceptionHandler</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resource\neuz.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\anvil.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\cur00001.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\cur00002.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\cur00003.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curAttack.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curBase.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curCamera.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curControl.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curDelay.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curDoor.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curGate.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curGetItem.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curHelp.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curLever.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curNo.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curNPC.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\curSelect.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\cursor2.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\cursor3.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\edit.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\hori.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="..\..\resource\Masquerade.prj">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="..\..\resource\mss32.dll">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="..\..\resource\mssmp3.asi">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="res\resize_h.cur">
+      <Filter>Resource Data</Filter>
+    </None>
+    <None Include="..\..\resource\Music\default.bgm">
+      <Filter>Resource Data\Music</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinMain.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\resource\credit.txt">
+      <Filter>Resource Data</Filter>
+    </Text>
+    <Text Include="..\..\resource\serverIPList.txt">
+      <Filter>Resource Data</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ico00001.ico">
+      <Filter>Resource Data</Filter>
+    </Image>
+    <Image Include="res\main_ico.ico">
+      <Filter>Resource Data</Filter>
+    </Image>
+    <Image Include="res\Omg.ico">
+      <Filter>Resource Data</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\resource\Music\morrowind title.mp3">
+      <Filter>Resource Data\Music</Filter>
+    </Media>
+    <Media Include="..\..\resource\Music\music1007.mp3">
+      <Filter>Resource Data\Music</Filter>
+    </Media>
+    <Media Include="..\..\resource\Music\track13.wav">
+      <Filter>Resource Data\Music</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

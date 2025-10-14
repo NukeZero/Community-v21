@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "source": "Bins/ServerBins/Win32/Release/1. AccountServer.exe",
+      "destination": "Data/Program/1. Account.exe"
+    },
+    {
+      "source": "Bins/ServerBins/Win32/Release/2. Certifier.exe",
+      "destination": "Data/Program/2. Certifier.exe"
+    },
+    {
+      "source": "Bins/ServerBins/Win32/Release/3. DatabaseServer.exe",
+      "destination": "Data/Program/3. Database.exe"
+    },
+    {
+      "source": "Bins/ServerBins/Win32/Release/4. CoreServer.exe",
+      "destination": "Data/Program/4. Core.exe"
+    },
+    {
+      "source": "Bins/ServerBins/Win32/Release/5. LoginServer.exe",
+      "destination": "Data/Program/5. Login.exe"
+    },
+    {
+      "source": "Bins/ServerBins/Win32/Release/6. CacheServer.exe",
+      "destination": "Data/Program/6. Cache.exe"
+    },
+    {
+      "source": "Bins/ServerBins/Win32/Release/7. WorldServer.exe",
+      "destination": "Data/Program/7. World.exe"
+    },
+    {
+      "source": "Bins/ClientBins/Win32/Release/Neuz.exe",
+      "destination": "Client/Neuz.exe"
+    }
+  ]
+}

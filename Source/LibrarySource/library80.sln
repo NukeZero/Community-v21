@@ -1,0 +1,77 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common\common80.vcxproj", "{EE954C58-99A6-4439-9ADC-242EFD3D290F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dump", "dump\dump80.vcxproj", "{29D4A48A-B828-47C7-A9A0-AF4029A3EFB3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "logging", "logging\logging80.vcxproj", "{A68E9161-DB03-41F4-B913-8D73A559047E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "memory", "memory\memory80.vcxproj", "{A51D6169-3337-4313-88DF-26A60DA48B32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "network", "network\network80.vcxproj", "{E8BE6FC6-BEB9-488A-A8EC-DCB236EB3479}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "thread", "thread\thread80.vcxproj", "{3F4AA711-B716-4E05-A96C-C48F197847BD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crypto", "crypto\crypto80.vcxproj", "{D7BAED1B-C987-41DD-9692-F495257AA812}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "database", "database\database80.vcxproj", "{3973F325-5262-4F97-B3C5-4C7EE29EE1CF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ui", "ui\ui80.vcxproj", "{78C8187A-FD6E-4F46-BF19-3526F660AFB7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bugtrap", "bugtrap\bugtrap80.vcxproj", "{C82BB1A2-CB43-4C22-B2B0-50C177DD9CC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ReleaseDll|Win32 = ReleaseDll|Win32
+		ReleaseDll|x64 = ReleaseDll|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE954C58-99A6-4439-9ADC-242EFD3D290F}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{EE954C58-99A6-4439-9ADC-242EFD3D290F}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{EE954C58-99A6-4439-9ADC-242EFD3D290F}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{EE954C58-99A6-4439-9ADC-242EFD3D290F}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{29D4A48A-B828-47C7-A9A0-AF4029A3EFB3}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{29D4A48A-B828-47C7-A9A0-AF4029A3EFB3}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{29D4A48A-B828-47C7-A9A0-AF4029A3EFB3}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{29D4A48A-B828-47C7-A9A0-AF4029A3EFB3}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{A68E9161-DB03-41F4-B913-8D73A559047E}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{A68E9161-DB03-41F4-B913-8D73A559047E}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{A68E9161-DB03-41F4-B913-8D73A559047E}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{A68E9161-DB03-41F4-B913-8D73A559047E}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{A51D6169-3337-4313-88DF-26A60DA48B32}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{A51D6169-3337-4313-88DF-26A60DA48B32}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{A51D6169-3337-4313-88DF-26A60DA48B32}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{A51D6169-3337-4313-88DF-26A60DA48B32}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{E8BE6FC6-BEB9-488A-A8EC-DCB236EB3479}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{E8BE6FC6-BEB9-488A-A8EC-DCB236EB3479}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{E8BE6FC6-BEB9-488A-A8EC-DCB236EB3479}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{E8BE6FC6-BEB9-488A-A8EC-DCB236EB3479}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{3F4AA711-B716-4E05-A96C-C48F197847BD}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{3F4AA711-B716-4E05-A96C-C48F197847BD}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{3F4AA711-B716-4E05-A96C-C48F197847BD}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{3F4AA711-B716-4E05-A96C-C48F197847BD}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{D7BAED1B-C987-41DD-9692-F495257AA812}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{D7BAED1B-C987-41DD-9692-F495257AA812}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{D7BAED1B-C987-41DD-9692-F495257AA812}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{D7BAED1B-C987-41DD-9692-F495257AA812}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{3973F325-5262-4F97-B3C5-4C7EE29EE1CF}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{3973F325-5262-4F97-B3C5-4C7EE29EE1CF}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{3973F325-5262-4F97-B3C5-4C7EE29EE1CF}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{3973F325-5262-4F97-B3C5-4C7EE29EE1CF}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{78C8187A-FD6E-4F46-BF19-3526F660AFB7}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{78C8187A-FD6E-4F46-BF19-3526F660AFB7}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{78C8187A-FD6E-4F46-BF19-3526F660AFB7}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{78C8187A-FD6E-4F46-BF19-3526F660AFB7}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{C82BB1A2-CB43-4C22-B2B0-50C177DD9CC2}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{C82BB1A2-CB43-4C22-B2B0-50C177DD9CC2}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{C82BB1A2-CB43-4C22-B2B0-50C177DD9CC2}.ReleaseDll|x64.ActiveCfg = ReleaseDll|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {397D18A2-2307-49EC-A2E7-9F120232916A}
+	EndGlobalSection
+EndGlobal

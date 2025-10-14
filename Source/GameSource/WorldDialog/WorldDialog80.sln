@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WorldDialog", "WorldDialog80.vcxproj", "{8F3C6B25-95BE-4669-A67C-C27354DB0F54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F3C6B25-95BE-4669-A67C-C27354DB0F54}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F3C6B25-95BE-4669-A67C-C27354DB0F54}.Debug|Win32.Build.0 = Debug|Win32
+		{8F3C6B25-95BE-4669-A67C-C27354DB0F54}.Release|Win32.ActiveCfg = Release|Win32
+		{8F3C6B25-95BE-4669-A67C-C27354DB0F54}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE6A53F4-C2E5-49BF-971D-CFEE7DE242B1}
+	EndGlobalSection
+EndGlobal

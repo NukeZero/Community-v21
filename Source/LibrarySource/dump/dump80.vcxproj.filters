@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FLDumpCmmon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDumper.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDumpInstaller.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDumpLog.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDumpMini.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDumpParam.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDumpRunner.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLGenericDumper.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLMiniDump.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLStackWalker.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FLDumpCommon.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDumper.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDumpInstaller.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDumpLog.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDumpMini.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDumpParam.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDumpRunner.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLGenericDumper.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLMiniDump.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLStackWalker.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

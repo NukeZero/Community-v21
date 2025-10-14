@@ -1,0 +1,15 @@
+// 국가 : LANG_KOR / LANG_USA / LANG_JAP / LANG_THA / LANG_TWN / LANG_GER / LANG_SPA / LANG_FRE / LANG_POR / LANG_VTN / LANG_RUS / LANG_PHP / LANG_ID,,,,,,
+// 요일 : SUN / MON / TUE / WED / THU / FRI / SAT,,,,,,
+// 귀속여부 : 0 - 일반 / 1 - 귀속,,,,,,
+// 국가,요일,순위,아이템 인덱스,아이템 개수,귀속 여부,신청 페냐 반환 비율
+//공통,,,,,,
+=,SAT,1,=,=,=,50
+=,SAT,2,=,=,=,24
+=,SAT,3,=,=,=,12
+=,SAT,4,=,=,=,6
+=,SAT,5,=,=,=,3
+=,SAT,6,=,=,=,1.5
+=,SAT,7,=,=,=,0.75
+=,SAT,8,=,=,=,0.375
+=,SAT,9,=,=,=,0.1875
+=,SAT,10,=,=,=,0.09375

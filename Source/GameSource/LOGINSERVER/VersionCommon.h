@@ -1,0 +1,28 @@
+#ifndef __VERSION_COMMON_H__
+#define __VERSION_COMMON_H__
+#if !defined( _DEBUG )
+	#define	__MAINSERVER
+#endif
+#define	__VER	21
+
+#if !defined( __MAINSERVER )
+	#define __INTERNALSERVER
+#endif
+
+#define		__SERVER				// 클라이언트 전용코드를 빌드하지 않기 위한 define
+
+#define		__NETWORK_DOS
+#define		__NETWORK_MASSIVE
+
+
+
+#if	  defined(__INTERNALSERVER)	// 내부 사무실 테스트서버
+
+
+#elif defined(__MAINSERVER)		// 외부 본섭
+
+#endif	// end - 서버종류별 define 
+
+
+#endif
+

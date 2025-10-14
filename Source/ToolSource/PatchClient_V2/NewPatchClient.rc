@@ -1,0 +1,277 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 706, 382
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 463, 215
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 699
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 375
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""res/NewPatchClient.rc2""\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 프랑스어(프랑스) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_FRA_SEARCHLIST  "Recherche de mises ?jour"
+    IDS_STR_FRA_PATCHCOMP   "Mise ?jour termin?"
+    IDS_STR_FRA_RUN         "Mise ?jour en cours..."
+    IDS_STR_FRA_PATCHPROCESS "Mise ?jour"
+    IDS_STR_FRA_DOWNLOADING "T??hargement..."
+    IDS_STR_FRA_DECOMPRESS  "D?ompression"
+END
+
+#endif    // 프랑스어(프랑스) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 포르투갈어(브라질) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BETAPATCHCLIENT_DIALOG DIALOGEX 0, 0, 525, 323
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDC_BUTTON_START,448,168,57,57,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON_REGISTER,76,174,57,13
+    PUSHBUTTON      "",IDC_EXIT,493,3,17,13
+    CONTROL         "Progress1",IDC_FILEPROGRESS,"msctls_progress32",0x0,11,255,248,10,WS_EX_TRANSPARENT
+    CONTROL         "Progress2",IDC_TOTALPROGRESS,"msctls_progress32",0x0,11,269,248,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPTION,140,223,57,13
+    CTEXT           "",IDC_FILE_NUMBER,206,243,53,8,SS_CENTERIMAGE | NOT WS_GROUP,WS_EX_RIGHT
+    CTEXT           "",IDC_DOWN_SPEED,91,242,89,8,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "",IDC_CURRENT_STATE,12,243,92,8,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "Ver X.X",IDC_MASQUERADEVERSION,14,285,129,11,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    RTEXT           "http://www.flyffonline.in.th",IDC_HOME,150,65,113,8,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_MINIMIZE,466,3,17,13
+    DEFPUSHBUTTON   "",IDC_BUTTON_START_DISABLE,456,239,57,57
+    PUSHBUTTON      "",IDC_PATCHNOTES,202,219,57,13
+END
+
+IDD_OPTION DIALOGEX 0, 0, 341, 196
+STYLE DS_SETFONT | WS_POPUP
+FONT 9, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDOK,195,44,50,14
+    PUSHBUTTON      "",IDCANCEL,195,62,50,14
+    LTEXT           "",IDC_STATIC,7,34,39,8
+    COMBOBOX        IDC_RES_COMBO,49,52,80,55,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TQ_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,164,120,8,10
+    CONTROL         "",IDC_TQ_RADIO2,"Button",BS_AUTORADIOBUTTON,209,120,8,10
+    CONTROL         "",IDC_TQ_RADIO3,"Button",BS_AUTORADIOBUTTON,250,120,8,10
+    CONTROL         "",IDC_VIEW_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,120,8,10
+    CONTROL         "",IDC_VIEW_RADIO2,"Button",BS_AUTORADIOBUTTON,60,120,8,10
+    CONTROL         "",IDC_VIEW_RADIO3,"Button",BS_AUTORADIOBUTTON,101,120,8,10
+    CONTROL         "",IDC_OD_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,164,166,8,10
+    CONTROL         "",IDC_OD_RADIO2,"Button",BS_AUTORADIOBUTTON,208,166,8,10
+    CONTROL         "",IDC_OD_RADIO3,"Button",BS_AUTORADIOBUTTON,250,166,8,10
+    CONTROL         "",IDC_SHD_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,166,8,10
+    CONTROL         "",IDC_SHD_RADIO2,"Button",BS_AUTORADIOBUTTON,62,166,8,10
+    CONTROL         "",IDC_SHD_RADIO3,"Button",BS_AUTORADIOBUTTON,101,166,8,10
+    LTEXT           "",IDC_STATIC2,23,102,67,8
+    LTEXT           "",IDC_STATIC3,167,102,75,8
+    LTEXT           "",IDC_STATIC4,23,150,75,8
+    LTEXT           "",IDC_STATIC5,168,150,123,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_BETAPATCHCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 522
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 320
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        VALUE "041204B0", ""
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\Hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_RT_MANIFEST1        RT_MANIFEST             "Flyff.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STR_POR_PATCHCOMP   "Patch Conclu?o"
+END
+
+#endif    // 포르투갈어(브라질) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res/NewPatchClient.rc2"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

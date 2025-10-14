@@ -1,0 +1,243 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\FileEncrpytion.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FileEncrpytion.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "FileEncrpytion Tool"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FileEncrpytion Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "Confirm",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_FILEENCRPYTION_DIALOG DIALOGEX 0, 0, 378, 378
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "FileEncrpytion"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Select the Config file to encrypt/decrypt by opening the file.",
+                    IDC_STATIC_CONFIGFILE_NAME,13,19,289,8,SS_NOTIFY
+    PUSHBUTTON      "Encryption",IDC_BTN_ENCRYPTION,133,64,50,14
+    PUSHBUTTON      "Decryption",IDC_BTN_DECRYPTION,193,64,50,14
+    PUSHBUTTON      "Explorer",IDC_BTN_OPENFOLDER,253,64,50,14
+    LTEXT           "",IDC_STATIC_DECRYPTION,68,49,289,8,SS_NOTIFY
+    LTEXT           "",IDC_STATIC_ENCRYPTION,68,34,289,8,SS_NOTIFY
+    GROUPBOX        "Config.ini File encryption/decryption",IDC_STATIC_CONFIGFILE,
+                    7,6,364,85
+    GROUPBOX        "DB Password encryption / decryption",IDC_STATIC,7,94,364,94
+    EDITTEXT        IDC_EDIT_STRING,13,108,289,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_ENCRYPTION_STRING,67,136,235,14,ES_AUTOHSCROLL | 
+                    ES_NOHIDESEL | ES_READONLY
+    PUSHBUTTON      "Encryption",IDC_BTN_ENCRYPTION_STRING,13,136,50,14
+    EDITTEXT        IDC_EDIT_DECRYPTION_STRING,67,164,235,14,ES_AUTOHSCROLL | 
+                    ES_NOHIDESEL | ES_READONLY
+    PUSHBUTTON      "Decryption",IDC_BTN_DECRYPTION_STRING,13,164,50,14
+    LTEXT           "data before encryption",IDC_STATIC_ENCRYPTION_ORGDATA,67,
+                    125,235,8
+    LTEXT           "data before decryption",
+                    IDC_STATIC_DECRYPTION_STRING_ORGDATA,67,153,235,8
+    GROUPBOX        "List.txt file decryption",IDC_STATIC,7,191,364,63
+    LTEXT           "encrypted file  :",IDC_STATIC,15,34,51,8
+    LTEXT           "decrypted file :",IDC_STATIC,15,49,51,8
+    PUSHBUTTON      "open file ",IDC_BTN_CONFIG_FILEOPEN,15,64,50,14
+    PUSHBUTTON      "open file",IDC_BTN_LIST_FILE_OPEN,13,234,50,14
+    PUSHBUTTON      "View decrypted file ",IDC_BTN_VIEW_DECRYPTION_LISTFILE,133,
+                    234,50,14
+    PUSHBUTTON      "decryption ",IDC_BTN_DECRYPTION_LISTFILE,73,234,50,14
+    LTEXT           "Select the List file to be encrypted/decrypted by opening the file.",
+                    IDC_STATIC_LISTFILE_NAME,13,206,289,8
+    LTEXT           "",IDC_STATIC_DECRYPTION_LISTFILE,66,220,289,8,SS_NOTIFY
+    LTEXT           "decrypted file :",IDC_STATIC,13,220,51,8
+    GROUPBOX        "Res file ",IDC_STATIC,7,256,364,52
+    PUSHBUTTON      "view file ",IDC_BTN_VIEW_OPENED_CONFIGFILE,73,64,50,14
+    PUSHBUTTON      "open file ",IDC_BTN_RES_FILE_OPEN,13,284,50,14
+    LTEXT           "Select the Res file you want to split with Open File.",
+                    IDC_STATIC_RESFILE_NAME,13,270,289,8
+    PUSHBUTTON      "Res Separation of files ",IDC_BTN_SPLIT_RESFILE,73,284,50,14
+    GROUPBOX        "MD5 encrpytion",IDC_STATIC,7,310,364,52
+    EDITTEXT        IDC_EDIT_MD5DATA,13,323,289,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "MD5 Encrpytion",IDC_BTN_ENCRYPTION_MD5,13,341,50,14
+    EDITTEXT        IDC_EDIT_ENCRYPTION_MD5,67,341,235,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_NOHIDESEL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "FileEncrpytion.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "FileEncrpytion.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FILEENCRPYTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 371
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "FileEncrpytion 정보(&A)..."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\FileEncrpytion.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

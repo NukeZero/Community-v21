@@ -1,0 +1,5 @@
+// 국가 : LANG_KOR / LANG_USA / LANG_JAP / LANG_THA / LANG_TWN / LANG_GER / LANG_SPA / LANG_FRE / LANG_POR / LANG_VTN / LANG_RUS / LANG_PHP / LANG_ID,,,,,,,,
+// 요일 : SUN / MON / TUE / WED / THU / FRI / SAT,,,,,,,,
+// 국가,요일,신청 시작 시간,신청 종료 시간,오픈 시간,준비 대기 시간,준비 시간,진행 시간,신청 시 필요 페냐
+// 공통,,,,,,,,
+=,SAT,12-00-00,20-00-00,20-30-00,20,10,120,1000000

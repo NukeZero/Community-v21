@@ -1,0 +1,120 @@
+#include "stdafx.h"
+
+#if defined(__DBSERVER) || defined(__CORESERVER) || defined(__ACTIVEXPLAYER) || defined(__VPW)
+#include "..\_Network\Objects\Obj.h"
+#else
+#include "Mover.h"
+#endif
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+void CCtrl::Serialize( CAr & ar )	// 33
+{
+	CObj::Serialize( ar );
+
+	if( ar.IsStoring() )
+	{
+		ar << m_objid;
+	}
+	else
+	{
+		ar >> m_objid;
+	}
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+void CItemBase::Serialize( CAr & ar )	// 11	// 20
+{
+	if( ar.IsStoring() )
+	{
+		ar << m_dwObjId << m_dwItemId;
+		ar << m_dwSerialNumber;
+		ar.WriteString( m_szItemText );
+	}
+	else
+	{
+		ar >> m_dwObjId >> m_dwItemId;
+		ar >> m_dwSerialNumber;
+		ar.ReadString( m_szItemText );
+
+	}
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+void CItemElem::Serialize( CAr & ar )	// 18
+{
+	CItemBase::Serialize( ar );
+	if( ar.IsStoring() )
+	{
+		ar << m_nItemNum;
+		ar << m_nRepairNumber << m_nHitPoint;
+		ar << m_byFlag;
+		ar << m_nAbilityOption;
+		ar << m_idGuild;				// 길드번호도 저장.
+		ar << m_bItemResist;			// 어느 속성 인가?
+		ar << m_nResistAbilityOption ;	// 속성 추가 능력치 가변 옵션
+		ar << m_nResistSMItemId;
+
+
+	}
+	else
+	{
+		ar >> m_nItemNum;
+		ar >> m_nRepairNumber ;
+		ar >> m_nHitPoint;
+		ar >> m_byFlag;
+		ar >> m_nAbilityOption;
+		ar >> m_idGuild;		
+		ar >> m_bItemResist;	
+		ar >> m_nResistAbilityOption ;	
+		ar >> m_nResistSMItemId;
+
+
+
+	}
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#ifdef __XPET2
+void CPetElem::Serialize( CAr & ar )	// 18
+{
+	CItemBase::Serialize( ar );
+	if( ar.IsStoring() )
+	{
+		ar << m_nMaxLevel << m_nLevel << m_dwHungry << m_dwFeeling;
+	} else
+	// Loading
+	{
+		ar >> m_nMaxLevel >> m_nLevel >> m_dwHungry >> m_dwFeeling;
+	}
+}
+#endif // xPet2
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+void CItem::Serialize( CAr & ar )	// 45
+{
+	CCtrl::Serialize( ar );		// 33
+	
+	if( ar.IsStoring() )
+	{
+	}
+	else
+	{
+		SAFE_DELETE( m_pItemBase );
+		m_pItemBase	= new CItemElem;
+	}
+
+	m_pItemBase->Serialize( ar );	// 11
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+// 지웠음. 따로 보관함...xuzhu
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+

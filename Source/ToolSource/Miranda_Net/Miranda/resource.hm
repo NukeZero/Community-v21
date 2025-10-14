@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Miranda.rc
+//
+#define HIDC_BUTTON_DELETE              0x809503fd    // IDD_DIALOG_FINAL

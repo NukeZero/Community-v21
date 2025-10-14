@@ -1,0 +1,74 @@
+
+miranda updates... by gmpbigsun
+
+2010_01_18 : 
+
+	- 파일 Drag로 o3d파일을 자동 로드한다.
+	- 본을 자동으로 읽는다.
+	- 파츠의 경우 남녀의 본을 자동으로 로드하며, 동일파츠는 갱신 다른파츠는 추가로드로 다 볼수있게 했다.
+
+	- 해당 모델의 이름규칙에 부합하는 Ani를 모두 로드해서 리스트로 보여준다.
+	- 해당 Ani클릭시 플레이되며 오른쪽 클릭시 초기화 된다.
+
+
+2010_01_20 : 
+
+    - Bone 리스트가 추가댔다 ( o3d를 로드하면 자동으로 애니가있을경우 ani list가 생성된다 )
+	- Bone은 상자로 모델에 표현되고 wireframe모드가 추가됐다.
+	- Bone선택시 해당본은 빨간색의 박스가 그려진다.
+
+2010_01_22 : 
+
+    - Bone을 선택한 상태에서 Link Sfx버튼을 누르면 sfx를 로드할수있따.
+	- 로드된 sfx는 선택한 Bone에 링크가 된다.
+	- Save의 경우 하나의 정보에 해당하는 에디트 박스가 뜨고 sfx가 어떤상황에서 나와야하는지등의 data를 입력할수있다.
+
+2010_01_26 :
+
+    - 최종 데이터 윈도우 완성, 여기서 세이브를 할경우 lua파일이 생성된다.
+	- filename.o3d -> (루아파일이름)filename.lua
+	               -> (상황별 함수명)filename_create( id ), filename_die( id ) ...etc
+
+	- 중복상황일 경우 처리 ( 쓰기만 완료 )
+	  filename_create( id )
+	  call_sfx( ... )
+	  call_sfx( ... )
+	  call_sfx( ... )
+	  end
+
+2010_01_27 : 
+
+    - 이제 o3d를 로드할때 SFX/scripts/filename.lua를 같이 로드해서 final window에 등록해준다. wow!
+
+2010_02_03 : 
+
+    - 이제 fname.lua 를 실제 게임에서 적용이 가능하다. 이를 위해 lua glue함수를 만들었고 게임내 이를 위한 sfx관리자가 추가댔다.
+
+	[ 규칙 ]
+	
+	- 한 오브젝트에서 최대 5개의 sfx를 붙일수 있다.
+	- 하나의 본에 같은이름의 sfx는 2개 이상 붙일수 없다.
+	- 같은 본에 대해서 다른 sfx를 붙이고자 할경우 기존의 sfx는 삭제된다.
+	- 게임상의 id가 부여되는 오브젝트만을 지원한다. ( mover, ctrl, item, etc... )
+	- 필요하다면 static_object에 대해서도 지원가능하지만 static오브젝트는 한가지 상태만이 존재하고 looping속성일것이기 때문에 아예 이펙트를 붙여서
+	  만드는 편이 더 유리하다.
+	
+
+	* 최종 목표 
+
+	- 툴에서 어느시점에 어떤 이펙트를 모델 어디에 붙일것인가에 대해 visual editing이 가능하다.
+	- you can visual editing the sfx link to model for when for how for where 
+	
+2010_05_06 : 
+  
+   - 어떤 sfx를 어떤 본에 링크시킬것인가 에 대해서 ver0.1이 탄생했다.
+   - 상태는 현재 create, battle 만 지원하고 해당상태가 되면 툴에서 지정한 sfx가 해당위치에 render된다.
+   - data는 lua로 빠져나오며 이를 neuz에서 이용한다.
+   
+2010_05_12 :
+
+   - 상태별 효과에 Link sfx 에 추가적으로 Multi texturing effect가 추가됨.
+     call_mte( ... )
+   - mte 관련 data완성 ( 통합함 )
+   
+

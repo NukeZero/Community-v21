@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FLAccepter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLAr.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLBuffer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLClientSock.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLClientSockE.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLConnecter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDOS.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDPMng.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLDPSock.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLNetworkLogAdapter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLServerSock.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLServerSockE.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLSock.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLStreamProtocol.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FLAccepter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAr.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLBuffer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLClientSock.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLClientSockE.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLConnecter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDOS.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDPMng.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLDPSock.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLNetworkCommon.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLNetworkLogAdapter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLServerSock.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLServerSockBase.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLServerSockE.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLSock.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLStreamProtocol.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

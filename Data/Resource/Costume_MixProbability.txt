@@ -1,0 +1,15 @@
+ITEM_PROB
+{
+	II_ARM_M_CHR_SAILOR01HAT	// id
+	1000				// When using 3
+	2000				// when using 4
+	3000				// when using 5
+}
+
+ITEM_PROB
+{
+	II_ARM_M_CHR_SAILOR01SUIT
+	1000
+	2000
+	3000
+}

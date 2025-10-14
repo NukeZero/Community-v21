@@ -1,0 +1,9 @@
+// 국가 : LANG_KOR / LANG_USA / LANG_JAP / LANG_THA / LANG_TWN / LANG_GER / LANG_SPA / LANG_FRE / LANG_POR / LANG_VTN / LANG_RUS / LANG_PHP / LANG_ID,,,,,
+// 요일 : SUN / MON / TUE / WED / THU / FRI / SAT,,,,,
+// 귀속여부 : 0 - 일반 / 1 - 귀속,,,,,
+// 국가,요일,완료 회수,아이템 인덱스,지급 개수,귀속 여부
+// 공통,,,,,
+=,sat,4,II_GEN_MAG_TRI_FIRESHOWER,1,1
+=,sat,5,II_SYS_SYS_SCR_BXRAINBOW01,1,1
+=,sat,6,II_SYS_SYS_SCR_BXRAINBOW01,2,1
+=,sat,7,II_SYS_SYS_SCR_BXRAINBOW01,4,1

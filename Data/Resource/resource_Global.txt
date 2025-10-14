@@ -1,0 +1,4435 @@
+version "V0.01"
+encryptionKey 0x57
+
+resource 1 "..\ResClient\data.res"
+{
+	file	"Constant.inc"
+	file	"ContinentDef.h"
+	file	"credit.txt"
+	file	"define.h"
+	file	"defineAttribute.h"
+	file	"defineEvent.h"
+	file	"defineItem.h"
+	file	"defineItemkind.h"
+	file	"defineNeuz.h"
+	file	"defineObj.h"
+	file	"defineSkill.h"
+	file	"defineSound.h"
+	file	"defineText.h"
+	file	"defineWorld.h"
+	file	"defineJob.h"
+	file	"definequest.h"
+	file	"expTable.inc"
+	file	"defineHonor.h"
+	file	"honorList.txt"
+	file	"honorList.txt.txt"
+	wildcard	"filter*.inc" 
+	wildcard	"InvalidName*.inc" 
+	file	"jobItem.inc"
+	file	"lang.h"
+	file	"Masquerade.prj"
+	file	"propCtrl.txt"
+	file	"propGuildQuest.inc"
+	file	"propMover.txt"
+	file	"propObj.csv"
+	file	"propSkill.txt"
+	file	"propTroupeSkill.txt"
+	file	"propSkillAdd.csv"
+	file	"propMoverEx.inc"
+	file	"propMotion.txt"
+	file	"ResData.h"
+	file	"Terrain.inc"
+	file	"WndStyle.h"
+	file	"wordToolTip.inc"
+	file	"propEnchant.inc"
+	file	"World.inc"
+	file	"mdlObj.inc"
+	file	"mdlDyna.inc"
+	file	"textEmotion.txt"
+	file	"propKarma.txt"
+	file	"propItemEtc.inc"
+	file	"propEvent.inc"
+	file	"propCtrl.txt.txt"
+	file	"propMover.txt.txt"
+	file	"propSkill.txt.txt"
+	file	"propTroupeSkill.txt.txt"
+	file	"propMotion.txt.txt"
+	file	"textEmotion.txt.txt"
+	file	"propKarma.txt.txt"
+	file	"propItemEtc.txt.txt"
+	file	"world.txt.txt"
+	file	"propLang.txt"
+	file	"PKSetting.inc"
+	file	"Exchange_Script.txt"
+	file	"Ultimate_GemAbility.txt"
+	file	"pet.inc"
+	file	"collecting.inc"
+	file	"accessory.inc"
+	file	"QuestDestination.txt.txt"
+	file	"PatrolDestination.txt.txt"
+	file	"defineMapComboBoxData.h"
+	file	"propMapComboBoxData.inc"
+	file	"propMapComboBoxData.txt.txt"
+	file	"neuzDefault.ini"
+	file	"teleportscroll.txt"
+	file 	"PaidWorldSet.txt"
+	file 	"PaidWorldTicket.txt"
+	file 	"TreasureCombine.txt"
+	file 	"TreasureItem.txt"
+	file	"defineItemType.h"
+	file	"defineItemGrade.h"
+	file	"servermoveinfo.inc"
+	file	"propMediation.inc"
+	file	"propFlyffpiece.inc"
+	file	"PreLoadText.inc"
+	file	"PreLoadDefine.inc"
+	file	"VisCheckList.txt"
+	file	"VisGroupList.txt"
+}
+
+resource 1 "..\ResClient\dataSub1.res"
+{
+	file	"etc.inc"
+	file	"propJob.inc"
+	file	"resdata.inc"
+	file	"textClient.inc"
+	file	"etc.txt.txt"
+	file	"resData.txt.txt"
+	file	"textClient.txt.txt"
+	file	"definelordskill.h"
+	file	"lordskill.txt"
+	file	"lordskill.txt.txt"
+	file	"lordevent.inc"
+	file	"couple.inc"
+	file	"layer.inc"
+	wildcard	"character*.inc"
+	wildcard	"propQuest*.inc"
+	wildcard	"character*.txt"
+	wildcard	"propQuest*.txt"
+}
+
+resource 1 "..\ResClient\dataSub2.res"
+{
+	file	"Spec_Item.txt"
+	file	"propItem.txt.txt"
+	file	"except.txt"
+}
+
+
+//////////////////////////////////////////////////////////////////////////
+//	START :	Char Folder
+resource 0 "..\ResClient\Char\Char_a.res"
+{
+	wildcard	"Char\Char_a*.*"
+}
+resource 0 "..\ResClient\Char\Char_b.res"
+{
+	wildcard	"Char\Char_b*.*"
+}
+resource 0 "..\ResClient\Char\Char_c.res"
+{
+	wildcard	"Char\Char_c*.*"
+}
+resource 0 "..\ResClient\Char\Char_d.res"
+{
+	wildcard	"Char\Char_d*.*"
+}
+resource 0 "..\ResClient\Char\Char_e.res"
+{
+	wildcard	"Char\Char_e*.*"
+}
+resource 0 "..\ResClient\Char\Char_f.res"
+{
+	wildcard	"Char\Char_f*.*"
+}
+resource 0 "..\ResClient\Char\Char_g.res"
+{
+	wildcard	"Char\Char_g*.*"
+}
+resource 0 "..\ResClient\Char\Char_h.res"
+{
+	wildcard	"Char\Char_h*.*"
+}
+resource 0 "..\ResClient\Char\Char_i.res"
+{
+	wildcard	"Char\Char_i*.*"
+}
+resource 0 "..\ResClient\Char\Char_j.res"
+{
+	wildcard	"Char\Char_j*.*"
+}
+resource 0 "..\ResClient\Char\Char_k.res"
+{
+	wildcard	"Char\Char_k*.*"
+}
+resource 0 "..\ResClient\Char\Char_l.res"
+{
+	wildcard	"Char\Char_l*.*"
+}
+resource 0 "..\ResClient\Char\Char_m.res"
+{
+	wildcard	"Char\Char_m*.*"
+}
+resource 0 "..\ResClient\Char\Char_n.res"
+{
+	wildcard	"Char\Char_n*.*"
+}
+resource 0 "..\ResClient\Char\Char_o.res"
+{
+	wildcard	"Char\Char_o*.*"
+}
+resource 0 "..\ResClient\Char\Char_p.res"
+{
+	wildcard	"Char\Char_p*.*"
+}
+resource 0 "..\ResClient\Char\Char_q.res"
+{
+	wildcard	"Char\Char_q*.*"
+}
+resource 0 "..\ResClient\Char\Char_r.res"
+{
+	wildcard	"Char\Char_r*.*"
+}
+resource 0 "..\ResClient\Char\Char_s.res"
+{
+	wildcard	"Char\Char_s*.*"
+}
+resource 0 "..\ResClient\Char\Char_t.res"
+{
+	wildcard	"Char\Char_t*.*"
+}
+resource 0 "..\ResClient\Char\Char_u.res"
+{
+	wildcard	"Char\Char_u*.*"
+}
+resource 0 "..\ResClient\Char\Char_v.res"
+{
+	wildcard	"Char\Char_v*.*"
+}
+resource 0 "..\ResClient\Char\Char_w.res"
+{
+	wildcard	"Char\Char_w*.*"
+}
+resource 0 "..\ResClient\Char\Char_x.res"
+{
+	wildcard	"Char\Char_x*.*"
+}
+resource 0 "..\ResClient\Char\Char_y.res"
+{
+	wildcard	"Char\Char_y*.*"
+}
+resource 0 "..\ResClient\Char\Char_z.res"
+{
+	wildcard	"Char\Char_z*.*"
+}
+//	END :	Char Folder
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	SFX Folder
+resource 0 "..\ResClient\Sfx\sfx_a.res"
+{
+	wildcard	"sfx\a*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_b.res"
+{
+	wildcard	"sfx\b*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_c.res"
+{
+	wildcard	"sfx\c*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_d.res"
+{
+	wildcard	"sfx\d*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_e.res"
+{
+	wildcard	"sfx\e*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_f.res"
+{
+	wildcard	"sfx\f*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_g.res"
+{
+	wildcard	"sfx\g*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_h.res"
+{
+	wildcard	"sfx\h*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_i.res"
+{
+	wildcard	"sfx\i*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_j.res"
+{
+	wildcard	"sfx\j*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_k.res"
+{
+	wildcard	"sfx\k*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_l.res"
+{
+	wildcard	"sfx\l*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_m.res"
+{
+	wildcard	"sfx\m*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_n.res"
+{
+	wildcard	"sfx\n*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_o.res"
+{
+	wildcard	"sfx\o*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_p.res"
+{
+	wildcard	"sfx\p*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_q.res"
+{
+	wildcard	"sfx\q*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_r.res"
+{
+	wildcard	"sfx\r*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_s.res"
+{
+	wildcard	"sfx\s*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_t.res"
+{
+	wildcard	"sfx\t*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_u.res"
+{
+	wildcard	"sfx\u*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_v.res"
+{
+	wildcard	"sfx\v*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_w.res"
+{
+	wildcard	"sfx\w*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_x.res"
+{
+	wildcard	"sfx\x*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_y.res"
+{
+	wildcard	"sfx\y*.*" 
+}
+resource 0 "..\ResClient\Sfx\sfx_z.res"
+{
+	wildcard	"sfx\z*.*" 
+}
+//	END :	SFX Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	SFX\Scripts Folder
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_a.res"
+{
+	wildcard	"sfx\scripts\a*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_b.res"
+{
+	wildcard	"sfx\scripts\b*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_c.res"
+{
+	wildcard	"sfx\scripts\c*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_d.res"
+{
+	wildcard	"sfx\scripts\d*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_e.res"
+{
+	wildcard	"sfx\scripts\e*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_f.res"
+{
+	wildcard	"sfx\scripts\f*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_g.res"
+{
+	wildcard	"sfx\scripts\g*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_h.res"
+{
+	wildcard	"sfx\scripts\h*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_i.res"
+{
+	wildcard	"sfx\scripts\i*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_j.res"
+{
+	wildcard	"sfx\scripts\j*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_k.res"
+{
+	wildcard	"sfx\scripts\k*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_l.res"
+{
+	wildcard	"sfx\scripts\l*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_m.res"
+{
+	wildcard	"sfx\scripts\m*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_n.res"
+{
+	wildcard	"sfx\scripts\n*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_o.res"
+{
+	wildcard	"sfx\scripts\o*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_p.res"
+{
+	wildcard	"sfx\scripts\p*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_q.res"
+{
+	wildcard	"sfx\scripts\q*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_r.res"
+{
+	wildcard	"sfx\scripts\r*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_s.res"
+{
+	wildcard	"sfx\scripts\s*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_t.res"
+{
+	wildcard	"sfx\scripts\t*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_u.res"
+{
+	wildcard	"sfx\scripts\u*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_v.res"
+{
+	wildcard	"sfx\scripts\v*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_w.res"
+{
+	wildcard	"sfx\scripts\w*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_x.res"
+{
+	wildcard	"sfx\scripts\x*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_y.res"
+{
+	wildcard	"sfx\scripts\y*.*" 
+}
+resource 0 "..\ResClient\Sfx\scripts\sfxscripts_z.res"
+{
+	wildcard	"sfx\scripts\z*.*" 
+}
+//	END :	SFX\Scripts Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	SFX\Texture Folder
+resource 0 "..\ResClient\Sfx\texture\sfxtex_a.res"
+{
+	wildcard	"sfx\texture\a*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_b.res"
+{
+	wildcard	"sfx\texture\b*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_c.res"
+{
+	wildcard	"sfx\texture\c*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_d.res"
+{
+	wildcard	"sfx\texture\d*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_e.res"
+{
+	wildcard	"sfx\texture\e*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_f.res"
+{
+	wildcard	"sfx\texture\f*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_g.res"
+{
+	wildcard	"sfx\texture\g*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_h.res"
+{
+	wildcard	"sfx\texture\h*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_i.res"
+{
+	wildcard	"sfx\texture\i*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_j.res"
+{
+	wildcard	"sfx\texture\j*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_k.res"
+{
+	wildcard	"sfx\texture\k*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_l.res"
+{
+	wildcard	"sfx\texture\l*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_m.res"
+{
+	wildcard	"sfx\texture\m*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_n.res"
+{
+	wildcard	"sfx\texture\n*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_o.res"
+{
+	wildcard	"sfx\texture\o*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_p.res"
+{
+	wildcard	"sfx\texture\p*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_q.res"
+{
+	wildcard	"sfx\texture\q*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_r.res"
+{
+	wildcard	"sfx\texture\r*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_s.res"
+{
+	wildcard	"sfx\texture\s*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_t.res"
+{
+	wildcard	"sfx\texture\t*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_u.res"
+{
+	wildcard	"sfx\texture\u*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_v.res"
+{
+	wildcard	"sfx\texture\v*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_w.res"
+{
+	wildcard	"sfx\texture\w*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_x.res"
+{
+	wildcard	"sfx\texture\x*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_y.res"
+{
+	wildcard	"sfx\texture\y*.*" 
+}
+resource 0 "..\ResClient\Sfx\texture\sfxtex_z.res"
+{
+	wildcard	"sfx\texture\z*.*" 
+}
+//	END :	SFX\Texture Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\Texture Folder
+resource 0 "..\ResClient\World\texture\wtex_a.res"
+{
+	wildcard	"World\texture\a*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_b.res"
+{
+	wildcard	"World\texture\b*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_c.res"
+{
+	wildcard	"World\texture\c*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_d.res"
+{
+	wildcard	"World\texture\d*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_e.res"
+{
+	wildcard	"World\texture\e*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_f.res"
+{
+	wildcard	"World\texture\f*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_g.res"
+{
+	wildcard	"World\texture\g*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_h.res"
+{
+	wildcard	"World\texture\h*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_i.res"
+{
+	wildcard	"World\texture\i*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_j.res"
+{
+	wildcard	"World\texture\j*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_k.res"
+{
+	wildcard	"World\texture\k*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_l.res"
+{
+	wildcard	"World\texture\l*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_m.res"
+{
+	wildcard	"World\texture\m*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_n.res"
+{
+	wildcard	"World\texture\n*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_o.res"
+{
+	wildcard	"World\texture\o*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_p.res"
+{
+	wildcard	"World\texture\p*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_q.res"
+{
+	wildcard	"World\texture\q*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_r.res"
+{
+	wildcard	"World\texture\r*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_s.res"
+{
+	wildcard	"World\texture\s*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_t.res"
+{
+	wildcard	"World\texture\t*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_u.res"
+{
+	wildcard	"World\texture\u*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_v.res"
+{
+	wildcard	"World\texture\v*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_w.res"
+{
+	wildcard	"World\texture\w*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_x.res"
+{
+	wildcard	"World\texture\x*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_y.res"
+{
+	wildcard	"World\texture\y*.*" 
+}
+resource 0 "..\ResClient\World\texture\wtex_z.res"
+{
+	wildcard	"World\texture\z*.*" 
+}
+
+//	END :	World\Texture Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\TextureMid Folder
+resource 0 "..\ResClient\World\textureMid\wtexm_a.res"
+{
+	wildcard	"World\textureMid\a*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_b.res"
+{
+	wildcard	"World\textureMid\b*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_c.res"
+{
+	wildcard	"World\textureMid\c*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_d.res"
+{
+	wildcard	"World\textureMid\d*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_e.res"
+{
+	wildcard	"World\textureMid\e*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_f.res"
+{
+	wildcard	"World\textureMid\f*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_g.res"
+{
+	wildcard	"World\textureMid\g*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_h.res"
+{
+	wildcard	"World\textureMid\h*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_i.res"
+{
+	wildcard	"World\textureMid\i*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_j.res"
+{
+	wildcard	"World\textureMid\j*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_k.res"
+{
+	wildcard	"World\textureMid\k*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_l.res"
+{
+	wildcard	"World\textureMid\l*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_m.res"
+{
+	wildcard	"World\textureMid\m*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_n.res"
+{
+	wildcard	"World\textureMid\n*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_o.res"
+{
+	wildcard	"World\textureMid\o*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_p.res"
+{
+	wildcard	"World\textureMid\p*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_q.res"
+{
+	wildcard	"World\textureMid\q*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_r.res"
+{
+	wildcard	"World\textureMid\r*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_s.res"
+{
+	wildcard	"World\textureMid\s*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_t.res"
+{
+	wildcard	"World\textureMid\t*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_u.res"
+{
+	wildcard	"World\textureMid\u*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_v.res"
+{
+	wildcard	"World\textureMid\v*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_w.res"
+{
+	wildcard	"World\textureMid\w*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_x.res"
+{
+	wildcard	"World\textureMid\x*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_y.res"
+{
+	wildcard	"World\textureMid\y*.*" 
+}
+resource 0 "..\ResClient\World\textureMid\wtexm_z.res"
+{
+	wildcard	"World\textureMid\z*.*" 
+}
+
+resource 0 "..\ResClient\World\textureMid\wtex_f.res"
+{
+	wildcard	"World\textureMid\f*.*" 
+}
+//	END :	World\TextureMid Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\TextureLow Folder
+resource 0 "..\ResClient\World\textureLow\wtexl_a.res"
+{
+	wildcard	"World\textureLow\a*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_b.res"
+{
+	wildcard	"World\textureLow\b*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_c.res"
+{
+	wildcard	"World\textureLow\c*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_d.res"
+{
+	wildcard	"World\textureLow\d*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_e.res"
+{
+	wildcard	"World\textureLow\e*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_f.res"
+{
+	wildcard	"World\textureLow\f*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_g.res"
+{
+	wildcard	"World\textureLow\g*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_h.res"
+{
+	wildcard	"World\textureLow\h*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_i.res"
+{
+	wildcard	"World\textureLow\i*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_j.res"
+{
+	wildcard	"World\textureLow\j*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_k.res"
+{
+	wildcard	"World\textureLow\k*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_l.res"
+{
+	wildcard	"World\textureLow\l*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_m.res"
+{
+	wildcard	"World\textureLow\m*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_n.res"
+{
+	wildcard	"World\textureLow\n*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_o.res"
+{
+	wildcard	"World\textureLow\o*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_p.res"
+{
+	wildcard	"World\textureLow\p*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_q.res"
+{
+	wildcard	"World\textureLow\q*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_r.res"
+{
+	wildcard	"World\textureLow\r*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_s.res"
+{
+	wildcard	"World\textureLow\s*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_t.res"
+{
+	wildcard	"World\textureLow\t*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_u.res"
+{
+	wildcard	"World\textureLow\u*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_v.res"
+{
+	wildcard	"World\textureLow\v*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_w.res"
+{
+	wildcard	"World\textureLow\w*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_x.res"
+{
+	wildcard	"World\textureLow\x*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_y.res"
+{
+	wildcard	"World\textureLow\y*.*" 
+}
+resource 0 "..\ResClient\World\textureLow\wtexl_z.res"
+{
+	wildcard	"World\textureLow\z*.*" 
+}
+
+resource 0 "..\ResClient\World\textureLow\wtex_f.res"
+{
+	wildcard	"World\textureLow\f*.*" 
+}
+//	END :	World\TextureLow Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+//	START :	client Folder
+resource 1 "..\ResClient\client\client.res"
+{
+// 	file	"client\GuildCombatTEXT_1_KOR.inc"
+// 	file	"client\GuildCombatTEXT_2_KOR.inc"
+// 	file	"client\GuildCombatTEXT_3_KOR.inc"
+// 	file	"client\GuildCombatTEXT_4_KOR.inc"
+// 	file	"client\GuildCombatTEXT_5_KOR.inc"
+// 	file	"client\GuildCombatTEXT_6_KOR.inc"
+	wildcard	"client\GuildCombatTEXT_*.inc"
+	file	"client\faq.txt.txt"
+//	file	"client\GameGuard.txt.txt"
+	file	"client\Guide.txt.txt"
+	file	"client\help.txt.txt"
+	file	"client\InstantHelp.txt.txt"
+	file	"client\PatchClient.txt.txt"
+	file	"client\tip.txt.txt"
+	file	"client\treeHelp.txt.txt"
+	file	"client\MiniGameDiceDesc.inc"
+	file	"client\MiniGameFindWordDesc.inc"
+	file	"client\MiniGamePuzzleDesc.inc"
+	file	"client\SmeltChangeUltimateWeapon.inc"
+	file	"client\SmeltChangeUniqueWeapon.inc"
+	file	"client\SmeltExtraction.inc"
+	file	"client\SmeltJewel.inc"
+	file	"client\SmeltMixJewel.inc"
+	file	"client\PetMiracle.inc"
+	file	"client\HeroSkillUp.inc"
+	file	"client\summonAngelQuest.inc"
+	file	"client\ChangeUltimateWeaponInfo.inc"
+	file	"client\ChangeUniqueWeaponInfo.inc"
+	file	"client\SmeltRemovePiercing.inc"
+	file	"client\RemoveAttribute.inc"
+// 	file	"client\GuildCombat1to1_TEXT1_KOR.inc"
+// 	file	"client\GuildCombat1to1_TEXT2_KOR.inc"
+// 	file	"client\GuildCombat1to1_TEXT3_KOR.inc"
+// 	file	"client\GuildCombat1to1_TEXT4_KOR.inc"
+// 	file	"client\GuildCombat1to1_TEXT5_KOR.inc"
+	wildcard	"client\GuildCombat1to1_TEXT*.inc"
+	file	"client\GuildCombatRedChipGuild.inc"
+	file	"client\ReqLvDown.inc"
+	file	"client\ItemAwakening.inc"
+	file	"client\ItemBlessingCancel.inc"
+	file	"client\SecretRoomDesc.inc"
+	file	"client\SecretRoomCheckTaxRate.inc"
+	file	"client\SecretRoomChangeTaxRate.inc"
+	file	"client\SecretRoomBoard.inc"
+	file	"client\lordInfo.inc"
+	file	"client\tutorial.txt.txt"
+	file	"client\tutorial.inc"
+	file	"client\PetTransEggs.inc"
+	file	"client\SmeltRemoveJewel.inc"
+	file	"client\lordrpInfo.inc"
+	file	"client\lordcandidate.inc"
+	file	"client\PetAwakCancel.inc"
+	file	"client\CoupleSkillInfo.inc"
+	file	"client\RRMinigameTyping.inc"
+	file	"client\RRMinigameStopwatch.inc"
+	file	"client\RRMinigameLadder.inc"
+	file	"client\RRMinigameKawiBawiBo.inc"
+	file	"client\RRMinigameDice.inc"
+	file	"client\RRMinigameCard.inc"
+	file	"client\RRMinigameArithmetic.inc"
+	file	"client\RainbowRaceKawiBawiBo.inc"
+	file	"client\RainbowRaceLadder.inc"
+	file	"client\RainbowRaceStopwatch.inc"
+	file	"client\RainbowRaceTyping.inc"
+	file	"client\RainbowRaceDice.inc"
+	file	"client\RainbowRaceCard.inc"
+	file	"client\RainbowRaceArithmetic.inc"
+	file	"client\RainbowRaceRule.inc"
+	file	"client\RainbowRacePrize.inc"
+	file	"client\RainbowRaceOffer.inc"
+	file	"client\RainbowRaceInfo.inc"
+	file	"client\ChangeAttribute.inc"
+
+	file	"client\faq.inc"
+	file	"client\help.inc"
+	file	"client\instantHelp.inc"
+	file	"client\sound.inc"
+	file	"client\tip.inc"
+	file	"client\treeHelp.inc"
+	file	"client\PatchClient.inc"
+	file	"client\Guide.inc"
+	file	"client\Logo.png"
+}
+//	END :	client Folder
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+//	START :	Icon Folder
+resource 0 "..\ResClient\Icon\icon_a.res"
+{
+	wildcard	"Icon\a*.*"
+}
+resource 0 "..\ResClient\Icon\icon_b.res"
+{
+	wildcard	"Icon\b*.*"
+}
+resource 0 "..\ResClient\Icon\icon_c.res"
+{
+	wildcard	"Icon\c*.*"
+}
+resource 0 "..\ResClient\Icon\icon_d.res"
+{
+	wildcard	"Icon\d*.*"
+}
+resource 0 "..\ResClient\Icon\icon_e.res"
+{
+	wildcard	"Icon\e*.*"
+}
+resource 0 "..\ResClient\Icon\icon_f.res"
+{
+	wildcard	"Icon\f*.*"
+}
+resource 0 "..\ResClient\Icon\icon_g.res"
+{
+	wildcard	"Icon\g*.*"
+}
+resource 0 "..\ResClient\Icon\icon_h.res"
+{
+	wildcard	"Icon\h*.*"
+}
+resource 0 "..\ResClient\Icon\icon_i.res"
+{
+	wildcard	"Icon\i*.*"
+}
+resource 0 "..\ResClient\Icon\icon_j.res"
+{
+	wildcard	"Icon\j*.*"
+}
+resource 0 "..\ResClient\Icon\icon_k.res"
+{
+	wildcard	"Icon\k*.*"
+}
+resource 0 "..\ResClient\Icon\icon_l.res"
+{
+	wildcard	"Icon\l*.*"
+}
+resource 0 "..\ResClient\Icon\icon_m.res"
+{
+	wildcard	"Icon\m*.*"
+}
+resource 0 "..\ResClient\Icon\icon_n.res"
+{
+	wildcard	"Icon\n*.*"
+}
+resource 0 "..\ResClient\Icon\icon_o.res"
+{
+	wildcard	"Icon\o*.*"
+}
+resource 0 "..\ResClient\Icon\icon_p.res"
+{
+	wildcard	"Icon\p*.*"
+}
+resource 0 "..\ResClient\Icon\icon_q.res"
+{
+	wildcard	"Icon\q*.*"
+}
+resource 0 "..\ResClient\Icon\icon_r.res"
+{
+	wildcard	"Icon\r*.*"
+}
+resource 0 "..\ResClient\Icon\icon_s.res"
+{
+	wildcard	"Icon\s*.*"
+}
+resource 0 "..\ResClient\Icon\icon_t.res"
+{
+	wildcard	"Icon\t*.*"
+}
+resource 0 "..\ResClient\Icon\icon_u.res"
+{
+	wildcard	"Icon\u*.*"
+}
+resource 0 "..\ResClient\Icon\icon_v.res"
+{
+	wildcard	"Icon\v*.*"
+}
+resource 0 "..\ResClient\Icon\icon_w.res"
+{
+	wildcard	"Icon\w*.*"
+}
+resource 0 "..\ResClient\Icon\icon_x.res"
+{
+	wildcard	"Icon\x*.*"
+}
+resource 0 "..\ResClient\Icon\icon_y.res"
+{
+	wildcard	"Icon\y*.*"
+}
+resource 0 "..\ResClient\Icon\icon_z.res"
+{
+	wildcard	"Icon\z*.*"
+}
+//	END :	Icon Folder
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+//	START :	Item Folder
+resource 0 "..\ResClient\Item\item_itm_a.res"
+{
+	wildcard	"Item\itm_a*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_b.res"
+{
+	wildcard	"Item\itm_b*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_c.res"
+{
+	wildcard	"Item\itm_c*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_d.res"
+{
+	wildcard	"Item\itm_d*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_e.res"
+{
+	wildcard	"Item\itm_e*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_f.res"
+{
+	wildcard	"Item\itm_f*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_g.res"
+{
+	wildcard	"Item\itm_g*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_h.res"
+{
+	wildcard	"Item\itm_h*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_i.res"
+{
+	wildcard	"Item\itm_i*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_j.res"
+{
+	wildcard	"Item\itm_j*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_k.res"
+{
+	wildcard	"Item\itm_k*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_l.res"
+{
+	wildcard	"Item\itm_l*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_m.res"
+{
+	wildcard	"Item\itm_m*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_n.res"
+{
+	wildcard	"Item\itm_n*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_o.res"
+{
+	wildcard	"Item\itm_o*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_p.res"
+{
+	wildcard	"Item\itm_p*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_q.res"
+{
+	wildcard	"Item\itm_q*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_r.res"
+{
+	wildcard	"Item\itm_r*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_s.res"
+{
+	wildcard	"Item\itm_s*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_t.res"
+{
+	wildcard	"Item\itm_t*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_u.res"
+{
+	wildcard	"Item\itm_u*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_v.res"
+{
+	wildcard	"Item\itm_v*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_w.res"
+{
+	wildcard	"Item\itm_w*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_x.res"
+{
+	wildcard	"Item\itm_x*.*"
+}
+resource 0 "..\ResClient\Item\item_itm_z.res"
+{
+	wildcard	"Item\itm_z*.*"
+}
+
+resource 0 "..\ResClient\Item\item_itm_y.res"
+{
+	wildcard	"Item\itm_y*.*"
+}
+resource 0 "..\ResClient\Item\item_item_all.res"
+{
+	wildcard	"Item\item*.*"
+}
+resource 0 "..\ResClient\Item\item_map_all.res"
+{
+	wildcard	"Item\map*.*"
+}
+resource 0 "..\ResClient\Item\item_skill_all.res"
+{
+	wildcard	"Item\skill*.*"
+}
+//	END :	Item Folder
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+//	START :	Model Folder (Korea only)
+// resource 0 "..\ResClient\Model\Ctrl.res"
+// {
+// 	wildcard	"model\Ctrl_*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Skl.res"
+// {
+// 	wildcard	"model\obj_skl*.o3d"
+// }
+// resource 0 "..\ResClient\Model\part.res"
+// {
+// 	wildcard	"model\part_f*.o3d"
+// }
+// resource 0 "..\ResClient\Model\part_m.res"
+// {
+// 	wildcard	"model\part_m*.o3d"
+// }
+// resource 0 "..\ResClient\Model\item.res"
+// {
+// 	wildcard	"model\item_*.o3d"
+// }
+// resource 0 "..\ResClient\Model\part_clo.res"  //성별 없는 망토
+// {
+// 	wildcard	"model\part_clo*.o3d"
+// }
+// resource 0 "..\ResClient\Model\item2.res"
+// {
+// 	wildcard	"model\item_*.ani"
+// 	wildcard	"model\item_*.chr"
+// }
+// resource 0 "..\ResClient\Model\mvr.res"
+// {
+// 	wildcard	"model\mvr_a*.o3d"
+// 	wildcard	"model\mvr_b*.o3d"
+// 	wildcard	"model\mvr_c*.o3d"
+// 	wildcard	"model\mvr_d*.o3d"
+// 	wildcard	"model\mvr_e*.o3d"
+// 	wildcard	"model\mvr_f*.o3d"
+// }
+// resource 0 "..\ResClient\Model\mvr_Sub1.res"
+// {
+// 	wildcard	"model\mvr_g*.o3d"
+// 	wildcard	"model\mvr_h*.o3d"
+// 	wildcard	"model\mvr_i*.o3d"
+// 	wildcard	"model\mvr_j*.o3d"
+// 	wildcard	"model\mvr_k*.o3d"
+// 	wildcard	"model\mvr_l*.o3d"
+// 	wildcard	"model\mvr_m*.o3d"
+// }
+// resource 0 "..\ResClient\Model\mvr_Sub2.res"
+// {
+// 	wildcard	"model\mvr_n*.o3d"
+// 	wildcard	"model\mvr_o*.o3d"
+// 	wildcard	"model\mvr_p*.o3d"
+// 	wildcard	"model\mvr_q*.o3d"
+// 	wildcard	"model\mvr_r*.o3d"
+// 	wildcard	"model\mvr_s*.o3d"
+// 	wildcard	"model\mvr_t*.o3d"
+// 	wildcard	"model\mvr_u*.o3d"
+// 	wildcard	"model\mvr_v*.o3d"
+// 	wildcard	"model\mvr_w*.o3d"
+// 	wildcard	"model\mvr_x*.o3d"
+// 	wildcard	"model\mvr_y*.o3d"
+// 	wildcard	"model\mvr_z*.o3d"
+// }
+// resource 0 "..\ResClient\Model\chr.res"
+// {
+// 	wildcard	"model\mvr_*.chr"
+// }
+// resource 0 "..\ResClient\Model\obj_MaFl.res" // 플라리스 
+// {
+// 	wildcard	"model\obj_MaFl*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaFi.res"
+// {
+// 	wildcard	"model\obj_MaFi*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaSa.res" // 세인트 모닝 
+// {
+// 	wildcard	"model\obj_MaSa*.o3d"
+// 	file	"model\obj_aaaa.o3d"
+// 	file	"model\obj_genlodestar02Coll.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaCo.res" // 공용 
+// {
+// 	wildcard	"model\obj_MaCo*.o3d"
+// 	wildcard	"model\obj_MaEve*.o3d"
+// 	wildcard	"model\obj_MaSHI*.o3d"
+// 	wildcard	"model\Obj_Ship*.o3d"
+// 	wildcard	"model\Obj_Mini*.o3d"
+// 	wildcard	"model\Obj_Rainbow*.o3d"
+// 
+// 	file	"model\obj_EleEarStnspr01.o3d"
+// 	file	"model\obj_evexmastree.o3d"
+// 	file	"model\obj_evexmastree1.o3d"
+// 	file	"model\obj_evexmastree2.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaPr.res" // 프랍 
+// {
+// 	wildcard	"model\obj_MaPr*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaKo.res"
+// {
+// 	wildcard	"model\obj_MaKo*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaRi.res" // 리시스 
+// {
+// 	wildcard	"model\obj_MaRi*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaDa.res" // 다콘 
+// {
+// 	wildcard	"model\obj_MaDa*.o3d"
+// }
+// resource 0 "..\ResClient\Model\region.res"
+// {
+// 	wildcard	"model\region*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaSu.res" // 초거대(보스)몬스터관련
+// {
+// 	wildcard	"model\Obj_MaSu*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaMa.res" // 다콘 세션 3 추가시 입력됨
+// {
+// 	wildcard	"model\obj_MaMa*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_MaTa.res" // 다콘 세션 3 추가시 입력됨
+// {
+// 	wildcard	"model\obj_MaTa*.o3d"
+// }
+// resource 0 "..\ResClient\Model\obj_DuDk.res" // 데카네스 던전
+// {
+// 	wildcard	"model\obj_DuDk*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_DuIb.res" // 템플 던전
+// {
+// 	wildcard	"model\Obj_DuIb*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Volcane.res" // 볼케인
+// {
+// 	wildcard	"model\Obj_volcane*.o3d"
+// 	wildcard	"rock_*.volvic*.dds"
+// 	file	"model\Obj_GuildCombatGround.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Azria.res" // 아즈리아
+// {
+// 	wildcard	"model\Obj_Azria*.o3d"
+// 	wildcard	"model\Obj_ Azria*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Arena.res" // 아레나
+// {
+// 	wildcard	"model\Obj_Arena*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Heaven.res" // 심연의탑
+// {
+// 	wildcard	"model\Obj_Heaven*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Cisland.res" // 코랄 아일랜드
+// {
+// 	wildcard	"model\Obj_Cisland*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Harmonin.res" // 하르모닌
+// {
+// 	wildcard	"model\Obj_Har*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Dun.res" // 14차 던전
+// {
+// 	wildcard	"model\Obj_Dun*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Etc.res" // 14차 기타
+// {
+// 	wildcard	"model\Obj_ceiling*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Ominous.res" // 아미너스
+// {
+// 	wildcard	"model\Obj_Ominous*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Quiz.res" // 퀴즈
+// {
+// 	wildcard	"model\Obj_Quiz*.o3d"
+// 	wildcard	"model\Obj_Goal*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Est.res" // 이스티아 캐니언
+// {
+// 	wildcard	"model\Obj_Est*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Dread.res" // 드래드풀
+// {
+// 	wildcard	"model\Obj_Dread*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Rustia.res" // 러스티아
+// {
+// 	wildcard	"model\Obj_Rustia*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Behe.res" // 베히모스 신전
+// {
+// 	wildcard	"model\Obj_Behe*.o3d"
+// 	wildcard	"model\Obj_Boss*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Rartesia.res" // 라르테시아
+// {
+// 	wildcard	"model\Obj_Rartesia*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Kaillun.res" // 카일룬 초원
+// {
+// 	wildcard	"model\Obj_Kaillun*.o3d"
+// 	wildcard	"model\Obj_Kailun*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Eliun.res" // 엘리운 마을
+// {
+// 	wildcard	"model\Obj_Eliun*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Kalgas.res" // 칼가스 동굴
+// {
+// 	wildcard	"model\Obj_Kalgas*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_bahara.res" // 바하라사막
+// {
+// 	wildcard	"model\Obj_bahara*.o3d"
+// 	wildcard	"model\Obj_Desert*.o3d"
+// 	wildcard	"model\Obj_Oasis*.o3d"
+// }
+// resource 0 "..\ResClient\Model\Obj_Colosseum.res" // 콜로세움
+// {
+// 	wildcard	"model\Obj_Colosseum*.o3d"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniA.res"
+// {
+// 	wildcard	"model\mvr_a*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniB.res"
+// {
+// 	wildcard	"model\mvr_b*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniC.res"
+// {
+// 	wildcard	"model\mvr_c*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniD.res"
+// {
+// 	wildcard	"model\mvr_d*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniE.res"
+// {
+// 	wildcard	"model\mvr_e*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniF.res"
+// {
+// 	wildcard	"model\mvr_f*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniG.res"
+// {
+// 	wildcard	"model\mvr_g*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniH.res"
+// {
+// 	wildcard	"model\mvr_h*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniI.res"
+// {
+// 	wildcard	"model\mvr_i*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniJ.res"
+// {
+// 	wildcard	"model\mvr_j*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniK.res"
+// {
+// 	wildcard	"model\mvr_k*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniL.res"
+// {
+// 	wildcard	"model\mvr_l*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniM.res"
+// {
+// 	wildcard	"model\mvr_m*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniN.res"
+// {
+// 	wildcard	"model\mvr_n*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniO.res"
+// {
+// 	wildcard	"model\mvr_o*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniP.res"
+// {
+// 	wildcard	"model\mvr_p*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniQ.res"
+// {
+// 	wildcard	"model\mvr_q*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniR.res"
+// {
+// 	wildcard	"model\mvr_r*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniS.res"
+// {
+// 	wildcard	"model\mvr_s*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniT.res"
+// {
+// 	wildcard	"model\mvr_t*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniU.res"
+// {
+// 	wildcard	"model\mvr_u*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniV.res"
+// {
+// 	wildcard	"model\mvr_v*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniW.res"
+// {
+// 	wildcard	"model\mvr_w*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniX.res"
+// {
+// 	wildcard	"model\mvr_x*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniY.res"
+// {
+// 	wildcard	"model\mvr_y*.ani"
+// }
+// resource 0 "..\ResClient\Model\mvr_aniZ.res"
+// {
+// 	wildcard	"model\mvr_z*.ani"
+// }
+// resource 0 "..\ResClient\Model\etc.res"
+// {
+// 	file	"model\shadow.o3d"
+// 	file	"model\arrow.o3d"
+// 	file	"model\gizmo.o3d"
+// 	file	"model\obj_default.o3d"
+// 	file	"model\obj_middleArrow_01.o3d"
+// 	file	"model\Obj_movpoint-01.o3d"
+// 	wildcard	"model\etc_*.*"
+// }
+// resource 0 "..\ResClient\Model\sfx.res"
+// {
+// 	wildcard	"model\sfx_*.*"
+// 	wildcard	"model\xi_*.*"
+// 	wildcard	"model\xl_*.*"
+// 	
+// }
+//	END :	Model Folder (Korea only)
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Model\Texture Folder (Korea only)
+// resource 0 "..\ResClient\Model\texture\CtrlTex.res"
+// { 
+// 	wildcard	"Model\texture\Ctrl_*.*"
+// 	file	"Model\Texture\red.tga"
+// }
+// resource 0 "..\ResClient\Model\texture\itemTex.res"
+// {
+// 	wildcard	"Model\texture\item_*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\itmTex.res"
+// {
+// 	wildcard	"Model\texture\itm_*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex.res"
+// { 
+// 	wildcard	"Model\texture\mvr_a*.*"
+// 	wildcard	"Model\texture\mvr_b*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub01.res"
+// { 
+// 	wildcard	"Model\texture\mvr_c*.*"
+// 	wildcard	"Model\texture\mvr_d*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub02.res"
+// { 
+// 	wildcard	"Model\texture\mvr_e*.*"
+// 	wildcard	"Model\texture\mvr_f*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub03.res"
+// { 
+// 	wildcard	"Model\texture\mvr_g*.*"
+// 	wildcard	"Model\texture\mvr_h*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub04.res"
+// { 
+// 	wildcard	"Model\texture\mvr_i*.*"
+// 	wildcard	"Model\texture\mvr_j*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub05.res"
+// { 
+// 	wildcard	"Model\texture\mvr_k*.*"
+// 	wildcard	"Model\texture\mvr_l*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub06.res"
+// { 
+// 	wildcard	"Model\texture\mvr_m*.*"
+// 	wildcard	"Model\texture\mvr_n*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub07.res"
+// { 
+// 	wildcard	"Model\texture\mvr_o*.*"
+// 	wildcard	"Model\texture\mvr_p*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub08.res"
+// { 
+// 	wildcard	"Model\texture\mvr_q*.*"
+// 	wildcard	"Model\texture\mvr_r*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub09.res"
+// { 
+// 	wildcard	"Model\texture\mvr_s*.*"
+// 	wildcard	"Model\texture\mvr_t*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub10.res"
+// { 
+// 	wildcard	"Model\texture\mvr_u*.*"
+// 	wildcard	"Model\texture\mvr_v*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub11.res"
+// { 
+// 	wildcard	"Model\texture\mvr_w*.*"
+// 	wildcard	"Model\texture\mvr_x*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\mvrTex_Sub12.res"
+// { 
+// 	wildcard	"Model\texture\mvr_y*.*"
+// 	wildcard	"Model\texture\mvr_z*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\regionTex.res"
+// {
+// 	wildcard	"Model\texture\region_*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaCoTex.res"
+// { 
+// 	wildcard	"Model\texture\obj_MaCo*.*" 
+// 	wildcard	"Model\texture\obj_MaEve*.*" 
+// 	wildcard	"Model\texture\obj_evexmastree*.*"
+// 	wildcard	"Model\texture\obj_evexmasbox*.*"
+// 	wildcard	"Model\texture\Obj_Mini*.*"
+// 	wildcard	"Model\texture\Obj_Rainbow*.*"
+// 	wildcard	"Model\texture\Ship_Pr*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaFlTex.res"
+// {
+// 	wildcard	"Model\texture\obj_MaFl*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaFiTex.res"
+// {
+// 	wildcard	"Model\texture\obj_MaFi*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaKoTex.res"
+// {
+// 	wildcard	"Model\texture\obj_MaKo*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaPrTex.res"
+// {
+// 	wildcard	"Model\texture\obj_MaPr*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaSaTex.res"
+// {
+// 	wildcard	"Model\texture\obj_MaSa*.*" 
+// 	file	"Model\texture\aaaa.dds" 
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaRiTex.res"
+// {
+// 	wildcard	"Model\texture\obj_MaRi*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaDaTex.res" // 다콘 텍스춰 
+// {
+// 	wildcard	"Model\texture\obj_MaDa*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaSuTex.res" // 초거대(보스)텍스춰 
+// {
+// 	wildcard	"Model\texture\obj_MaSu*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaMaTex.res" // 다콘 세션 3 추가시 입력됨
+// {
+// 	wildcard	"Model\texture\obj_MaMa*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_MaTaTex.res" // 다콘 세션 3 추가시 입력됨
+// {
+// 	wildcard	"Model\texture\obj_MaTa*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\obj_DuDk.res" // 데카네스 던전
+// {
+// 	wildcard	"model\texture\obj_DuDk*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_DuIb.res" // 템플
+// {
+// 	wildcard	"model\texture\Obj_DuIb*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Volcane.res" // 볼케인
+// {	
+// 	wildcard	"model\texture\Obj_volcane*.*" 
+// 	wildcard	"model\texture\rock_*.*"
+// 	wildcard	"model\texture\Obj_GuildCombatGround*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Azria.res" // 아즈리아
+// {	
+// 	wildcard	"model\texture\Obj_Azria*.*" 
+// 	wildcard	"model\texture\Obj_ Azria*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Arena.res" // 아레나
+// {	
+// 	wildcard	"model\texture\Obj_Arena*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Heaven.res" // 심연의탑
+// {	
+// 	wildcard	"model\texture\Obj_Heaven*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Cisland.res" // 코랄 아일랜드
+// {	
+// 	wildcard	"model\texture\Obj_Cisland*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Harmonin.res" // 하르모닌
+// {	
+// 	wildcard	"model\texture\Obj_Har*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Dun.res" // 14차 던전
+// {	
+// 	wildcard	"model\texture\Obj_Dun*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Etc.res" // 14차 기타
+// {	
+// 	wildcard	"model\texture\Obj_Ceiling*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Ominous.res" // 아미너스
+// {	
+// 	wildcard	"model\texture\Obj_Ominous*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Quiz.res" // 퀴즈존
+// {	
+// 	wildcard	"model\texture\Obj_Quiz*.*" 
+// 	wildcard	"model\texture\Obj_Goal*.*" 
+// 	wildcard	"model\texture\Obj_Bench*.*" 
+// 	wildcard	"model\texture\Obj_Fence*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Hou.res" // 벽지 바닥 텍스쳐
+// {	
+// 	wildcard	"model\texture\Obj_Hou*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Guildhouse.res" // 길드 하우스
+// {	
+// 	wildcard	"model\texture\Obj_Guildh*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Est.res" // 이스티아 캐니언
+// {	
+// 	wildcard	"model\texture\Obj_Est*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Dread.res" // 드래드풀
+// {	
+// 	wildcard	"model\texture\Obj_Dread*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Rustia.res" // 러스티아
+// {	
+// 	wildcard	"model\texture\Obj_Rustia*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Rartesia.res" // 라르테시아
+// {
+// 	wildcard	"model\texture\Obj_Rartesia*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Kaillun.res" // 카일룬 초원
+// {
+// 	wildcard	"model\texture\Obj_Kaillun*.*"
+// 	wildcard	"model\texture\Obj_Kailun*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Eliun.res" // 엘리운 마을
+// {
+// 	wildcard	"model\texture\Obj_Eliun*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Behe.res" // 베히모스 신전
+// {
+// 	wildcard	"model\texture\Obj_Behe*.*"
+// 	wildcard	"model\texture\Obj_Beha*.*"
+// 	wildcard	"model\texture\Obj_Boss*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Kalgas.res" // 칼가스 동굴
+// {
+// 	wildcard	"model\texture\Obj_Kalgas*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_bahara.res" // 바하라 사막
+// {
+// 	wildcard	"model\texture\Obj_bahara*.*"
+// 	wildcard	"model\texture\Obj_Desert*.*"
+// 	wildcard	"model\texture\Obj_Oasis*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\Obj_Colosseum.res" // 콜로세움
+// {
+// 	wildcard	"model\texture\Obj_Colosseum*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\part_mTex.res" 
+// { 
+// 	wildcard	"Model\texture\part_m*.*"
+// 	wildcard	"Model\texture\part_u*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\part_fTex.res"
+// {
+// 	wildcard	"Model\texture\part_f*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\part_cloTex.res" //성별 구분 없는 망토
+// {
+// 	wildcard	"Model\texture\part_clo*.*"
+// }
+// resource 0 "..\ResClient\Model\texture\etcTex.res"
+// {
+// 	file	"model\texture\Env.dds"
+// 	file	"model\texture\ARROW1.dds"
+// 	file	"model\texture\shadow.dds"
+// 	file	"model\texture\obj_SklEleWatIceshk01.dds"
+// 	//file	"model\texture\reflect.tga"
+// 	wildcard	"model\texture\etc_*.*"
+// 	file	"model\texture\obj_middleArrow_01.dds"
+// 
+// 	file	"model\texture\obj_sklragbowicearrow01.dds"
+// 	file	"model\texture\crack.dds"
+// }
+// resource 0 "..\ResClient\Model\texture\SfxTex.res"
+// { 
+// 	wildcard	"Model\texture\sfx_*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\part_Npc.res"
+// { 
+// 	wildcard	"Model\texture\part_Npc*.*" 
+// }
+// resource 0 "..\ResClient\Model\texture\xi_skill.res"
+// { 
+// 	wildcard	"Model\texture\xi_skill*.*" 
+// }
+//	END :	Model\Texture Folder (Korea only)
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Model\TextureMid Folder (Korea only)
+// resource 0 "..\ResClient\Model\textureMid\CtrlTex.res"
+// {
+// 	wildcard	"Model\textureMid\Ctrl_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\itemTex.res"
+// {
+// 	wildcard	"Model\textureMid\item_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\itmTex.res"
+// {
+// 	wildcard	"Model\textureMid\itm_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_a*.*"
+// 	wildcard	"Model\textureMid\mvr_b*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub01.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_c*.*"
+// 	wildcard	"Model\textureMid\mvr_d*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub02.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_e*.*"
+// 	wildcard	"Model\textureMid\mvr_f*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub03.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_g*.*"
+// 	wildcard	"Model\textureMid\mvr_h*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub04.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_i*.*"
+// 	wildcard	"Model\textureMid\mvr_j*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub05.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_k*.*"
+// 	wildcard	"Model\textureMid\mvr_l*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub06.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_m*.*"
+// 	wildcard	"Model\textureMid\mvr_n*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub07.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_o*.*"
+// 	wildcard	"Model\textureMid\mvr_p*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub08.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_q*.*"
+// 	wildcard	"Model\textureMid\mvr_r*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub09.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_s*.*"
+// 	wildcard	"Model\textureMid\mvr_t*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub10.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_u*.*"
+// 	wildcard	"Model\textureMid\mvr_v*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub11.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_w*.*"
+// 	wildcard	"Model\textureMid\mvr_x*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\mvrTex_Sub12.res"
+// { 
+// 	wildcard	"Model\textureMid\mvr_y*.*"
+// 	wildcard	"Model\textureMid\mvr_z*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\regionTex.res"
+// {
+// 	wildcard	"Model\textureMid\region_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaCoTex.res"
+// { 
+// 	wildcard	"Model\textureMid\obj_MaCo*.*" 
+// 	wildcard	"Model\textureMid\obj_MaEve*.*" 
+// 	wildcard	"Model\textureMid\obj_evexmastree*.*"
+// 	wildcard	"Model\textureMid\obj_evexmasbox*.*"
+// 	wildcard	"Model\textureMid\Obj_Mini*.*"
+// 	wildcard	"Model\textureMid\Obj_Rainbow*.*"
+// 	wildcard	"Model\textureMid\Ship_Pr*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaFlTex.res"
+// {
+// 	wildcard	"Model\textureMid\obj_MaFl*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaFiTex.res"
+// {
+// 	wildcard	"Model\textureMid\obj_MaFi*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaKoTex.res"
+// {
+// 	wildcard	"Model\textureMid\obj_MaKo*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaPrTex.res"
+// {
+// 	wildcard	"Model\textureMid\obj_MaPr*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaSaTex.res"
+// {
+// 	wildcard	"Model\textureMid\obj_MaSa*.*" 
+// 	file	"Model\texture\aaaa.dds" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaRiTex.res"
+// {
+// 	wildcard	"Model\texture\obj_MaRi*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaDaTex.res" // 다콘 mid 텍스춰 
+// {
+// 	wildcard	"Model\textureMid\obj_MaDa*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaSuTex.res" // 초거대(보스)텍스춰 
+// {
+// 	wildcard	"Model\textureMid\obj_MaSu*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaMaTex.res" // 다콘 세션 3 추가시 입력됨
+// {
+// 	wildcard	"Model\textureMid\obj_MaMa*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_MaTaTex.res" // 다콘 세션 3 추가시 입력됨
+// {
+// 	wildcard	"Model\textureMid\obj_MaTa*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\obj_DuDk.res" // 데카네스 던전
+// {
+// 	wildcard	"model\textureMid\obj_DuDk*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_DuIb.res" // 템플
+// {
+// 	wildcard	"model\textureMid\Obj_DuIb*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Volcane.res" // 볼케인
+// {	
+// 	wildcard	"model\textureMid\Obj_volcane*.*" 
+// 	wildcard	"model\textureMid\rock_*.*"
+// 	wildcard	"model\textureMid\Obj_GuildCombatGround*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Azria.res" // 아즈리아
+// {	
+// 	wildcard	"model\textureMid\Obj_Azria*.*" 
+// 	wildcard	"model\textureMid\Obj_ Azria*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Arena.res" // 아레나
+// {	
+// 	wildcard	"model\textureMid\Obj_Arena*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Heaven.res" // 심연의탑
+// {	
+// 	wildcard	"model\textureMid\Obj_Heaven*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Cisland.res" // 코랄 아일랜드
+// {	
+// 	wildcard	"model\textureMid\Obj_Cisland*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Harmoninn.res" // 하르모닌
+// {	
+// 	wildcard	"model\textureMid\Obj_Har*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Dun.res" // 14차 던전
+// {	
+// 	wildcard	"model\textureMid\Obj_Dun*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Etc.res" // 14차 기타
+// {	
+// 	wildcard	"model\texture\Obj_Ceiling*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Ominous.res" // 아미너스
+// {	
+// 	wildcard	"model\textureMid\Obj_Ominous*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Quiz.res" // 퀴즈
+// {	
+// 	wildcard	"model\textureMid\Obj_Quiz*.*"
+// 	wildcard	"model\textureMid\Obj_Goal*.*" 
+// 	wildcard	"model\textureMid\Obj_Bench*.*" 
+// 	wildcard	"model\textureMid\Obj_Fence*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Guildhouse.res" // 길드 하우스
+// {	
+// 	wildcard	"model\textureMid\Obj_Guildh*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Est.res" // 이스티아 캐니언
+// {	
+// 	wildcard	"model\textureMid\Obj_Est*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Dread.res" // 드래드풀
+// {	
+// 	wildcard	"model\textureMid\Obj_Dread*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Rustia.res" // 러스티아
+// {	
+// 	wildcard	"model\textureMid\Obj_Rustia*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Rartesia.res" // 라르테시아
+// {
+// 	wildcard	"model\textureMid\Obj_Rartesia*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Kaillun.res" // 카일룬 초원
+// {
+// 	wildcard	"model\textureMid\Obj_Kaillun*.*"
+// 	wildcard	"model\textureMid\Obj_Kailun*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Eliun.res" // 엘리운 마을
+// {
+// 	wildcard	"model\textureMid\Obj_Eliun*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Behe.res" // 베히모스 신전
+// {
+// 	wildcard	"model\textureMid\Obj_Behe*.*"
+// 	wildcard	"model\textureMid\Obj_Beha*.*"
+// 	wildcard	"model\texture\Obj_Boss*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\Obj_Kalgas.res" // 칼가스 동굴
+// {
+// 	wildcard	"model\textureMid\Obj_Kalgas*.*"
+// }
+// 
+// resource 0 "..\ResClient\Model\textureMid\Obj_bahara.res" // 바하라사막
+// {
+// 	wildcard	"model\textureMid\Obj_bahara*.*"
+// 	wildcard	"model\textureMid\Obj_Desert*.*"
+// 	wildcard	"model\textureMid\Obj_Oasis*.*"
+// }
+// 
+// resource 0 "..\ResClient\Model\textureMid\Obj_Colosseum.res" // 콜로세움
+// {
+// 	wildcard	"model\textureMid\Obj_Colosseum*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\part_mTex.res"
+// { 
+// 	wildcard	"Model\textureMid\part_m*.*"
+// 	wildcard	"Model\textureMid\part_u*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\part_fTex.res"
+// {
+// 	wildcard	"Model\textureMid\part_f*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\part_cloTex.res" //성별 구분 없는 망토
+// {
+// 	wildcard	"Model\textureMid\part_clo*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\etcTex.res"
+// {
+// 	file	"model\textureMid\ARROW1.dds"
+// 	file	"model\textureMid\shadow.dds"
+// 	//file	"model\textureMid\reflect.tga"
+// 	wildcard	"model\textureMid\etc_*.*"
+// 	file	"model\textureMid\obj_middleArrow_01.dds"
+// 
+// 	file	"model\textureMid\obj_sklragbowicearrow01.dds"
+// 	file	"model\textureMid\crack.dds"
+// }
+// resource 0 "..\ResClient\Model\textureMid\SfxTex.res"
+// {
+// 	wildcard	"Model\textureMid\sfx_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureMid\part_Npc.res"
+// { 
+// 	wildcard	"Model\textureMid\part_Npc*.*" 
+// }
+//	END : Model\TextureMid Folder (Korea only)
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Model\TextureLow Folder (Korea only)
+// resource 0 "..\ResClient\Model\textureLow\CtrlTex.res"
+// {
+// 	wildcard	"Model\textureLow\Ctrl_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\itemTex.res"
+// {
+// 	wildcard	"Model\textureLow\item_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\itmTex.res"
+// {
+// 	wildcard	"Model\textureLow\itm_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_a*.*"
+// 	wildcard	"Model\textureLow\mvr_b*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub01.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_c*.*"
+// 	wildcard	"Model\textureLow\mvr_d*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub02.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_e*.*"
+// 	wildcard	"Model\textureLow\mvr_f*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub03.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_g*.*"
+// 	wildcard	"Model\textureLow\mvr_h*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub04.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_i*.*"
+// 	wildcard	"Model\textureLow\mvr_j*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub05.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_k*.*"
+// 	wildcard	"Model\textureLow\mvr_l*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub06.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_m*.*"
+// 	wildcard	"Model\textureLow\mvr_n*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub07.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_o*.*"
+// 	wildcard	"Model\textureLow\mvr_p*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub08.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_q*.*"
+// 	wildcard	"Model\textureLow\mvr_r*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub09.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_s*.*"
+// 	wildcard	"Model\textureLow\mvr_t*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub10.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_u*.*"
+// 	wildcard	"Model\textureLow\mvr_v*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub11.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_w*.*"
+// 	wildcard	"Model\textureLow\mvr_x*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\mvrTex_Sub12.res"
+// { 
+// 	wildcard	"Model\textureLow\mvr_y*.*"
+// 	wildcard	"Model\textureLow\mvr_z*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\regionTex.res"
+// {
+// 	wildcard	"Model\textureLow\region_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaCoTex.res"
+// { 
+// 	wildcard	"Model\textureLow\obj_MaCo*.*" 
+// 	wildcard	"Model\textureLow\obj_MaEve*.*" 
+// 	wildcard	"Model\textureLow\obj_evexmastree*.*"
+// 	wildcard	"Model\textureLow\obj_evexmasbox*.*"
+// 	wildcard	"Model\textureLow\Obj_Mini*.*"
+// 	wildcard	"Model\textureLow\Obj_Rainbow*.*"
+// 	wildcard	"Model\textureLow\Ship_Pr*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaFlTex.res"
+// {
+// 	wildcard	"Model\textureLow\obj_MaFl*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaFiTex.res"
+// {
+// 	wildcard	"Model\textureLow\obj_MaFi*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaKoTex.res"
+// {
+// 	wildcard	"Model\textureLow\obj_MaKo*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaPrTex.res"
+// {
+// 	wildcard	"Model\textureLow\obj_MaPr*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaSaTex.res"
+// {
+// 	wildcard	"Model\textureLow\obj_MaSa*.*" 
+// 	file	"Model\texture\aaaa.dds" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaRiTex.res"
+// {
+// 	wildcard	"Model\texture\obj_MaRi*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaDaTex.res" // 다콘 low 텍스춰 
+// {
+// 	wildcard	"Model\textureLow\obj_MaDa*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaSuTex.res" // 초거대(보스)텍스춰 
+// {
+// 	wildcard	"Model\textureLow\obj_MaSu*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaMaTex.res" // 다콘 세션 3 추가시 입력됨
+// {
+// 	wildcard	"Model\textureLow\obj_MaMa*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_MaTaTex.res" // 다콘 세션 3 추가시 입력됨
+// {
+// 	wildcard	"Model\textureLow\obj_MaTa*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\obj_DuDk.res" // 데카네스 던전
+// {
+// 	wildcard	"model\textureLow\obj_DuDk*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_DuIb.res" // 템플
+// {
+// 	wildcard	"model\textureLow\Obj_DuIb*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Volcane.res" // 볼케인
+// {	
+// 	wildcard	"model\textureLow\Obj_volcane*.*"
+// 	wildcard	"model\textureLow\rock_*.*" 
+// 	wildcard	"model\textureLow\Obj_GuildCombatGround*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Azria.res" // 아즈리아
+// {	
+// 	wildcard	"model\textureLow\Obj_Azria*.*" 
+// 	wildcard	"model\textureLow\Obj_ Azria*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Arena.res" // 아레나
+// {	
+// 	wildcard	"model\textureLow\Obj_Arena*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Heaven.res" // 심연의탑
+// {	
+// 	wildcard	"model\textureLow\Obj_Heaven*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Cisland.res" // 코랄 아일랜드
+// {	
+// 	wildcard	"model\textureLow\Obj_Cisland*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Harmonin.res" // 하르모닌
+// {	
+// 	wildcard	"model\textureLow\Obj_Har*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Dun.res" // 14차 던전
+// {	
+// 	wildcard	"model\textureLow\Obj_Dun*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Etc.res" // 14차 기타
+// {	
+// 	wildcard	"model\texture\Obj_Ceiling*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Ominous.res" // 아미너스
+// {	
+// 	wildcard	"model\textureLow\Obj_Ominous*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Quiz.res" // 퀴즈
+// {	
+// 	wildcard	"model\textureLow\Obj_Quiz*.*" 
+// 	wildcard	"model\textureLow\Obj_Goal*.*" 
+// 	wildcard	"model\textureLow\Obj_Bench*.*" 
+// 	wildcard	"model\textureLow\Obj_Fence*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Guildhouse.res" // 길드 하우스
+// {	
+// 	wildcard	"model\textureLow\Obj_Guildh*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Est.res" // 이스티아 캐니언
+// {	
+// 	wildcard	"model\textureLow\Obj_Est*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Dread.res" // 드래드풀
+// {	
+// 	wildcard	"model\textureLow\Obj_Dread*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Rustia.res" // 러스티아
+// {	
+// 	wildcard	"model\textureLow\Obj_Rustia*.*" 
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Rartesia.res" // 라르테시아
+// {
+// 	wildcard	"model\textureLow\Obj_Rartesia*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Kaillun.res" // 카일룬 초원
+// {
+// 	wildcard	"model\textureLow\Obj_Kaillun*.*"
+// 	wildcard	"model\textureMid\Obj_Kailun*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Eliun.res" // 엘리운 마을
+// {
+// 	wildcard	"model\textureLow\Obj_Eliun*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Behe.res" // 베히모스 신전
+// {
+// 	wildcard	"model\textureLow\Obj_Behe*.*"
+// 	wildcard	"model\textureLow\Obj_Beha*.*"
+// 	wildcard	"model\texture\Obj_Boss*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Kalgas.res" // 칼가스 동굴
+// {
+// 	wildcard	"model\textureLow\Obj_Kalgas*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_bahara.res" // 바하라 사막
+// {
+// 	wildcard	"model\textureLow\Obj_bahara*.*"
+// 	wildcard	"model\textureLow\Obj_Desert*.*"
+// 	wildcard	"model\textureLow\Obj_Oasis*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\Obj_Colosseum.res" // 콜로세움
+// {
+// 	wildcard	"model\textureLow\Obj_Colosseum*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\part_mTex.res"
+// { 
+// 	wildcard	"Model\textureLow\part_m*.*"
+// 	wildcard	"Model\textureLow\part_u*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\part_fTex.res"
+// {
+// 	wildcard	"Model\textureLow\part_f*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\part_cloTex.res"  //성별 구분 없는 망토
+// {
+// 	wildcard	"Model\textureLow\part_clo*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\etcTex.res"
+// {
+// 	file	"model\textureLow\ARROW1.dds"
+// 	file	"model\textureLow\shadow.dds"
+// 	//file	"model\textureLow\reflect.tga"
+// 	wildcard	"model\textureLow\etc_*.*"
+// 	file	"model\textureLow\obj_middleArrow_01.dds"
+// 
+// 	file	"model\textureLow\obj_sklragbowicearrow01.dds"
+// 	file	"model\textureLow\crack.dds"
+// }
+// resource 0 "..\ResClient\Model\textureLow\SfxTex.res"
+// {
+// 	wildcard	"Model\textureLow\sfx_*.*"
+// }
+// resource 0 "..\ResClient\Model\textureLow\part_Npc.res"
+// { 
+// 	wildcard	"Model\textureLow\part_Npc*.*" 
+// }
+//	END :	Model\TextureLow Folder (Korea only)
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme Folder
+// resource 0 "..\ResClient\Theme\Theme.res"
+// {
+// 	wildcard	"theme\*.bmp"
+// 	wildcard	"theme\*.tga"
+// 	wildcard	"theme\*.dds"
+// 	wildcard	"theme\*.inc"
+// }
+//	END :	Theme Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Default Folder
+// resource 0 "..\ResClient\Theme\default\default.res"
+// {
+// 	wildcard	"theme\default\*.bmp"
+// 	wildcard	"theme\default\*.tga"
+// 	wildcard	"theme\default\*.dds"
+// 	wildcard	"theme\default\*.inc"
+// }
+//	END :	Theme\Default Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\English Folder
+// resource 0 "..\ResClient\Theme\English\English.res"
+// {
+// 	wildcard	"theme\English\*.bmp"
+// 	wildcard	"theme\English\*.tga"
+// 	wildcard	"theme\English\*.dds"
+// 	wildcard	"theme\English\*.inc"
+// }
+//	END :	Theme\English Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\French Folder
+// resource 0 "..\ResClient\Theme\French\French.res"
+// {
+// 	wildcard	"theme\French\*.bmp"
+// 	wildcard	"theme\French\*.tga"
+// 	wildcard	"theme\French\*.dds"
+// 	wildcard	"theme\French\*.inc"
+// }
+//	END :	Theme\French Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\German Folder
+// resource 0 "..\ResClient\Theme\German\German.res"
+// {
+// 	wildcard	"theme\German\*.bmp"
+// 	wildcard	"theme\German\*.tga"
+// 	wildcard	"theme\German\*.dds"
+// 	wildcard	"theme\German\*.inc"
+// }
+//	END :	Theme\German Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\HongKong Folder
+// resource 0 "..\ResClient\Theme\HongKong\HongKong.res"
+// {
+// 	wildcard	"theme\HongKong\*.bmp"
+// 	wildcard	"theme\HongKong\*.tga"
+// 	wildcard	"theme\HongKong\*.dds"
+// 	wildcard	"theme\HongKong\*.inc"
+// }
+//	END :	Theme\HongKong Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Indonesia Folder
+// resource 0 "..\ResClient\Theme\Indonesia\Indonesia.res"
+// {
+// 	wildcard	"theme\Indonesia\*.bmp"
+// 	wildcard	"theme\Indonesia\*.tga"
+// 	wildcard	"theme\Indonesia\*.dds"
+// 	wildcard	"theme\Indonesia\*.inc"
+// }
+//	END :	Theme\Indonesia Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Japanese Folder
+// resource 0 "..\ResClient\Theme\Japanese\Japanese.res"
+// {
+// 	wildcard	"theme\Japanese\*.bmp"
+// 	wildcard	"theme\Japanese\*.tga"
+// 	wildcard	"theme\Japanese\*.dds"
+// 	wildcard	"theme\Japanese\*.inc"
+// }
+//	END :	Theme\Japanese Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Korean Folder
+// resource 0 "..\ResClient\Theme\Korean\Korean.res"
+// {
+// 	wildcard	"theme\Korean\*.bmp"
+// 	wildcard	"theme\Korean\*.tga"
+// 	wildcard	"theme\Korean\*.dds"
+// 	wildcard	"theme\Korean\*.inc"
+// }
+//	END :	Theme\Korean Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Philippines Folder
+// resource 0 "..\ResClient\Theme\Philippines\Philippines.res"
+// {
+// 	wildcard	"theme\Philippines\*.bmp"
+// 	wildcard	"theme\Philippines\*.tga"
+// 	wildcard	"theme\Philippines\*.dds"
+// 	wildcard	"theme\Philippines\*.inc"
+// }
+//	END :	Theme\Philippines Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Portuguese Folder
+// resource 0 "..\ResClient\Theme\Portuguese\Portuguese.res"
+// {
+// 	wildcard	"theme\Portuguese\*.bmp"
+// 	wildcard	"theme\Portuguese\*.tga"
+// 	wildcard	"theme\Portuguese\*.dds"
+// 	wildcard	"theme\Portuguese\*.inc"
+// }
+//	END :	Theme\Portuguese Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Russian Folder
+// resource 0 "..\ResClient\Theme\Russian\Russian.res"
+// {
+// 	wildcard	"theme\Russian\*.bmp"
+// 	wildcard	"theme\Russian\*.tga"
+// 	wildcard	"theme\Russian\*.dds"
+// 	wildcard	"theme\Russian\*.inc"
+// }
+//	END :	Theme\Russian Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Spanish Folder
+// resource 0 "..\ResClient\Theme\Spanish\Spanish.res"
+// {
+// 	wildcard	"theme\Spanish\*.bmp"
+// 	wildcard	"theme\Spanish\*.tga"
+// 	wildcard	"theme\Spanish\*.dds"
+// 	wildcard	"theme\Spanish\*.inc"
+// }
+//	END :	Theme\Spanish Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Taiwan Folder
+// resource 0 "..\ResClient\Theme\Taiwan\Taiwan.res"
+// {
+// 	wildcard	"theme\Taiwan\*.bmp"
+// 	wildcard	"theme\Taiwan\*.tga"
+// 	wildcard	"theme\Taiwan\*.dds"
+// 	wildcard	"theme\Taiwan\*.inc"
+// }
+//	END :	Theme\Taiwan Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Thailand Folder
+// resource 0 "..\ResClient\Theme\Thailand\Thailand.res"
+// {
+// 	wildcard	"theme\Thailand\*.bmp"
+// 	wildcard	"theme\Thailand\*.tga"
+// 	wildcard	"theme\Thailand\*.dds"
+// 	wildcard	"theme\Thailand\*.inc"
+// }
+//	END :	Theme\Thailand Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Theme\Vietnam Folder
+// resource 0 "..\ResClient\Theme\Vietnam\Vietnam.res"
+// {
+// 	wildcard	"theme\Vietnam\*.bmp"
+// 	wildcard	"theme\Vietnam\*.tga"
+// 	wildcard	"theme\Vietnam\*.dds"
+// 	wildcard	"theme\Vietnam\*.inc"
+// }
+//	END :	Theme\Vietnam Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	Weather Folder
+resource 0 "..\ResClient\Weather\Weather_a.res"
+{
+	wildcard	"Weather\a*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_b.res"
+{
+	wildcard	"Weather\b*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_c.res"
+{
+	wildcard	"Weather\c*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_d.res"
+{
+	wildcard	"Weather\d*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_e.res"
+{
+	wildcard	"Weather\e*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_f.res"
+{
+	wildcard	"Weather\f*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_g.res"
+{
+	wildcard	"Weather\g*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_h.res"
+{
+	wildcard	"Weather\h*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_i.res"
+{
+	wildcard	"Weather\i*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_j.res"
+{
+	wildcard	"Weather\j*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_k.res"
+{
+	wildcard	"Weather\k*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_l.res"
+{
+	wildcard	"Weather\l*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_m.res"
+{
+	wildcard	"Weather\m*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_n.res"
+{
+	wildcard	"Weather\n*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_o.res"
+{
+	wildcard	"Weather\o*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_p.res"
+{
+	wildcard	"Weather\p*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_q.res"
+{
+	wildcard	"Weather\q*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_r.res"
+{
+	wildcard	"Weather\r*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_s.res"
+{
+	wildcard	"Weather\s*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_t.res"
+{
+	wildcard	"Weather\t*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_u.res"
+{
+	wildcard	"Weather\u*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_v.res"
+{
+	wildcard	"Weather\v*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_w.res"
+{
+	wildcard	"Weather\w*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_x.res"
+{
+	wildcard	"Weather\x*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_y.res"
+{
+	wildcard	"Weather\y*.*" 
+}
+resource 0 "..\ResClient\Weather\Weather_z.res"
+{
+	wildcard	"Weather\z*.*" 
+}
+//	END :	Weather Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	DropItem Folder
+//resource 0 "..\ResClient\Weather\DropItem.res"
+//{
+//	file	"dropitem\propDropLevelPenalty.csv"
+//	file	"dropitem\propDropMonsterLevel.csv"
+//	file	"dropitem\propDropMonsterLevelSetLang.csv"
+//	file	"dropitem\propDropMonsterName.csv"
+//	file	"dropitem\propDropPenyaIconSet.csv"	
+//
+//}
+
+//	END :	DropItem Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	ConsignmentMarket Folder
+//resource 0 "..\ResClient\Weather\ConsignmentMarket_c.res"
+//{
+//	wildcard	"ConsignmentMarket\c*.*" 
+//}
+//
+//resource 0 "..\ResClient\Weather\ConsignmentMarket_v.res"
+//{
+//	wildcard	"ConsignmentMarket\v*.*" 
+//}
+//
+////	END :	ConsignmentMarket Folder
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdMadrigal Folder
+resource 1 "..\ResClient\World\WdMadrigal\WdMadrigal.res"
+{
+	file	"world\wdMadrigal\WdMadrigal.wld"
+	file	"world\wdMadrigal\WdMadrigal.rgn"
+	file	"world\wdMadrigal\WdMadrigal.dyo"
+	file	"world\wdMadrigal\wdMadrigal.txt.txt"
+	file	"world\wdMadrigal\WdMadrigal.wld.cnt"
+}
+
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal00-00.res" 
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,00,04).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal00-05.res" 
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,05,09).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal00-10.res" 
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,10,14).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal00-15.res" 
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,15,19).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal00-20.res" 
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,20,24).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal00-25.res" 
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,25,29).lnd"
+//}
+////////// 05-00
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal05-00.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,00,04).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal05-05.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,05,09).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal05-10.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,10,14).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal05-15.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,15,19).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal05-20.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,20,24).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal05-25.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,25,29).lnd"
+//}
+////////// 10-00
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal10-00.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,00,04).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal10-05.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,05,09).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal10-10.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,10,14).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal10-15.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,15,19).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal10-20.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,20,24).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal10-25.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,25,29).lnd"
+//}
+////////// 15-00
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal15-00.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,00,04).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal15-05.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,05,09).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal15-10.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,10,14).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal15-15.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,15,19).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal15-20.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,20,24).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal15-25.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,25,29).lnd"
+//}
+////////// 20-00
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal20-00.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,00,04).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal20-05.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,05,09).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal20-10.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,10,14).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal20-15.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,15,19).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal20-20.res"
+//{
+	//count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,20,24).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal20-25.res"
+//{
+//	count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,25,29).lnd"
+//}
+////////// 25-00
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal25-00.res"
+//{
+//	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,00,04).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal25-05.res"
+//{
+//count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,05,09).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal25-10.res"
+//{
+//	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,10,14).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal25-15.res"
+//{
+//	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,15,19).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal25-20.res"
+//{
+//	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,20,24).lnd"
+//}
+//resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal25-25.res"
+//{
+//	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,25,29).lnd"
+//}
+ 
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_00-00.res" 
+{
+	count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_00-05.res" 
+{
+	count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_00-10.res" 
+{
+	count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_00-15.res" 
+{
+	count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_00-20.res" 
+{
+	count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_00-25.res" 
+{
+	count	"world\wdMadrigal\WdMadrigal(2,00,04)-(2,25,29).dds"
+}
+////////// 05-00
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_05-00.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_05-05.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_05-10.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_05-15.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_05-20.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_05-25.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,05,09)-(2,25,29).dds"
+}
+////////// 10-00
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_10-00.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_10-05.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_10-10.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_10-15.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_10-20.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_10-25.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,10,14)-(2,25,29).dds"
+}
+////////// 15-00
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_15-00.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_15-05.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_15-10.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_15-15.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_15-20.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_15-25.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,15,19)-(2,25,29).dds"
+}
+////////// 20-00
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_20-00.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_20-05.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_20-10.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_20-15.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_20-20.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_20-25.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,20,24)-(2,25,29).dds"
+}
+////////// 25-00
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_25-00.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_25-05.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_25-10.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_25-15.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_25-20.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdMadrigal\WdMadrigal_25-25.res"
+{
+	count	"world\wdMadrigal\WdMadrigal(2,25,29)-(2,25,29).dds"
+}
+//	END :	World\WdMadrigal Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdEvent01 Folder
+resource 1 "..\ResClient\World\WdEvent01\WdEvent01.res"
+{
+	file	"world\WdEvent01\WdEvent01.wld"
+	file	"world\WdEvent01\WdEvent01.rgn"
+	file	"world\WdEvent01\WdEvent01.dyo"
+	file	"world\WdEvent01\WdEvent01.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\WdEvent01\WdEvent0100-00.res" 
+// {
+// 	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,00,04).lnd"
+// }
+// resource 0 "..\ResClient\World\WdEvent01\WdEvent0100-05.res" 
+// {
+// 	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,05,09).lnd"
+// }
+// resource 0 "..\ResClient\World\WdEvent01\WdEvent0100-10.res" 
+// {
+// 	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,10,14).lnd"
+// }
+// resource 0 "..\ResClient\World\WdEvent01\WdEvent0100-15.res" 
+// {
+// 	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,15,19).lnd"
+// }
+// resource 0 "..\ResClient\World\WdEvent01\WdEvent0100-20.res" 
+// {
+// 	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,20,24).lnd"
+// }
+// resource 0 "..\ResClient\World\WdEvent01\WdEvent0100-25.res" 
+// {
+// 	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,25,29).lnd"
+// }
+
+resource 0 "..\ResClient\World\WdEvent01\WdEvent01_00-00.res" 
+{
+	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdEvent01\WdEvent01_00-05.res" 
+{
+	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdEvent01\WdEvent01_00-10.res" 
+{
+	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdEvent01\WdEvent01_00-15.res" 
+{
+	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdEvent01\WdEvent01_00-20.res" 
+{
+	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdEvent01\WdEvent01_00-25.res" 
+{
+	count	"world\WdEvent01\WdEvent01(2,00,04)-(2,25,29).dds"
+}
+//	END :	World\WdEvent01 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuFlMas Folder
+resource 1 "..\ResClient\World\DuFlMas\DuFlMas.res"
+{
+	file	"world\DuFlMas\DuFlMas.wld"
+	file	"world\DuFlMas\DuFlMas.rgn"
+	file	"world\DuFlMas\DuFlMas.dyo"
+	file	"world\DuFlMas\DuFlMas.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\DuFlMas\DuFlMas00-00.res" 
+// {
+// 	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,00,04).lnd"
+// }
+// resource 0 "..\ResClient\World\DuFlMas\DuFlMas00-05.res" 
+// {
+// 	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,05,09).lnd"
+// }
+// resource 0 "..\ResClient\World\DuFlMas\DuFlMas00-10.res" 
+// {
+// 	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,10,14).lnd"
+// }
+// resource 0 "..\ResClient\World\DuFlMas\DuFlMas00-15.res" 
+// {
+// 	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,15,19).lnd"
+// }
+// resource 0 "..\ResClient\World\DuFlMas\DuFlMas00-20.res" 
+// {
+// 	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,20,24).lnd"
+// }
+// resource 0 "..\ResClient\World\DuFlMas\DuFlMas00-25.res" 
+// {
+// 	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,25,29).lnd"
+// }
+
+resource 0 "..\ResClient\World\DuFlMas\DuFlMas_00-00.res" 
+{
+	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\DuFlMas\DuFlMas_00-05.res" 
+{
+	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\DuFlMas\DuFlMas_00-10.res" 
+{
+	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\DuFlMas\DuFlMas_00-15.res" 
+{
+	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\DuFlMas\DuFlMas_00-20.res" 
+{
+	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\DuFlMas\DuFlMas_00-25.res" 
+{
+	count	"world\DuFlMas\DuFlMas(2,00,04)-(2,25,29).dds"
+}
+//	END :	World\DuFlMas Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuDaDk Folder
+resource 1 "..\ResClient\World\DuDaDk\DuDaDk.res"
+{
+	file	"world\DuDaDk\DuDaDk.wld"
+	file	"world\DuDaDk\DuDaDk.rgn"
+	file	"world\DuDaDk\DuDaDk.dyo"
+	file	"world\DuDaDk\DuDaDk.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\DuDaDk\DuDaDk00-00.res" 
+// {
+// 	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,00,04).lnd"
+// }
+// resource 0 "..\ResClient\World\DuDaDk\DuDaDk00-05.res" 
+// {
+// 	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,05,09).lnd"
+// }
+// resource 0 "..\ResClient\World\DuDaDk\DuDaDk00-10.res" 
+// {
+// 	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,10,14).lnd"
+// }
+// resource 0 "..\ResClient\World\DuDaDk\DuDaDk00-15.res" 
+// {
+// 	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,15,19).lnd"
+// }
+// resource 0 "..\ResClient\World\DuDaDk\DuDaDk00-20.res" 
+// {
+// 	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,20,24).lnd"
+// }
+// resource 0 "..\ResClient\World\DuDaDk\DuDaDk00-25.res" 
+// {
+// 	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,25,29).lnd"
+// }
+
+resource 0 "..\ResClient\World\DuDaDk\DuDaDk_00-00.res" 
+{
+	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\DuDaDk\DuDaDk_00-05.res" 
+{
+	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\DuDaDk\DuDaDk_00-10.res" 
+{
+	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\DuDaDk\DuDaDk_00-15.res" 
+{
+	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\DuDaDk\DuDaDk_00-20.res" 
+{
+	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\DuDaDk\DuDaDk_00-25.res" 
+{
+	count	"world\DuDaDk\DuDaDk(2,00,04)-(2,25,29).dds"
+}
+//	END :	World\DuDaDk Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdKebaras Folder
+resource 1 "..\ResClient\World\WdKebaras\WdKebaras.res"
+{
+	file	"world\WdKebaras\WdKebaras.wld"
+	file	"world\WdKebaras\WdKebaras.rgn"
+	file	"world\WdKebaras\WdKebaras.dyo"
+	file	"world\WdKebaras\WdKebaras.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\WdKebaras\WdKebaras00-00.res" 
+// {
+// 	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,00,04).lnd"
+// }
+// resource 0 "..\ResClient\World\WdKebaras\WdKebaras00-05.res" 
+// {
+// 	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,05,09).lnd"
+// }
+// resource 0 "..\ResClient\World\WdKebaras\WdKebaras00-10.res" 
+// {
+// 	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,10,14).lnd"
+// }
+// resource 0 "..\ResClient\World\WdKebaras\WdKebaras00-15.res" 
+// {
+// 	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,15,19).lnd"
+// }
+// resource 0 "..\ResClient\World\WdKebaras\WdKebaras00-20.res" 
+// {
+// 	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,20,24).lnd"
+// }
+// resource 0 "..\ResClient\World\WdKebaras\WdKebaras00-25.res" 
+// {
+// 	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,25,29).lnd"
+// }
+
+resource 0 "..\ResClient\World\WdKebaras\WdKebaras_00-00.res" 
+{
+	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdKebaras\WdKebaras_00-05.res" 
+{
+	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdKebaras\WdKebaras_00-10.res" 
+{
+	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdKebaras\WdKebaras_00-15.res" 
+{
+	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdKebaras\WdKebaras_00-20.res" 
+{
+	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdKebaras\WdKebaras_00-25.res" 
+{
+	count	"world\WdKebaras\WdKebaras(2,00,04)-(2,25,29).dds"
+}
+//	END :	World\WdKebaras Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuBear Folder
+resource 1 "..\ResClient\World\DuBear\DuBear.res"
+{
+	file	"world\DuBear\DuBear.wld"
+	file	"world\DuBear\DuBear.rgn"
+	file	"world\DuBear\DuBear.dyo"
+	file	"world\DuBear\DuBear.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\DuBear\DuBear00-00.res" 
+// { 	
+// 	count	"world\DuBear\DuBear(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\World\DuBear\DuBear_00-00.res" 
+{
+	count	"world\DuBear\DuBear(2,00,04)-(2,00,04).dds"
+}
+//	END :	World\DuBear Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuKrr Folder
+resource 1 "..\ResClient\World\DuKrr\DuKrr.res"
+{
+	file	"world\DuKrr\DuKrr.wld"
+	file	"world\DuKrr\DuKrr.rgn"
+	file	"world\DuKrr\DuKrr.dyo"
+	file	"world\DuKrr\DuKrr.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\DuKrr\DuKrr00-00.res" 
+// { 	
+// 	count	"world\DuKrr\DuKrr(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\World\DuKrr\DuKrr_00-00.res" 
+{
+	count	"world\DuKrr\DuKrr(2,00,04)-(2,00,04).dds"
+}
+//	END :	World\DuKrr Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuMuscle Folder
+resource 1 "..\ResClient\World\DuMuscle\DuMuscle.res"
+{
+	file	"world\DuMuscle\DuMuscle.wld"
+	file	"world\DuMuscle\DuMuscle.rgn"
+	file	"world\DuMuscle\DuMuscle.dyo"
+	file	"world\DuMuscle\DuMuscle.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\DuMuscle\DuMuscle00-00.res" 
+// { 	
+// 	count	"world\DuMuscle\DuMuscle(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\World\DuMuscle\DuMuscle_00-00.res" 
+{
+	count	"world\DuMuscle\DuMuscle(2,00,04)-(2,00,04).dds"
+}
+//	END :	World\DuMuscle Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdGuildWar1To1 Folder
+resource 1 "..\ResClient\World\WdGuildWar1To1\WdGuildWar1To1.res"
+{
+	file	"world\WdGuildWar1To1\WdGuildWar1To1.wld"
+	file	"world\WdGuildWar1To1\WdGuildWar1To1.rgn"
+	file	"world\WdGuildWar1To1\WdGuildWar1To1.dyo"
+	file	"world\WdGuildWar1To1\WdGuildWar1To1.txt.txt"
+
+	file	"world\WdGuildWar1To1\WdGuildWar1To100-00.dds"
+
+// 	file	"world\WdGuildWar1To1\WdGuildWar1To100-00.lnd"
+}
+//	END :	World\DuMuscle Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdGuildWar Folder
+resource 1 "..\ResClient\World\WdGuildWar\WdGuildWar.res"
+{
+	file	"world\WdGuildWar\WdGuildWar.wld"
+	file	"world\WdGuildWar\WdGuildWar.rgn"
+	file	"world\WdGuildWar\WdGuildWar.dyo"
+	file	"world\WdGuildWar\WdGuildWar.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\WdGuildWar\WdGuildWar00-00.res" 
+// { 	
+// 	count	"world\WdGuildWar\WdGuildWar(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\World\WdGuildWar\WdGuildWar_00-00.res" 
+{
+	count	"world\WdGuildWar\WdGuildWar(2,00,04)-(2,00,04).dds"
+	file	"world\WdGuildWar\WdGuildWar_Mask.dds"
+}
+//	END :	World\WdGuildWar Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuSaTemple Folder
+resource 1 "..\ResClient\World\DuSaTemple\DuSaTemple.res"
+{
+	file	"world\DuSaTemple\DuSaTemple.wld"
+	file	"world\DuSaTemple\DuSaTemple.rgn"
+	file	"world\DuSaTemple\DuSaTemple.dyo"
+	file	"world\DuSaTemple\DuSaTemple.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\DuSaTemple\DuSaTemple00-00.res" 
+// { 	
+// 	count	"world\DuSaTemple\DuSaTemple(2,00,03)-(2,00,03).lnd"
+// }
+
+resource 0 "..\ResClient\World\DuSaTemple\DuSaTemple_00-00.res" 
+{
+	count	"world\DuSaTemple\DuSaTemple(2,00,03)-(2,00,03).dds"
+}
+//	END :	World\DuSaTemple Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuSaTempleBoss Folder
+resource 1 "..\ResClient\World\DuSaTempleBoss\DuSaTempleBoss.res"
+{
+	file	"world\DuSaTempleBoss\DuSaTempleBoss.wld"
+	file	"world\DuSaTempleBoss\DuSaTempleBoss.rgn"
+	file	"world\DuSaTempleBoss\DuSaTempleBoss.dyo"
+	file	"world\DuSaTempleBoss\DuSaTempleBoss.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\DuSaTempleBoss\DuSaTempleBoss00-00.res" 
+// { 	
+// 	count	"world\DuSaTempleBoss\DuSaTempleBoss(2,00,01)-(2,00,01).lnd"
+// }
+
+resource 0 "..\ResClient\World\DuSaTempleBoss\DuSaTempleBoss_00-00.res" 
+{
+	count	"world\DuSaTempleBoss\DuSaTempleBoss(2,00,01)-(2,00,01).dds"
+}
+//	END :	World\DuSaTempleBoss Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdVolcane Folder
+resource 1 "..\ResClient\World\WdVolcane\WdVolcane.res"
+{
+	file	"world\WdVolcane\WdVolcane.wld"
+	file	"world\WdVolcane\WdVolcane.rgn"
+	file	"world\WdVolcane\WdVolcane.dyo"
+	file	"world\WdVolcane\WdVolcane.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\WdVolcane\WdVolcane00-00.res" 
+// { 	
+// 	count	"world\WdVolcane\WdVolcane(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\world\WdVolcane\WdVolcane_00-00.res" 
+{
+	count	"world\WdVolcane\WdVolcane(2,00,04)-(2,00,04).dds"
+}
+//	END :	World\WdVolcane Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdVolcaneRed Folder
+resource 1 "..\ResClient\World\WdVolcaneRed\WdVolcaneRed.res"
+{
+	file	"world\WdVolcaneRed\WdVolcaneRed.wld"
+	file	"world\WdVolcaneRed\WdVolcaneRed.rgn"
+	file	"world\WdVolcaneRed\WdVolcaneRed.dyo"
+	file	"world\WdVolcaneRed\WdVolcaneRed.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\WdVolcaneRed\WdVolcaneRed00-00.res" 
+// { 	
+// 	count	"world\WdVolcaneRed\WdVolcaneRed(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\world\WdVolcaneRed\WdVolcaneRed_00-00.res" 
+{
+	count	"world\WdVolcaneRed\WdVolcaneRed(2,00,04)-(2,00,04).dds"
+}
+//	END :	World\WdVolcaneRed Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdVolcaneYellow Folder
+resource 1 "..\ResClient\World\WdVolcaneYellow\WdVolcaneYellow.res"
+{
+	file	"world\WdVolcaneYellow\WdVolcaneYellow.wld"
+	file	"world\WdVolcaneYellow\WdVolcaneYellow.rgn"
+	file	"world\WdVolcaneYellow\WdVolcaneYellow.dyo"
+	file	"world\WdVolcaneYellow\WdVolcaneYellow.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\WdVolcaneYellow\WdVolcaneYellow00-00.res" 
+// { 	
+// 	count	"world\WdVolcaneYellow\WdVolcaneYellow(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\world\WdVolcaneYellow\WdVolcaneYellow_00-00.res" 
+{
+	count	"world\WdVolcaneYellow\WdVolcaneYellow(2,00,04)-(2,00,04).dds"
+}
+//	END :	World\WdVolcaneYellow Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdArena Folder
+resource 1 "..\ResClient\World\WdArena\WdArenar.res"
+{
+	file	"world\WdArena\WdArena.wld"
+	file	"world\WdArena\WdArena.rgn"
+	file	"world\WdArena\WdArena.dyo"
+	file	"world\WdArena\WdArena.txt.txt"
+
+	file	"world\WdArena\WdArena00-00.dds"
+	file	"world\WdArena\WdArena00-01.dds"
+	file	"world\WdArena\WdArena01-00.dds"
+	file	"world\WdArena\WdArena01-01.dds"
+
+// 	file	"world\WdArena\WdArena00-00.lnd"
+// 	file	"world\WdArena\WdArena00-01.lnd"
+// 	file	"world\WdArena\WdArena01-00.lnd"
+// 	file	"world\WdArena\WdArena01-01.lnd"
+}
+//	END :	World\WdArena Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdArena_1 Folder
+resource 1 "..\ResClient\World\WdArena_1\WdArenar_1.res"
+{
+	file	"world\WdArena_1\WdArena_1.wld"
+	file	"world\WdArena_1\WdArena_1.rgn"
+	file	"world\WdArena_1\WdArena_1.dyo"
+	file	"world\WdArena_1\WdArena_1.txt.txt"
+
+	file	"world\WdArena_1\WdArena_100-00.dds"
+	file	"world\WdArena_1\WdArena_100-01.dds"
+	file	"world\WdArena_1\WdArena_101-00.dds"
+	file	"world\WdArena_1\WdArena_101-01.dds"
+
+// 	file	"world\WdArena_1\WdArena_100-00.lnd"
+// 	file	"world\WdArena_1\WdArena_100-01.lnd"
+// 	file	"world\WdArena_1\WdArena_101-00.lnd"
+// 	file	"world\WdArena_1\WdArena_101-01.lnd"
+}
+//	END :	World\WdArena_1 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdHeaven01 Folder
+resource 1 "..\ResClient\World\WdHeaven01\WdHeaven01.res"
+{
+	file	"world\WdHeaven01\WdHeaven01.wld"
+	file	"world\WdHeaven01\WdHeaven01.rgn"
+	file	"world\WdHeaven01\WdHeaven01.dyo"
+	file	"world\WdHeaven01\WdHeaven01.txt.txt"
+
+	file	"world\WdHeaven01\WdHeaven0100-00.dds"
+
+// 	file	"world\WdHeaven01\WdHeaven0100-00.lnd"
+}
+//	END :	World\WdHeaven01 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdHeaven02 Folder
+resource 1 "..\ResClient\World\WdHeaven02\WdHeaven02.res"
+{
+	file	"world\WdHeaven02\WdHeaven02.wld"
+	file	"world\WdHeaven02\WdHeaven02.rgn"
+	file	"world\WdHeaven02\WdHeaven02.dyo"
+	file	"world\WdHeaven02\WdHeaven02.txt.txt"
+
+	file	"world\WdHeaven02\WdHeaven0200-00.dds"
+
+// 	file	"world\WdHeaven02\WdHeaven0200-00.lnd"
+}
+//	END :	World\WdHeaven02 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdHeaven03 Folder
+resource 1 "..\ResClient\World\WdHeaven03\WdHeaven03.res"
+{
+	file	"world\WdHeaven03\WdHeaven03.wld"
+	file	"world\WdHeaven03\WdHeaven03.rgn"
+	file	"world\WdHeaven03\WdHeaven03.dyo"
+	file	"world\WdHeaven03\WdHeaven03.txt.txt"
+
+	file	"world\WdHeaven03\WdHeaven0300-00.dds"
+
+// 	file	"world\WdHeaven03\WdHeaven0300-00.lnd"
+}
+//	END :	World\WdHeaven03 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdHeaven04 Folder
+resource 1 "..\ResClient\World\WdHeaven04\WdHeaven04.res"
+{
+	file	"world\WdHeaven04\WdHeaven04.wld"
+	file	"world\WdHeaven04\WdHeaven04.rgn"
+	file	"world\WdHeaven04\WdHeaven04.dyo"
+	file	"world\WdHeaven04\WdHeaven04.txt.txt"
+
+	file	"world\WdHeaven04\WdHeaven0400-00.dds"
+
+// 	file	"world\WdHeaven04\WdHeaven0400-00.lnd"
+}
+//	END :	World\WdHeaven04 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdHeaven05 Folder
+resource 1 "..\ResClient\World\WdHeaven05\WdHeaven05.res"
+{
+	file	"world\WdHeaven05\WdHeaven05.wld"
+	file	"world\WdHeaven05\WdHeaven05.rgn"
+	file	"world\WdHeaven05\WdHeaven05.dyo"
+	file	"world\WdHeaven05\WdHeaven05.txt.txt"
+
+	file	"world\WdHeaven05\WdHeaven0500-00.dds"
+
+// 	file	"world\WdHeaven05\WdHeaven0500-00.lnd"
+}
+//	END :	World\WdHeaven05 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdHeaven06 Folder
+resource 1 "..\ResClient\World\WdHeaven06\WdHeaven06.res"
+{
+	file	"world\WdHeaven06\WdHeaven06.wld"
+	file	"world\WdHeaven06\WdHeaven06.rgn"
+	file	"world\WdHeaven06\WdHeaven06.dyo"
+	file	"world\WdHeaven06\WdHeaven06.txt.txt"
+
+	file	"world\WdHeaven06\WdHeaven0600-00.dds"
+	file	"world\WdHeaven06\WdHeaven0600-01.dds"
+	file	"world\WdHeaven06\WdHeaven0601-00.dds"
+	file	"world\WdHeaven06\WdHeaven0601-01.dds"
+
+// 	file	"world\WdHeaven06\WdHeaven0600-00.lnd"
+// 	file	"world\WdHeaven06\WdHeaven0600-01.lnd"
+// 	file	"world\WdHeaven06\WdHeaven0601-00.lnd"
+// 	file	"world\WdHeaven06\WdHeaven0601-01.lnd"
+}
+//	END :	World\WdHeaven06 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdHeaven06_1 Folder
+resource 1 "..\ResClient\World\WdHeaven06_1\WdHeaven06_1.res"
+{
+	file	"world\WdHeaven06_1\WdHeaven06_1.wld"
+	file	"world\WdHeaven06_1\WdHeaven06_1.rgn"
+	file	"world\WdHeaven06_1\WdHeaven06_1.dyo"
+	file	"world\WdHeaven06_1\WdHeaven06_1.txt.txt"
+
+	file	"world\WdHeaven06_1\WdHeaven06_100-00.dds"
+	file	"world\WdHeaven06_1\WdHeaven06_100-01.dds"
+	file	"world\WdHeaven06_1\WdHeaven06_101-00.dds"
+	file	"world\WdHeaven06_1\WdHeaven06_101-01.dds"
+
+// 	file	"world\WdHeaven06_1\WdHeaven06_100-00.lnd"
+// 	file	"world\WdHeaven06_1\WdHeaven06_100-01.lnd"
+// 	file	"world\WdHeaven06_1\WdHeaven06_101-00.lnd"
+// 	file	"world\WdHeaven06_1\WdHeaven06_101-01.lnd"
+}
+//	END :	World\WdHeaven06_1 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdCisland Folder
+resource 1 "..\ResClient\World\WdCisland\WdCisland.res"
+{
+	file	"world\WdCisland\WdCisland.wld"
+	file	"world\WdCisland\WdCisland.rgn"
+	file	"world\WdCisland\WdCisland.dyo"
+	file	"world\WdCisland\WdCisland.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\WdCisland\WdCisland00-00.res" 
+// {
+// 	count	"world\WdCisland\WdCisland(2,00,04)-(2,00,04).lnd"
+// }
+// resource 0 "..\ResClient\World\WdCisland\WdCisland00-05.res" 
+// {
+// 	count	"world\WdCisland\WdCisland(2,00,04)-(2,05,09).lnd"
+// }
+// resource 0 "..\ResClient\World\WdCisland\WdCisland00-10.res" 
+// {
+// 	count	"world\WdCisland\WdCisland(2,00,04)-(2,10,14).lnd"
+// }
+// resource 0 "..\ResClient\World\WdCisland\WdCisland00-15.res" 
+// {
+// 	count	"world\WdCisland\WdCisland(2,00,04)-(2,15,19).lnd"
+// }
+// resource 0 "..\ResClient\World\WdCisland\WdCisland00-20.res" 
+// {
+// 	count	"world\WdCisland\WdCisland(2,00,04)-(2,20,24).lnd"
+// }
+// resource 0 "..\ResClient\World\WdCisland\WdCisland00-25.res" 
+// {
+// 	count	"world\WdCisland\WdCisland(2,00,04)-(2,25,29).lnd"
+// }
+
+resource 0 "..\ResClient\World\WdCisland\WdCisland_00-00.res" 
+{
+	count	"world\WdCisland\WdCisland(2,00,04)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\WdCisland\WdCisland_00-05.res" 
+{
+	count	"world\WdCisland\WdCisland(2,00,04)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\WdCisland\WdCisland_00-10.res" 
+{
+	count	"world\WdCisland\WdCisland(2,00,04)-(2,10,14).dds"
+}
+resource 0 "..\ResClient\World\WdCisland\WdCisland_00-15.res" 
+{
+	count	"world\WdCisland\WdCisland(2,00,04)-(2,15,19).dds"
+}
+resource 0 "..\ResClient\World\WdCisland\WdCisland_00-20.res" 
+{
+	count	"world\WdCisland\WdCisland(2,00,04)-(2,20,24).dds"
+}
+resource 0 "..\ResClient\World\WdCisland\WdCisland_00-25.res" 
+{
+	count	"world\WdCisland\WdCisland(2,00,04)-(2,25,29).dds"
+}
+//	END :	World\WdCisland Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdMiniroom Folder
+resource 1 "..\ResClient\World\WdMiniroom\WdMiniroom.res"
+{
+	file	"world\WdMiniroom\WdMiniroom.wld"
+	file	"world\WdMiniroom\WdMiniroom.rgn"
+	file	"world\WdMiniroom\WdMiniroom.dyo"
+	file	"world\WdMiniroom\WdMiniroom.txt.txt"
+
+	file	"world\WdMiniroom\WdMiniroom00-00.dds"
+
+// 	file	"world\WdMiniroom\WdMiniroom00-00.lnd"
+}
+//	END :	World\WdMiniroom Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuOminous Folder
+resource 1 "..\ResClient\World\DuOminous\DuOminous.res"
+{
+	file	"world\DuOminous\DuOminous.wld"
+	file	"world\DuOminous\DuOminous.rgn"
+	file	"world\DuOminous\DuOminous.dyo"
+	file	"world\DuOminous\DuOminous.txt.txt"
+
+	wildcard	"World\DuOminous\*.dds"
+
+// 	wildcard	"World\DuOminous\*.lnd"
+}
+//	END :	World\DuOminous Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuOminous_1 Folder
+resource 1 "..\ResClient\World\DuOminous_1\DuOminous_1.res"
+{
+	file	"world\DuOminous_1\DuOminous_1.wld"
+	file	"world\DuOminous_1\DuOminous_1.rgn"
+	file	"world\DuOminous_1\DuOminous_1.dyo"
+	file	"world\DuOminous_1\DuOminous_1.txt.txt"
+
+	wildcard	"World\DuOminous_1\*.dds"
+
+// 	wildcard	"World\DuOminous_1\*.lnd"
+}
+//	END :	World\DuOminous_1 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdQuiz Folder
+resource 1 "..\ResClient\World\WdQuiz\WdQuiz.res"
+{
+	file	"world\WdQuiz\WdQuiz.wld"
+	file	"world\WdQuiz\WdQuiz.rgn"
+	file	"world\WdQuiz\WdQuiz.dyo"
+	file	"world\WdQuiz\WdQuiz.txt.txt"
+
+	wildcard	"World\WdQuiz\*.dds"
+
+// 	wildcard	"World\WdQuiz\*.lnd"
+}
+//	END :	World\WdQuiz Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdGuildhousesmall Folder
+resource 1 "..\ResClient\World\WdGuildhousesmall\WdGuildhousesmall.res"
+{
+	file	"world\WdGuildhousesmall\WdGuildhousesmall.wld"
+	file	"world\WdGuildhousesmall\WdGuildhousesmall.rgn"
+	file	"world\WdGuildhousesmall\WdGuildhousesmall.dyo"
+	file	"world\WdGuildhousesmall\WdGuildhousesmall.txt.txt"
+
+	wildcard	"World\WdGuildhousesmall\*.dds"
+
+// 	wildcard	"World\WdGuildhousesmall\*.lnd"
+}
+//	END :	World\WdGuildhousesmall Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\Wdguildhousemiddle Folder
+resource 1 "..\ResClient\World\Wdguildhousemiddle\Wdguildhousemiddle.res"
+{
+	file	"world\Wdguildhousemiddle\Wdguildhousemiddle.wld"
+	file	"world\Wdguildhousemiddle\Wdguildhousemiddle.rgn"
+	file	"world\Wdguildhousemiddle\Wdguildhousemiddle.dyo"
+	file	"world\Wdguildhousemiddle\Wdguildhousemiddle.txt.txt"
+
+	wildcard	"World\Wdguildhousemiddle\*.dds"
+
+// 	wildcard	"World\Wdguildhousemiddle\*.lnd"
+}
+//	END :	World\Wdguildhousemiddle Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\Wdguildhouselarge Folder
+resource 1 "..\ResClient\World\Wdguildhouselarge\Wdguildhouselarge.res"
+{
+	file	"world\Wdguildhouselarge\Wdguildhouselarge.wld"
+	file	"world\Wdguildhouselarge\Wdguildhouselarge.rgn"
+	file	"world\Wdguildhouselarge\Wdguildhouselarge.dyo"
+	file	"world\Wdguildhouselarge\Wdguildhouselarge.txt.txt"
+
+	wildcard	"World\Wdguildhouselarge\*.dds"
+
+// 	wildcard	"World\Wdguildhouselarge\*.lnd"
+}
+//	END :	World\Wdguildhouselarge Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DudreadfulCave Folder
+resource 1 "..\ResClient\World\DudreadfulCave\DudreadfulCave.res"
+{
+	file	"world\DudreadfulCave\DudreadfulCave.wld"
+	file	"world\DudreadfulCave\DudreadfulCave.rgn"
+	file	"world\DudreadfulCave\DudreadfulCave.dyo"
+	file	"world\DudreadfulCave\DudreadfulCave.txt.txt"
+}
+
+// resource 0 "..\ResClient\World\DudreadfulCave\DudreadfulCave00-00.res" 
+// {
+// 	count	"world\DudreadfulCave\DudreadfulCave(2,00,04)-(2,00,04).lnd"
+// }
+// resource 0 "..\ResClient\World\DudreadfulCave\DudreadfulCave00-05.res" 
+// {
+// 	count	"world\DudreadfulCave\DudreadfulCave(2,00,04)-(2,05,09).lnd"
+// }
+// resource 0 "..\ResClient\World\DudreadfulCave\DudreadfulCave05-00.res" 
+// {
+// 	count	"world\DudreadfulCave\DudreadfulCave(2,05,09)-(2,00,04).lnd"
+// }
+// resource 0 "..\ResClient\World\DudreadfulCave\DudreadfulCave05-05.res" 
+// {
+// 	count	"world\DudreadfulCave\DudreadfulCave(2,05,09)-(2,05,09).lnd"
+// }
+
+resource 0 "..\ResClient\World\DudreadfulCave\DudreadfulCave_00-00.res" 
+{
+	count	"world\DudreadfulCave\DudreadfulCave(2,00,04)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\DudreadfulCave\DudreadfulCave_00-05.res" 
+{
+	count	"world\DudreadfulCave\DudreadfulCave(2,00,04)-(2,05,09).dds"
+}
+resource 0 "..\ResClient\World\DudreadfulCave\DudreadfulCave_05-00.res" 
+{
+	count	"world\DudreadfulCave\DudreadfulCave(2,05,09)-(2,00,04).dds"
+}
+resource 0 "..\ResClient\World\DudreadfulCave\DudreadfulCave_05-05.res" 
+{
+	count	"world\DudreadfulCave\DudreadfulCave(2,05,09)-(2,05,09).dds"
+}
+//	END :	World\DudreadfulCave Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuRustia Folder
+resource 1 "..\ResClient\World\DuRustia\DuRustia.res"
+{
+	file	"world\DuRustia\DuRustia.wld"
+	file	"world\DuRustia\DuRustia.rgn"
+	file	"world\DuRustia\DuRustia.dyo"
+	file	"world\DuRustia\DuRustia.txt.txt"
+	
+}
+
+// resource 0 "..\ResClient\World\DuRustia\DuRustia00-00.res" 
+// { 	
+// 	count	"world\DuRustia\DuRustia(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\world\DuRustia\DuRustia_00-00.res" 
+{
+	count	"world\DuRustia\DuRustia(2,00,04)-(2,00,04).dds"
+}
+//	END :	World\DuRustia Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuRustia_1 Folder
+resource 1 "..\ResClient\World\DuRustia_1\DuRustia_1.res"
+{
+	file	"world\DuRustia_1\DuRustia_1.wld"
+	file	"world\DuRustia_1\DuRustia_1.rgn"
+	file	"world\DuRustia_1\DuRustia_1.dyo"
+	file	"world\DuRustia_1\DuRustia_1.txt.txt"
+	
+}
+
+// resource 0 "..\ResClient\World\DuRustia_1\DuRustia_100-00.res" 
+// { 	
+// 	count	"world\DuRustia_1\DuRustia_1(2,00,04)-(2,00,04).lnd"
+// }
+
+resource 0 "..\ResClient\world\DuRustia_1\DuRustia_1_00-00.res" 
+{
+	count	"world\DuRustia_1\DuRustia_1(2,00,04)-(2,00,04).dds"
+}
+//	END :	World\DuRustia_1 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuBehamah Folder
+resource 1 "..\ResClient\World\DuBehamah\DuBehamah.res"
+{
+	file	"world\DuBehamah\DuBehamah.wld"
+	file	"world\DuBehamah\DuBehamah.wld.cnt"
+	file	"world\DuBehamah\DuBehamah.rgn"
+	file	"world\DuBehamah\DuBehamah.dyo"
+	file	"world\DuBehamah\DuBehamah.txt.txt"
+
+// 	wildcard	"World\DuBehamah\*.lnd"
+
+	wildcard	"World\DuBehamah\*.dds"
+}
+//	END :	World\DuBehamah Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdRartesia Folder
+resource 1 "..\ResClient\World\WdRartesia\WdRartesia.res"
+{
+	file	"world\WdRartesia\WdRartesia.wld"
+	file	"world\WdRartesia\WdRartesia.rgn"
+	file	"world\WdRartesia\WdRartesia.dyo"
+	file	"world\WdRartesia\WdRartesia.txt.txt"
+
+// 	wildcard	"World\WdRartesia\*.lnd"
+
+	wildcard	"World\WdRartesia\*.dds"
+}
+//	END :	World\WdRartesia Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuKalgas Folder
+resource 1 "..\ResClient\World\DuKalgas\DuKalgas.res"
+{
+	file	"world\DuKalgas\DuKalgas.wld"
+	file	"world\DuKalgas\DuKalgas.rgn"
+	file	"world\DuKalgas\DuKalgas.dyo"
+	file 	"world\DuKalgas\DuKalgas.txt.txt"
+	
+// 	wildcard	"World\DuKalgas\*.lnd"
+	
+	wildcard	"World\DuKalgas\*.dds"
+}
+//	END :	World\DuKalgas Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdColosseum Folder
+resource 1 "..\ResClient\World\WdColosseum\WdColosseum.res"
+{
+	file	"world\WdColosseum\WdColosseum.wld"
+	file	"world\WdColosseum\WdColosseum.rgn"
+	file	"world\WdColosseum\WdColosseum.dyo"
+	file 	"world\WdColosseum\WdColosseum.txt.txt"
+	
+// 	wildcard	"World\WdColosseum\*.lnd"
+	
+	wildcard	"World\WdColosseum\*.dds"
+}
+//	END :	World\WdColosseum Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuHerneos Folder
+resource 1 "..\ResClient\World\DuHerneos\DuHerneos.res"
+{
+	file	"world\DuHerneos\DuHerneos.wld"
+	file	"world\DuHerneos\DuHerneos.rgn"
+	file	"world\DuHerneos\DuHerneos.dyo"
+	file 	"world\DuHerneos\DuHerneos.txt.txt"
+	file	"world\DuHerneos\DuHerneos.wld.cnt"
+	
+// 	wildcard	"World\DuHerneos\*.lnd"
+	
+	wildcard	"World\DuHerneos\*.dds"
+}
+//	END :	World\DuHerneos Folder
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuHerneos_1 Folder
+resource 1 "..\ResClient\World\DuHerneos_1\DuHerneos_1.res"
+{
+	file	"world\DuHerneos_1\DuHerneos_1.wld"
+	file	"world\DuHerneos_1\DuHerneos_1.rgn"
+	file	"world\DuHerneos_1\DuHerneos_1.dyo"
+	file 	"world\DuHerneos_1\DuHerneos_1.txt.txt"
+	file	"world\DuHerneos_1\DuHerneos_1.wld.cnt"
+	
+// 	wildcard	"World\DuHerneos_1\*.lnd"
+	
+	wildcard	"World\DuHerneos_1\*.dds"
+}
+//	END :	World\DuHerneos_1 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuSanpres Folder
+resource 1 "..\ResClient\World\DuSanpres\DuSanpres.res"
+{
+	file	"world\DuSanpres\DuSanpres.wld"
+	file	"world\DuSanpres\DuSanpres.rgn"
+	file	"world\DuSanpres\DuSanpres.dyo"
+	file 	"world\DuSanpres\DuSanpres.txt.txt"
+	file	"world\DuSanpres\DuSanpres.wld.cnt"
+	
+// 	wildcard	"World\DuSanpres\*.lnd"
+	
+	wildcard	"World\DuSanpres\*.dds"
+}
+//	END :	World\DuSanpres Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuSanpres_1 Folder
+resource 1 "..\ResClient\World\DuSanpres_1\DuSanpres_1.res"
+{
+	file	"world\DuSanpres_1\DuSanpres_1.wld"
+	file	"world\DuSanpres_1\DuSanpres_1.rgn"
+	file	"world\DuSanpres_1\DuSanpres_1.dyo"
+	file 	"world\DuSanpres_1\DuSanpres_1.txt.txt"
+	file	"world\DuSanpres_1\DuSanpres_1.wld.cnt"
+	
+// 	wildcard	"World\DuSanpres_1\*.lnd"
+	
+	wildcard	"World\DuSanpres_1\*.dds"
+}
+//	END :	World\DuSanpres_1 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuUpresia Folder
+resource 1 "..\ResClient\World\DuUpresia\DuUpresia.res"
+{
+	file	"world\DuUpresia\DuUpresia.wld"
+	file	"world\DuUpresia\DuUpresia.rgn"
+	file	"world\DuUpresia\DuUpresia.dyo"
+	file 	"world\DuUpresia\DuUpresia.txt.txt"
+	file	"world\DuUpresia\DuUpresia.wld.cnt"
+	
+// 	wildcard	"World\DuUpresia\*.lnd"
+	
+	wildcard	"World\DuUpresia\*.dds"
+}
+//	END :	World\DuUpresia Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\DuUpresia_1 Folder
+resource 1 "..\ResClient\World\DuUpresia_1\DuUpresia_1.res"
+{
+	file	"world\DuUpresia_1\DuUpresia_1.wld"
+	file	"world\DuUpresia_1\DuUpresia_1.rgn"
+	file	"world\DuUpresia_1\DuUpresia_1.dyo"
+	file 	"world\DuUpresia_1\DuUpresia_1.txt.txt"
+	file	"world\DuUpresia_1\DuUpresia_1.wld.cnt"
+	
+// 	wildcard	"World\DuUpresia_1\*.lnd"
+	
+	wildcard	"World\DuUpresia_1\*.dds"
+}
+//	END :	World\DuUpresia_1 Folder
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdFwc Folder
+resource 1 "..\ResClient\World\WdFwc\WdFwc.res"
+{
+	file	"world\WdFwc\WdFwc.wld"
+	file	"world\WdFwc\WdFwc.rgn"
+	file	"world\WdFwc\WdFwc.dyo"
+	file 	"world\WdFwc\WdFwc.txt.txt"
+	file 	"world\WdFwc\WdFwc.wld.cnt"
+	
+// 	wildcard	"World\WdFwc\*.lnd"
+	
+	wildcard	"World\WdFwc\*.dds"
+}
+//	END :	World\WdFwc Folder
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdMarket Folder
+resource 1 "..\ResClient\World\WdMarket\WdMarket.res"
+{
+	file	"world\WdMarket\WdMarket.wld"
+	file	"world\WdMarket\WdMarket.rgn"
+	file	"world\WdMarket\WdMarket.dyo"
+	file 	"world\WdMarket\WdMarket.txt.txt"
+	file 	"world\WdMarket\WdMarket.wld.cnt"
+	
+// 	wildcard	"World\WdMarket\*.lnd"
+	
+	wildcard	"World\WdMarket\*.dds"
+}
+//	END :	World\WdMarket Folder
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+//	START :	World\WdDarkRartesia Folder
+resource 1 "..\ResClient\World\WdDarkRartesia\WdDarkRartesia.res"
+{
+	file	"world\WdDarkRartesia\WdDarkRartesia.wld"
+	file	"world\WdDarkRartesia\WdDarkRartesia.rgn"
+	file	"world\WdDarkRartesia\WdDarkRartesia.dyo"
+	file	"world\WdDarkRartesia\WdDarkRartesia.txt.txt"
+
+// 	wildcard	"World\WdDarkRartesia\*.lnd"
+
+	wildcard	"World\WdDarkRartesia\*.dds"
+}
+//	END :	World\WdDarkRartesia Folder
+////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,159 @@
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+#include "VersionCommon.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+#if   __CURRENT_LANG == LANG_THA
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_icon.ico"
+#elif __CURRENT_LANG == LANG_GER
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_icon.ico"
+#elif __CURRENT_LANG == LANG_FRA
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_icon.ico"
+#elif __CURRENT_LANG == LANG_POR
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_icon.ico"
+#elif __CURRENT_LANG == LANG_JAP
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_icon_jap.ico"
+#elif __COUNTRY == CNTRY_USA
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_icon.ico"
+#elif __CURRENT_CNTRY == CNTRY_HK
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_icon_hk.ico"
+#elif __CURRENT_LANG == LANG_FWC
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_icon.ico"
+#elif __CURRENT_LANG == LANG_KOR
+	IDR_MAINFRAME		ICON    DISCARDABLE     "res\\flyff_kr_icon.ico"
+#else
+	IDR_MAINFRAME       ICON    DISCARDABLE     "res\\BetaPatchClient.ico"
+#endif
+
+#if   __CURRENT_LANG == LANG_KOR
+	LANGUAGE 18, 1S
+	#pragma code_page(949)
+	#include "string_kor.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_kr_20.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option_kr_19.jpg"
+
+#elif __CURRENT_LANG == LANG_ENG
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_eng.rc2"
+
+#if __COUNTRY == CNTRY_USA
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_us_18.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+#elif __COUNTRY == CNTRY_PHI
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_us_18.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+#elif __COUNTRY == CNTRY_IND
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_id_19.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+#endif
+
+#elif __CURRENT_LANG == LANG_JAP
+	LANGUAGE 17, 1
+	#pragma code_page(932)
+	#include "string_jpn.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_jp.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+	IDB_BITMAP_CHAR1        BITMAP  DISCARDABLE     "Image\\chr1_jp.bmp"
+	IDB_BITMAP_CHAR2        BITMAP  DISCARDABLE     "Image\\chr1_jp_mask.bmp"
+	IDB_BITMAP_CHAR3        BITMAP  DISCARDABLE     "Image\\chr2_jp.bmp"
+	IDB_BITMAP_CHAR4        BITMAP  DISCARDABLE     "Image\\chr2_jp_mask.bmp"
+	IDB_BITMAP_CHAR5        BITMAP  DISCARDABLE     "Image\\chr3_jp.bmp"
+	IDB_BITMAP_CHAR6        BITMAP  DISCARDABLE     "Image\\chr3_jp_mask.bmp"
+	IDB_BITMAP_CHAR7        BITMAP  DISCARDABLE     "Image\\chr4_jp.bmp"
+	IDB_BITMAP_CHAR8        BITMAP  DISCARDABLE     "Image\\chr4_jp_mask.bmp"
+
+#elif __CURRENT_LANG == LANG_CHI
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#elif __CURRENT_LANG == LANG_THA 
+	LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+	#pragma code_page(950)
+	#include "string_twn.rc2"
+// 	LANGUAGE LANG_THAI/*0x1E*/, SUBLANG_CHINESE_TRADITIONAL/*0x1*/
+// 	#pragma code_page(874)
+// 	#include "string_tha.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_th_19.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#elif __CURRENT_LANG == LANG_TWN
+	LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+	#pragma code_page(950)
+	#include "string_twn.rc2"
+#if __CURRENT_CNTRY == CNTRY_TWN
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_tw_19.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+#elif __CURRENT_CNTRY == CNTRY_HK
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_hk_17.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+#endif
+
+#elif __CURRENT_LANG == LANG_GER
+	LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+	#pragma code_page(1252)
+	#include "string_deu.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_de_19.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#elif __CURRENT_LANG == LANG_SPA //수정요
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_eng.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_es_18.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#elif __CURRENT_LANG == LANG_FRA //수정요
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_frn.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_fr_19.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#elif __CURRENT_LANG == LANG_POR //수정요
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_por.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_br_19.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#elif __CURRENT_LANG == LANG_VTN //수정요
+	LANGUAGE 9, 1
+	#pragma code_page(1258)
+	#include "string_vtn.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#elif __CURRENT_LANG == LANG_RUS //수정요
+	LANGUAGE 9, 1
+	#pragma code_page(1251)
+	#include "string_rus.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_rus_14.jpg"
+	IDC_BITMAP_MAIN_2       IMAGE   MOVEABLE PURE   "Image\\main_rus_14.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#elif __CURRENT_LANG == LANG_FWC
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_fwc.rc2"
+
+	IDC_BITMAP_MAIN         IMAGE   MOVEABLE PURE   "Image\\main_fwc.jpg"
+	IDC_BITMAP_OPTION       IMAGE   MOVEABLE PURE   "Image\\option.jpg"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////

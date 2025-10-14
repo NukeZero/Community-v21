@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ecd65e83-3ed1-4cc1-a58a-1c651d41c0cb}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\_DirectX">
+      <UniqueIdentifier>{baba7780-dd10-4382-84fa-06bb62497cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common">
+      <UniqueIdentifier>{d295dfd6-2fa2-4505-b8dc-b4ca1aec7eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\LOD">
+      <UniqueIdentifier>{41872319-650e-496b-bf5b-42ed6127ee6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Model">
+      <UniqueIdentifier>{addf8f4a-5299-46e7-89f6-dce1f7d88319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Object">
+      <UniqueIdentifier>{1bd34870-c336-4ea4-95c5-25e1a10b8fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Common\Script">
+      <UniqueIdentifier>{9b4123da-66b8-4ebf-92cc-343302f9c8d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Menu">
+      <UniqueIdentifier>{cb74e844-cdcc-4fcb-966a-083692951d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Menu\Dialog">
+      <UniqueIdentifier>{601b693f-e4b0-4830-8bb6-d2c2710fbaff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Menu\View">
+      <UniqueIdentifier>{ef68cab6-a464-436f-8449-9a023da553c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Menu\Window">
+      <UniqueIdentifier>{4489242b-baba-43e0-8ade-907da89e5688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Network">
+      <UniqueIdentifier>{491a29c3-d39a-4d5b-8ec7-87317f10ab08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_Network\Mics">
+      <UniqueIdentifier>{81c203fa-b34f-4025-865b-2b1381848c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\_AIInterface">
+      <UniqueIdentifier>{86a4457c-c0bc-4bb2-8a49-c25055909b37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e541d26d-faa4-4614-9e28-ddf3db50fc04}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{3448ea01-74eb-403d-baaf-5cbbf94b5543}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Definition Files">
+      <UniqueIdentifier>{eb33b430-ded0-4411-b1b2-f2b0d870469d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Beast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCalcWorldmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgObejctTextureList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPatrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hwoption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectTextureView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PagePropPath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xutil3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dapp.cpp">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="d3denumeration.cpp">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dfont.cpp">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dsettings.cpp">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dutil.cpp">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="dxutil.cpp">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="2DRender.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Command.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\CommandBeast.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="EditString.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lang.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="path.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Project.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectCmn.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="projectlux.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="targa.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainMng.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="vUtil.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="weather.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="World3D.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldEdit.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldFile.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="worldintersect.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="worldmng.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="xutil.cpp">
+      <Filter>Source Files\_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lod.cpp">
+      <Filter>Source Files\_Common\LOD</Filter>
+    </ClCompile>
+    <ClCompile Include="billboard.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Bone.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic3d.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="material.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="modelglobal.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelMng.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="modelobject.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelSfx.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="object3d.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="commonctrl.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateObj.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Mover.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="moverequip.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="moverrender.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcProperty.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="objserialize.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="objserializeopt.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Region.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="respawn.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="sfxbase.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="sfxobj.cpp">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="scanner.cpp">
+      <Filter>Source Files\_Common\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>Source Files\_Common\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CoolDialogBar.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgNavigator.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgNavigatorMapView.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRandomDegreeScale.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRespawnDefault.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRevival.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSaveOption.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSetGrid.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSetTime.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgWorldProp.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjProperty.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="sizecbar2.cpp">
+      <Filter>Source Files\_Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAddDelObject.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBmpSaveOption.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgContinent.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEditString.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgInputAngle.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLight24.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgNewWorld.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRespawn.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgWorldLight.cpp">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelView.cpp">
+      <Filter>Source Files\_Menu\View</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTreeView.cpp">
+      <Filter>Source Files\_Menu\View</Filter>
+    </ClCompile>
+    <ClCompile Include="ChkListBox.cpp">
+      <Filter>Source Files\_Menu\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDlgWorld.cpp">
+      <Filter>Source Files\_Menu\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="ar.cpp">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClCompile>
+    <ClCompile Include="action.cpp">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="actionmover.cpp">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="actionmovermsg.cpp">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="actionmovermsg2.cpp">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="actionmoverstate.cpp">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionMoverState2.cpp">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Beast.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hwoption.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectTextureView.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainEdit.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldView.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dapp.h">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="d3denumeration.h">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dfont.h">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dsettings.h">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dutil.h">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="dxutil.h">
+      <Filter>Source Files\_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="2DRender.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_interface\appdefine.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="authorization.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Command.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\CommandBeast.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="definecommon.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="EditString.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="path.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Project.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectCmn.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targa.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainMng.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="vUtil.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="weather.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="worldmng.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="xutil.h">
+      <Filter>Source Files\_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="landscape.h">
+      <Filter>Source Files\_Common\LOD</Filter>
+    </ClInclude>
+    <ClInclude Include="patch.h">
+      <Filter>Source Files\_Common\LOD</Filter>
+    </ClInclude>
+    <ClInclude Include="billboard.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Bone.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="graphic3d.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="material.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="modelglobal.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelMng.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="modelobject.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelSfx.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="object3d.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="xuzhu.h">
+      <Filter>Source Files\_Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="commonctrl.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateObj.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Mover.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="movermsg.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcProperty.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Region.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="respawn.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="sfxbase.h">
+      <Filter>Source Files\_Common\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="scanner.h">
+      <Filter>Source Files\_Common\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>Source Files\_Common\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="CoolDialogBar.h">
+      <Filter>Source Files\_Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgNavigator.h">
+      <Filter>Source Files\_Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgNavigatorMapView.h">
+      <Filter>Source Files\_Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRevival.h">
+      <Filter>Source Files\_Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgWorldProp.h">
+      <Filter>Source Files\_Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjProperty.h">
+      <Filter>Source Files\_Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="sizecbar2.h">
+      <Filter>Source Files\_Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAddDelObject.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBmpSaveOption.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgContinent.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgEditString.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgInputAngle.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLight24.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgNewWorld.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRespawn.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgWorldLight.h">
+      <Filter>Source Files\_Menu\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelView.h">
+      <Filter>Source Files\_Menu\View</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTreeView.h">
+      <Filter>Source Files\_Menu\View</Filter>
+    </ClInclude>
+    <ClInclude Include="ChkListBox.h">
+      <Filter>Source Files\_Menu\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDlgWorld.h">
+      <Filter>Source Files\_Menu\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="CmnHdr.h">
+      <Filter>Source Files\_Network</Filter>
+    </ClInclude>
+    <ClInclude Include="ar.h">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClInclude>
+    <ClInclude Include="heapmng.h">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClInclude>
+    <ClInclude Include="mempooler.h">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClInclude>
+    <ClInclude Include="memspy.h">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMap.h">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap.h">
+      <Filter>Source Files\_Network\Mics</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionMover.h">
+      <Filter>Source Files\_AIInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Beast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BeastHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCalcWorldmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgObejctTextureList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPatrol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRandomDegreeScale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRespawnDefault.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSaveOption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSetGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSetTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PagePropPath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="squish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sunUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xutil3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\define.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineAttribute.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineEvent.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineItem.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineItemkind.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineJob.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineNeuz.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineObj.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\definequest.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineSkill.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineSound.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineText.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\defineWorld.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\lang.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\ResData.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RESOURCE\WndStyle.h">
+      <Filter>Definition Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Beast.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BeastDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Check.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\height_r.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\height_s.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00002.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00003.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00004.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00005.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00006.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00007.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00008.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00010.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainfram.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\middlecheck.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\obj_edit.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\tabimage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\UnCheck.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WorldDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Beast.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bin00001.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\data1.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\data2.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\data3.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="gmpbigsun.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

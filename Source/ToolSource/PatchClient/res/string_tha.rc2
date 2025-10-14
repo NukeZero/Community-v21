@@ -1,0 +1,21 @@
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_REINSTALL		"เกิดความผิดพลาดในการลงโปรแกรม กรุณาลงใหม่อีกครั้ง\nคุณสามารถดาวน์โหลดได้จากหน้าเว็บ"
+	IDS_RUNNING_NEUZ		"โปรแกรมฟลิฟฟ์กำลังทำงานอยู่" 
+	IDS_RUNNING_PATCH		"โปรแกรมแพทอัตโนมัติกำลังทำงานอยู่"
+	IDS_OPTION			"ออฟชั่น"
+	IDS_CLOSE			"ปิด"
+	IDS_RESOLUTION		"กำลังขยาย"
+	IDS_VIEW			"ระยะสายตา"
+	IDS_TEXTURE			"รายละเอียดพื้นผิว"
+	IDS_SHADOW			"แสงและเงา"
+	IDS_OBJECTDETAIL		"รายละเอียดวัตถุ"
+	IDS_FAR			"สูง"
+	IDS_MEDIUM			"กลาง"
+	IDS_NEAR			"ต่ำ"
+	IDS_HIGH			"สูง"
+	IDS_LOW			"ต่ำ"
+	IDS_DIRECTX_INSTALL		"ยังไม่ได้ลงโปรแกรม DirectX 9.0b"
+	IDS_UPDATE_PATCH		"Patch Client กำลังดำเนินการอีกครั้ง \n กรุณากด Ok เพื่อดำเนินการ"
+	IDS_RETRY			"คุณจะทดลองอีกครั้งมั้ย ?"
+END

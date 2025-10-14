@@ -1,0 +1,791 @@
+#include "stdafx.h"
+#include "defineSound.h"
+#include "defineText.h"
+#include "AppDefine.h"
+#include "WndMessenger.h"
+#include "WndFriendCtrl.h"
+#include "messenger.h"
+#include "WndFriendConFirm.h"
+#include "dpcertified.h"
+extern	CDPCertified	g_dpCertified;
+
+#include "WndManager.h"
+
+#include "DPClient.h"
+extern	CDPClient	g_DPlay;	 
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+/****************************************************
+  WndId : APP_MESSENGER - Messenger
+  CtrlId : WIDC_TABCTRL1 - TabCtrl
+  CtrlId : WIDC_BUTTON1 - Button
+****************************************************/
+
+
+CWndMessenger::CWndMessenger() 
+{ 
+} 
+CWndMessenger::~CWndMessenger() 
+{ 
+//	SAFE_DELETE( g_WndMng.m_pWndMessengerSearch );
+} 	
+void CWndMessenger::SerializeRegInfo( CAr& ar, DWORD& dwVersion )
+{
+	CWndNeuz::SerializeRegInfo( ar, dwVersion );
+	CWndTabCtrl* lpTabCtrl = (CWndTabCtrl*)GetDlgItem( WIDC_TABCTRL1 );
+	if( ar.IsLoading() )
+	{
+		int nCurSel;
+		ar >> nCurSel;
+		lpTabCtrl->SetCurSel( nCurSel );
+	}
+	else
+	{
+		ar << lpTabCtrl->GetCurSel();
+	}
+}
+
+#ifdef __RENDER_SERVERINFO0608
+void CWndMessenger::OnMouseWndSurface( CPoint point )
+{
+	// 직업 아이콘 위치에 커서를 가져가면 접속한 서버의 정보(서버이름과 멀티서버 번호)를 보여준다.
+	CRect rectHittest( 2, 2, 35, 27 );	
+	if( rectHittest.PtInRect( point ) )
+	{
+		CPoint point2 = point;
+		ClientToScreen( &point2 );
+		ClientToScreen( &rectHittest );
+		g_toolTip.PutToolTip( (DWORD)this, m_strTooltip, rectHittest, point2, 0 );
+	}
+}
+#endif
+
+void CWndMessenger::OnDraw( C2DRender* p2DRender ) 
+{ 
+	CWndWorld* pWndWorld = (CWndWorld*)g_WndMng.GetWndBase( APP_WORLD );
+
+	DWORD dwMyState;
+	if( g_WndMng.m_Messenger.m_dwMyState == FRS_AUTOABSENT )
+	{
+		dwMyState = FRS_ABSENT;
+	}
+	else
+	{
+		dwMyState =  g_WndMng.m_Messenger.m_dwMyState;
+	}
+	
+	TEXTUREVERTEX2 vertex[ 6 * 2 ];
+	TEXTUREVERTEX2* pVertices = vertex;
+	
+	if( dwMyState == FRS_OFFLINE )
+	{
+		if( g_pPlayer->IsPro() )
+		{
+			pWndWorld->m_texMsgIcon.MakeVertex( p2DRender, CPoint( 5, 0 ),  ( 54 + g_pPlayer->GetJob() - 6 ) + ( 8 * g_pPlayer->GetSex() ), &pVertices, 0xffff6464 );
+		}
+		else
+		{
+			pWndWorld->m_texMsgIcon.MakeVertex( p2DRender, CPoint( 5, 0 ),  g_pPlayer->GetJob() + ( 6 * g_pPlayer->GetSex() ), &pVertices, 0xffff6464 );
+		}
+	}
+	else
+	{
+		if( g_pPlayer->IsPro() )
+		{
+			pWndWorld->m_texMsgIcon.MakeVertex( p2DRender, CPoint( 5, 0 ),  ( 54 + g_pPlayer->GetJob() - 6 ) + ( 8 * g_pPlayer->GetSex() ), &pVertices, 0xffffffff );
+		}
+		else
+		{
+			pWndWorld->m_texMsgIcon.MakeVertex( p2DRender, CPoint( 5, 0 ),  g_pPlayer->GetJob() + ( 6 * g_pPlayer->GetSex() ), &pVertices, 0xffffffff );
+		}
+
+		if( dwMyState != FRS_ONLINE )
+			pWndWorld->m_texMsgIcon.MakeVertex( p2DRender, CPoint( 5 + 18, 0 + 16 ), 27 + ( dwMyState - 2 ), &pVertices, 0xffffffff );
+	}	
+	
+	pWndWorld->m_texMsgIcon.Render( m_pApp->m_pd3dDevice, vertex, ( (int) pVertices - (int) vertex ) / sizeof( TEXTUREVERTEX2 ) );
+	
+	CString strState;
+	strState.Format( "(%s)", prj.GetText( dwMyState + TID_FRS_ONLINE ) );
+	
+	LPCTSTR pszName = g_pPlayer->GetName( TRUE );
+	p2DRender->TextOut( 70,  2, 1, 1, pszName, 0xff606060 );
+	p2DRender->TextOut( 71,  2, 1, 1, pszName, 0xff606060 );
+	p2DRender->TextOut( 70, 18, 1, 1, strState, 0xff606060 );
+} 
+
+void CWndMessenger::OnInitialUpdate() 
+{ 
+	CWndNeuz::OnInitialUpdate(); 
+	// 여기에 코딩하세요
+
+#ifdef __RENDER_SERVERINFO0608
+	LPCTSTR lpszFormat = prj.GetText(TID_GAME_TOOLTIP_MESS); //접속 서버 -  %s / 멀티 %d 서버 -
+	m_strTooltip.Format( lpszFormat, g_dpCertified.GetServerName(g_Option.m_nSer), g_Option.m_nMSer+1 );
+#endif
+
+	CWndTabCtrl* pWndTabCtrl = (CWndTabCtrl*)GetDlgItem( WIDC_TABCTRL1 );
+	
+	//m_wndAdminBalanceExp.Create( WBS_CHILD | WBS_NODRAWFRAME, rect, pWndTabCtrl, APP_ADMIN_BALANCE_EXP );
+	//m_wndPartySkill.Create( WBS_CHILD | WBS_NOFRAME | WBS_NODRAWFRAME , rect, pWndTabCtrl, APP_PARTY_SKILL );
+	WTCITEM tabTabItem;
+
+	m_wndFriend.Create( WLVS_ICON, CRect( 0, 0, 250, 250 ), pWndTabCtrl, 11 );
+	m_wndFriend.AddWndStyle( WBS_NODRAWFRAME );
+//	m_wndFriend.InitItem( g_pPlayer->m_nJob, g_pPlayer->m_nJob, g_pPlayer->m_aJobSkill );
+	if( g_WndMng.m_Messenger.m_aFriend.size() )
+	{
+		g_DPlay.SendGetFriendName();
+		g_DPlay.SendGetFriendState();
+	}
+	m_wndParty.Create( WLVS_ICON, CRect( 0, 0, 250, 250 ), pWndTabCtrl, 12 );
+	m_wndParty.AddWndStyle( WBS_NODRAWFRAME );
+//	m_wndParty.InitItem( g_pPlayer->m_nJob, g_pPlayer->m_nJob, g_pPlayer->m_aJobSkill );
+
+	m_wndGuild.Create( WLVS_ICON, CRect( 0, 0, 250, 250 ), pWndTabCtrl, 13 );
+	m_wndGuild.AddWndStyle( WBS_NODRAWFRAME );
+	
+	tabTabItem.mask = WTCIF_TEXT | WTCIF_PARAM;
+	tabTabItem.pszText = prj.GetText(TID_APP_COMMUNITY_FRIEND);//"친구";
+	tabTabItem.pWndBase = &m_wndFriend;
+	pWndTabCtrl->InsertItem( 0, &tabTabItem );
+	
+	tabTabItem.mask = WTCIF_TEXT | WTCIF_PARAM;
+	tabTabItem.pszText = prj.GetText(TID_APP_PARTY);//"극단";
+	tabTabItem.pWndBase = &m_wndParty;
+	pWndTabCtrl->InsertItem( 1, &tabTabItem );
+
+	tabTabItem.mask = WTCIF_TEXT | WTCIF_PARAM;
+	tabTabItem.pszText = prj.GetText(TID_APP_COMPANY);//"극단";;	// GetText 추가해야함
+	tabTabItem.pWndBase = &m_wndGuild;
+	pWndTabCtrl->InsertItem( 2, &tabTabItem );
+
+	m_menuState.CreateMenu( this );	
+	m_menuState.AppendMenu( 0, FRS_ONLINE   , prj.GetText( TID_FRS_ONLINE   ) );
+	m_menuState.AppendMenu( 0, FRS_OFFLINE  , prj.GetText( TID_FRS_OFFLINE  ) );
+	m_menuState.AppendMenu( 0, FRS_ABSENT   , prj.GetText( TID_FRS_ABSENT   ) );
+	m_menuState.AppendMenu( 0, FRS_HARDPLAY , prj.GetText( TID_FRS_HARDPLAY ) );
+	m_menuState.AppendMenu( 0, FRS_EAT      , prj.GetText( TID_FRS_EAT      ) );
+	m_menuState.AppendMenu( 0, FRS_REST     , prj.GetText( TID_FRS_REST     ) );
+	m_menuState.AppendMenu( 0, FRS_MOVE     , prj.GetText( TID_FRS_MOVE     ) );
+	
+	// 윈도를 중앙으로 옮기는 부분.
+	CRect rectRoot = m_pWndRoot->GetLayoutRect();
+	CRect rectWindow = GetWindowRect();
+	CPoint point( rectRoot.right - rectWindow.Width(), rectRoot.bottom - rectWindow.Height() );
+	Move( point );
+} 
+// 처음 이 함수를 부르면 윈도가 열린다.
+BOOL CWndMessenger::Initialize( CWndBase* pWndParent, DWORD /*dwWndId*/ ) 
+{ 
+#ifdef __SCHOOL0701
+	if( g_eLocal.GetState( EVE_SCHOOL ) )
+		return FALSE;
+#endif // __SCHOOL0701
+	// Daisy에서 설정한 리소스로 윈도를 연다.
+	return CWndNeuz::InitDialog( g_Neuz.GetSafeHwnd(), APP_MESSENGER_, WBS_THICKFRAME, CPoint( 0, 0 ), pWndParent );
+} 
+/*
+  직접 윈도를 열때 사용 
+BOOL CWndMessenger::Initialize( CWndBase* pWndParent, DWORD dwWndId ) 
+{ 
+	CRect rectWindow = m_pWndRoot->GetWindowRect(); 
+	CRect rect( 50 ,50, 300, 300 ); 
+	SetTitle( _T( "title" ) ); 
+	return CWndNeuz::Create( WBS_THICKFRAME | WBS_MOVE | WBS_SOUND | WBS_CAPTION, rect, pWndParent, dwWndId ); 
+} 
+*/
+BOOL CWndMessenger::OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ) 
+{ 
+	return CWndNeuz::OnCommand( nID, dwMessage, pWndBase ); 
+} 
+void CWndMessenger::OnLButtonUp( UINT nFlags, CPoint point ) 
+{ 
+} 
+void CWndMessenger::OnLButtonDown( UINT nFlags, CPoint point ) 
+{ 
+} 
+BOOL CWndMessenger::OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ) 
+{ 
+	if( nID == WIDC_ADD )
+	{
+//		if( g_WndMng.GetWndBase( APP_ADD_FRIEND ) == FALSE )
+		if( !g_WndMng.m_pWndAddFriend )
+		{
+			g_WndMng.m_pWndAddFriend = new CWndAddFriend;
+			g_WndMng.m_pWndAddFriend->Initialize();
+			
+/*			g_DPlay.SendAddFriendReqest( pFocusMover->m_idPlayer );
+			char szMessage[256];
+			sprintf( szMessage, "%s님에게 메신저 요청을 하였습니다", pFocusMover->GetName());
+			g_WndMng.PutString( szMessage, NULL, 0xffffff00 );
+*/
+		}
+	}
+	else
+	if( nID == WIDC_FIND )
+	{
+//		SAFE_DELETE( g_WndMng.m_pWndMessengerSearch );
+//		g_WndMng.m_pWndMessengerSearch = new CWndMessengerSearch;
+//		g_WndMng.m_pWndMessengerSearch->Initialize( &g_WndMng, APP_MESSENGER_SEARCH );
+		g_WndMng.OpenMessageBox( _T( prj.GetText(TID_DIAG_0027) ) );
+	}
+	else
+	if( nID == WIDC_BUTTON1 )
+	{
+		CWndButton* pWndButton = (CWndButton*)GetDlgItem( WIDC_BUTTON1 );
+		CRect rect = pWndButton->GetWindowRect( TRUE );
+		ClientToScreen( &rect );
+		rect.OffsetRect( CPoint( 0, rect.Height() ) );
+		m_menuState.Move( rect.TopLeft() );
+		m_menuState.SetVisible( TRUE );
+		m_menuState.SetFocus();
+	}
+	else
+	if( nID == WIDC_BUTTON2 )
+	{
+		if( !g_WndMng.m_pWndMessengerNote )
+		{
+			g_WndMng.m_pWndMessengerNote = new CWndMessengerNote;
+			g_WndMng.m_pWndMessengerNote->Initialize();  
+		}
+	}
+	else
+	{
+		if( FRS_ONLINE <= nID && nID < MAX_FRIENDSTAT )
+		{
+			// 내 상태가 바뀌었따~ 코어로 보내어 모두 알려주자~
+			g_DPlay.SendSetState( nID );
+		}
+	}
+	return CWndNeuz::OnChildNotify( message, nID, pLResult ); 
+} 
+void CWndMessenger::SetWndRect( CRect rectWnd, BOOL bOnSize )
+{
+	AdjustMinRect( &rectWnd, 16 * 11, 16 * 10 );
+//	AdjustMaxRect( &rectWnd, 16 * 12, 16 * 12 );
+	CWndNeuz::SetWndRect( rectWnd, bOnSize );
+}
+/*
+void CWndNavigator::OnSize(UINT nType, int cx, int cy)
+{
+	m_wndPlace.Move( CPoint( 0, 0 ) );
+	m_wndZoomIn.Move( CPoint(0, cy - 32 ) );
+	m_wndZoomOut.Move( CPoint(0, cy - 16 ) );
+	
+	CWndNeuz::OnSize(nType,cx,cy);
+}
+*/
+void CWndMessenger::OnSize(UINT nType, int cx, int cy)
+{
+	/*
+//#ifdef __NEWINTERFACE
+	if( m_strTile.IsEmpty() == FALSE )
+	{
+		CRect rectWnd = GetWndRect();
+		CSize size2( rectWnd.Width(), rectWnd.Height() );
+		CSize sizeDiv = size2;
+		sizeDiv.cx %= 16;
+		sizeDiv.cy %= 16;
+		size2.cx /= 16; size2.cx *= 16;
+		size2.cy /= 16; size2.cy *= 16;
+		if( sizeDiv.cx ) size2.cx += 16;
+		if( sizeDiv.cy ) size2.cy += 16;
+		rectWnd.bottom = rectWnd.top + size2.cy;
+		rectWnd.right = rectWnd.left + size2.cx;
+		SetWndRect( rectWnd, FALSE );
+		AdjustWndBase();
+	}
+	*/
+	CRect rect = GetClientRect();//GetWndRect();
+	CWndTabCtrl* pTabCtrl = (CWndTabCtrl*)GetDlgItem( WIDC_TABCTRL1 );
+	CWndButton* pAdd = (CWndButton*)GetDlgItem( WIDC_ADD );
+	CWndButton* pFind = (CWndButton*)GetDlgItem( WIDC_FIND );
+	CWndButton* pTag = (CWndButton*)GetDlgItem( WIDC_BUTTON2 );
+
+	rect.top += 32;
+	rect.left += 4;
+	rect.bottom -= 20;
+	pTabCtrl->SetWndRect( rect );
+	pAdd->Move( rect.left + 5, rect.bottom + 2 );
+	pFind->Move( rect.left + 25, rect.bottom + 2 );
+	pTag->Move( rect.left + 45, rect.bottom + 2 );
+
+#ifdef __S0610
+	m_wndFriend.ScrollBarPos( 0 );
+	m_wndParty.ScrollBarPos( 0 );
+	m_wndGuild.ScrollBarPos( 0 );
+#endif // __S0610
+
+	CWndNeuz::OnSize( nType, cx, cy );
+}
+CWndInstantMsg::CWndInstantMsg() 
+{ 
+} 
+CWndInstantMsg::~CWndInstantMsg() 
+{ 
+} 
+void CWndInstantMsg::OnDraw( C2DRender* p2DRender ) 
+{ 
+	if( m_timer.IsTimeOut() )
+	{
+		Destroy();
+	}
+} 
+void CWndInstantMsg::OnInitialUpdate() 
+{ 
+	CWndNeuz::OnInitialUpdate(); 
+	
+	m_timer.Set( SEC( 10 ) ); // 열리거나, 매시지를 받은 이후 10초 후에 사라진다.
+
+	CRect rectRoot = m_pWndRoot->GetLayoutRect();
+	CRect rectWindow = GetWindowRect();
+	CPoint point( rectRoot.right - rectWindow.Width(), rectRoot.bottom  - rectWindow.Height() );
+	Move( point );
+	//MoveParentCenter();
+} 
+// 처음 이 함수를 부르면 윈도가 열린다.
+BOOL CWndInstantMsg::Initialize( CWndBase* pWndParent, DWORD /*dwWndId*/ ) 
+{ 
+	// Daisy에서 설정한 리소스로 윈도를 연다.
+	return CWndNeuz::InitDialog( g_Neuz.GetSafeHwnd(), APP_INSTANTMSG, WBS_NOFOCUS, CPoint( 0, 0 ), pWndParent );
+} 
+/*
+  직접 윈도를 열때 사용 
+BOOL CWndInstantMsg::Initialize( CWndBase* pWndParent, DWORD dwWndId ) 
+{ 
+	CRect rectWindow = m_pWndRoot->GetWindowRect(); 
+	CRect rect( 50 ,50, 300, 300 ); 
+	SetTitle( _T( "title" ) ); 
+	return CWndNeuz::Create( WBS_THICKFRAME | WBS_MOVE | WBS_SOUND | WBS_CAPTION, rect, pWndParent, dwWndId ); 
+} 
+*/
+BOOL CWndInstantMsg::OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ) 
+{ 
+	return CWndNeuz::OnCommand( nID, dwMessage, pWndBase ); 
+} 
+void CWndInstantMsg::OnSize( UINT nType, int cx, int cy ) \
+{ 
+	CWndNeuz::OnSize( nType, cx, cy ); 
+} 
+void CWndInstantMsg::OnLButtonUp( UINT nFlags, CPoint point ) 
+{ 
+	CWndMessage* pWndMessage = g_WndMng.OpenMessage( m_strPlayer );
+	pWndMessage->AddMessage( m_strPlayer, m_strMessage );
+	Destroy();
+} 
+void CWndInstantMsg::OnLButtonDown( UINT nFlags, CPoint point ) 
+{ 
+} 
+BOOL CWndInstantMsg::OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ) 
+{ 
+	if( nID != WTBID_CLOSE )
+	{
+		CWndMessage* pWndMessage = g_WndMng.OpenMessage( m_strPlayer );
+		pWndMessage->AddMessage( m_strPlayer, m_strMessage );
+		Destroy();
+	}
+
+	/*
+	switch(nID)
+	{
+		case WIDC_EDIT: // 본문 
+			if(message == EN_CHANGE)
+			{
+				CWndEdit* pWndText = (CWndEdit*)GetDlgItem( WIDC_EDIT );
+				CString string;
+				string.Format( "/say %s %s", m_strPlayer, pWndText->m_string );
+#ifdef __ONLINE
+				g_DPlay.SendChat( string );
+#endif
+				pWndText->Empty();
+			}
+			break;
+		case WIDC_SEND: // 본문 
+			{
+				CWndEdit* pWndText = (CWndEdit*)GetDlgItem( WIDC_EDIT );
+				CString string;
+				string.Format( "/say %s %s", m_strPlayer, pWndText->m_string );
+#ifdef __ONLINE
+				g_DPlay.SendChat( string );
+#endif
+				pWndText->Empty();
+//				pWndText->ResetString();
+			}
+			break;
+
+	}
+	*/
+	return CWndNeuz::OnChildNotify( message, nID, pLResult ); 
+} 
+void CWndInstantMsg::AddMessage( LPCTSTR lpszFrom, LPCTSTR lpszMessage )
+{
+	PLAYSND( SND_INF_MESSENGERRING );
+	
+	CWndText* pWndText = (CWndText*)GetDlgItem( WIDC_TEXT );
+	CString strMessage;
+	m_strMessage = lpszMessage;
+	strMessage.Format( "#cff0000ff%s%s :#nc\n  %s\n", lpszFrom, prj.GetText(TID_GAME_FROM3), lpszMessage );
+//	strMessage.Format( "#cff0000ff%s님의 말 :#nc\n  %s\n", lpszFrom, lpszMessage );
+	pWndText->AddString( strMessage );
+	m_timer.Reset();
+//	pWndText->m_wndScrollBar.SetMaxScrollPos();
+}
+
+void CWndInstantMsg::AddMessageJoin( LPCTSTR lpszJoinName )
+{
+	PLAYSND( SND_INF_MESSENGERRING );
+	
+	CWndText* pWndText = (CWndText*)GetDlgItem( WIDC_TEXT );
+	CString strMessage;
+	strMessage.Format( "#cff0000ff%s%s\n", lpszJoinName, prj.GetText(TID_GAME_LOGIN) );
+//	strMessage.Format( "#cff0000ff%s님이 로그인하였습니다\n", lpszJoinName );
+	pWndText->AddString( strMessage );
+	m_timer.Reset();
+}
+
+void CWndInstantMsg::AddPostMessage( LPCTSTR lpszSendName )
+{
+#ifdef __POST0906
+	PLAYSND( SND_INF_MESSENGERRING );
+	
+	CWndText* pWndText = (CWndText*)GetDlgItem( WIDC_TEXT );
+	CString strMessage;
+	strMessage.Format( "#cff0000ff%s%s\n", lpszSendName, prj.GetText(TID_GAME_LOGIN) );
+	//	strMessage.Format( "#cff0000ff%s님이 로그인하였습니다\n", lpszJoinName );
+	pWndText->AddString( prj.GetText(TID_MAIL_RECEIVE) );
+	m_timer.Reset();
+#endif	// __POST0906
+}
+//////////////////////////////////////////////////////////
+
+CWndMessage::CWndMessage() 
+{ 
+} 
+CWndMessage::~CWndMessage() 
+{ 
+} 
+void CWndMessage::OnDraw( C2DRender* p2DRender ) 
+{ 
+} 
+void CWndMessage::OnInitialUpdate() 
+{ 
+	CWndNeuz::OnInitialUpdate(); 
+
+	CWndEdit* pWndEdit = (CWndEdit*)GetDlgItem( WIDC_EDIT );
+	pWndEdit->AddWndStyle( EBS_AUTOVSCROLL );
+	pWndEdit->SetNativeMode();
+
+	pWndEdit->SetFocus();
+
+	CRect rectRoot = m_pWndRoot->GetLayoutRect();
+	CRect rectWindow = GetWindowRect();
+	CPoint point( rectRoot.right - rectWindow.Width(), 110 );
+	Move( point );
+	MoveParentCenter();
+} 
+void CWndMessage::InitSize( void )
+{
+	CRect rectRoot = m_pWndRoot->GetLayoutRect();
+	CRect rectWindow = GetWindowRect();
+	CPoint point( rectRoot.right - rectWindow.Width(), 110 );
+	Move( point );
+	MoveParentCenter();
+}
+// 처음 이 함수를 부르면 윈도가 열린다.
+BOOL CWndMessage::Initialize( CWndBase* pWndParent, DWORD /*dwWndId*/ ) 
+{ 
+	// Daisy에서 설정한 리소스로 윈도를 연다.
+	return CWndNeuz::InitDialog( g_Neuz.GetSafeHwnd(), APP_MESSAGE, WBS_THICKFRAME, CPoint( 0, 0 ), pWndParent );
+} 
+/*
+  직접 윈도를 열때 사용 
+BOOL CWndMessage::Initialize( CWndBase* pWndParent, DWORD dwWndId ) 
+{ 
+	CRect rectWindow = m_pWndRoot->GetWindowRect(); 
+	CRect rect( 50 ,50, 300, 300 ); 
+	SetTitle( _T( "title" ) ); 
+	return CWndNeuz::Create( WBS_THICKFRAME | WBS_MOVE | WBS_SOUND | WBS_CAPTION, rect, pWndParent, dwWndId ); 
+} 
+*/
+BOOL CWndMessage::OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ) 
+{ 
+	return CWndNeuz::OnCommand( nID, dwMessage, pWndBase ); 
+} 
+void CWndMessage::SetWndRect( CRect rectWnd, BOOL bOnSize )
+{
+	AdjustMinRect( &rectWnd, 16 * 10, 16 * 10 );
+//	AdjustMaxRect( &rectWnd, 16 * 12, 16 * 12 );
+	CWndNeuz::SetWndRect( rectWnd, bOnSize );
+}
+void CWndMessage::OnSize( UINT nType, int cx, int cy ) \
+{ 
+	CRect rect = GetClientRect();//GetWndRect();
+	
+	CWndText* pWndText = (CWndText*)GetDlgItem( WIDC_TEXT );
+	CWndEdit* pWndEdit = (CWndEdit*)GetDlgItem( WIDC_EDIT );
+	CWndButton* pWndSend = (CWndButton*)GetDlgItem( WIDC_SEND );
+
+	rect.top += 4;
+	rect.left += 4;
+	rect.right -= 4;
+	rect.bottom -= 50;
+	pWndText->SetWndRect( rect );
+
+	rect = GetClientRect();//GetWndRect();
+	rect.top = rect.bottom - 45;
+	rect.left += 4;
+	rect.right -= 80;
+	rect.bottom -= 4;
+	pWndEdit->SetWndRect( rect );
+	
+	rect = GetClientRect();//GetWndRect();
+	rect.top = rect.bottom - 45;
+	rect.left = rect.right - 74;
+	rect.right -= 4;
+	rect.bottom -= 4;
+	//pWndSend->SetWndRect( rect );
+	pWndSend->Move( rect.TopLeft() );//rect.right + 4, rect.top );
+
+	//pAdd->Move( rect.left + 5, rect.bottom + 2 );
+	//pFind->Move( rect.left + 25, rect.bottom + 2 );
+	
+	//m_wndPlace.Move( CPoint( 0, 0 ) );
+	//m_wndZoomIn.Move( CPoint(0, cy - 32 ) );
+	//m_wndZoomOut.Move( CPoint(0, cy - 16 ) );
+	
+	CWndNeuz::OnSize( nType, cx, cy ); 
+} 
+void CWndMessage::OnLButtonUp( UINT nFlags, CPoint point ) 
+{ 
+} 
+void CWndMessage::OnLButtonDown( UINT nFlags, CPoint point ) 
+{ 
+} 
+BOOL CWndMessage::OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ) 
+{ 
+	CWndEdit* pWndText = (CWndEdit*)GetDlgItem( WIDC_EDIT );
+	switch(nID)
+	{
+		case WIDC_EDIT: // 본문 
+			if( message == EN_RETURN)
+			{
+				if( pWndText->m_string.IsEmpty() == FALSE )
+				{
+					CString string;
+					string.Format( "/say \"%s\" %s", m_strPlayer, pWndText->m_string );
+#ifdef __ONLINE
+					g_DPlay.SendChat( string );
+#endif
+					pWndText->Empty();
+				}
+				//				pWndText->ResetString();
+			}
+			break;
+		case WIDC_SEND: // 본문 
+			{
+				CString str = pWndText->m_string;
+				if( str.IsEmpty() == FALSE )
+				{
+					CString string;
+					string.Format( "/say \"%s\" %s", m_strPlayer, pWndText->m_string );
+#ifdef __ONLINE
+					g_DPlay.SendChat( string );
+#endif
+					pWndText->Empty();
+	//				pWndText->ResetString();
+				}
+			}
+			break;
+
+	}
+	return CWndNeuz::OnChildNotify( message, nID, pLResult ); 
+} 
+void CWndMessage::AddMessage( LPCTSTR lpszFrom, LPCTSTR lpszMessage )
+{
+	CWndText* pWndText = (CWndText*)GetDlgItem( WIDC_TEXT );
+	CString strMessage;
+
+	if( !strcmp( lpszFrom, g_pPlayer->GetName() ) )
+		strMessage.Format( "#cffff0000%s%s :#nc\n  %s\n", lpszFrom, prj.GetText(TID_GAME_FROM3), lpszMessage );
+	//  	strMessage.Format( "#cffff0000%s님의 말 :#nc\n  %s\n", lpszFrom, lpszMessage );
+	else
+		strMessage.Format( "#cff0000ff%s%s :#nc\n  %s\n", lpszFrom, prj.GetText(TID_GAME_FROM3), lpszMessage );
+	//  	strMessage.Format( "#cff0000ff%s님의 말 :#nc\n  %s\n", lpszFrom, lpszMessage );
+	
+	pWndText->AddString( strMessage );
+	pWndText->m_wndScrollBar.SetMaxScrollPos();
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//		쪽지창
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/****************************************************
+WndId : APP_MESSAGE_NOTE - 쪽지보내기창
+CtrlId : WIDC_EDIT1 - 
+CtrlId : WIDC_BUTTON1 - Button
+CtrlId : WIDC_TEXT1 - 
+****************************************************/
+
+CWndMessageNote::CWndMessageNote() 
+{ 
+} 
+CWndMessageNote::~CWndMessageNote() 
+{ 
+} 
+void CWndMessageNote::OnDraw( C2DRender* p2DRender ) 
+{ 
+} 
+void CWndMessageNote::OnInitialUpdate() 
+{ 
+	CWndNeuz::OnInitialUpdate(); 
+	// 여기에 코딩하세요
+//	m_pWndText = (CWndText*)GetDlgItem( WIDC_TEXT1 );
+	m_pEdit = (CWndEdit*)GetDlgItem( WIDC_EDIT1 );
+	m_pEdit->AddWndStyle( EBS_WANTRETURN );//| WBS_VSCROLL  );
+	m_pEdit->SetNativeMode();
+	m_pEdit->SetFocus();
+	CString strTitle;
+	strTitle.Format( "%s - %s", GetTitle(), m_szName );
+	SetTitle( strTitle );
+	// 윈도를 중앙으로 옮기는 부분.
+	CRect rectRoot = m_pWndRoot->GetLayoutRect();
+	CRect rectWindow = GetWindowRect();
+	CPoint point( rectRoot.right - rectWindow.Width(), 110 );
+	Move( point );
+	MoveParentCenter();
+} 
+// 처음 이 함수를 부르면 윈도가 열린다.
+BOOL CWndMessageNote::Initialize( CWndBase* pWndParent, DWORD /*dwWndId*/ ) 
+{ 
+	// Daisy에서 설정한 리소스로 윈도를 연다.
+	return CWndNeuz::InitDialog( g_Neuz.GetSafeHwnd(), APP_MESSAGE_NOTE, 0, CPoint( 0, 0 ), pWndParent );
+} 
+/*
+직접 윈도를 열때 사용 
+BOOL CWndMessageNote::Initialize( CWndBase* pWndParent, DWORD dwWndId ) 
+{ 
+CRect rectWindow = m_pWndRoot->GetWindowRect(); 
+CRect rect( 50 ,50, 300, 300 ); 
+SetTitle( _T( "title" ) ); 
+return CWndNeuz::Create( WBS_THICKFRAME | WBS_MOVE | WBS_SOUND | WBS_CAPTION, rect, pWndParent, dwWndId ); 
+} 
+*/
+BOOL CWndMessageNote::OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ) 
+{ 
+	return CWndNeuz::OnCommand( nID, dwMessage, pWndBase ); 
+} 
+void CWndMessageNote::OnSize( UINT nType, int cx, int cy ) \
+{ 
+	CWndNeuz::OnSize( nType, cx, cy ); 
+} 
+void CWndMessageNote::OnLButtonUp( UINT nFlags, CPoint point ) 
+{ 
+} 
+void CWndMessageNote::OnLButtonDown( UINT nFlags, CPoint point ) 
+{ 
+} 
+BOOL CWndMessageNote::OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ) 
+{ 
+	if( nID == WIDC_BUTTON1 )
+	{
+		LPSTR lpSendMessage = (LPSTR)m_pEdit->GetString();
+		int adf = strlen( lpSendMessage );
+		if( strlen( lpSendMessage ) <= 255 )
+		{
+			g_DPlay.SendMessageNote( m_dwUserId, (LPSTR)m_pEdit->GetString() );
+		}
+		else
+		{
+			// 에러 메세지 
+			g_WndMng.PutString( prj.GetText( TID_GAME_MESSFULLMSG ), NULL, prj.GetTextColor( TID_GAME_MESSFULLMSG ) );
+		}
+		Destroy();
+	}
+	return CWndNeuz::OnChildNotify( message, nID, pLResult ); 
+} 
+
+/****************************************************
+WndId : APP_MESSENGER_NOTE - 쪽지창
+CtrlId : WIDC_TEXT1 - 
+****************************************************/
+
+CWndMessengerNote::CWndMessengerNote() 
+{ 
+} 
+CWndMessengerNote::~CWndMessengerNote() 
+{ 
+} 
+void CWndMessengerNote::OnDraw( C2DRender* p2DRender ) 
+{ 
+} 
+void CWndMessengerNote::OnInitialUpdate() 
+{ 
+	CWndNeuz::OnInitialUpdate(); 
+	// 여기에 코딩하세요
+	
+	for( int i = 0 ; i < g_Neuz.m_nTagCount ; i++ )
+	{
+		CWndText * pWndText = (CWndText*)GetDlgItem( WIDC_TEXT1 );
+		pWndText->AddWndStyle( EBS_WANTRETURN );
+		CString strMessage;
+		strMessage.Format( "%s - %d / %02d / %02d", g_Neuz.m_strTagName[ i ], g_Neuz.m_dwtegDate[ i ] / 10000, ( g_Neuz.m_dwtegDate[ i ] % 10000 ) / 100,  ( g_Neuz.m_dwtegDate[ i ] % 10000 ) % 100 );
+		pWndText->AddString( strMessage, 0xff804000 );
+		pWndText->AddString( "\n  " );
+		pWndText->AddString( g_Neuz.m_strTagMessage[ i ] );
+		pWndText->AddString( "\n\n" );
+		
+//		g_Neuz.m_dwtegDate[ i ]
+//		g_Neuz.m_strTagMessage[ i ]
+	}
+	
+	// 윈도를 중앙으로 옮기는 부분.
+	CRect rectRoot = m_pWndRoot->GetLayoutRect();
+	CRect rectWindow = GetWindowRect();
+	CPoint point( rectRoot.right - rectWindow.Width(), 110 );
+	Move( point );
+	MoveParentCenter();
+} 
+// 처음 이 함수를 부르면 윈도가 열린다.
+BOOL CWndMessengerNote::Initialize( CWndBase* pWndParent, DWORD /*dwWndId*/ ) 
+{ 
+	// Daisy에서 설정한 리소스로 윈도를 연다.
+	return CWndNeuz::InitDialog( g_Neuz.GetSafeHwnd(), APP_MESSENGER_NOTE, 0, CPoint( 0, 0 ), pWndParent );
+} 
+/*
+직접 윈도를 열때 사용 
+BOOL CWndMessengerNote::Initialize( CWndBase* pWndParent, DWORD dwWndId ) 
+{ 
+CRect rectWindow = m_pWndRoot->GetWindowRect(); 
+CRect rect( 50 ,50, 300, 300 ); 
+SetTitle( _T( "title" ) ); 
+return CWndNeuz::Create( WBS_THICKFRAME | WBS_MOVE | WBS_SOUND | WBS_CAPTION, rect, pWndParent, dwWndId ); 
+} 
+*/
+BOOL CWndMessengerNote::OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ) 
+{ 
+	return CWndNeuz::OnCommand( nID, dwMessage, pWndBase ); 
+} 
+void CWndMessengerNote::OnSize( UINT nType, int cx, int cy ) \
+{ 
+	CWndNeuz::OnSize( nType, cx, cy ); 
+} 
+void CWndMessengerNote::OnLButtonUp( UINT nFlags, CPoint point ) 
+{ 
+} 
+void CWndMessengerNote::OnLButtonDown( UINT nFlags, CPoint point ) 
+{ 
+} 
+BOOL CWndMessengerNote::OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ) 
+{ 
+	return CWndNeuz::OnChildNotify( message, nID, pLResult ); 
+} 
+
+

@@ -1,0 +1,51 @@
+- Neuz Console -
+
+author : gmpbigsun
+date : 2009_7_30_thu
+
+1. 생김새 : - 리스트 박스 하나와 ( 출력창으로 이용 )
+              그 밑에 에디트 박스 ( 입력용 )로 이루어져 있다.
+
+
+2. 사용 : - '~' 버튼으로 게임과의 상호 포커스 이동을 지원
+     
+	  - 함수등록후 문자열로 함수호출기능
+        
+          - 아무것도 입력하지 않고 Enter를 치면 창이 사라짐
+        
+          - "help" 라고 입력하면 커맨드 리스트 보여줌
+
+
+2. 기능 : - 정보출력기능 ( 리스트박스 )
+         
+	   - 단일 스트링정보 Addstring함수를 이용하거나
+            Log( ... )함수를 이용해서 출력시킬수 있다. ( 에디트 박스 )
+
+   
+3. 함수등록방법
+
+	- Common/ConsoleFunc.cpp 파일의 ConsoleRegister( )함수 참고
+
+	- 예 )
+        CONSOLE_REGISTER( string("show_fps"), CON_DATA::VT_FUNCTION, _show_fps );
+        콘솔창에 "show_fps"라고 입력할경우 해당 함수를 불러줌
+        
+	_show_fps 는 함수명(포인터)이며 해당 함수를 작성할때 argument에 주의바람
+        즉 argument는 vector< string > 타입으로 해당함수에서 풀어내어 처리해야한다.
+	
+	모든 등록 함수 prototype은 다음과 같아야 한다.
+	void func_name( vector< string >& );
+
+
+4. PS : 함수를 작성하고 해당 명령 문자열만 등록시키면 바로 써먹을수 있는 간단한 구조이기때문에
+        간단한 테스트용으로 적합하며, 이미 채팅창에 거의 대부분의 기능이 있으므로
+        중복해서 작성하지 말것..
+
+        예로, _show_fps함수는 단순히 CWndWorld의 m_bRenderFPS 값을 바꿀뿐이다.
+
+        실시간으로 어떤값을 조사할때 특히 출력창이 유용할수있다.
+
+
+
+        
+  

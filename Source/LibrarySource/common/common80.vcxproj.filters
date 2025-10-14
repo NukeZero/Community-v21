@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FLAssert.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLEnumModule.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLEnumProcess.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLEnumThread.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLFileUtil.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLFindFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLModuleInfo.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLStdFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLStringFunction.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLSystemUtil.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLTextFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLTickCount.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FLArray.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLAssert.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLCommon.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLCommonTypes.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLEnumModule.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLEnumProcess.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLEnumThread.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLFile.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLFileUtil.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLFindFile.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLModuleInfo.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLStdFile.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLStringFunction.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLSystemUtil.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLTextFile.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLTickCount.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

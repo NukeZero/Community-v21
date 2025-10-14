@@ -1,0 +1,433 @@
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+#include "VersionCommon.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+#if		__CURRENT_LANG == LANG_KOR
+	LANGUAGE 18, 1S
+	#pragma code_page(949)
+	#include "string_kor.rc2"
+
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_KOR\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_KOR\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_KOR\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_KOR\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_KOR\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_KOR\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_KOR\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_KOR\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_KOR\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_KOR\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_KOR\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_KOR\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_KOR\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_KOR\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_KOR\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_KOR\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_KOR\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_KOR\\LauncherButt_PatcheNotes_Normal.bmp"
+	
+	
+#elif	__CURRENT_LANG == LANG_ENG
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_eng.rc2"
+	
+	#if		__COUNTRY == CNTRY_USA
+		IDR_MAINFRAME		ICON	DISCARDABLE		"Image\\LANG_ENG\\flyff_icon_us.ico"
+	#else
+		IDR_MAINFRAME		ICON	DISCARDABLE		"Image\\LANG_ENG\\flyff_icon.ico"
+	#endif
+
+	IDR_PNG1                PNG                     "Image\\LANG_ENG\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_ENG\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_ENG\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_ENG\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_ENG\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_ENG\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_ENG\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_ENG\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_ENG\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_ENG\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_ENG\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_ENG\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_ENG\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_ENG\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_ENG\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_ENG\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_ENG\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_JAP
+	LANGUAGE 17, 1
+	#pragma code_page(932)
+	#include "string_jpn.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_JAP\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_JAP\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_JAP\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_JAP\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_JAP\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_JAP\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_JAP\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_JAP\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_JAP\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_JAP\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_JAP\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_JAP\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_JAP\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_JAP\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_JAP\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_JAP\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_JAP\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_JAP\\LauncherButt_PatcheNotes_Normal.bmp"
+	
+
+#elif	__CURRENT_LANG == LANG_CHI
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_eng.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_CHI\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_CHI\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_CHI\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_CHI\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_CHI\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_CHI\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_CHI\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_CHI\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_CHI\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_CHI\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_CHI\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_CHI\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_CHI\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_CHI\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_CHI\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_CHI\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_CHI\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_CHI\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_THA
+	LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+	#pragma code_page(950)
+	#include "string_twn.rc2"
+
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_THA\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_THA\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_THA\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_THA\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_THA\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_THA\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_THA\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_THA\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_THA\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_THA\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_THA\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_THA\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_THA\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_THA\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_THA\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_THA\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_THA\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_THA\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_THA\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_THA\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_THA\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_TWN
+	LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+	#pragma code_page(950)
+	#include "string_twn.rc2"
+
+	#if		__COUNTRY == CNTRY_HK
+		IDR_MAINFRAME		ICON	DISCARDABLE		"Image\\LANG_TWN\\flyff_icon_hk.ico"
+	#else
+		IDR_MAINFRAME		ICON	DISCARDABLE		"Image\\LANG_TWN\\flyff_icon.ico"
+	#endif
+	
+	IDR_PNG1                PNG                     "Image\\LANG_TWN\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_TWN\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_TWN\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_TWN\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_TWN\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_TWN\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_TWN\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_TWN\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_TWN\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_TWN\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_TWN\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_TWN\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_TWN\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_TWN\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_TWN\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_TWN\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_TWN\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_GER
+	LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+	#pragma code_page(1252)
+	#include "string_deu.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_GER\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_GER\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_GER\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_GER\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_GER\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_GER\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_GER\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_GER\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_GER\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_GER\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_GER\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_GER\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_GER\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_GER\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_GER\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_GER\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_GER\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_GER\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_GER\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_GER\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_GER\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_SPA
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_eng.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_SPA\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_SPA\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_SPA\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_SPA\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_SPA\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_SPA\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_SPA\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_SPA\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_SPA\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_SPA\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_SPA\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_SPA\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_SPA\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_SPA\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_SPA\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_SPA\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_SPA\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_SPA\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_FRA
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_frn.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_FRA\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_FRA\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_FRA\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_FRA\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_FRA\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_FRA\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_FRA\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_FRA\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_FRA\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_FRA\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_FRA\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_FRA\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_FRA\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_FRA\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_FRA\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_FRA\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_FRA\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_FRA\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_POR
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_por.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_POR\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_POR\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_POR\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_POR\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_POR\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_POR\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_POR\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_POR\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_POR\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_POR\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_POR\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_POR\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_POR\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_POR\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_POR\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_POR\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_POR\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_POR\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_POR\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_POR\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_POR\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_VTN
+	LANGUAGE 9, 1
+	#pragma code_page(1258)
+	#include "string_vtn.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_VTN\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_VTN\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_VTN\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_VTN\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_VTN\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_VTN\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_VTN\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_VTN\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_VTN\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_VTN\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_VTN\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_VTN\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_VTN\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_VTN\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_VTN\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_VTN\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_VTN\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_VTN\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_RUS
+	LANGUAGE 9, 1
+	#pragma code_page(1251)
+	#include "string_rus.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_RUS\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_RUS\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_RUS\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_RUS\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_RUS\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_RUS\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_RUS\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_RUS\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_RUS\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_RUS\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_RUS\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_RUS\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_RUS\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_RUS\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_RUS\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_RUS\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_RUS\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_RUS\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#elif	__CURRENT_LANG == LANG_FWC
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_fwc.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\LANG_FWC\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\LANG_FWC\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\LANG_FWC\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\LANG_FWC\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\LANG_FWC\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\LANG_FWC\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\LANG_FWC\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\LANG_FWC\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\LANG_FWC\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\LANG_FWC\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\LANG_FWC\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\LANG_FWC\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\LANG_FWC\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\LANG_FWC\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\LANG_FWC\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\LANG_FWC\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\LANG_FWC\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\LANG_FWC\\LauncherButt_PatcheNotes_Normal.bmp"
+
+	
+#else
+	LANGUAGE 9, 1
+	#pragma code_page(1252)
+	#include "string_eng.rc2"
+	
+	IDR_MAINFRAME			ICON	DISCARDABLE		"Image\\DEFAULT\\flyff_icon.ico"
+
+	IDR_PNG1                PNG                     "Image\\DEFAULT\\LauncherBG.png"
+	IDR_PNG2                PNG                     "Image\\DEFAULT\\OptionsBG.png"
+	IDB_BITMAP_OK00         BITMAP  DISCARDABLE     "Image\\DEFAULT\\Ok00.bmp"
+	IDB_BITMAP_OK01         BITMAP  DISCARDABLE     "Image\\DEFAULT\\Ok01.bmp"
+	IDB_BITMAP_CANCEL00     BITMAP  DISCARDABLE     "Image\\DEFAULT\\Cancel00.bmp"
+	IDB_BITMAP_CANCEL01     BITMAP  DISCARDABLE     "Image\\DEFAULT\\Cancel01.bmp"
+	IDB_BITMAP_CLOSE00      BITMAP  DISCARDABLE     "Image\\DEFAULT\\LauncherButt_Min_Over.bmp"
+	IDB_BITMAP_CLOSE01      BITMAP  DISCARDABLE     "Image\\DEFAULT\\LauncherButt_Min_Normal.bmp"
+	IDB_BITMAP_OPTION00     BITMAP  DISCARDABLE     "Image\\DEFAULT\\LauncherButt_Options_Over.bmp"
+	IDB_BITMAP_OPTION01     BITMAP  DISCARDABLE     "Image\\DEFAULT\\LauncherButt_Options_Normal.bmp"
+	IDB_BITMAP_START00      BITMAP  DISCARDABLE     "Image\\DEFAULT\\LauncherButt_Play_Over.bmp"
+	IDB_BITMAP_START01      BITMAP  DISCARDABLE     "Image\\DEFAULT\\LauncherButt_Play_Normal.bmp"
+	IDB_BITMAP_START_D00	BITMAP	DISCARDABLE		"Image\\DEFAULT\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_START_D01	BITMAP	DISCARDABLE		"Image\\DEFAULT\\LauncherButt_Play_Idlel.bmp"
+	IDB_BITMAP_REGISTER00	BITMAP	DISCARDABLE		"Image\\DEFAULT\\LauncherButt_Register_Over.bmp"
+	IDB_BITMAP_REGISTER01	BITMAP	DISCARDABLE		"Image\\DEFAULT\\LauncherButt_Register_Normal.bmp"
+	IDB_BITMAP_MINIMIZE00	BITMAP	DISCARDABLE		"Image\\DEFAULT\\LauncherButt_Close_Over.bmp"
+	IDB_BITMAP_MINIMIZE01	BITMAP	DISCARDABLE		"Image\\DEFAULT\\LauncherButt_Close_Normal.bmp"
+	IDB_BITMAP_PATCHNOTES00 BITMAP	DISCARDABLE		"Image\\DEFAULT\\LauncherButt_PatcheNotes_Over.bmp"
+	IDB_BITMAP_PATCHNOTES01 BITMAP	DISCARDABLE		"Image\\DEFAULT\\LauncherButt_PatcheNotes_Normal.bmp"
+
+#endif
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Encrypter", "Encrypter80.vcxproj", "{A9ED5C44-93FE-42A5-8B9D-00964D2A3533}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9ED5C44-93FE-42A5-8B9D-00964D2A3533}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9ED5C44-93FE-42A5-8B9D-00964D2A3533}.Debug|Win32.Build.0 = Debug|Win32
+		{A9ED5C44-93FE-42A5-8B9D-00964D2A3533}.Release|Win32.ActiveCfg = Release|Win32
+		{A9ED5C44-93FE-42A5-8B9D-00964D2A3533}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3C5C2FE-AB18-4E76-8288-06039F4C1F81}
+	EndGlobalSection
+EndGlobal

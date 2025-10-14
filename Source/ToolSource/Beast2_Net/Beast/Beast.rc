@@ -1,0 +1,2504 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Beast.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Beast.ico"
+IDR_BEASTTYPE           ICON                    "res\\BeastDoc.ico"
+IDI_HEIGHT_MOUNTAIN     ICON                    "res\\icon3.ico"
+IDI_HEIGHT_FLAT         ICON                    "res\\ico00001.ico"
+IDI_HEIGHT_SOFT         ICON                    "res\\ico00002.ico"
+IDI_OBJ_EDIT_PUT        ICON                    "res\\ico00003.ico"
+IDI_OBJ_EDIT_PUT_UP     ICON                    "res\\obj_edit.ico"
+IDI_OBJ_EDIT_SELECT     ICON                    "res\\ico00004.ico"
+IDI_OBJ_EDIT_MOVE       ICON                    "res\\ico00005.ico"
+IDI_OBJ_EDIT_DELETE     ICON                    "res\\ico00006.ico"
+IDI_OBJ_EDIT_ROTATION   ICON                    "res\\ico00007.ico"
+IDI_OBJ_EDIT_SCALE      ICON                    "res\\ico00008.ico"
+IDI_HEIGHT_HOLE         ICON                    "res\\height_s.ico"
+IDI_HEIGHT_RANDOM       ICON                    "res\\height_r.ico"
+IDI_HEIGHT_ATTRIBUTE    ICON                    "res\\ico00010.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_HEIGHT_MOUNTAIN     BITMAP                  "res\\bitmap1.bmp"
+IDB_HEIGHT_SOFT         BITMAP                  "res\\bitmap2.bmp"
+IDB_HEIGHT_FLAT         BITMAP                  "res\\bitmap3.bmp"
+IDB_TABIMAGES           BITMAP                  "res\\bmp00001.bmp"
+IDB_TABIMAGES1          BITMAP                  "res\\tabimage.bmp"
+IDB_CHECK               BITMAP                  "res\\Check.bmp"
+IDB_UNCHECK             BITMAP                  "res\\UnCheck.bmp"
+IDB_MIDDLECHECK         BITMAP                  "res\\middlecheck.bmp"
+IDR_EDIT                BITMAP                  "res\\mainfram.bmp"
+IDR_VIEW                BITMAP                  "res\\toolbar2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW_WORLD
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOM
+    BUTTON      ID_BUTTON32776
+    BUTTON      ID_VIEW_SCROLL
+    BUTTON      ID_VIEW_ROTATION
+    BUTTON      ID_BUTTON32779
+    BUTTON      ID_VIEW_ZOOM_EXTENTS
+    BUTTON      ID_BUTTON32781
+    BUTTON      ID_BUTTON32782
+    SEPARATOR
+    BUTTON      ID_GET
+    BUTTON      ID_SELECT_PUT
+    BUTTON      ID_SELECT
+    BUTTON      ID_SELECT_MOVE
+    BUTTON      ID_SELECT_ROTATION
+    BUTTON      ID_SELECT_SCALE
+    SEPARATOR
+    BUTTON      ID_RESTRICT_X
+    BUTTON      ID_RESTRICT_Y
+    BUTTON      ID_RESTRICT_Z
+    BUTTON      ID_RESTRICT_XZ
+    SEPARATOR
+    BUTTON      ID_TERRAIN_HEIGHT
+    BUTTON      ID_TERRAIN_TEXTURE
+    BUTTON      ID_TERRAIN_COLOR
+    BUTTON      ID_TERRAIN_WATER
+    BUTTON      ID_BUTTON_ICON_MPU
+    BUTTON      ID_BUTTON_ICON_CONTINENT
+    BUTTON      ID_BUTTON_ICON_LIGHTMAP
+END
+
+IDR_EDIT TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_VIEW_FRAMEMOVE
+    BUTTON      ID_EXEC_GAME
+    SEPARATOR
+    BUTTON      ID_EDIT_ONLAND
+    BUTTON      ID_EDIT_HEAPOBJECT
+    SEPARATOR
+    BUTTON      ID_EDIT_GRID
+    BUTTON      ID_EDIT_LOCK
+    BUTTON      ID_EDIT_RANDOM_DEGREE_SCALE
+    BUTTON      ID_EDIT_RESPAWN_ENABLE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+END
+
+IDR_VIEW TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_VIEW_WIREFRAME
+    BUTTON      ID_VIEW_LOD
+    BUTTON      ID_VIEW_OBJLOD
+    BUTTON      ID_VIEW_FOG
+    BUTTON      ID_VIEW_NAME
+    SEPARATOR
+    BUTTON      ID_VIEW_GRID
+    BUTTON      ID_VIEW_GRID_PATCH
+    BUTTON      ID_VIEW_GRID_LANDSCAPE
+    SEPARATOR
+    BUTTON      ID_VIEW_TERRAIN
+    BUTTON      ID_VIEW_ALL_OBJECTS
+    BUTTON      ID_VIEW_WATER
+    BUTTON      ID_VIEW_LIGHT
+    SEPARATOR
+    BUTTON      ID_VIEW_HEIGHT_ATTRIBUTE
+    SEPARATOR
+    BUTTON      ID_VIEW_TOP
+    BUTTON      ID_VIEW_FRONT
+    BUTTON      ID_VIEW_AXIS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Not available",               ID_FILE_NEW_PROJECT
+        MENUITEM "Not available",               ID_FILE_OPEN_PROJECT
+        MENUITEM "Save Project(P)",             ID_FILE_SAVE_PROJECT
+        MENUITEM "Close Project",               ID_FILE_CLOSE_PROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "New World",                   ID_FILE_NEW_WORLD
+        MENUITEM "Open World",                  ID_FILE_OPEN_WORLD
+        MENUITEM "Save World",                  ID_FILE_SAVE_WORLD
+        MENUITEM "Save As World",               ID_FILE_SAVE_AS_WORLD
+        MENUITEM "Save As Bitmap",              ID_FILE_SAVE_AS_BITMAP
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "Edit(&E)"
+    BEGIN
+        MENUITEM "Undo(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cut(&T)\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "Copy(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "Paste(&P)\tCtrl+V",           ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Gravity\tO",                  ID_EDIT_ONLAND
+        MENUITEM "Pile Up\tH",                  ID_EDIT_HEAPOBJECT
+        MENUITEM SEPARATOR
+        MENUITEM "Lock\tSPACE",                 ID_EDIT_LOCK
+        MENUITEM "Snap to grid\tG",             ID_EDIT_GRID
+        MENUITEM "Get grid size",               ID_EDIT_GETGRID
+        MENUITEM "Set Grid",                    ID_EDIT_SETGRID
+        MENUITEM SEPARATOR
+        MENUITEM "Random Scale and Rotation",   ID_EDIT_RANDOM_DEGREE_SCALE
+        MENUITEM "Spawn Default Setting",       ID_EDIT_RESPAWN_DEFAULT
+        MENUITEM SEPARATOR
+        MENUITEM "Animate",                     ID_VIEW_FRAMEMOVE
+        MENUITEM "Execute Game",                ID_EXEC_GAME
+    END
+    POPUP "Object(&S)"
+    BEGIN
+        MENUITEM "Put",                         ID_VIEW_ROTATION
+        MENUITEM "Select",                      ID_VIEW_ROTATION
+        MENUITEM "Select Move",                 ID_SELECT_MOVE
+        MENUITEM "Select Rotation",             ID_SELECT_ROTATION
+        MENUITEM "Select Scale",                ID_SELECT_SCALE
+        MENUITEM SEPARATOR
+        MENUITEM "Restrict Y",                  ID_RESTRICT_Y
+        MENUITEM "Restrict XZ",                 ID_RESTRICT_XZ
+    END
+    POPUP "Terrain(&T)"
+    BEGIN
+        MENUITEM "Height",                      ID_TERRAIN_HEIGHT
+        MENUITEM "Texture",                     ID_TERRAIN_TEXTURE
+        MENUITEM "Color",                       ID_TERRAIN_COLOR
+        MENUITEM "Water",                       ID_TERRAIN_WATER
+    END
+    POPUP "World(&W)"
+    BEGIN
+        MENUITEM "Description",                 ID_WORLD_DESCRIPTION
+        MENUITEM "Weather",                     ID_WORLD_WEATHER
+        MENUITEM "Fog",                         ID_WORLD_FOG
+        MENUITEM "Time && Date",                ID_WORLD_TIME_DATE
+        MENUITEM "Music",                       ID_WORLD_MUSIC
+        MENUITEM "Script",                      ID_WORLD_SCRIPT
+        MENUITEM "Camera",                      ID_WORLD_CAMERA
+        MENUITEM "Light",                       ID_WORLD_LIGHT
+        MENUITEM "Revival To",                  ID_WORLD_REVIVAL
+        MENUITEM "World Properties",            ID_WORLD_PROPERTIES
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "Zoom View",                   ID_VIEW_ZOOM
+        MENUITEM "Scroll View",                 ID_VIEW_SCROLL
+        MENUITEM "Rotation View",               ID_VIEW_ROTATION
+        MENUITEM SEPARATOR
+        MENUITEM "Top View",                    ID_VIEW_TOP
+        MENUITEM "Front View",                  ID_VIEW_FRONT
+        MENUITEM SEPARATOR
+        MENUITEM "Wire Frame",                  ID_VIEW_WIREFRAME
+        MENUITEM "Terrain LOD",                 ID_VIEW_LOD
+        MENUITEM "Object LOD",                  ID_VIEW_OBJLOD
+        MENUITEM "Fog",                         ID_VIEW_FOG
+        MENUITEM "Name",                        ID_VIEW_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Grid",                        ID_VIEW_GRID
+        MENUITEM "Grid Patch",                  ID_VIEW_GRID_PATCH
+        MENUITEM "Grid Landscape",              ID_VIEW_GRID_LANDSCAPE
+        MENUITEM SEPARATOR
+        MENUITEM "Sky Box",                     ID_VIEW_SKYBOX
+        MENUITEM "Terrain",                     ID_VIEW_TERRAIN
+        MENUITEM "All Objects",                 ID_VIEW_ALL_OBJECTS
+        MENUITEM "Water",                       ID_VIEW_WATER
+        MENUITEM "Light",                       ID_VIEW_LIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "Spawn Region",                ID_VIEW_SPAWN
+        MENUITEM "Mover",                       ID_VIEW_MOVER
+        MENUITEM "Obj",                         ID_VIEW_OBJ
+        MENUITEM "Region",                      ID_VIEW_REGION
+        MENUITEM SEPARATOR
+        MENUITEM "Height Attribute",            ID_VIEW_HEIGHT_ATTRIBUTE
+        MENUITEM "Set Time",                    ID_VIEW_SET_TIME
+    END
+    POPUP "Window(&W)"
+    BEGIN
+        MENUITEM "Work Space",                  ID_VIEW_WORKSPACE
+        MENUITEM "Not available",               ID_VIEW_PREVIEWER
+        MENUITEM SEPARATOR
+        MENUITEM "Terrain Editor",              ID_VIEW_TERRAIN_EDITOR
+        MENUITEM "Navigator",                   ID_VIEW_NAVIGATOR
+        MENUITEM SEPARATOR
+        MENUITEM "Tool Bar(&T)",                ID_VIEW_TOOLBAR
+        MENUITEM "Status Bar(&S)",              ID_VIEW_STATUS_BAR
+        MENUITEM "Continent Info",              ID_VIEW_CONTINENT
+        MENUITEM "전체맵 계산기",                     ID_WINDOW_CALC_WORLDMAP
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "Beast Info(&A)...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "A",            ID_SELECT_PUT,          VIRTKEY, NOINVERT
+    "A",            ID_VIEW_ROTATION,       VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EDIT_DRAW,           VIRTKEY, SHIFT, NOINVERT
+    "E",            ID_SELECT_ROTATION,     VIRTKEY, NOINVERT
+    "F",            ID_VIEW_FRONT,          VIRTKEY, NOINVERT
+    "G",            ID_EDIT_GRID,           VIRTKEY, NOINVERT
+    "H",            ID_EDIT_HEAPOBJECT,     VIRTKEY, NOINVERT
+    "N",            ID_FILE_NEW_WORLD,      VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_EDIT_ONLAND,         VIRTKEY, NOINVERT
+    "O",            ID_FILE_OPEN_WORLD,     VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_SELECT,              VIRTKEY, NOINVERT
+    "R",            ID_SELECT_SCALE,        VIRTKEY, NOINVERT
+    "S",            ID_FILE_SAVE_WORLD,     VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_VIEW_SCROLL,         VIRTKEY, SHIFT, NOINVERT
+    "T",            ID_VIEW_TOP,            VIRTKEY, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_SPACE,       ID_EDIT_LOCK,           VIRTKEY, NOINVERT
+    "W",            ID_SELECT_MOVE,         VIRTKEY, NOINVERT
+    "X",            ID_RESTRICT_XZ,         VIRTKEY, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_RESTRICT_Y,          VIRTKEY, NOINVERT
+    "Z",            ID_VIEW_ZOOM,           VIRTKEY, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Beast Info"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Beast Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Aeonsoft 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,6,50,14,WS_GROUP
+END
+
+IDD_WORK_WORLD DIALOGEX 0, 0, 150, 390
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,3,136,144,125
+    CONTROL         "List2",IDC_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,3,13,144,92
+    LTEXT           "World List",IDC_STATIC,7,3,35,8
+    LTEXT           "Section (Part of World)",IDC_STATIC,3,125,74,8
+    PUSHBUTTON      "Add",IDC_BUTTON1,65,108,26,14
+    PUSHBUTTON      "Remove",IDC_BUTTON3,93,108,30,14
+    PUSHBUTTON      "New",IDC_BUTTON4,3,108,31,14
+    PUSHBUTTON      "Open",IDC_BUTTON5,36,108,27,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,3,274,144,113,WS_EX_CLIENTEDGE
+    LTEXT           "Section Map",IDC_STATIC,3,263,41,8
+END
+
+IDD_WORK_LANDSCAPE DIALOGEX 0, 0, 143, 409
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Normal",IDC_LANDTEX_NORMAL,"Button",BS_AUTORADIOBUTTON,10,90,40,10
+    CONTROL         "Detail",IDC_LANDTEX_DETAIL,"Button",BS_AUTORADIOBUTTON,10,99,35,10
+    CONTROL         "Blank",IDC_LANDTEX_BLANK,"Button",BS_AUTORADIOBUTTON,10,108,35,10
+    CONTROL         "Landmark",IDC_LANDTEX_LANDMARK,"Button",BS_AUTORADIOBUTTON,10,118,48,10
+    CONTROL         "Height",IDC_LANDSCAPE_HEIGHT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,3,3,44,15
+    CONTROL         "Texture",IDC_LANDSCAPE_TEXTURE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,49,3,45,15
+    CONTROL         "Color",IDC_LANDSCAPE_COLOR,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,96,3,44,15
+    CONTROL         "Radio2",IDC_HEIGHT_MOUNTAIN,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE | WS_GROUP,10,33,19,16
+    CONTROL         "Radio2",IDC_HEIGHT_FLAT,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,30,33,19,16
+    CONTROL         "Radio2",IDC_HEIGHT_SOFT,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,50,33,19,16
+    CONTROL         "Hole",IDC_HEIGHT_HOLE,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,70,33,19,16
+    CONTROL         "Radio2",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,90,33,19,16
+    CONTROL         "Radio2",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,110,33,19,16
+    CONTROL         "",IDC_TEXTUREVIEW,"Static",SS_BLACKFRAME,75,81,52,49,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_LIST_TEXTURE,"SysListView32",LVS_SMALLICON | WS_BORDER | WS_TABSTOP,9,172,124,100
+    GROUPBOX        "Color",IDC_STATIC,3,280,137,126
+    GROUPBOX        "Texture",IDC_STATIC,3,74,137,204
+    PUSHBUTTON      "Add",IDC_BUTTON1,15,72,11,14
+    PUSHBUTTON      "Delete",IDC_BUTTON3,54,72,15,14
+    PUSHBUTTON      "Properties",IDC_BUTTON4,29,71,19,14
+    GROUPBOX        "Height",IDC_STATIC,3,19,137,53
+    CONTROL         "Slider4",IDC_HEIGHT_RADIUS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,62,50,77,15
+    LTEXT           "Radius",IDC_STATIC,9,54,24,8
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_RADIUS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,58,373,80,15
+    LTEXT           "Radius",IDC_STATIC,8,377,24,8
+    EDITTEXT        IDC_EDIT_HEIGHT_RADIUS,37,52,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_COLOR_EDIT_RADIUS,34,375,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "",IDC_COLOR_PALETTE,"Static",SS_BLACKFRAME,57,290,77,18,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_COLOR,"Static",SS_BLACKFRAME,34,290,20,18,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Color",IDC_COLOR_DIALOG,6,292,25,14
+    CONTROL         "Eyedropper",IDC_SPOID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,392,52,12
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_SHADE,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,58,309,80,15
+    LTEXT           "Shade",IDC_STATIC,8,314,22,8
+    EDITTEXT        IDC_COLOR_EDIT_SHADE,34,311,24,14,ES_AUTOHSCROLL
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_BLUE,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,58,357,80,15
+    LTEXT           "Blue",IDC_STATIC,8,362,16,8
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_GREEN,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,58,341,80,15
+    LTEXT           "Green",IDC_STATIC,8,346,21,8
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_RED,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,58,326,80,15
+    LTEXT           "Red",IDC_STATIC,8,330,14,8
+    EDITTEXT        IDC_COLOR_EDIT_RED,34,327,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_EDIT_GREEN,34,343,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_EDIT_BLUE,34,359,24,14,ES_AUTOHSCROLL
+    CONTROL         "Slider4",IDC_TEXTURE_RADIUS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,60,133,80,15
+    LTEXT           "Radius",IDC_STATIC,10,137,24,8
+    EDITTEXT        IDC_TEXTURE_EDIT_RADIUS,36,135,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "Slider4",IDC_TEXTURE_HARDNESS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,60,151,80,15
+    LTEXT           "Hard",IDC_STATIC,10,155,17,8
+    EDITTEXT        IDC_TEXTURE_EDIT_HARDNESS,36,153,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+END
+
+IDD_WORK_OBJECT DIALOGEX 0, 0, 151, 393
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Put",IDC_OBJ_EDIT_PUT,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,9,240,18,17
+    CONTROL         "Put up",IDC_OBJ_EDIT_PUT_UP,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,28,240,18,17
+    CONTROL         "Select",IDC_OBJ_EDIT_SELECT,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,47,240,18,17
+    CONTROL         "Wire",IDC_OBJ_EDIT_MOVE,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,66,240,18,17
+    CONTROL         "Unvisible",IDC_OBJ_EDIT_ROTATION,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,85,240,18,17
+    PUSHBUTTON      "Delete",IDC_OBJ_EDIT_DELETE,123,240,18,17,BS_ICON
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,3,3,145,221,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_SCALE_X,53,294,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale X",IDC_STATIC,12,297,26,8
+    EDITTEXT        IDC_EDIT_SCALE_Y,53,309,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale Y",IDC_STATIC,12,313,26,8
+    EDITTEXT        IDC_EDIT_SCALE_Z,53,324,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale Z",IDC_STATIC,12,329,26,8
+    EDITTEXT        IDC_EDIT_ROTATION_X,53,339,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation X",IDC_STATIC,12,343,35,8
+    EDITTEXT        IDC_EDIT_ROTATION_Y,53,354,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation Y",IDC_STATIC,12,358,35,8
+    EDITTEXT        IDC_EDIT_ROTATION_Z,53,369,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation Z",IDC_STATIC,12,372,35,8
+    EDITTEXT        IDC_EDIT_HEIGHT,53,279,57,14,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,12,282,22,8
+    GROUPBOX        "Object Transform",IDC_STATIC,3,267,145,123
+    CONTROL         "Spin1",IDC_SPIN_SCALE_X,"msctls_updown32",UDS_ARROWKEYS,111,294,8,14
+    CONTROL         "Spin1",IDC_SPIN_SCALE_Y,"msctls_updown32",UDS_ARROWKEYS,111,309,8,14
+    CONTROL         "Spin1",IDC_SPIN_SCALE_Z,"msctls_updown32",UDS_ARROWKEYS,111,325,8,14
+    CONTROL         "Spin1",IDC_SPIN_ROTATION_X,"msctls_updown32",UDS_ARROWKEYS,111,340,8,14
+    CONTROL         "Spin1",IDC_SPIN_ROTATION_Y,"msctls_updown32",UDS_ARROWKEYS,111,355,8,14
+    CONTROL         "Spin1",IDC_SPIN_ROTATION_Z,"msctls_updown32",UDS_ARROWKEYS,111,370,8,14
+    CONTROL         "Spin1",IDC_SPIN_HEIGHT,"msctls_updown32",UDS_ARROWKEYS,111,279,8,14
+    GROUPBOX        "Edit",IDC_STATIC,3,228,145,35
+    PUSHBUTTON      "Scale",IDC_OBJ_EDIT_SCALE,104,240,18,17,BS_ICON
+END
+
+IDD_WORKSPACE DIALOG  0, 0, 183, 308
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Times New Roman"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,3,7,177,282
+    PUSHBUTTON      "S",IDC_BUTTON1,3,291,15,14,BS_BITMAP
+    PUSHBUTTON      "S",IDC_BUTTON2,19,291,15,14,BS_BITMAP
+    PUSHBUTTON      "S",IDC_BUTTON3,35,291,15,14,BS_BITMAP
+    PUSHBUTTON      "S",IDC_BUTTON4,51,291,15,14,BS_BITMAP
+    PUSHBUTTON      "S",IDC_BUTTON5,67,291,15,14,BS_BITMAP
+    PUSHBUTTON      "S",IDC_BUTTON6,83,291,15,14,BS_BITMAP
+    PUSHBUTTON      "S",IDC_BUTTON7,99,291,15,14,BS_BITMAP
+END
+
+IDD_WORK_LAYER DIALOGEX 0, 0, 134, 231
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "New",IDC_BUTTON1,3,214,21,14
+    PUSHBUTTON      "Remove",IDC_BUTTON2,100,214,31,14
+    PUSHBUTTON      "Copy",IDC_BUTTON3,52,214,21,14
+    PUSHBUTTON      "Merge",IDC_BUTTON4,26,214,24,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,3,3,128,207,WS_EX_CLIENTEDGE
+END
+
+IDD_WORK_RESPAWN DIALOGEX 0, 0, 128, 277
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,3,3,122,149,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT6,53,181,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale X",IDC_STATIC,12,184,26,8
+    EDITTEXT        IDC_EDIT7,53,196,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale Y",IDC_STATIC,12,200,26,8
+    EDITTEXT        IDC_EDIT8,53,211,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale Z",IDC_STATIC,12,216,26,8
+    EDITTEXT        IDC_EDIT9,53,226,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation X",IDC_STATIC,12,230,35,8
+    EDITTEXT        IDC_EDIT10,53,241,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation Y",IDC_STATIC,12,245,35,8
+    EDITTEXT        IDC_EDIT11,53,256,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation Z",IDC_STATIC,12,259,35,8
+    EDITTEXT        IDC_EDIT12,53,166,57,14,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,12,169,22,8
+    GROUPBOX        "Brush Coordination",IDC_STATIC,3,155,122,119
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,111,181,8,14
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,111,196,8,14
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,111,212,8,14
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,111,227,8,14
+    CONTROL         "Spin1",IDC_SPIN6,"msctls_updown32",UDS_ARROWKEYS,111,242,8,14
+    CONTROL         "Spin1",IDC_SPIN7,"msctls_updown32",UDS_ARROWKEYS,111,257,8,14
+    CONTROL         "Spin1",IDC_SPIN8,"msctls_updown32",UDS_ARROWKEYS,111,166,8,14
+END
+
+IDD_WORK_REGION DIALOGEX 0, 0, 128, 277
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,3,3,122,149,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT6,53,181,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale X",IDC_STATIC,12,184,26,8
+    EDITTEXT        IDC_EDIT7,53,196,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale Y",IDC_STATIC,12,200,26,8
+    EDITTEXT        IDC_EDIT8,53,211,57,14,ES_AUTOHSCROLL
+    LTEXT           "Scale Z",IDC_STATIC,12,216,26,8
+    EDITTEXT        IDC_EDIT9,53,226,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation X",IDC_STATIC,12,230,35,8
+    EDITTEXT        IDC_EDIT10,53,241,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation Y",IDC_STATIC,12,245,35,8
+    EDITTEXT        IDC_EDIT11,53,256,57,14,ES_AUTOHSCROLL
+    LTEXT           "Rotation Z",IDC_STATIC,12,259,35,8
+    EDITTEXT        IDC_EDIT12,53,166,57,14,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,12,169,22,8
+    GROUPBOX        "Brush Coordination",IDC_STATIC,3,155,122,119
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,111,181,8,14
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,111,196,8,14
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,111,212,8,14
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,111,227,8,14
+    CONTROL         "Spin1",IDC_SPIN6,"msctls_updown32",UDS_ARROWKEYS,111,242,8,14
+    CONTROL         "Spin1",IDC_SPIN7,"msctls_updown32",UDS_ARROWKEYS,111,257,8,14
+    CONTROL         "Spin1",IDC_SPIN8,"msctls_updown32",UDS_ARROWKEYS,111,166,8,14
+END
+
+IDD_NEW_WORLD DIALOGEX 0, 0, 215, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New World"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,121,50,14
+    COMBOBOX        IDC_COMBO_TEXTURE,56,7,97,157,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Base Texture",IDC_STATIC,7,9,45,8
+    LTEXT           "Base Height",IDC_STATIC,7,56,41,8
+    LTEXT           "World Width",IDC_STATIC,7,71,42,8
+    EDITTEXT        IDC_BASE_HEIGHT,104,53,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UNIT_WIDTH,104,68,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UNIT_HEIGHT,104,83,48,14,ES_AUTOHSCROLL
+    LTEXT           "World Height",IDC_STATIC,7,87,44,8
+    CONTROL         "Indoor",IDC_INDOOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,125,37,10
+    LTEXT           "64",IDC_WORLD_WIDTH,83,71,16,8
+    LTEXT           "64",IDC_WORLD_HEIGHT,83,86,16,8
+    CONTROL         "",IDC_TEXTUREVIEW,"Static",SS_BLACKFRAME,156,7,52,49,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_HEIGHT_BITMAP,56,21,80,14,ES_AUTOHSCROLL
+    LTEXT           "Height Bitmap",IDC_STATIC,7,23,47,8
+    PUSHBUTTON      "...",IDC_BROWSER,138,21,15,14
+    LTEXT           "Multiple Height",IDC_STATIC,7,41,50,8
+    EDITTEXT        IDC_MULTIPLE_HEIGHT,104,38,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEWWORLD_MPU,104,99,29,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    LTEXT           "MPU ",IDC_STATIC,7,101,35,11
+    LTEXT           "( 1 - 4 )",IDC_STATIC,70,102,27,10
+END
+
+IDD_WORLD_PROPERIES DIALOGEX 0, 0, 168, 317
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "World Properties"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,296,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,59,296,50,14
+    CONTROL         "Indoor",IDC_INDOOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,33,10
+    CONTROL         "Fly",IDC_FLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,7,21,10
+    LTEXT           "Start",IDC_STATIC,36,19,16,8
+    LTEXT           "End",IDC_STATIC,79,19,14,8
+    LTEXT           "Density",IDC_STATIC,123,19,26,8
+    EDITTEXT        IDC_FOG_START,36,29,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOG_END,79,29,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOG_DENSITY,121,29,40,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,37,45,8,8
+    LTEXT           "Y",IDC_STATIC,80,45,8,8
+    LTEXT           "Z",IDC_STATIC,122,45,8,8
+    EDITTEXT        IDC_LIGHT_DIR_X,36,53,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_DIR_Y,79,53,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_DIR_Z,121,53,40,14,ES_AUTOHSCROLL
+    LTEXT           "Fog",IDC_STATIC,8,31,13,8
+    LTEXT           "Light Dir",IDC_STATIC,7,56,29,8
+    LTEXT           "Ambient",IDC_STATIC,7,81,27,8
+    LTEXT           "Diffuse",IDC_STATIC,7,108,24,8
+    LTEXT           "Red",IDC_STATIC,36,69,17,8
+    LTEXT           "Green",IDC_STATIC,79,70,24,8
+    LTEXT           "Blue",IDC_STATIC,121,70,28,8
+    EDITTEXT        IDC_AMBIENT_RED,36,79,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AMBIENT_GREEN,79,79,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AMBIENT_BLUE,121,79,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_APPLY,111,296,50,14
+    LTEXT           "Red",IDC_STATIC,36,97,17,8
+    LTEXT           "Green",IDC_STATIC,79,98,24,8
+    LTEXT           "Blue",IDC_STATIC,121,98,28,8
+    EDITTEXT        IDC_DIFFUSE_RED,36,107,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIFFUSE_GREEN,79,107,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIFFUSE_BLUE,121,107,40,14,ES_AUTOHSCROLL
+    LTEXT           "PK Mode",IDC_STATIC,5,125,30,8
+    CONTROL         "Peace",IDC_PEACE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,38,125,31,10
+    CONTROL         "Penalty PK",IDC_PENALTYPK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,70,125,47,10
+    CONTROL         "Free PK",IDC_FREEPK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,120,125,36,10
+    LTEXT           "Sky ",IDC_STATIC,7,143,23,10
+    LTEXT           "Cloud ",IDC_STATIC,7,191,26,8
+    LTEXT           "Sun:",IDC_STATIC,7,240,51,8
+    LTEXT           "Moon:",IDC_STATIC,7,256,51,8
+    EDITTEXT        IDC_EDIT_WP_SKY1,66,143,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WP_SKY2,66,157,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WP_SKY3,66,170,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WP_CLOUD1,66,188,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WP_CLOUD2,66,202,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WP_CLOUD3,66,217,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WP_SUN,66,238,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WP_MOON,66,253,95,12,ES_AUTOHSCROLL
+    LTEXT           "Day :",IDC_STATIC,42,144,19,12
+    LTEXT           "Evening :",IDC_STATIC,29,159,32,10
+    LTEXT           "Night :",IDC_STATIC,40,172,24,11
+    LTEXT           "Day :",IDC_STATIC,43,192,20,11
+    LTEXT           "Evening :",IDC_STATIC,29,205,32,10
+    LTEXT           "Night :",IDC_STATIC,40,218,24,11
+    CONTROL         "Use 24",IDC_BTN_USE24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,7,36,10
+    PUSHBUTTON      "Edit 24",IDC_BTN_EDIT24,125,7,36,11
+    EDITTEXT        IDC_EDIT_WP_SEACLOUD,66,272,95,14,ES_AUTOHSCROLL
+    LTEXT           "SeaCloud:",IDC_STATIC,6,276,51,8
+END
+
+IDD_PROP_OBJ DIALOGEX 0, 0, 187, 101
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Object"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    CONTROL         "Land Independence",IDC_LAND_INDEPENDENCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,77,10
+    LTEXT           "OBJ ID",IDC_STATIC,7,24,24,8
+    EDITTEXT        IDC_OBJID,34,22,146,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "변경",IDC_CHANGE_OBJID,68,64,50,14
+    EDITTEXT        IDC_MODIFY_OBJID,7,43,57,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "모두 변경",IDC_CHANGEALL_OBJID,129,64,50,14
+    PUSHBUTTON      "찾기",IDC_FIND_OBJID,7,64,50,14
+    EDITTEXT        IDC_MODIFY_OBJNAME,67,43,113,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PROP_LIGHT DIALOG  0, 0, 188, 118
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Light"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Type",IDC_STATIC,7,11,17,8
+    LTEXT           "Diffuse",IDC_STATIC,7,25,24,8
+    LTEXT           "Specular",IDC_STATIC,7,40,30,8
+    LTEXT           "Ambient",IDC_STATIC,7,54,27,8
+    LTEXT           "Position",IDC_STATIC,7,70,28,8
+    LTEXT           "Direction",IDC_STATIC,7,85,30,8
+    LTEXT           "Range",IDC_STATIC,7,101,22,8
+    LTEXT           "Falloff",IDC_STATIC,95,10,21,8
+    LTEXT           "Attenuation0",IDC_STATIC,95,25,41,8
+    LTEXT           "Attenuation1",IDC_STATIC,95,41,41,8
+    LTEXT           "Attenuation2",IDC_STATIC,95,55,41,8
+    LTEXT           "Theta",IDC_STATIC,95,70,19,8
+    LTEXT           "Phi",IDC_STATIC,95,84,12,8
+    EDITTEXT        IDC_EDIT2,44,22,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,44,37,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,44,52,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,44,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,44,82,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,44,97,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,141,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,141,22,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,141,37,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,141,52,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,141,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,141,82,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,43,7,41,67,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROP_REGION DIALOG  0, 0, 188, 118
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Region"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Begin",IDC_STATIC,7,7,20,8
+    EDITTEXT        IDC_EDIT1,46,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "End",IDC_STATIC,112,27,14,8
+    EDITTEXT        IDC_EDIT5,46,22,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,48,39,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,130,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,129,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,129,39,40,14,ES_AUTOHSCROLL
+    LTEXT           "Color",IDC_STATIC,7,62,18,8
+    EDITTEXT        IDC_EDIT19,45,59,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,45,75,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,46,91,40,14,ES_AUTOHSCROLL
+END
+
+IDD_PROP_ATTRIBUTE DIALOG  0, 0, 229, 118
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Attribute"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Clear",IDC_CLEAR,172,7,50,14
+    PUSHBUTTON      "Set All",IDC_SET_ALL,172,23,50,14
+    PUSHBUTTON      "Invert",IDC_INVERT,172,39,50,14
+END
+
+IDD_PROP_TRIGGER DIALOG  0, 0, 230, 118
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Trigger"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Function",IDC_STATIC,7,9,29,8
+    LTEXT           "Sound",IDC_STATIC,7,22,22,8
+    LTEXT           "Music",IDC_STATIC,7,38,21,8
+    LTEXT           "Teleport",IDC_STATIC,7,52,28,8
+    LTEXT           "x",IDC_STATIC,7,72,8,8
+    LTEXT           "y",IDC_STATIC,64,72,8,8
+    LTEXT           "z",IDC_STATIC,117,72,8,8
+    EDITTEXT        IDC_SOUND,39,21,116,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SOUND_BROWSER,160,21,16,14
+    EDITTEXT        IDC_TELE_X,18,69,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TELE_Y,72,69,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TELE_Z,126,69,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_FUNCTION,39,7,184,72,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TELEPORT,39,52,184,118,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MUSIC,39,37,117,91,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "BGM",IDC_BGM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,38,27,10
+    PUSHBUTTON      "Play",IDC_PLAY_SOUND,191,21,32,14
+    PUSHBUTTON      "Play",IDC_PLAY_MUSIC,191,36,32,14
+END
+
+IDD_ADD_OBJECT DIALOGEX 0, 0, 182, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "오브젝트 추가"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,80,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,96,50,14
+    LISTBOX         IDC_LIST,7,19,115,91,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "추가할 오브젝트 선택",IDC_STATIC,7,7,78,8
+END
+
+IDD_DELETE_OBJECT DIALOGEX 0, 0, 182, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "오브젝트 삭제"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,80,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,96,50,14
+    LISTBOX         IDC_LIST,7,19,115,91,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "삭제할 오브젝트 선택",IDC_STATIC,7,7,78,8
+END
+
+IDD_NEW_FOLDER DIALOG  0, 0, 239, 45
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Folder"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,79,7,98,14,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "OK",IDOK,182,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,24,50,14
+    LTEXT           "Name of New Folder",IDC_STATIC,7,9,67,8
+END
+
+IDD_RESPAWN DIALOGEX 0, 0, 264, 198
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Respawn"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Remove",IDC_REMOVE,7,177,50,14
+    PUSHBUTTON      "Save",IDC_SAVE,207,177,50,14
+    CONTROL         "List1",IDC_LIST_RESPAWN,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,20,250,153
+    LTEXT           "총갯수:",IDC_STATIC,7,7,30,8
+    LTEXT           "Mover:",IDC_STATIC,99,7,26,8
+    LTEXT           "Item:",IDC_STATIC,184,7,21,8
+    LTEXT           "0",IDC_STATIC_TOTAL,38,7,36,8
+    LTEXT           "0",IDC_STATIC_MOVER,128,7,38,8
+    LTEXT           "0",IDC_STATIC_ITEM,209,7,48,8
+    PUSHBUTTON      "Remove All",IDC_REMOVE_ALL,59,177,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Move",IDC_MOVE,111,177,50,14,NOT WS_TABSTOP
+END
+
+IDD_PROP_MOVER DIALOGEX 0, 0, 242, 126
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Mover"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    LTEXT           "Name",IDC_STATIC,7,7,20,8
+    EDITTEXT        IDC_NAME,54,7,160,14,ES_AUTOHSCROLL
+    CONTROL         "Immortality",IDC_IMMORTALITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,109,53,10
+    CONTROL         "Super Power",IDC_SUPER_POWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,109,57,10
+    COMBOBOX        IDC_CHARACTER,54,58,160,109,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Character",IDC_STATIC,7,58,32,8
+    LTEXT           "Dialog",IDC_STATIC,7,41,22,8
+    EDITTEXT        IDC_DIALOG,54,41,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DIALOG_BROWSER,130,41,15,14
+    COMBOBOX        IDC_BELLI,54,88,94,71,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Belligerence",IDC_STATIC,7,88,44,8
+    LTEXT           "AI",IDC_STATIC,7,73,8,8
+    COMBOBOX        IDC_AI,54,73,94,109,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AI_STATE,148,73,66,87,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PATH_INDEX,148,88,65,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Patrol Cycle",IDC_CYCLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,148,109,55,10
+    LTEXT           "propMoverID",IDC_STATIC,7,24,43,8
+    EDITTEXT        IDC_PROPMOVERID,54,24,160,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_TERRAIN_TEXTURE_EX DIALOGEX 0, 0, 232, 116
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Texture Edit"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Normal",IDC_LANDTEX_NORMAL,"Button",BS_AUTORADIOBUTTON,7,7,40,10
+    CONTROL         "Detail",IDC_LANDTEX_DETAIL,"Button",BS_AUTORADIOBUTTON,7,16,35,10
+    CONTROL         "Blank",IDC_LANDTEX_BLANK,"Button",BS_AUTORADIOBUTTON,7,25,35,10
+    CONTROL         "Landmark",IDC_LANDTEX_LANDMARK,"Button",BS_AUTORADIOBUTTON,7,35,48,10
+    CONTROL         "",IDC_TEXTUREVIEW,"Static",SS_BLACKFRAME,92,7,45,41,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "Slider4",IDC_TEXTURE_RADIUS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,57,57,80,15
+    LTEXT           "Radius",IDC_STATIC,7,60,24,8
+    EDITTEXT        IDC_TEXTURE_EDIT_RADIUS,33,57,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "Slider4",IDC_TEXTURE_HARDNESS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,57,76,80,15
+    LTEXT           "Hard",IDC_STATIC,7,79,17,8
+    EDITTEXT        IDC_TEXTURE_EDIT_HARDNESS,33,76,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "Slider4",IDC_TEXTURE_OPACITY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,57,95,168,15
+    LTEXT           "Alpha",IDC_STATIC,7,98,19,8
+    EDITTEXT        IDC_TEXTURE_EDIT_OPACITY,33,95,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+END
+
+IDD_TERRAIN_HEIGHT DIALOG  0, 0, 161, 108
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Height Edit"
+FONT 10, "System"
+BEGIN
+    CONTROL         "None",IDC_ATTR_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,79,29,10
+    CONTROL         "NoWalk",IDC_ATTR_NOWALK,"Button",BS_AUTORADIOBUTTON,47,79,36,10
+    CONTROL         "NoFly",IDC_ATTR_NOFLY,"Button",BS_AUTORADIOBUTTON,98,79,31,10
+    CONTROL         "NoMove",IDC_ATTR_NOMOVE,"Button",BS_AUTORADIOBUTTON,7,91,43,10
+    CONTROL         "Die",IDC_ATTR_DIE,"Button",BS_AUTORADIOBUTTON,58,91,21,10
+    CONTROL         "Slider4",IDC_HEIGHT_RADIUS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,59,24,95,15
+    CONTROL         "Radio2",IDC_HEIGHT_MOUNTAIN,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE | WS_GROUP,8,7,19,16
+    CONTROL         "Radio2",IDC_HEIGHT_FLAT,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,28,7,19,16
+    CONTROL         "Radio2",IDC_HEIGHT_SOFT,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,48,7,19,16
+    CONTROL         "Random",IDC_HEIGHT_RANDOM,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,68,7,19,16
+    CONTROL         "Attribute",IDC_HEIGHT_ATTRIBUTE,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_PUSHLIKE,88,7,19,16
+    CONTROL         "Radio2",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,108,7,19,16
+    CONTROL         "Slider4",IDC_HEIGHT_HARDNESS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,59,40,95,15
+    LTEXT           "Radius",IDC_STATIC,7,28,24,8
+    EDITTEXT        IDC_EDIT_HEIGHT_RADIUS,35,26,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_FIXED_HEIGHT,78,61,75,14,ES_AUTOHSCROLL
+    CONTROL         "Fixed Height",IDC_CHECK_FIXED_HEIGHT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,61,45,14
+    LTEXT           "Hard",IDC_STATIC,7,44,17,8
+    EDITTEXT        IDC_EDIT_HEIGHT_HARDNESS,35,42,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_HEIGHT_MPU,136,89,11,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "MPU :",IDC_STATIC,115,91,20,10
+END
+
+IDD_TERRAIN_COLOR DIALOGEX 0, 0, 162, 129
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Edit"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_RADIUS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,61,90,94,15
+    LTEXT           "Radius",IDC_STATIC,7,94,24,8
+    EDITTEXT        IDC_COLOR_EDIT_RADIUS,35,92,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "",IDC_COLOR_PALETTE,"Static",SS_BLACKFRAME,64,7,77,18,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_COLOR,"Static",SS_BLACKFRAME | NOT WS_VISIBLE | WS_DISABLED,38,7,20,18,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Color",IDC_COLOR_DIALOG,7,9,25,14
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_SHADE,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,61,26,94,15
+    LTEXT           "Shade",IDC_STATIC,9,31,22,8
+    EDITTEXT        IDC_COLOR_EDIT_SHADE,35,28,24,14,ES_AUTOHSCROLL
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_BLUE,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,61,74,94,15
+    LTEXT           "Blue",IDC_STATIC,9,79,16,8
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_GREEN,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,61,58,94,15
+    LTEXT           "Green",IDC_STATIC,9,63,21,8
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_RED,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,61,43,94,15
+    LTEXT           "Red",IDC_STATIC,9,47,14,8
+    EDITTEXT        IDC_COLOR_EDIT_RED,35,44,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_EDIT_GREEN,35,60,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COLOR_EDIT_BLUE,35,76,24,14,ES_AUTOHSCROLL
+    CONTROL         "Slider4",IDC_COLOR_SLIDER_HARDNESS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,61,106,94,15
+    LTEXT           "Hard",IDC_STATIC,7,110,17,8
+    EDITTEXT        IDC_COLOR_EDIT_HARDNESS,35,108,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+END
+
+IDD_TERRAIN_TEXTURE DIALOGEX 0, 0, 144, 91
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Texture Edit"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Normal",IDC_LANDTEX_NORMAL,"Button",BS_AUTORADIOBUTTON,7,7,40,10
+    CONTROL         "Detail",IDC_LANDTEX_DETAIL,"Button",BS_AUTORADIOBUTTON,7,16,35,10
+    CONTROL         "Blank",IDC_LANDTEX_BLANK,"Button",BS_AUTORADIOBUTTON,7,25,35,10
+    CONTROL         "Landmark",IDC_LANDTEX_LANDMARK,"Button",BS_AUTORADIOBUTTON,7,35,48,10
+    CONTROL         "",IDC_TEXTUREVIEW,"Static",SS_BLACKFRAME,92,7,45,41,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    CONTROL         "Slider4",IDC_TEXTURE_RADIUS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,57,51,80,15
+    LTEXT           "Radius",IDC_STATIC,7,55,24,8
+    EDITTEXT        IDC_TEXTURE_EDIT_RADIUS,33,53,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "Slider4",IDC_TEXTURE_HARDNESS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,57,69,80,15
+    LTEXT           "Hard",IDC_STATIC,7,73,17,8
+    EDITTEXT        IDC_TEXTURE_EDIT_HARDNESS,33,70,24,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+END
+
+IDD_PREVIEW DIALOGEX 0, 0, 107, 119
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,4,4,99,90,WS_EX_CLIENTEDGE
+    LTEXT           "Type :",IDC_STATIC,4,97,21,8
+    LTEXT           "Name :",IDC_STATIC,4,107,24,8
+    LTEXT           "Object",IDC_STATIC,33,97,22,8
+    LTEXT           "Object",IDC_STATIC,33,107,22,8
+END
+
+IDD_BMP_SAVE_OPTION DIALOG  0, 0, 201, 74
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BMP Save Option"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,24,50,14
+    CONTROL         "Paint Name",IDC_VIEW_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,54,10
+    CONTROL         "Paint Spawn",IDC_VIEW_SPAWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,40,56,10
+    CONTROL         "Paint Region",IDC_VIEW_REGION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,23,55,10
+    LTEXT           "!BMP file can be save at 32bit color resolution only. ",IDC_STATIC,12,55,168,12
+    CONTROL         "Water & Cloud",IDC_WATER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,7,58,10
+    CONTROL         "HeightAttrb",IDC_HEIGHT_ATTRB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,23,59,10
+END
+
+IDD_PROP_CAPTION DIALOG  0, 0, 188, 118
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Caption"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_TITLE,7,17,174,25,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESCRIPTION,7,57,174,54,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "Title ( Multiline : Ctrl+ENTER )",IDC_STATIC,7,7,121,8
+    LTEXT           "Description( Multiline : Ctrl+ENTER )",IDC_STATIC,7,45,144,8
+END
+
+IDD_EDIT_STRING DIALOG  0, 0, 169, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit String"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,59,34,50,14
+    EDITTEXT        IDC_EDIT1,7,7,155,24,ES_MULTILINE
+END
+
+IDD_TERRAIN_WATER DIALOG  0, 0, 144, 91
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Water Edit"
+FONT 10, "System"
+BEGIN
+    CONTROL         "None",IDC_WATER_NONE,"Button",BS_AUTORADIOBUTTON,7,7,33,10
+    CONTROL         "Water",IDC_WATER_WATER,"Button",BS_AUTORADIOBUTTON,7,17,36,10
+    CONTROL         "Cloud",IDC_WATER_CLOUD,"Button",BS_AUTORADIOBUTTON,7,27,35,10
+    COMBOBOX        IDC_COMBO1,62,50,75,75,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Water Texture",IDC_STATIC,7,51,47,8
+    LTEXT           "Water Height",IDC_STATIC,7,65,47,8
+    EDITTEXT        IDC_EDIT1,62,63,75,14,ES_AUTOHSCROLL
+END
+
+IDD_PROP_RESPAWN DIALOG  0, 0, 253, 72
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Spawn"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_SUM,69,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "Sum",IDC_STATIC,7,9,16,8
+    CONTROL         "Enable",IDC_RESPAWN_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,55,39,10
+    EDITTEXT        IDC_DELAY,69,22,40,14,ES_AUTOHSCROLL
+    LTEXT           "Delay(Sec)",IDC_STATIC,7,26,36,8
+    EDITTEXT        IDC_ACTIVEATTACK,69,37,40,14,ES_AUTOHSCROLL
+    LTEXT           "ActiveAttack(Num)",IDC_STATIC,7,41,59,8
+    LTEXT           "Hour",IDC_STATIC,114,25,17,8
+    LTEXT           "Day",IDC_STATIC,114,9,14,8
+    EDITTEXT        IDC_EDIT_HOUR_MIN,149,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUR_MAX,206,22,40,14,ES_AUTOHSCROLL
+    LTEXT           "Min",IDC_STATIC,133,25,13,8
+    LTEXT           "Min",IDC_STATIC,133,9,13,8
+    LTEXT           "Max",IDC_STATIC,190,25,15,8
+    LTEXT           "Max",IDC_STATIC,190,9,15,8
+    EDITTEXT        IDC_EDIT_DAY_MIN,149,8,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DAY_MAX,206,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "Item",IDC_STATIC,114,40,15,8
+    EDITTEXT        IDC_EDIT_ITEM_MIN,149,38,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ITEM_MAX,206,37,40,14,ES_AUTOHSCROLL
+    LTEXT           "Min",IDC_STATIC,133,40,13,8
+    LTEXT           "Max",IDC_STATIC,190,40,15,8
+END
+
+IDD_REVIVAL DIALOG  0, 0, 170, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Revival To"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,40,50,14
+    COMBOBOX        IDC_COMBO1,54,7,109,190,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "World Id",IDC_STATIC,11,9,29,8
+    EDITTEXT        IDC_EDIT1,54,22,109,14,ES_AUTOHSCROLL
+    LTEXT           "Revival Key",IDC_STATIC,10,24,41,8
+END
+
+IDD_PROP_POS DIALOG  0, 0, 154, 83
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Pos"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Key",IDC_STATIC,7,9,14,8
+    EDITTEXT        IDC_KEY,32,7,102,14,ES_AUTOHSCROLL
+    CONTROL         "Target Key",IDC_TARGET_KEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,28,51,10
+    CONTROL         "Chao Key",IDC_CHAO_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,59,28,47,10
+END
+
+IDD_RANDOM_DEGREE_SCALE DIALOG  0, 0, 213, 45
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Random Degree, Random Scale"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,24,50,14
+    EDITTEXT        IDC_EDIT_SCALE1,54,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCALE2,104,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,96,28,8,8
+    EDITTEXT        IDC_EDIT_DEGREE1,54,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEGREE2,104,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,96,12,8,8
+    CONTROL         "Degree",IDC_CHECK_DEGREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,9,40,10
+    CONTROL         "Scale",IDC_CHECK_SCALE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,26,34,10
+END
+
+IDD_SETTIME DIALOG  0, 0, 187, 45
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Time"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "Hour",IDC_STATIC,7,10,17,8
+    EDITTEXT        IDC_EDIT1,31,7,40,14,ES_AUTOHSCROLL
+END
+
+IDD_SET_GRID DIALOG  0, 0, 143, 60
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Grid"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,24,50,14
+    LTEXT           "Grid X",IDC_STATIC,7,7,21,8
+    LTEXT           "Grid Y",IDC_STATIC,7,25,22,8
+    LTEXT           "Grid Z",IDC_STATIC,7,41,21,8
+    EDITTEXT        IDC_EDIT_GRID_X,38,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GRID_Y,38,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GRID_Z,37,39,40,14,ES_AUTOHSCROLL
+END
+
+IDD_RESPAWN_DEFAULT DIALOG  0, 0, 154, 45
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Respawn Default Setting"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,97,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,24,50,14
+    LTEXT           "Num",IDC_STATIC,7,7,16,8
+    LTEXT           "Sec",IDC_STATIC,7,26,13,8
+    EDITTEXT        IDC_EDIT_NUM,35,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEC,34,24,40,14,ES_AUTOHSCROLL
+END
+
+IDD_SAVE_OPTION DIALOG  0, 0, 186, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Option"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    CONTROL         "Save DDS Maps",IDC_DDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,47,69,10
+    CONTROL         "Save dyo(Dynamic) file",IDC_DYO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,91,10
+    CONTROL         "Save rgn(Region) File",IDC_RGN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,21,86,10
+    CONTROL         "Save lnd(Landscape) File",IDC_LND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,35,98,10
+END
+
+IDD_PROP_STRUCTURE DIALOG  0, 0, 154, 83
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Structure"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Structure",IDC_STATIC,7,8,30,8
+    COMBOBOX        IDC_STRUCTURE,43,7,104,96,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Unit",IDC_UNIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,25,29,10
+END
+
+IDD_TERRAIN_LAYER DIALOGEX 0, 0, 199, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Layer"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Remove",IDC_REMOVE,142,7,50,14
+    LTEXT           "Static",IDC_STATIC_LAND,7,7,122,8
+    PUSHBUTTON      "Update",IDC_UPDATE,142,24,50,14
+    PUSHBUTTON      "All Visible",IDC_ALL_VISIBLE,142,41,50,14
+    PUSHBUTTON      "Open Texture",IDC_TEXTURE_OPEN_BUTTON,142,59,50,14
+END
+
+IDD_NAVIGATOR DIALOGEX 0, 0, 107, 101
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Navigator"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+END
+
+IDD_WORLD_LIGHT DIALOG  0, 0, 242, 109
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "World Light"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Direct Light",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,7,53,10
+    CONTROL         "Game Light",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,66,7,53,10
+    DEFPUSHBUTTON   "OK",IDOK,185,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,185,24,50,14
+    EDITTEXT        IDC_HOUR,45,83,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AMBIENT_R,46,31,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AMBIENT_G,89,31,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AMBIENT_B,132,31,40,14,ES_AUTOHSCROLL
+    LTEXT           "Ambient",IDC_STATIC,14,33,27,8
+    LTEXT           "Diffuse",IDC_STATIC,13,50,24,8
+    GROUPBOX        "Direct Light",IDC_STATIC,7,20,173,49
+    LTEXT           "Hour",IDC_STATIC,14,85,17,8
+    GROUPBOX        "Game Light",IDC_STATIC,7,72,173,30
+    EDITTEXT        IDC_DIFFUSE_R,46,48,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIFFUSE_G,89,48,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIFFUSE_B,132,48,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_APPLY,185,40,50,14
+END
+
+IDC_EDIT_COND_TELE_Y DIALOG  0, 0, 453, 227
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Control"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Endurance(HP)",IDC_STATIC,218,185,49,8
+    LTEXT           "Item Min",IDC_STATIC,13,147,29,8
+    LTEXT           "Item Max",IDC_STATIC,115,147,31,8
+    COMBOBOX        IDC_COMBO_COND_ITEM,65,15,89,133,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_COND_LEVEL,65,30,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COND_QUEST_STATE1,156,45,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COND_QUEST_STATE2,156,59,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIST_COND_JOB,183,48,60,50,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ENDURANCE,274,183,58,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_COND_GENDER,65,87,89,118,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ITEM_MIN,60,144,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ITEM_MAX,162,144,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Cond Item",IDC_COND_ITEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,17,49,10
+    CONTROL         "Cond Level",IDC_COND_LEVEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,33,53,10
+    CONTROL         "Start Quest",IDC_COND_QUEST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,47,51,10
+    CONTROL         "Cond Gender",IDC_COND_GENDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,88,53,10
+    GROUPBOX        "Condition",IDC_STATIC,7,7,238,94
+    PUSHBUTTON      "Add Job",IDC_ADD_JOB,183,16,29,14
+    COMBOBOX        IDC_COMBO_COND_JOB,183,34,61,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Remove",IDC_REMOVE_JOB,213,16,30,14
+    GROUPBOX        "Generate Item",IDC_STATIC,7,135,200,85
+    LTEXT           "ActAttack",IDC_STATIC,389,116,30,8
+    LTEXT           "Num",IDC_STATIC,350,116,16,8
+    GROUPBOX        "Generate Monster",IDC_STATIC,210,103,236,76
+    GROUPBOX        "Geneate Trap",IDC_STATIC,250,7,196,94
+    LTEXT           "Kind",IDC_STATIC,259,16,16,8
+    LTEXT           "Kind",IDC_STATIC,230,116,16,8
+    EDITTEXT        IDC_EDIT_MONSTER_NUM1,351,127,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONSTER_ACT_ATTACK1,388,127,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONSTER_NUM2,351,143,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONSTER_ACT_ATTACK2,388,143,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONSTER_NUM3,351,159,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONSTER_ACT_ATTACK3,388,159,36,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MONSTER_KIND1,215,128,133,122,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MONSTER_KIND2,215,145,132,110,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MONSTER_KIND3,215,160,132,122,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TRAP_KIND1,255,25,109,124,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TRAP_KIND2,255,39,109,132,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TRAP_KIND3,255,54,109,138,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Rate",IDC_STATIC,127,161,16,8
+    LTEXT           "Kind",IDC_STATIC,54,161,16,8
+    EDITTEXT        IDC_EDIT_ITEM_RATE1,128,171,73,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ITEM_RATE2,128,187,74,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ITEM_RATE3,128,203,74,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_ITEM_KIND1,7,172,118,141,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ITEM_KIND2,7,189,118,123,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ITEM_KIND3,7,204,119,114,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Random",IDC_TRAP_TYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,255,73,43,10
+    CONTROL         "No  Endurance",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,255,85,61,10
+    EDITTEXT        IDC_EDIT_TRAP_RANDOM_PERCENT,379,69,56,14,ES_AUTOHSCROLL
+    LTEXT           "Random Percent",IDC_STATIC,320,73,55,8
+    LTEXT           "Level",IDC_STATIC,380,15,19,8
+    EDITTEXT        IDC_EDIT_TRAP_LEVEL1,379,25,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRAP_LEVEL2,379,39,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRAP_LEVEL3,379,54,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRAP_DELAY,379,84,56,14,ES_AUTOHSCROLL
+    LTEXT           "Delay",IDC_STATIC,320,86,20,8
+    LTEXT           "Ctrl Key",IDC_STATIC,213,209,27,8
+    EDITTEXT        IDC_EDIT_CTRL_KEY,245,206,53,14,ES_AUTOHSCROLL
+    LTEXT           "Link Key",IDC_STATIC,305,209,29,8
+    EDITTEXT        IDC_EDIT_LINK_KEY,344,206,52,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_COND_ITEMCOUNT,156,15,24,79,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COND_QUEST1,65,45,89,102,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COND_QUEST2,65,59,89,102,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COND_QUEST3,65,73,89,101,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_COND_QUEST_STATE3,156,73,24,12,ES_AUTOHSCROLL
+    CONTROL         "Teleport",IDC_COND_TELEPORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,104,41,10
+    EDITTEXT        IDC_EDIT_COND_TELE_WORLDID,69,103,34,12,ES_AUTOHSCROLL
+    LTEXT           "ID : ",IDC_STATIC,53,104,14,8
+    LTEXT           "X : ",IDC_STATIC,55,120,10,8
+    EDITTEXT        IDC_EDIT_COND_TELE_X,69,118,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COND_TELE_Y,118,118,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COND_TELE_Z,170,118,34,12,ES_AUTOHSCROLL
+    LTEXT           "Y : ",IDC_STATIC,105,120,10,8
+    LTEXT           "Z : ",IDC_STATIC,156,120,9,8
+    CONTROL         "End Quest",IDC_COND_QUEST_END,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,59,50,10
+END
+
+IDD_PROP_AREASETTING DIALOG  0, 0, 230, 118
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "AreaSetting"
+FONT 10, "System"
+BEGIN
+    CONTROL         "CheckLevel",IDC_CHECKLEVEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,24,9,8
+    CONTROL         "CheckJob",IDC_CHECKJOB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,39,9,9
+    CONTROL         "CheckQuest",IDC_CHECKQUEST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,53,8,10
+    CONTROL         "CheckGender",IDC_CHECKGENDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,67,9,10
+    CONTROL         "CheckGuild",IDC_CHECKGUILD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,96,8,9
+    LTEXT           "ConLevel",IDC_CONLEVEL,25,24,32,8
+    LTEXT           "ConJob",IDC_CONJOB,25,39,37,8
+    LTEXT           "ConQuest",IDC_CONQUEST,25,53,37,8
+    LTEXT           "ConGender",IDC_CONGENDER,25,68,37,8
+    LTEXT           "ConGuild",IDC_CONGUILD,25,96,36,8
+    EDITTEXT        IDC_EDITMIN,85,23,46,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "↔ MAX",IDC_MAX,134,25,27,7
+    EDITTEXT        IDC_EDITMAX,164,23,54,12,ES_AUTOHSCROLL | WS_DISABLED
+    COMBOBOX        IDC_COMBOJOB,69,38,72,86,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_QUESTFLAG,165,52,53,12,ES_AUTOHSCROLL | WS_DISABLED
+    COMBOBOX        IDC_COMBOGENDER,69,67,72,61,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOQUEST,69,52,72,61,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "CheckItem",IDC_CHECKITEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,9,9,8
+    LTEXT           "ConItem",IDC_CONITEM,25,9,28,8
+    COMBOBOX        IDC_COMBOITEM,69,8,72,86,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ITEM,164,8,54,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "CheckParty",IDC_CHECKPARTY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,81,9,10
+    LTEXT           "ConParty",IDC_CONPARTY,25,81,35,8
+    LTEXT           "MIN",IDC_STATIC,69,25,14,8
+END
+
+IDD_PATROL DIALOGEX 0, 0, 162, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Patrol Path"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,142,68,13,9,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,142,78,13,9,NOT WS_VISIBLE | WS_DISABLED
+    LISTBOX         IDC_PATH_LIST,7,7,56,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",IDC_PATH_NEW,70,11,38,11
+    PUSHBUTTON      "Delete",IDC_PATH_DELETE,70,26,38,11
+    CONTROL         "Edit",IDC_PATH_EDIT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,70,41,38,11
+    PUSHBUTTON      "Save",IDC_PATROL_SAVE,111,11,38,11
+    PUSHBUTTON      "Load",IDC_PATROL_LOAD,111,26,38,11
+    PUSHBUTTON      "Apply Obj",IDC_APPLY_OBJECT,70,65,50,14
+END
+
+IDD_PROP_PATH DIALOG  0, 0, 187, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "PathObj"
+FONT 10, "System"
+BEGIN
+    LTEXT           "StopDelay",IDC_STATIC,12,10,40,8
+    LTEXT           "Motion",IDC_STATIC,12,25,31,8
+    EDITTEXT        IDC_DELAY,55,7,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_MOTION,55,24,67,77,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sec(s)",IDC_STATIC,99,10,39,8
+END
+
+IDD_DIALOG_CONTINENT_INFO DIALOGEX 0, 0, 250, 314
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_WEATHER,98,237,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FOG_START,64,255,23,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FOG_END,98,255,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_AR,47,271,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_AG,76,271,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_AB,102,271,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_DR,47,285,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_DG,76,285,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_DB,102,285,21,12,ES_AUTOHSCROLL
+    CONTROL         "Use Sky",IDC_CHECK_USE_SKY,"Button",BS_AUTOCHECKBOX | WS_GROUP,134,240,46,10
+    EDITTEXT        IDC_EDIT_SKY_TEXTURE,183,238,59,12,ES_AUTOHSCROLL | WS_GROUP | NOT WS_TABSTOP
+    CONTROL         "Use Cloud",IDC_CHECK_USE_CLOUD,"Button",BS_AUTOCHECKBOX | WS_GROUP,134,253,46,10
+    EDITTEXT        IDC_EDIT_CLOUD_TEXTURE,183,254,59,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    LISTBOX         IDC_LIST_CONTINENT_VERTEX,11,106,111,72,LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_CONTINENT,169,99,67,12,NOT WS_TABSTOP
+    LTEXT           "Name : ",IDC_STATIC,139,99,23,11
+    LTEXT           "Continet external vertices",IDC_STATIC,10,97,97,8
+    LISTBOX         IDC_LIST_CONTINENT,10,35,222,43,LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    PUSHBUTTON      "New continent",ID_BTN_CONTINENT_ADD,29,3,75,15,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete continent",ID_BTN_CONTINENT_DELETE,160,3,63,15,NOT WS_TABSTOP
+    LTEXT           "Ambient :",IDC_STATIC,10,272,33,10
+    LTEXT           "Diffuse :",IDC_STATIC,10,285,32,10
+    LTEXT           "Fog (start-end) :",IDC_STATIC,10,257,55,11
+    LTEXT           "~",IDC_STATIC,88,255,8,9
+    LTEXT           "Weather :",IDC_STATIC,9,236,89,9
+    CONTROL         "Use Sun",IDC_CHECK_USE_SUN,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,134,270,46,10
+    EDITTEXT        IDC_EDIT_SUN_TEXTURE,183,269,59,12,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    CONTROL         "Use Moon",IDC_CHECK_USE_MOON,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,134,285,46,10
+    EDITTEXT        IDC_EDIT_MOON_TEXTURE,183,284,60,12,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    EDITTEXT        IDC_EDIT_CONTINENT_NUMBER,169,116,25,12,ES_AUTOHSCROLL
+    LTEXT           "*ID :",IDC_STATIC,139,118,17,10
+    GROUPBOX        "Continent List",IDC_STATIC,1,23,242,59
+    GROUPBOX        "Continet Detail",IDC_STATIC,1,85,242,219
+    CONTROL         "Use Continent Envir( 대륙환경사용,  노체크시 월드환경으로 )",IDC_CHECK_USE_CONTENVIR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,182,233,13
+    CONTROL         "Real Data( 월드맵뷰, 세금등의 Data로쓰임 )",IDC_CHECK_REAL_DATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,195,197,13
+    LTEXT           "( 2 rain, 3 snow, 5 sun )",IDC_STATIC,10,244,89,9
+    CONTROL         "TOWN( 환경값 및 Real data 무시 )",IDC_CHECK_TOWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,211,130,10
+    LTEXT           "BGM:",IDC_STATIC,139,138,22,10
+    EDITTEXT        IDC_EDIT_BGM,169,137,40,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DIALOG_LIGHT24 DIALOG  0, 0, 491, 260
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "24HOURS LIGHT"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_AR_1,37,39,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_1,68,39,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_1,100,39,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_1,145,39,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_1,176,39,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_1,208,39,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_2,37,55,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_2,68,55,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_2,100,55,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_2,145,55,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_2,176,55,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_2,208,55,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_3,37,70,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_3,68,70,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_3,100,70,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_3,145,70,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_3,176,70,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_3,208,70,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_4,37,86,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_4,68,86,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_4,100,86,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_4,145,86,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_4,176,86,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_4,208,86,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_5,37,100,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_5,68,100,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_5,100,100,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_5,145,100,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_5,176,100,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_5,208,100,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_6,37,114,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_6,68,114,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_6,100,114,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_6,145,114,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_6,176,114,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_6,208,114,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_7,37,128,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_7,68,128,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_7,100,128,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_7,145,128,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_7,176,128,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_7,208,128,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_8,37,144,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_8,68,144,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_8,100,144,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_8,145,144,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_8,176,144,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_8,208,144,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_9,37,159,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_9,68,159,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_9,100,159,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_9,145,159,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_9,176,159,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_9,208,159,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_10,37,176,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_10,68,176,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_10,100,176,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_10,145,176,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_10,176,176,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_10,208,176,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_11,37,191,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_11,68,191,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_11,100,191,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_11,145,191,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_11,176,191,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_11,208,191,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_12,37,207,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_12,68,207,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_12,100,207,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_12,145,207,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_12,176,207,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_12,208,207,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_13,280,40,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_13,311,40,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_13,343,40,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_13,380,40,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_13,411,40,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_13,443,40,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_14,280,56,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_14,311,56,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_14,343,56,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_14,380,56,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_14,411,56,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_14,443,56,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_15,280,71,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_15,311,71,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_15,343,71,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_15,380,71,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_15,411,71,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_15,443,71,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_16,280,87,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_16,311,87,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_16,343,87,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_16,380,87,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_16,411,87,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_16,443,87,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_17,280,101,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_17,311,101,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_17,343,101,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_17,380,101,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_17,411,101,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_17,443,101,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_18,280,115,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_18,311,115,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_18,343,115,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_18,380,115,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_18,411,115,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_18,443,115,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_19,280,129,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_19,311,129,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_19,343,129,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_19,380,129,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_19,411,129,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_19,443,129,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_20,280,145,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_20,311,145,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_20,343,145,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_20,380,145,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_20,411,145,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_20,443,145,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_21,280,160,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_21,311,160,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_21,343,160,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_21,380,160,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_21,411,160,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_21,443,160,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_22,280,177,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_22,311,177,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_22,343,177,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_22,380,177,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_22,411,177,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_22,443,177,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_23,280,192,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_23,311,192,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_23,343,192,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_23,380,192,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_23,411,192,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_23,443,192,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AR_24,280,208,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AG_24,311,208,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AB_24,343,208,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DR_24,380,208,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DG_24,411,208,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DB_24,443,208,26,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,239,50,14
+    DEFPUSHBUTTON   "APPLY",IDAPPLY_24,224,239,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,434,239,50,14
+    LTEXT           "1  :",IDC_STATIC,15,41,18,11
+    LTEXT           "2  :",IDC_STATIC,15,55,18,11
+    LTEXT           "3  :",IDC_STATIC,15,70,18,11
+    LTEXT           "4  :",IDC_STATIC,15,88,18,11
+    LTEXT           "5  :",IDC_STATIC,15,101,18,11
+    LTEXT           "6  :",IDC_STATIC,15,114,18,11
+    LTEXT           "7  :",IDC_STATIC,15,130,18,11
+    LTEXT           "8  :",IDC_STATIC,15,147,18,11
+    LTEXT           "9  :",IDC_STATIC,15,163,18,11
+    LTEXT           "10 :",IDC_STATIC,15,178,18,11
+    LTEXT           "11 :",IDC_STATIC,15,193,18,11
+    LTEXT           "12 :",IDC_STATIC,15,209,18,11
+    LTEXT           "< FORENOON >",IDC_STATIC,108,13,56,12
+    LTEXT           "< AFTERNOON >",IDC_STATIC,360,15,67,12
+    LTEXT           "Ambient( R G B )",IDC_STATIC,44,26,73,9
+    LTEXT           "Ambient( R G B )",IDC_STATIC,284,27,73,9
+    LTEXT           "Diffuse( R G B )",IDC_STATIC,151,25,73,9
+    LTEXT           "Diffuse( R G B )",IDC_STATIC,391,27,73,9
+END
+
+IDD_INPUT_ANGLE DIALOGEX 0, 0, 85, 33
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Angle"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,15,9,29,12,ES_AUTOHSCROLL
+    LTEXT           "(degree)",IDC_STATIC,50,10,28,8
+END
+
+IDD_INPUT_POSITION DIALOGEX 0, 0, 175, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "위치 이동"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,53,10,98,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,53,30,98,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,53,50,98,12,ES_AUTOHSCROLL
+    LTEXT           "X 좌표 : ",IDC_STATIC,19,11,30,8
+    LTEXT           "Y 좌표 : ",IDC_STATIC,19,31,30,8
+    LTEXT           "Z 좌표 : ",IDC_STATIC,19,51,30,8
+END
+
+IDD_DIALOG_CALC_WORLDMAP DIALOGEX 0, 0, 375, 310
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "전체맵 계산기"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "계산하기",IDOK,132,119,94,19
+    EDITTEXT        IDC_EDIT1,53,30,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,125,30,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,199,30,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT4,272,30,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Bitmap position( x1, x2, y1, y2 )",IDC_STATIC,20,15,335,39
+    EDITTEXT        IDC_EDIT5,52,79,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT6,124,79,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT7,198,79,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT8,270,79,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "World position( x1, x2, y1, y2 )",IDC_STATIC,18,65,335,40
+    LISTBOX         IDC_LIST1,16,160,337,40,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST2,16,221,336,75,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "*결과",IDC_STATIC,15,149,53,8
+    LTEXT           "*계산기록",IDC_STATIC,16,210,53,8
+END
+
+IDD_INPUT_SCALE DIALOGEX 0, 0, 141, 27
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Scale"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,68,7,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(%)",IDC_STATIC,113,7,14,8
+    EDITTEXT        IDC_EDIT2,7,7,40,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+END
+
+IDD_DIALOG_PROGRESS DIALOGEX 0, 0, 280, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "라이트맵 생성"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,21,92,216,17
+    CONTROL         "전체영역",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,27,21,102,14
+    CONTROL         "현재영역",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,159,22,89,13
+    GROUPBOX        "적용범위",IDC_STATIC,21,7,239,35
+    PUSHBUTTON      "생성( 재생성 )",IDC_BUTTON1,38,55,71,14
+    PUSHBUTTON      "삭제",IDC_BUTTON2,180,54,50,14
+    PUSHBUTTON      "닫기",IDC_BUTTON3,206,126,50,14
+END
+
+IDD_OBJECT_TEXTURE DIALOGEX 0, 0, 184, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Object Texture List"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "업데이트",IDR_TEXTURE_UPDATE,117,184,50,14
+    CONTROL         "",IDC_LIST_TEXTURE_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER,15,33,151,148
+    LTEXT           "오브젝트 이름 :",IDC_STATIC,18,17,57,8
+    LTEXT           "",IDC_STATIC_OBJECT_NAME,78,18,88,8
+    PUSHBUTTON      "폴더열기",IDC_BUTTON_FOLDER_OPEN,14,183,50,14
+END
+
+IDD_NAVIGATOR_MAP DIALOGEX 0, 0, 205, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Navigator Map"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "FileDescription", "Beast MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Beast"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "Beast.EXE"
+            VALUE "ProductName", "Beast 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_WORK_WORLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 147
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 387
+    END
+
+    IDD_WORK_LANDSCAPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 140
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 406
+    END
+
+    IDD_WORK_OBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 148
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 390
+    END
+
+    IDD_WORKSPACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 305
+    END
+
+    IDD_WORK_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 131
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_WORK_RESPAWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 125
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_WORK_REGION, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 125
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_NEW_WORLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_WORLD_PROPERIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+
+    IDD_PROP_OBJ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_PROP_LIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_PROP_REGION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_PROP_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_PROP_TRIGGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_ADD_OBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_DELETE_OBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_NEW_FOLDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_RESPAWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_PROP_MOVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_TERRAIN_TEXTURE_EX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_TERRAIN_HEIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_TERRAIN_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_TERRAIN_TEXTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_PREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 103
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_BMP_SAVE_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_PROP_CAPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_EDIT_STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TERRAIN_WATER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_PROP_RESPAWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_REVIVAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_PROP_POS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_RANDOM_DEGREE_SCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_SETTIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_SET_GRID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_RESPAWN_DEFAULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_SAVE_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_PROP_STRUCTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_TERRAIN_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_NAVIGATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 105
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_WORLD_LIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDC_EDIT_COND_TELE_Y, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_PROP_AREASETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_PATROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_PROP_PATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_CONTINENT_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 243
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DIALOG_LIGHT24, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 484
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_INPUT_ANGLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 78
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 26
+    END
+
+    IDD_INPUT_POSITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_DIALOG_CALC_WORLDMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+
+    IDD_INPUT_SCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_DIALOG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_OBJECT_TEXTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_NAVIGATOR_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROP_LIGHT DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0x4944, 0x4552, 0x5443, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x5053, 0x524f, 0x0054, 
+    IDC_COMBO1, 0x403, 6, 0
+0x4f50, 0x4e49, 0x0054, 
+    0
+END
+
+IDD_PROP_MOVER DLGINIT
+BEGIN
+    IDC_AI_STATE, 0x403, 11, 0
+0x5453, 0x5441, 0x5f45, 0x4e49, 0x5449, "\000" 
+    IDC_AI_STATE, 0x403, 11, 0
+0x5453, 0x5441, 0x5f45, 0x4449, 0x454c, "\000" 
+    IDC_AI_STATE, 0x403, 13, 0
+0x5453, 0x5441, 0x5f45, 0x4157, 0x444e, 0x5245, "\000" 
+    IDC_AI_STATE, 0x403, 13, 0
+0x5453, 0x5441, 0x5f45, 0x5550, 0x5352, 0x4555, "\000" 
+    IDC_AI_STATE, 0x403, 12, 0
+0x5453, 0x5441, 0x5f45, 0x5645, 0x4441, 0x0045, 
+    IDC_AI_STATE, 0x403, 14, 0
+0x5453, 0x5441, 0x5f45, 0x5552, 0x414e, 0x4157, 0x0059, 
+    IDC_AI_STATE, 0x403, 11, 0
+0x5453, 0x5441, 0x5f45, 0x4152, 0x4547, "\000" 
+    IDC_AI_STATE, 0x403, 12, 0
+0x5453, 0x5441, 0x5f45, 0x5453, 0x4e41, 0x0044, 
+    IDC_AI_STATE, 0x403, 13, 0
+0x5453, 0x5441, 0x5f45, 0x4150, 0x5254, 0x4c4f, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_DATA1 RCDATA 
+BEGIN
+    0x7376, 0x312e, 0x312e, 0x0a0d, 0x2d3b, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x0d2d, 0x3b0a, 
+    0x4320, 0x6e6f, 0x7473, 0x6e61, 0x7374, 0x7320, 0x6570, 0x6963, 0x6966, 
+    0x6465, 0x6220, 0x2079, 0x6874, 0x2065, 0x7061, 0x0d70, 0x3b0a, 0x2020, 
+    0x2020, 0x3063, 0x632d, 0x3338, 0x2020, 0x203d, 0x6f62, 0x656e, 0x6d20, 
+    0x7461, 0x6972, 0x2078, 0x6e69, 0x6564, 0x2078, 0x2030, 0x207e, 0x3832, 
+    0x0a0d, 0x203b, 0x2020, 0x6320, 0x3438, 0x632d, 0x3738, 0x3d20, 0x6d20, 
+    0x7461, 0x6956, 0x7765, 0x7250, 0x6a6f, 0x0a0d, 0x203b, 0x2020, 0x6320, 
+    0x3838, 0x632d, 0x3139, 0x3d20, 0x7220, 0x7365, 0x7265, 0x6576, 0x0d64, 
+    0x3b0a, 0x2020, 0x2020, 0x3963, 0x2032, 0x2020, 0x2020, 0x203d, 0x696c, 
+    0x6867, 0x2074, 0x6964, 0x6572, 0x7463, 0x6f69, 0x0d6e, 0x3b0a, 0x2020, 
+    0x2020, 0x3963, 0x2033, 0x2020, 0x2020, 0x203d, 0x616d, 0x6574, 0x6972, 
+    0x6c61, 0x6420, 0x6669, 0x7566, 0x6573, 0x6320, 0x6c6f, 0x726f, 0x2a20, 
+    0x6c20, 0x6769, 0x7468, 0x6420, 0x6669, 0x7566, 0x6573, 0x6320, 0x6c6f, 
+    0x726f, 0x0a0d, 0x203b, 0x2020, 0x6320, 0x3439, 0x2020, 0x2020, 0x3d20, 
+    0x6d20, 0x7461, 0x7265, 0x6169, 0x206c, 0x6d61, 0x6962, 0x6e65, 0x2074, 
+    0x6f63, 0x6f6c, 0x0d72, 0x3b0a, 0x2020, 0x2020, 0x3963, 0x2035, 0x2020, 
+    0x2020, 0x203d, 0x6f63, 0x736e, 0x2074, 0x2e31, 0x6630, 0x202c, 0x2c30, 
+    0x2e20, 0x2e2e, 0x0d2e, 0x3b0a, 0x0d09, 0x3b0a, 0x0a0d, 0x203b, 0x6556, 
+    0x7472, 0x7865, 0x6320, 0x6d6f, 0x6f70, 0x656e, 0x746e, 0x2073, 0x6128, 
+    0x2073, 0x7073, 0x6365, 0x6669, 0x6569, 0x2064, 0x6e69, 0x7420, 0x6568, 
+    0x7620, 0x7265, 0x6574, 0x2078, 0x4544, 0x4c43, 0x0d29, 0x3b0a, 0x2020, 
+    0x2020, 0x3076, 0x2020, 0x2020, 0x203d, 0x6f50, 0x6973, 0x6974, 0x6e6f, 
+    0x0a0d, 0x203b, 0x2020, 0x7620, 0x2e31, 0x2078, 0x3d20, 0x6d20, 0x7461, 
+    0x6972, 0x2078, 0x6469, 0x0d78, 0x3b0a, 0x2020, 0x2020, 0x3276, 0x2020, 
+    0x2020, 0x203d, 0x6f4e, 0x6d72, 0x6c61, 0x0a0d, 0x203b, 0x2020, 0x7620, 
+    0x2033, 0x2020, 0x3d20, 0x5420, 0x7865, 0x6f63, 0x726f, 0x7364, 0x0a0d, 
+    0x2d3b, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x0d2d, 0x0d0a, 0x0d0a, 0x3b0a, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x0a0d, 0x203b, 0x6556, 0x7472, 0x7865, 0x6220, 0x656c, 0x646e, 
+    0x6e69, 0x0d67, 0x3b0a, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x0a0d, 0x0a0d, 0x203b, 
+    0x7254, 0x6e61, 0x6673, 0x726f, 0x206d, 0x6f70, 0x6973, 0x6974, 0x6e6f, 
+    0x6620, 0x726f, 0x7720, 0x726f, 0x646c, 0x2030, 0x616d, 0x7274, 0x7869, 
+    0x0a0d, 0x6f6d, 0x2076, 0x3061, 0x782e, 0x202c, 0x3176, 0x782e, 0x0a0d, 
+    0x0a0d, 0x346d, 0x3378, 0x7220, 0x2c30, 0x7620, 0x2c30, 0x6320, 0x615b, 
+    0x2e30, 0x5d78, 0x0909, 0x703b, 0x736f, 0x7420, 0x6172, 0x736e, 0x6f66, 
+    0x6d72, 0x0a0d, 0x336d, 0x3378, 0x7220, 0x2c33, 0x7620, 0x2c32, 0x6320, 
+    0x615b, 0x2e30, 0x5d78, 0x0909, 0x6e3b, 0x726f, 0x616d, 0x206c, 0x7274, 
+    0x6e61, 0x6673, 0x726f, 0x0d6d, 0x6d0a, 0x766f, 0x2020, 0x3072, 0x772e, 
+    0x202c, 0x3963, 0x2e35, 0x0978, 0x0909, 0x203b, 0x3072, 0x772e, 0x3d20, 
+    0x3120, 0x302e, 0x0d66, 0x0d0a, 0x6d0a, 0x7834, 0x2034, 0x506f, 0x736f, 
+    0x202c, 0x3072, 0x202c, 0x3863, 0x0934, 0x0909, 0x203b, 0x506f, 0x736f, 
+    0x3d20, 0x0d20, 0x0d0a, 0x3b0a, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x0a0d, 0x203b, 
+    0x694c, 0x6867, 0x6974, 0x676e, 0x6320, 0x6c61, 0x7563, 0x616c, 0x6974, 
+    0x6e6f, 0x0a0d, 0x2d3b, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x0d2d, 0x3b0a, 0x6420, 0x7269, 
+    0x6365, 0x6974, 0x6e6f, 0x6c61, 0x6c20, 0x6769, 0x7468, 0x0a0d, 0x643b, 
+    0x3370, 0x7220, 0x2e31, 0x2c78, 0x7220, 0x2c33, 0x6320, 0x3239, 0x2020, 
+    0x3b20, 0x4e20, 0xbf20, 0x20cd, 0x204c, 0xc7c0, 0xb320, 0xc0bb, 0x0dfb, 
+    0x3b0a, 0x756d, 0x206c, 0x3272, 0x202c, 0x3172, 0x782e, 0x202c, 0x3963, 
+    0x0933, 0x203b, 0x206e, 0x202a, 0x6964, 0x6666, 0x7375, 0x0d65, 0x3b0a, 
+    0x6461, 0x2064, 0x446f, 0x2c30, 0x7220, 0x2c32, 0x6320, 0x3439, 0x3b09, 
+    0x2b20, 0x6120, 0x626d, 0x6569, 0x746e, 0x0a0d, 0x6f6d, 0x2076, 0x446f, 
+    0x2c30, 0x6320, 0x3539, 0x782e, 0x7878, 0x0978, 0x203b, 0x6f6e, 0x6c20, 
+    0x6769, 0x7468, 0x6e69, 0x0d67, 0x0d0a, 0x3b0a, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x0a0d, 0x203b, 0x6554, 0x7478, 0x7275, 0x2065, 0x6f63, 0x726f, 0x6964, 
+    0x616e, 0x6574, 0x0d73, 0x3b0a, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x0a0d, 0x0a0d, 
+    0x203b, 0x754a, 0x7473, 0x6320, 0x706f, 0x2079, 0x6874, 0x2065, 0x6574, 
+    0x7478, 0x7275, 0x2065, 0x6f63, 0x726f, 0x6964, 0x616e, 0x6574, 0x0d73, 
+    0x6d0a, 0x766f, 0x6f20, 0x3054, 0x202c, 0x7620, 0x0d33, 0x0d0a, 0x0d0a, 
+    "\012" 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Beast\n\nBeast\n\n\nBeast.Document\nBeast Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Beast"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_COOR_X     "                          "
+    ID_INDICATOR_COOR_Y     "                          "
+    ID_INDICATOR_COOR_Z     "                          "
+    ID_INDICATOR_LANDNAME   "                                                    "
+    ID_INDICATOR_LAYER      "Layer = 00000"
+    ID_INDICATOR_OBJECTNAME "Obj = 000000000000000000000000000"
+    ID_INDICATOR_TERRAINNAME "Tex = 000000000000000000000000000"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다\n열기"
+    ID_FILE_CLOSE           "현재 열린 문서를 닫습니다\n닫기"
+    ID_FILE_SAVE            "현재 열린 문서를 저장합니다\n저장"
+    ID_FILE_SAVE_AS         "현재 열린 문서를 다른 이름으로 저장합니다\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다\n쪽 설정"
+    ID_FILE_PRINT_SETUP     "프린터와 인쇄 옵션을 변경합니다\n인쇄 설정"
+    ID_FILE_PRINT           "현재 열린 문서를 인쇄합니다\n인쇄"
+    ID_FILE_PRINT_PREVIEW   "쪽 전체를 표시합니다\n인쇄 미리 보기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보와 버전 정보, 저작권 정보를 표시합니다\n정보"
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE2       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE3       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE4       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE5       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE6       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE7       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE8       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE9       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE10      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE11      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE12      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE13      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE14      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE15      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE16      "이 문서를 엽니다"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "Undo"
+    ID_EDIT_REDO            "Redo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다\n미리 보기 취소"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ZOOM            "\nZoom View[Z]"
+    ID_BUTTON32776          "\nNot available yet"
+    ID_VIEW_SCROLL          "\nScroll View"
+    ID_VIEW_ROTATION        "\nRotation View"
+    ID_BUTTON32779          "\nNot available yet"
+    ID_VIEW_ZOOM_EXTENTS    "\nNot available yet"
+    ID_BUTTON32781          "\nNot available yet"
+    ID_BUTTON32782          "\nNot available yet"
+    ID_VIEW_FRAMEMOVE       "\nAnimate World"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON_ICON_CONTINENT "\nSetup Continent"
+    ID_VIEW_CONTINENT       "대륙정보창을 엽니다."
+    ID_WINDOW_CALC_WORLDMAP "월드맵 계산기"
+    ID_BUTTON_ICON_LIGHTMAP "\n라이트맵을 생성합니다"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_GRID            "\n최소 그리드 출력(4m*4m)"
+    ID_VIEW_LOD             "\n지형 LOD"
+    ID_VIEW_TERRAIN         "\n지형 출력"
+    ID_VIEW_ALL_OBJECTS     "\n모든 오브젝트 출력"
+    ID_VIEW_FOG             "\n안개"
+    ID_FILE_NEW_WORLD       "\n오픈"
+    ID_VIEW_WATER           "\n물, 구름 출력"
+    ID_EXEC_GAME            "\nExcute Game with this World"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RESPAWN              "\n지원안함"
+    ID_SELECT_ELEMENT       "\n지원안함"
+    ID_VIEW_GRID_LANDSCAPE  "\n랜드스케이프 단위 그리드 출력"
+    ID_VIEW_GRID_PATCH      "\n패치단위 그리드 출력"
+    ID_VIEW_LIGHT           "\n조명 "
+    ID_TERRAIN_HEIGHT       "\nHeight Edit"
+    ID_TERRAIN_TEXTURE      "\nTexture Edit"
+    ID_EDIT_LOCK            "\nObject Lock[SPACE]"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_ERASE           "\n지원안함"
+    ID_VIEW_WIREFRAME       "\n와이어프레임"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TERRAIN_COLOR        "\nColor Edit"
+    ID_VIEW_PREVIEWER       "\nNot available yet"
+    ID_EDIT_ONLAND          "\n오브젝트를 땅에 밀착한다.[O]"
+    ID_VIEW_NAME            "\nNPC 이름 출력"
+    ID_EDIT_GRID            "\nSnap to grid.[G]"
+    ID_EDIT_GETGRID         "\nNot available yet"
+    ID_VIEW_TOP             "\nTop View[T]"
+    ID_VIEW_FRONT           "\nFont View[F]"
+    ID_TERRAIN_WATER        "\nWater Edit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_HEIGHT_ATTRIBUTE "\n높이 속성 출력"
+    ID_VIEW_OBJLOD          "\n오브젝트 LOD"
+    ID_EDIT_RANDOM_DEGREE_SCALE "\nRandom Scale and Rotation[SPACE]"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SELECT               "\nSelect Object[Q]"
+    ID_SELECT_ROTATION      "\nRotation Object[E]"
+    ID_SELECT_SCALE         "\nScaling Object[R]"
+    ID_SELECT_MOVE          "\nMove Object[W]"
+    ID_RESTRICT_XZ          "\nRestrict XZ[X]"
+    ID_SELECT_PUT           "\nPut Object[A]"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RESTRICT_X           "\nNot available yet"
+    ID_RESTRICT_Y           "\nRestrict Y[Y]"
+    ID_RESTRICT_Z           "\nNot available yet"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_RESPAWN_ENABLE  "Respawn Enable"
+    ID_GET                  "\nNot available yet"
+    ID_EDIT_ONOBJECT        "\n오브젝트를 쌓아 올린다.[C]"
+    ID_EDIT_HEAPOBJECT      "\n오브젝트를 쌓아 올린다.[H]"
+    ID_VIEW_NAVIGATOR       "네비게이터를 열거나 감춥니다"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\Beast.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

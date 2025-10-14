@@ -1,0 +1,39 @@
+#ifndef __WNDTUTORIAL__H
+#define __WNDTUTORIAL__H
+
+//sun: 12, 튜토리얼 개선
+struct TUTORIAL_STRING
+{
+	CString		strTitle;
+	CString		strContents;
+};
+
+// typedef std::map<int, TUTORIAL_STRING>::value_type mgValType;
+// typedef std::map<int, TUTORIAL_STRING>::iterator mgMapItor;
+
+class CWndTutorial : public CWndNeuz 
+{ 
+public: 
+
+	CString       m_strKeyword;
+	std::map<int, TUTORIAL_STRING>  m_mapTutorial;
+
+	CWndTutorial(); 
+	~CWndTutorial(); 
+
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+
+	BOOL LoadTutorial(LPCTSTR lpszFileName);
+	BOOL AddToList(int nIndex);
+}; 
+
+#endif
+
+

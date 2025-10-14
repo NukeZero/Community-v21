@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{80F27A5A-450C-4F07-BC9D-313E22F75DCC}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BetaPatchClient.h" />
+    <ClInclude Include="BetaPatchClientDlg.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="DialogFrame.h" />
+    <ClInclude Include="DialogOptionFrame.h" />
+    <ClInclude Include="DlgOption.h" />
+    <ClInclude Include="httpdownload.h" />
+    <ClInclude Include="HwOption.h" />
+    <ClInclude Include="HyperLink.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="patchmanager.h" />
+    <ClInclude Include="Picture.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="scanner.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="VersionCommon.h" />
+    <ClInclude Include="vutil.h" />
+    <ClInclude Include="xUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BetaPatchClient.cpp" />
+    <ClCompile Include="BetaPatchClientDlg.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="DialogFrame.cpp" />
+    <ClCompile Include="DialogOptionFrame.cpp" />
+    <ClCompile Include="DlgOption.cpp" />
+    <ClCompile Include="httpdownload.cpp" />
+    <ClCompile Include="HwOption.cpp" />
+    <ClCompile Include="HyperLink.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="patchmanager.cpp" />
+    <ClCompile Include="Picture.cpp" />
+    <ClCompile Include="scanner.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="vutil.cpp" />
+    <ClCompile Include="xUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NewPatchClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DSETUP.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Flyff.exe.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Certifier</ProjectName>
+    <ProjectGuid>{A425F62A-22FF-4904-BFFB-6831D6DC897F}</ProjectGuid>
+    <RootNamespace>Certifier</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27205.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Output\Certifier\Release/Certifier.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../LibrarySource/;..\..\..\Data\Resource;..\_network;..\_Network\Misc\Include;..\_Common;..\_database;..\..\..\ThirdParty\json\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation />
+      <BrowseInformationFile />
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\2. $(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\ThirdParty\BugTrap\libs;..\..\..\Bins\LibraryBins\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Output\Certifier\Debug/Certifier.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../LibrarySource/;..\..\..\Data\Resource;..\_network;..\_Network\Misc\Include;..\_Common;..\_database;..\..\..\ThirdParty\json\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\2. $(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\ThirdParty\BugTrap\libs;..\..\..\Bins\LibraryBins\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MapFileName>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_CommonDefine\FLFileEncryption.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLFlyffConfig.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLTm.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketServerDescription.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLKeyGenerator.cpp" />
+    <ClCompile Include="..\_Common\file.cpp" />
+    <ClCompile Include="..\_Common\FLContentSwitch.cpp" />
+    <ClCompile Include="..\_Common\FLGameTimer.cpp" />
+    <ClCompile Include="..\_Common\FLServerDescription.cpp" />
+    <ClCompile Include="..\_Common\scanner.cpp" />
+    <ClCompile Include="..\_Common\timer.cpp" />
+    <ClCompile Include="..\_common\vutil.cpp" />
+    <ClCompile Include="..\_common\xutil.cpp" />
+    <ClCompile Include="..\_database\Query.cpp" />
+    <ClCompile Include="..\_DirectX\dxutil.cpp" />
+    <ClCompile Include="..\_Network\tools.cpp" />
+    <ClCompile Include="AccountMgr.cpp" />
+    <ClCompile Include="certifier.cpp" />
+    <ClCompile Include="DBManager.cpp" />
+    <ClCompile Include="dpaccountclient.cpp" />
+    <ClCompile Include="DPCertifier.cpp" />
+    <ClCompile Include="FLAuthWait.cpp" />
+    <ClCompile Include="FLDBManager_Auth_Europe.cpp" />
+    <ClCompile Include="FLDBManager_Auth_Indonesia.cpp" />
+    <ClCompile Include="FLDBManager_Auth_Japan.cpp" />
+    <ClCompile Include="FLDBManager_Auth_USA.cpp" />
+    <ClCompile Include="FLIDNAuthClient.cpp" />
+    <ClCompile Include="FLIDNAuthProtocol.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="user.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="certifier.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_CommonDefine\FLCommonDumper.h" />
+    <ClInclude Include="..\_CommonDefine\FLFileEncryption.h" />
+    <ClInclude Include="..\_CommonDefine\FLFlyffConfig.h" />
+    <ClInclude Include="..\_CommonDefine\FLPacketStruct.h" />
+    <ClInclude Include="..\_CommonDefine\FLReturnStateCode.h" />
+    <ClInclude Include="..\_CommonDefine\FLTm.h" />
+    <ClInclude Include="..\_CommonDefine\FlyffCommonDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketAllDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketServerDescription.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLKeyGenerator.h" />
+    <ClInclude Include="..\_common\data.h" />
+    <ClInclude Include="..\_Common\DefineCommon.h" />
+    <ClInclude Include="..\_Common\file.h" />
+    <ClInclude Include="..\_Common\FLContentSwitch.h" />
+    <ClInclude Include="..\_Common\FLGameTimer.h" />
+    <ClInclude Include="..\_Common\FLServerDescription.h" />
+    <ClInclude Include="..\_Common\scanner.h" />
+    <ClInclude Include="..\_Common\timer.h" />
+    <ClInclude Include="..\_common\vutil.h" />
+    <ClInclude Include="..\_common\xutil.h" />
+    <ClInclude Include="..\_database\Query.h" />
+    <ClInclude Include="..\_DirectX\dxutil.h" />
+    <ClInclude Include="..\_network\cmnhdr.h" />
+    <ClInclude Include="..\_network\misc\include\Misc.h" />
+    <ClInclude Include="..\_network\MsgHdr.h" />
+    <ClInclude Include="..\_Network\tools.h" />
+    <ClInclude Include="AccountMgr.h" />
+    <ClInclude Include="DBManager.h" />
+    <ClInclude Include="dpaccountclient.h" />
+    <ClInclude Include="DPCertifier.h" />
+    <ClInclude Include="FLAuthWait.h" />
+    <ClInclude Include="FLDBOverlappedPlus.h" />
+    <ClInclude Include="FLIDNAuthClient.h" />
+    <ClInclude Include="FLIDNAuthDefine.h" />
+    <ClInclude Include="FLIDNAuthProtocol.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="user.h" />
+    <ClInclude Include="VersionCommon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="certifier.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Certifier.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

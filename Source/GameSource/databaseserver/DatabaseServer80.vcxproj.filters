@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{23b7743d-91fa-444a-b744-9ff755011cb3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d6d1c8e7-f9d7-4815-a06a-7157f702faef}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9b3b1a80-b8e2-4942-9e0d-5b3168346904}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Network Files">
+      <UniqueIdentifier>{0d976c33-d26f-4765-a537-7432863cd658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network Files\Misc">
+      <UniqueIdentifier>{6a07b1cd-e325-4768-ad27-7b4a74be987c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network Files\NetObjects">
+      <UniqueIdentifier>{4751d62f-43ab-4c17-8221-970483a60b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Neuz Files">
+      <UniqueIdentifier>{93331f9e-e9ec-4687-a3f9-372cd1ee446d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Neuz Files\DirectX Files">
+      <UniqueIdentifier>{564a4ed9-f0cc-4f5c-88b3-7956edf6f26b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Neuz Files\Common Files">
+      <UniqueIdentifier>{9a3e53ee-280a-47e1-a1f1-50787bf1ebe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Neuz Files\Common Files\Script">
+      <UniqueIdentifier>{dc161f52-3087-48a0-84ce-89f83c7d4111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Neuz Files\Common Files\Objects">
+      <UniqueIdentifier>{39ba7595-1c83-4f16-90ea-b30b18e1cbee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Neuz Files\Common Files\Low">
+      <UniqueIdentifier>{4a6e252a-2e5c-4074-9e3f-3157e25d18b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Neuz Files\Interface">
+      <UniqueIdentifier>{b8a9446c-a983-4d8f-8bda-b80a5023efc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database Files">
+      <UniqueIdentifier>{dd9d1ccc-b7f3-4dc4-adcc-18f150962725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database Files\거래 중개">
+      <UniqueIdentifier>{97ae0acd-a34a-4ebd-b5fc-6669ab9855f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database Files\아이템 골드 로그">
+      <UniqueIdentifier>{b932e84e-ddb4-4b65-8bc6-446785d6b1bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database Files\유저">
+      <UniqueIdentifier>{cea9ccd8-66d6-4748-992c-dc50cecc39aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database Files\케릭터 로그">
+      <UniqueIdentifier>{12a4f992-149b-494f-b3d9-15775c7cc651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine">
+      <UniqueIdentifier>{a66b2f1c-07e9-4330-874e-d79b3e6fda3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Packet">
+      <UniqueIdentifier>{449f7749-6bb6-4420-9926-288a64919089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Packet\텔레포트지도">
+      <UniqueIdentifier>{ce2dbd9d-81f2-4d03-adc6-1f2dc8c9b430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Packet\이벤트용 아레나">
+      <UniqueIdentifier>{9fc9599a-fa10-4792-988b-b4cebc6b787b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Packet\Server Description">
+      <UniqueIdentifier>{0edec092-ce4b-42e6-8126-7c2c2a66a599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Packet\캐릭터 서버군 이동">
+      <UniqueIdentifier>{1405d6b3-bbc0-49ec-99a3-6b401162d4de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Packet\거래 중개">
+      <UniqueIdentifier>{fa881d0c-0a6c-416d-a9a3-d2232d73ef63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Packet\인증">
+      <UniqueIdentifier>{c6306468-d1bd-43de-89f8-f857873069fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Packet\길드 뱅크 업데이트">
+      <UniqueIdentifier>{33309862-7d8b-43c6-84a2-86c20381567e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__CommonDefine\Util">
+      <UniqueIdentifier>{9c1530f5-f4f5-4138-9792-e28f0bdd9002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Content">
+      <UniqueIdentifier>{ecbe3208-21db-4fa8-a0e1-d14e31d11a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Content\스펙 관련">
+      <UniqueIdentifier>{c52e1440-da41-4fba-9ba7-19a527001047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Content\Contents 관리">
+      <UniqueIdentifier>{92b11f9b-0d12-4cf6-b555-8834ad5a763e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Content\ItemContainer">
+      <UniqueIdentifier>{4a6c993c-b95d-4665-9502-bf71926708bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="스팩">
+      <UniqueIdentifier>{a95bb94b-9254-4d3d-b5b0-2008b4468250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBDataConvert">
+      <UniqueIdentifier>{ebb4fb22-f012-4acd-84a3-d704d1a9e7d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{0bf59f47-c0b5-45ae-8534-ce81d3b3baf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_CommonFunction">
+      <UniqueIdentifier>{3966f7ef-3c78-43cd-8a72-c7084de1ab06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccountTimeLimitDBCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CampusDBCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="couplehelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbcontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBSerialNumberRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dpaccountclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DPCoreSrvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DPLoginSrvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dptrans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildHouseDBCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HousingDBCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lordskillexecutable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Project.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuizDBCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RainbowRaceDBCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SecretRoomDBMng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tlord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_network\objects\Obj.cpp">
+      <Filter>Network Files\NetObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\langman.cpp">
+      <Filter>Neuz Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\path.cpp">
+      <Filter>Neuz Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\vutil.cpp">
+      <Filter>Neuz Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\xutil.cpp">
+      <Filter>Neuz Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_DirectX\dxutil.cpp">
+      <Filter>Neuz Files\DirectX Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\buff.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Campus.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Continent.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\couple.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\EventLua.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\eveschool.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\file.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLCommonCheck.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLPiercingOption.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLRandomOption.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLServerDescription.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FunnyCoin.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\guild.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\GuildCombat1to1.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\GuildHouse.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\guildquest.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\guildwar.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\honor.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Housing.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\lord.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\lordskill.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\LuaBase.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\playerdata.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\pocket.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\post.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ProjectCmn.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Quiz.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\rtmessenger.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\serialnumber.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\spevent.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Tax.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\timer.cpp">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\scanner.cpp">
+      <Filter>Neuz Files\Common Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\script.cpp">
+      <Filter>Neuz Files\Common Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\ObjSerialize.cpp">
+      <Filter>Neuz Files\Common Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_common\ObjSerializeOpt.cpp">
+      <Filter>Neuz Files\Common Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\pet.cpp">
+      <Filter>Neuz Files\Common Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\Stat.cpp">
+      <Filter>Neuz Files\Common Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLGameTimer.cpp">
+      <Filter>Neuz Files\Common Files\Low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Interface\UserTaskBar.cpp">
+      <Filter>Neuz Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\AccountCacheMgr.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\DBBackEndSystem.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\DbItemUpdate.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_database\DbManager.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\DbManagerFun.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\DbManagerJoin.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\DbManagerLog.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\DbManagerSave.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\FLDataBase.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\FLQueryCommand.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_database\Query.cpp">
+      <Filter>Database Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\FLConsignmentSale_Query.cpp">
+      <Filter>Database Files\거래 중개</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\FLDBConsignmentSale.cpp">
+      <Filter>Database Files\거래 중개</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\FLItemGoldLog_Query.cpp">
+      <Filter>Database Files\아이템 골드 로그</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\FLPlayer_Query.cpp">
+      <Filter>Database Files\유저</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\FLExpLog_Query.cpp">
+      <Filter>Database Files\케릭터 로그</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLDBCommonFuntion.cpp">
+      <Filter>__CommonDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLFileEncryption.cpp">
+      <Filter>__CommonDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLFlyffConfig.cpp">
+      <Filter>__CommonDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLScriptFileManager.cpp">
+      <Filter>__CommonDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLStringParsing.cpp">
+      <Filter>__CommonDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\FLTm.cpp">
+      <Filter>__CommonDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket.cpp">
+      <Filter>__CommonDefine\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketTeleportMap.cpp">
+      <Filter>__CommonDefine\Packet\텔레포트지도</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketEventArena.cpp">
+      <Filter>__CommonDefine\Packet\이벤트용 아레나</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketServerDescription.cpp">
+      <Filter>__CommonDefine\Packet\Server Description</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.cpp">
+      <Filter>__CommonDefine\Packet\캐릭터 서버군 이동</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.cpp">
+      <Filter>__CommonDefine\Packet\거래 중개</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketWDB_ConsignmentSale.cpp">
+      <Filter>__CommonDefine\Packet\거래 중개</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket_Certify.cpp">
+      <Filter>__CommonDefine\Packet\인증</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketGuildBankUpdate.cpp">
+      <Filter>__CommonDefine\Packet\길드 뱅크 업데이트</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.cpp">
+      <Filter>__CommonDefine\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\UTIL\FLKeyGenerator.cpp">
+      <Filter>__CommonDefine\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager.cpp">
+      <Filter>_Content\스펙 관련</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager_Load.cpp">
+      <Filter>_Content\스펙 관련</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecStruct.cpp">
+      <Filter>_Content\스펙 관련</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLContentSwitch.cpp">
+      <Filter>_Content\Contents 관리</Filter>
+    </ClCompile>
+    <ClCompile Include="FLSpec.cpp">
+      <Filter>스팩</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Database\FLDBDataConvert.cpp">
+      <Filter>DBDataConvert</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLItemBase.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLItemElem.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_Common\FLCommonFunction.cpp">
+      <Filter>_CommonFunction</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccountTimeLimitDBCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CampusDBCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="couplehelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbcontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBSerialNumberRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineConMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dpaccountclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DPCoreSrvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DPLoginSrvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dptrans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildHouseDBCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HousingDBCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lordskillexecutable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="project.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuizDBCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RainbowRaceDBCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SecretRoomDBMng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tlord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_network\CmnHdr.h">
+      <Filter>Network Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_network\MsgHdr.h">
+      <Filter>Network Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_network\misc\include\Misc.h">
+      <Filter>Network Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_network\objects\Obj.h">
+      <Filter>Network Files\NetObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\DefineCommon.h">
+      <Filter>Neuz Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\langman.h">
+      <Filter>Neuz Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\patch.h">
+      <Filter>Neuz Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\xutil.h">
+      <Filter>Neuz Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_DirectX\dxutil.h">
+      <Filter>Neuz Files\DirectX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\authorization.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\buff.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\buyinginfo.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Campus.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\data.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\EventLua.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\eveschool.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\file.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLCommonCheck.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLPiercingOption.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLRandomOption.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLServerDescription.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FunnyCoin.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\guild.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\GuildCombat1to1.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\GuildHouse.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\guildquest.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\guildwar.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Housing.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\lord.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\lordskill.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\LuaBase.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\party.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_common\path.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\playerdata.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\pocket.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\post.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\ProjectCmn.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Quiz.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\rtmessenger.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\serialnumber.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\SkillInfluence.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\spevent.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\timer.h">
+      <Filter>Neuz Files\Common Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\scanner.h">
+      <Filter>Neuz Files\Common Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\script.h">
+      <Filter>Neuz Files\Common Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\pet.h">
+      <Filter>Neuz Files\Common Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\Stat.h">
+      <Filter>Neuz Files\Common Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLGameTimer.h">
+      <Filter>Neuz Files\Common Files\Low</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Interface\UserTaskBar.h">
+      <Filter>Neuz Files\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\AccountCacheMgr.h">
+      <Filter>Database Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_database\DbManager.h">
+      <Filter>Database Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\FLDataBase.h">
+      <Filter>Database Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\FLQueryCommand.h">
+      <Filter>Database Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_database\Query.h">
+      <Filter>Database Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\FLConsignmentSale_Query.h">
+      <Filter>Database Files\거래 중개</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\FLDBConsignmentSale.h">
+      <Filter>Database Files\거래 중개</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\FLItemGoldLog_Query.h">
+      <Filter>Database Files\아이템 골드 로그</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\FLPlayer_Query.h">
+      <Filter>Database Files\유저</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\FLExpLog_Query.h">
+      <Filter>Database Files\케릭터 로그</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLCommonDumper.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLDBCommonFuntion.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLFileEncryption.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLFlyffConfig.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Log\FLItemLogStruct.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLPacketStruct.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLResourceDefines.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLReturnStateCode.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLScriptFileManager.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLStringParsing.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLTm.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLTypes.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FlyffCommonDefine.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\RefectoringDefine.h">
+      <Filter>__CommonDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket.h">
+      <Filter>__CommonDefine\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketAllDefine.h">
+      <Filter>__CommonDefine\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketTeleportMap.h">
+      <Filter>__CommonDefine\Packet\텔레포트지도</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketEventArena.h">
+      <Filter>__CommonDefine\Packet\이벤트용 아레나</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketServerDescription.h">
+      <Filter>__CommonDefine\Packet\Server Description</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.h">
+      <Filter>__CommonDefine\Packet\캐릭터 서버군 이동</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.h">
+      <Filter>__CommonDefine\Packet\거래 중개</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketWDB_ConsignmentSale.h">
+      <Filter>__CommonDefine\Packet\거래 중개</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket_Certify.h">
+      <Filter>__CommonDefine\Packet\인증</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketGuildBankUpdate.h">
+      <Filter>__CommonDefine\Packet\길드 뱅크 업데이트</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.h">
+      <Filter>__CommonDefine\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\UTIL\FLKeyGenerator.h">
+      <Filter>__CommonDefine\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecManager.h">
+      <Filter>_Content\스펙 관련</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecStruct.h">
+      <Filter>_Content\스펙 관련</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLContentSwitch.h">
+      <Filter>_Content\Contents 관리</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_CommonDefine\FLItemContainer.h">
+      <Filter>_Content\ItemContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="FLSpec.h">
+      <Filter>스팩</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Database\FLDBDataConvert.h">
+      <Filter>DBDataConvert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLItemBase.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLItemElem.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Common\FLCommonFunction.h">
+      <Filter>_CommonFunction</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DatabaseServer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="databaseserver.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DatabaseServer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

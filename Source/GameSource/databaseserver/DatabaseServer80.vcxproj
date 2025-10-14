@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>DatabaseServer</ProjectName>
+    <ProjectGuid>{7E317D3C-CBBF-42FD-8A33-EFB923BED47D}</ProjectGuid>
+    <RootNamespace>DatabaseServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27205.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Output\DatabaseServer\Debug/DatabaseServer.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../LibrarySource/;..\..\..\Data\Resource;..\_Network\Misc\Include;..\_network;..\_DirectX;..\_Common;..\_database;..\_Interface;..\..\..\ThirdParty;..\..\..\ThirdParty\directX\$(Platform)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\3. $(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Bins\LibraryBins\$(Platform)\;..\..\..\ThirdParty\BugTrap\libs;..\..\..\ThirdParty\lua\lib\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MapFileName>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Output\DatabaseServer\Release/DatabaseServer.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../LibrarySource/;..\..\..\Data\Resource;..\_Network\Misc\Include;..\_network;..\_DirectX;..\_Common;..\_database;..\_Interface;..\..\..\ThirdParty;..\..\..\ThirdParty\directX\$(Platform)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput />
+      <AssemblerListingLocation />
+      <BrowseInformationFile />
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\3. $(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Bins\LibraryBins\$(Platform)\;..\..\..\ThirdParty\BugTrap\libs;..\..\..\ThirdParty\lua\lib\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_CommonDefine\FLFileEncryption.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLFlyffConfig.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLScriptFileManager.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLStringParsing.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLTm.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketEventArena.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketGuildBankUpdate.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketServerDescription.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketTeleportMap.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketWDB_ConsignmentSale.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket_Certify.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager_Load.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecStruct.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLKeyGenerator.cpp" />
+    <ClCompile Include="..\_Common\buff.cpp" />
+    <ClCompile Include="..\_Common\Campus.cpp" />
+    <ClCompile Include="..\_Common\Continent.cpp" />
+    <ClCompile Include="..\_Common\couple.cpp" />
+    <ClCompile Include="..\_Common\EventLua.cpp" />
+    <ClCompile Include="..\_common\eveschool.cpp" />
+    <ClCompile Include="..\_Common\file.cpp" />
+    <ClCompile Include="..\_Common\FLCommonCheck.cpp" />
+    <ClCompile Include="..\_Common\FLCommonFunction.cpp" />
+    <ClCompile Include="..\_Common\FLContentSwitch.cpp" />
+    <ClCompile Include="..\_Common\FLDBCommonFuntion.cpp" />
+    <ClCompile Include="..\_Common\FLGameTimer.cpp" />
+    <ClCompile Include="..\_Common\FLItemBase.cpp" />
+    <ClCompile Include="..\_Common\FLItemElem.cpp" />
+    <ClCompile Include="..\_Common\FLPiercingOption.cpp" />
+    <ClCompile Include="..\_Common\FLRandomOption.cpp" />
+    <ClCompile Include="..\_Common\FLServerDescription.cpp" />
+    <ClCompile Include="..\_Common\FunnyCoin.cpp" />
+    <ClCompile Include="..\_common\guild.cpp" />
+    <ClCompile Include="..\_Common\GuildCombat1to1.cpp" />
+    <ClCompile Include="..\_Common\GuildHouse.cpp" />
+    <ClCompile Include="..\_common\guildquest.cpp" />
+    <ClCompile Include="..\_common\guildwar.cpp" />
+    <ClCompile Include="..\_Common\honor.cpp" />
+    <ClCompile Include="..\_Common\Housing.cpp" />
+    <ClCompile Include="..\_Common\langman.cpp" />
+    <ClCompile Include="..\_Common\lord.cpp" />
+    <ClCompile Include="..\_Common\lordskill.cpp" />
+    <ClCompile Include="..\_Common\LuaBase.cpp" />
+    <ClCompile Include="..\_Common\ObjSerialize.cpp" />
+    <ClCompile Include="..\_common\ObjSerializeOpt.cpp" />
+    <ClCompile Include="..\_Common\path.cpp" />
+    <ClCompile Include="..\_Common\pet.cpp" />
+    <ClCompile Include="..\_Common\playerdata.cpp" />
+    <ClCompile Include="..\_Common\pocket.cpp" />
+    <ClCompile Include="..\_Common\post.cpp" />
+    <ClCompile Include="..\_Common\ProjectCmn.cpp" />
+    <ClCompile Include="..\_Common\Quiz.cpp" />
+    <ClCompile Include="..\_Common\rtmessenger.cpp" />
+    <ClCompile Include="..\_Common\scanner.cpp" />
+    <ClCompile Include="..\_Common\script.cpp" />
+    <ClCompile Include="..\_Common\serialnumber.cpp" />
+    <ClCompile Include="..\_Common\spevent.cpp" />
+    <ClCompile Include="..\_Common\Stat.cpp" />
+    <ClCompile Include="..\_Common\Tax.cpp" />
+    <ClCompile Include="..\_Common\timer.cpp" />
+    <ClCompile Include="..\_common\vutil.cpp" />
+    <ClCompile Include="..\_Common\xutil.cpp" />
+    <ClCompile Include="..\_Database\AccountCacheMgr.cpp" />
+    <ClCompile Include="..\_Database\DBBackEndSystem.cpp" />
+    <ClCompile Include="..\_Database\DbItemUpdate.cpp" />
+    <ClCompile Include="..\_database\DbManager.cpp" />
+    <ClCompile Include="..\_Database\DbManagerFun.cpp" />
+    <ClCompile Include="..\_Database\DbManagerJoin.cpp" />
+    <ClCompile Include="..\_Database\DbManagerLog.cpp" />
+    <ClCompile Include="..\_Database\DbManagerSave.cpp" />
+    <ClCompile Include="..\_Database\FLConsignmentSale_Query.cpp" />
+    <ClCompile Include="..\_Database\FLDataBase.cpp" />
+    <ClCompile Include="..\_Database\FLDBConsignmentSale.cpp" />
+    <ClCompile Include="..\_Database\FLDBDataConvert.cpp" />
+    <ClCompile Include="..\_Database\FLExpLog_Query.cpp" />
+    <ClCompile Include="..\_Database\FLItemGoldLog_Query.cpp" />
+    <ClCompile Include="..\_Database\FLPlayer_Query.cpp" />
+    <ClCompile Include="..\_Database\FLQueryCommand.cpp" />
+    <ClCompile Include="..\_database\Query.cpp" />
+    <ClCompile Include="..\_DirectX\dxutil.cpp" />
+    <ClCompile Include="..\_Interface\UserTaskBar.cpp" />
+    <ClCompile Include="..\_network\objects\Obj.cpp" />
+    <ClCompile Include="AccountTimeLimitDBCtrl.cpp" />
+    <ClCompile Include="CampusDBCtrl.cpp" />
+    <ClCompile Include="couplehelper.cpp" />
+    <ClCompile Include="DatabaseServer.cpp" />
+    <ClCompile Include="dbcontroller.cpp" />
+    <ClCompile Include="DBSerialNumberRequest.cpp" />
+    <ClCompile Include="dpaccountclient.cpp" />
+    <ClCompile Include="DPCoreSrvr.cpp" />
+    <ClCompile Include="DPLoginSrvr.cpp" />
+    <ClCompile Include="dptrans.cpp" />
+    <ClCompile Include="FLSpec.cpp" />
+    <ClCompile Include="GuildHouseDBCtrl.cpp" />
+    <ClCompile Include="HousingDBCtrl.cpp" />
+    <ClCompile Include="lordskillexecutable.cpp" />
+    <ClCompile Include="Project.cpp" />
+    <ClCompile Include="QuizDBCtrl.cpp" />
+    <ClCompile Include="RainbowRaceDBCtrl.cpp" />
+    <ClCompile Include="SecretRoomDBMng.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tlord.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_CommonDefine\FLCommonDumper.h" />
+    <ClInclude Include="..\_CommonDefine\FLFileEncryption.h" />
+    <ClInclude Include="..\_CommonDefine\FLFlyffConfig.h" />
+    <ClInclude Include="..\_CommonDefine\FLItemContainer.h" />
+    <ClInclude Include="..\_CommonDefine\FLPacketStruct.h" />
+    <ClInclude Include="..\_CommonDefine\FLResourceDefines.h" />
+    <ClInclude Include="..\_CommonDefine\FLReturnStateCode.h" />
+    <ClInclude Include="..\_CommonDefine\FLScriptFileManager.h" />
+    <ClInclude Include="..\_CommonDefine\FLStringParsing.h" />
+    <ClInclude Include="..\_CommonDefine\FLTm.h" />
+    <ClInclude Include="..\_CommonDefine\FLTypes.h" />
+    <ClInclude Include="..\_CommonDefine\FlyffCommonDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Log\FLItemLogStruct.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketAllDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketEventArena.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketGuildBankUpdate.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketServerDescription.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketTeleportMap.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketWDB_ConsignmentSale.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket_Certify.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.h" />
+    <ClInclude Include="..\_CommonDefine\RefectoringDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecManager.h" />
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecStruct.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLKeyGenerator.h" />
+    <ClInclude Include="..\_Common\authorization.h" />
+    <ClInclude Include="..\_Common\buff.h" />
+    <ClInclude Include="..\_common\buyinginfo.h" />
+    <ClInclude Include="..\_Common\Campus.h" />
+    <ClInclude Include="..\_Common\data.h" />
+    <ClInclude Include="..\_Common\DefineCommon.h" />
+    <ClInclude Include="..\_Common\EventLua.h" />
+    <ClInclude Include="..\_common\eveschool.h" />
+    <ClInclude Include="..\_Common\file.h" />
+    <ClInclude Include="..\_Common\FLCommonCheck.h" />
+    <ClInclude Include="..\_Common\FLCommonFunction.h" />
+    <ClInclude Include="..\_Common\FLContentSwitch.h" />
+    <ClInclude Include="..\_Common\FLDBCommonFuntion.h" />
+    <ClInclude Include="..\_Common\FLGameTimer.h" />
+    <ClInclude Include="..\_Common\FLItemBase.h" />
+    <ClInclude Include="..\_Common\FLItemElem.h" />
+    <ClInclude Include="..\_Common\FLPiercingOption.h" />
+    <ClInclude Include="..\_Common\FLRandomOption.h" />
+    <ClInclude Include="..\_Common\FLServerDescription.h" />
+    <ClInclude Include="..\_Common\FunnyCoin.h" />
+    <ClInclude Include="..\_common\guild.h" />
+    <ClInclude Include="..\_Common\GuildCombat1to1.h" />
+    <ClInclude Include="..\_Common\GuildHouse.h" />
+    <ClInclude Include="..\_common\guildquest.h" />
+    <ClInclude Include="..\_common\guildwar.h" />
+    <ClInclude Include="..\_Common\Housing.h" />
+    <ClInclude Include="..\_Common\langman.h" />
+    <ClInclude Include="..\_Common\lord.h" />
+    <ClInclude Include="..\_Common\lordskill.h" />
+    <ClInclude Include="..\_Common\LuaBase.h" />
+    <ClInclude Include="..\_common\party.h" />
+    <ClInclude Include="..\_Common\patch.h" />
+    <ClInclude Include="..\_common\path.h" />
+    <ClInclude Include="..\_Common\pet.h" />
+    <ClInclude Include="..\_Common\playerdata.h" />
+    <ClInclude Include="..\_Common\pocket.h" />
+    <ClInclude Include="..\_Common\post.h" />
+    <ClInclude Include="..\_Common\ProjectCmn.h" />
+    <ClInclude Include="..\_Common\Quiz.h" />
+    <ClInclude Include="..\_Common\rtmessenger.h" />
+    <ClInclude Include="..\_Common\scanner.h" />
+    <ClInclude Include="..\_Common\script.h" />
+    <ClInclude Include="..\_Common\serialnumber.h" />
+    <ClInclude Include="..\_Common\SkillInfluence.h" />
+    <ClInclude Include="..\_Common\spevent.h" />
+    <ClInclude Include="..\_Common\Stat.h" />
+    <ClInclude Include="..\_Common\timer.h" />
+    <ClInclude Include="..\_Common\xutil.h" />
+    <ClInclude Include="..\_Database\AccountCacheMgr.h" />
+    <ClInclude Include="..\_database\DbManager.h" />
+    <ClInclude Include="..\_Database\FLConsignmentSale_Query.h" />
+    <ClInclude Include="..\_Database\FLDataBase.h" />
+    <ClInclude Include="..\_Database\FLDBConsignmentSale.h" />
+    <ClInclude Include="..\_Database\FLDBDataConvert.h" />
+    <ClInclude Include="..\_Database\FLExpLog_Query.h" />
+    <ClInclude Include="..\_Database\FLItemGoldLog_Query.h" />
+    <ClInclude Include="..\_Database\FLPlayer_Query.h" />
+    <ClInclude Include="..\_Database\FLQueryCommand.h" />
+    <ClInclude Include="..\_database\Query.h" />
+    <ClInclude Include="..\_DirectX\dxutil.h" />
+    <ClInclude Include="..\_Interface\UserTaskBar.h" />
+    <ClInclude Include="..\_network\CmnHdr.h" />
+    <ClInclude Include="..\_network\misc\include\Misc.h" />
+    <ClInclude Include="..\_network\MsgHdr.h" />
+    <ClInclude Include="..\_network\objects\Obj.h" />
+    <ClInclude Include="AccountTimeLimitDBCtrl.h" />
+    <ClInclude Include="CampusDBCtrl.h" />
+    <ClInclude Include="couplehelper.h" />
+    <ClInclude Include="dbcontroller.h" />
+    <ClInclude Include="DBSerialNumberRequest.h" />
+    <ClInclude Include="DefineConMode.h" />
+    <ClInclude Include="dpaccountclient.h" />
+    <ClInclude Include="DPCoreSrvr.h" />
+    <ClInclude Include="DPLoginSrvr.h" />
+    <ClInclude Include="dptrans.h" />
+    <ClInclude Include="FLSpec.h" />
+    <ClInclude Include="GuildHouseDBCtrl.h" />
+    <ClInclude Include="HousingDBCtrl.h" />
+    <ClInclude Include="lordskillexecutable.h" />
+    <ClInclude Include="project.h" />
+    <ClInclude Include="QuizDBCtrl.h" />
+    <ClInclude Include="RainbowRaceDBCtrl.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SecretRoomDBMng.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="tlord.h" />
+    <ClInclude Include="VersionCommon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DatabaseServer.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="databaseserver.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DatabaseServer.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Neuz</ProjectName>
+    <ProjectGuid>{4C758B03-22AF-4006-ACCE-99B6681C0D38}</ProjectGuid>
+    <RootNamespace>Neuz</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27205.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>..\..\ThirdParty\directX\lib;..\..\ThirdParty\Lua\lib;..\..\ThirdParty\miles\;..\..\Library\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Output\Neuz\Debug/Neuz.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../ThirdParty/;../../LibrarySource;..\_Multimedia;..\_DirectX;..\_Common;..\_Interface;..\_network\misc\include;..\_network;..\..\..\ThirdParty\directX\$(Platform)\include;..\..\..\Data\Resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation />
+      <BrowseInformationFile />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;imm32.lib;VERSION.LIB;d3dx9dt.lib;d3d9.lib;d3dxof.lib;dxerr9.lib;dsound.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bins\ClientBins\$(Platform)\$(Configuration)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\ThirdParty\BugTrap\libs;..\..\..\Bins\LibraryBins\$(Platform)\;..\..\..\ThirdParty\directX\$(Platform)\lib;..\..\..\ThirdParty\lua\lib\$(Platform)\;..\..\..\ThirdParty\Miles\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;libcmt.lib;libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\..\..\Bins\ClientBins\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\..\Bins\ClientBins\$(Platform)\$(Configuration)\$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Output\Neuz\Release/Neuz.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../ThirdParty/;../../LibrarySource;..\_Multimedia;..\_DirectX;..\_Common;..\_Interface;..\_network\misc\include;..\_network;..\..\..\ThirdParty\directX\$(Platform)\include;..\..\..\Data\Resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput />
+      <AssemblerListingLocation />
+      <BrowseInformationFile />
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;imm32.lib;VERSION.LIB;d3dx9.lib;d3d9.lib;d3dxof.lib;dxerr9.lib;dsound.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bins\ClientBins\$(Platform)\$(Configuration)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\ThirdParty\BugTrap\libs;..\..\..\Bins\LibraryBins\$(Platform)\;..\..\..\ThirdParty\directX\$(Platform)\lib;..\..\..\ThirdParty\lua\lib\$(Platform)\;..\..\..\ThirdParty\Miles\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\..\Bins\ClientBins\$(Platform)\$(Configuration)\$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>..\..\..\Bins\ClientBins\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_AIInterface\Action.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMover.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverCollision.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverCtrl.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverDmg.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverMsg.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverMsg2.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverState.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverState2.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionShip.cpp" />
+    <ClCompile Include="..\_AIInterface\AIInterface.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLFileCompare.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLFileEncryption.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLFlyffConfig.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLMakeFileData.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLTm.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketBroadCastMessage.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketChargeZoneTicket.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketEventArena.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketFlyffPieceEvent.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemExchange.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemOption.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemUpgrade.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketMadrigalGift.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketServerDescription.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketTeleportMap.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketTreasureChest.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketUserAuth.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager_Load.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecStruct.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLKeyGenerator.cpp" />
+    <ClCompile Include="..\_Common\2DRender.cpp" />
+    <ClCompile Include="..\_Common\accessory.cpp" />
+    <ClCompile Include="..\_Common\billboard.cpp" />
+    <ClCompile Include="..\_Common\Bone.cpp" />
+    <ClCompile Include="..\_Common\buff.cpp" />
+    <ClCompile Include="..\_Common\Camera.cpp" />
+    <ClCompile Include="..\_Common\Campus.cpp" />
+    <ClCompile Include="..\_Common\Chatting.cpp" />
+    <ClCompile Include="..\_Common\ClientMsg.cpp" />
+    <ClCompile Include="..\_Common\collecting.cpp" />
+    <ClCompile Include="..\_Common\CommonCtrl.cpp" />
+    <ClCompile Include="..\_Common\Console.cpp" />
+    <ClCompile Include="..\_Common\ConsoleFunc.cpp" />
+    <ClCompile Include="..\_Common\Continent.cpp" />
+    <ClCompile Include="..\_Common\CooltimeMgr.cpp" />
+    <ClCompile Include="..\_Common\couple.cpp" />
+    <ClCompile Include="..\_Common\CreateObj.cpp" />
+    <ClCompile Include="..\_Common\Ctrl.cpp" />
+    <ClCompile Include="..\_Common\DefineCommon.cpp" />
+    <ClCompile Include="..\_Common\DialogMsg.cpp" />
+    <ClCompile Include="..\_Common\EditString.cpp" />
+    <ClCompile Include="..\_common\eveschool.cpp" />
+    <ClCompile Include="..\_Common\File.cpp" />
+    <ClCompile Include="..\_Common\FLCommonFunction.cpp" />
+    <ClCompile Include="..\_Common\FLContentSwitch.cpp" />
+    <ClCompile Include="..\_Common\FLCooperativeContributions_Common.cpp" />
+    <ClCompile Include="..\_Common\FLExchange.cpp" />
+    <ClCompile Include="..\_Common\FLGameTimer.cpp" />
+    <ClCompile Include="..\_Common\FLItemBase.cpp" />
+    <ClCompile Include="..\_Common\FLItemElem.cpp" />
+    <ClCompile Include="..\_Common\FLPiercingOption.cpp" />
+    <ClCompile Include="..\_Common\FLRandomOption.cpp" />
+    <ClCompile Include="..\_Common\FLServerDescription.cpp" />
+    <ClCompile Include="..\_Common\FLShortcutKeyManager.cpp" />
+    <ClCompile Include="..\_Common\FLSkillSystem.cpp" />
+    <ClCompile Include="..\_common\flyffevent.cpp" />
+    <ClCompile Include="..\_Common\GlobalTickManager.cpp" />
+    <ClCompile Include="..\_Common\Graphic3D.cpp" />
+    <ClCompile Include="..\_common\guild.cpp" />
+    <ClCompile Include="..\_Common\GuildCombat1to1.cpp" />
+    <ClCompile Include="..\_Common\GuildHouse.cpp" />
+    <ClCompile Include="..\_common\guildquest.cpp" />
+    <ClCompile Include="..\_Common\GuildRender.cpp" />
+    <ClCompile Include="..\_common\guildwar.cpp" />
+    <ClCompile Include="..\_Common\honor.cpp" />
+    <ClCompile Include="..\_Common\Housing.cpp" />
+    <ClCompile Include="..\_Common\HwOption.cpp" />
+    <ClCompile Include="..\_Common\Item.cpp" />
+    <ClCompile Include="..\_Common\langman.cpp" />
+    <ClCompile Include="..\_Common\Light.cpp" />
+    <ClCompile Include="..\_Common\lod.cpp" />
+    <ClCompile Include="..\_Common\lord.cpp" />
+    <ClCompile Include="..\_Common\lordskill.cpp" />
+    <ClCompile Include="..\_Common\LuaBase.cpp" />
+    <ClCompile Include="..\_Common\MapComboBoxData.cpp" />
+    <ClCompile Include="..\_Common\MapInformationManager.cpp" />
+    <ClCompile Include="..\_Common\MapMonsterInformation.cpp" />
+    <ClCompile Include="..\_Common\MapMonsterInformationPack.cpp" />
+    <ClCompile Include="..\_Common\Material.cpp" />
+    <ClCompile Include="..\_Common\MiniGame.cpp" />
+    <ClCompile Include="..\_Common\MiniGameBase.cpp" />
+    <ClCompile Include="..\_Common\Model.cpp" />
+    <ClCompile Include="..\_Common\ModelGlobal.cpp" />
+    <ClCompile Include="..\_Common\ModelMng.cpp" />
+    <ClCompile Include="..\_Common\ModelObject.cpp" />
+    <ClCompile Include="..\_Common\Mover.cpp" />
+    <ClCompile Include="..\_Common\MoverActEvent.cpp" />
+    <ClCompile Include="..\_Common\MoverAttack.cpp" />
+    <ClCompile Include="..\_Common\moverbuff.cpp" />
+    <ClCompile Include="..\_Common\MoverEquip.cpp" />
+    <ClCompile Include="..\_Common\MoverItem.cpp" />
+    <ClCompile Include="..\_Common\MoverMove.cpp" />
+    <ClCompile Include="..\_Common\MoverMsg.cpp" />
+    <ClCompile Include="..\_Common\MoverParam.cpp" />
+    <ClCompile Include="..\_Common\MoverRender.cpp" />
+    <ClCompile Include="..\_Common\MoverSkill.cpp" />
+    <ClCompile Include="..\_Common\Music.cpp" />
+    <ClCompile Include="..\_Common\Music2.cpp" />
+    <ClCompile Include="..\_Common\Obj.cpp" />
+    <ClCompile Include="..\_Common\Object3D.cpp" />
+    <ClCompile Include="..\_Common\ObjSerialize.cpp" />
+    <ClCompile Include="..\_common\ObjSerializeOpt.cpp" />
+    <ClCompile Include="..\_Common\Particle.cpp" />
+    <ClCompile Include="..\_Common\ParticleMng.cpp" />
+    <ClCompile Include="..\_Common\party.cpp" />
+    <ClCompile Include="..\_Common\partyquest.cpp" />
+    <ClCompile Include="..\_Common\path.cpp" />
+    <ClCompile Include="..\_Common\PathObj.cpp" />
+    <ClCompile Include="..\_Common\PCBang.cpp" />
+    <ClCompile Include="..\_Common\pet.cpp" />
+    <ClCompile Include="..\_Common\playerdata.cpp" />
+    <ClCompile Include="..\_Common\pocket.cpp" />
+    <ClCompile Include="..\_Common\post.cpp" />
+    <ClCompile Include="..\_Common\Project.cpp" />
+    <ClCompile Include="..\_Common\ProjectCmn.cpp" />
+    <ClCompile Include="..\_Common\ProjectLux.cpp" />
+    <ClCompile Include="..\_Common\Quiz.cpp" />
+    <ClCompile Include="..\_Common\RainbowNPCInformation.cpp" />
+    <ClCompile Include="..\_Common\RainbowNPCInformationPack.cpp" />
+    <ClCompile Include="..\_Common\RainbowRace.cpp" />
+    <ClCompile Include="..\_Common\ResManager.cpp" />
+    <ClCompile Include="..\_Common\Respawn.cpp" />
+    <ClCompile Include="..\_Common\rtmessenger.cpp" />
+    <ClCompile Include="..\_Common\scanner.cpp" />
+    <ClCompile Include="..\_Common\Script.cpp" />
+    <ClCompile Include="..\_Common\SeasonEffect.cpp" />
+    <ClCompile Include="..\_Common\SecretRoom.cpp" />
+    <ClCompile Include="..\_Common\serialnumber.cpp" />
+    <ClCompile Include="..\_Common\Sfx.cpp" />
+    <ClCompile Include="..\_Common\sfxbase.cpp" />
+    <ClCompile Include="..\_Common\SfxObj.cpp" />
+    <ClCompile Include="..\_Common\Shader.cpp" />
+    <ClCompile Include="..\_Common\Ship.cpp" />
+    <ClCompile Include="..\_Common\SkyBox.cpp" />
+    <ClCompile Include="..\_Common\spevent.cpp" />
+    <ClCompile Include="..\_Common\Stat.cpp" />
+    <ClCompile Include="..\_Common\Synchronizer.cpp" />
+    <ClCompile Include="..\_Common\TailEffectMng.cpp" />
+    <ClCompile Include="..\_Common\targa.cpp" />
+    <ClCompile Include="..\_Common\Tax.cpp" />
+    <ClCompile Include="..\_Common\TeleportationIconInfo.cpp" />
+    <ClCompile Include="..\_Common\TerrainMng.cpp" />
+    <ClCompile Include="..\_Common\TextureManager.cpp" />
+    <ClCompile Include="..\_Common\timer.cpp" />
+    <ClCompile Include="..\_Common\TreeInformation.cpp" />
+    <ClCompile Include="..\_Common\UltimateWeapon.cpp" />
+    <ClCompile Include="..\_Common\UserMarkPositionInfo.cpp" />
+    <ClCompile Include="..\_Common\vutil.cpp" />
+    <ClCompile Include="..\_Common\weather.cpp" />
+    <ClCompile Include="..\_Common\World.cpp" />
+    <ClCompile Include="..\_Common\World3D.cpp" />
+    <ClCompile Include="..\_Common\WorldEnvironment.cpp" />
+    <ClCompile Include="..\_Common\WorldFile.cpp" />
+    <ClCompile Include="..\_Common\WorldIntersect.cpp" />
+    <ClCompile Include="..\_Common\worldmng.cpp" />
+    <ClCompile Include="..\_Common\xUtil.cpp" />
+    <ClCompile Include="..\_Common\xUtil3D.cpp" />
+    <ClCompile Include="..\_Common\yUtil.cpp" />
+    <ClCompile Include="..\_DirectX\d3dapp.cpp" />
+    <ClCompile Include="..\_DirectX\d3denumeration.cpp" />
+    <ClCompile Include="..\_DirectX\d3dfont.cpp" />
+    <ClCompile Include="..\_DirectX\d3dsettings.cpp" />
+    <ClCompile Include="..\_DirectX\d3dutil.cpp" />
+    <ClCompile Include="..\_DirectX\dsutil.cpp" />
+    <ClCompile Include="..\_DirectX\dxutil.cpp" />
+    <ClCompile Include="..\_Interface\Clipboard.cpp" />
+    <ClCompile Include="..\_Interface\FLColorInfo.cpp" />
+    <ClCompile Include="..\_Interface\FLColorManager.cpp" />
+    <ClCompile Include="..\_Interface\FLWndCancellation.cpp" />
+    <ClCompile Include="..\_Interface\FLWndCharServerMovement.cpp" />
+    <ClCompile Include="..\_Interface\FLWndCostume.cpp" />
+    <ClCompile Include="..\_Interface\FLWndInventorySlotProc.cpp" />
+    <ClCompile Include="..\_Interface\FLWndTeleporterMng.cpp" />
+    <ClCompile Include="..\_Interface\FLWndTeleporter_General.cpp" />
+    <ClCompile Include="..\_Interface\FLWndTeleporter_Use.cpp" />
+    <ClCompile Include="..\_Interface\FLWndTreasurechest.cpp" />
+    <ClCompile Include="..\_Interface\FuncApplet.cpp" />
+    <ClCompile Include="..\_Interface\FuncTextCmd.cpp" />
+    <ClCompile Include="..\_Interface\ITheme.cpp" />
+    <ClCompile Include="..\_Interface\tooltip.cpp" />
+    <ClCompile Include="..\_Interface\Wnd2ndPassword.cpp" />
+    <ClCompile Include="..\_Interface\WndAdminCreateItem.cpp" />
+    <ClCompile Include="..\_Interface\WndAwakening.cpp" />
+    <ClCompile Include="..\_Interface\WndBagEx.cpp" />
+    <ClCompile Include="..\_Interface\WndBank.cpp" />
+    <ClCompile Include="..\_Interface\WndBase.cpp" />
+    <ClCompile Include="..\_Interface\WndBlessingCancel.cpp" />
+    <ClCompile Include="..\_interface\WndChangeFace.cpp" />
+    <ClCompile Include="..\_Interface\WndChangeName.cpp" />
+    <ClCompile Include="..\_interface\WndChatFilter.cpp" />
+    <ClCompile Include="..\_Interface\WndChattingBlockingList.cpp" />
+    <ClCompile Include="..\_interface\WndCloseExistingConnection.cpp" />
+    <ClCompile Include="..\_Interface\WndCollecting.cpp" />
+    <ClCompile Include="..\_Interface\WndCommand.cpp" />
+    <ClCompile Include="..\_Interface\WndCommItem.cpp" />
+    <ClCompile Include="..\_Interface\WndCommonInputCount.cpp" />
+    <ClCompile Include="..\_Interface\WndCommonItemExchange.cpp" />
+    <ClCompile Include="..\_Interface\WndCommonItemExchangeConfirm.cpp" />
+    <ClCompile Include="..\_Interface\WndCommunication.cpp" />
+    <ClCompile Include="..\_Interface\WndControl.cpp" />
+    <ClCompile Include="..\_Interface\WndControl_Button.cpp" />
+    <ClCompile Include="..\_Interface\WndControl_ComboBox.cpp" />
+    <ClCompile Include="..\_Interface\WndControl_ListBox.cpp" />
+    <ClCompile Include="..\_Interface\WndControl_Menu.cpp" />
+    <ClCompile Include="..\_Interface\WndControl_ScrollBar.cpp" />
+    <ClCompile Include="..\_Interface\WndControl_Tab.cpp" />
+    <ClCompile Include="..\_Interface\WndControl_Text.cpp" />
+    <ClCompile Include="..\_Interface\WndControl_Tree.cpp" />
+    <ClCompile Include="..\_Interface\WndCredit.cpp" />
+    <ClCompile Include="..\_Interface\WndDebugInfo.cpp" />
+    <ClCompile Include="..\_Interface\WndDialog.cpp" />
+    <ClCompile Include="..\_Interface\WndDuelConfirm.cpp" />
+    <ClCompile Include="..\_Interface\WndEditCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndElldinsJar.cpp" />
+    <ClCompile Include="..\_Interface\WndEnchantBaruna.cpp" />
+    <ClCompile Include="..\_Interface\WndExtra.cpp" />
+    <ClCompile Include="..\_Interface\WndField.cpp" />
+    <ClCompile Include="..\_Interface\WndField2.cpp" />
+    <ClCompile Include="..\_Interface\WndField3.cpp" />
+    <ClCompile Include="..\_Interface\WndFlyffPieceSystem.cpp" />
+    <ClCompile Include="..\_Interface\WndFontColorInfo.cpp" />
+    <ClCompile Include="..\_Interface\WndFontColorManager.cpp" />
+    <ClCompile Include="..\_Interface\WndFriendConFirm.cpp" />
+    <ClCompile Include="..\_Interface\WndFriendCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndGold.cpp" />
+    <ClCompile Include="..\_Interface\WndGuideSystem.cpp" />
+    <ClCompile Include="..\_Interface\WndGuild.cpp" />
+    <ClCompile Include="..\_interface\WndGuildBank.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildCombat1to1.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildHouse.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildMerit.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildName.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildTabApp.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildTabInfo.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildTabMember.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildTabPower.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildTabWar.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildVote.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildWarDecl.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildWarGiveUp.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildWarPeace.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildWarPeaceConfirm.cpp" />
+    <ClCompile Include="..\_Interface\WndGuildWarRequest.cpp" />
+    <ClCompile Include="..\_Interface\WndHelp.cpp" />
+    <ClCompile Include="..\_Interface\WndHelperWebBox.cpp" />
+    <ClCompile Include="..\_Interface\WndHousing.cpp" />
+    <ClCompile Include="..\_Interface\WndIndirectTalk.cpp" />
+    <ClCompile Include="..\_Interface\WndInvenRemoveItem.cpp" />
+    <ClCompile Include="..\_Interface\WndInventoryItem.cpp" />
+    <ClCompile Include="..\_Interface\WndInventoryWear.cpp" />
+    <ClCompile Include="..\_Interface\WndItemCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndLord.cpp" />
+    <ClCompile Include="..\_Interface\WndLvReqDown.cpp" />
+    <ClCompile Include="..\_Interface\WndMadrigalGift.cpp" />
+    <ClCompile Include="..\_Interface\WndMailRequestingBox.cpp" />
+    <ClCompile Include="..\_Interface\WndManager.cpp" />
+    <ClCompile Include="..\_Interface\WndMap.cpp" />
+    <ClCompile Include="..\_Interface\WndMapEx.cpp" />
+    <ClCompile Include="..\_Interface\WndMessageBox.cpp" />
+    <ClCompile Include="..\_Interface\WndMessenger.cpp" />
+    <ClCompile Include="..\_Interface\WndMessengerCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndMessengerSearch.cpp" />
+    <ClCompile Include="..\_Interface\WndMiniGame.cpp" />
+    <ClCompile Include="..\_Interface\WndMotion.cpp" />
+    <ClCompile Include="..\_Interface\WndNavigator.cpp" />
+    <ClCompile Include="..\_Interface\WndNeuz.cpp" />
+    <ClCompile Include="..\_Interface\WndNotice.cpp" />
+    <ClCompile Include="..\_Interface\WndOption.cpp" />
+    <ClCompile Include="..\_Interface\WndOptionGame.cpp" />
+    <ClCompile Include="..\_Interface\WndParty.cpp" />
+    <ClCompile Include="..\_Interface\WndPartyChangeTroup.cpp" />
+    <ClCompile Include="..\_Interface\WndPartyConfirm.cpp" />
+    <ClCompile Include="..\_Interface\WndPartyCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndPartyQuick.cpp" />
+    <ClCompile Include="..\_Interface\WndPetLootOption.cpp" />
+    <ClCompile Include="..\_Interface\WndPetRes.cpp" />
+    <ClCompile Include="..\_Interface\WndPetSys.cpp" />
+    <ClCompile Include="..\_Interface\WndPiercing.cpp" />
+    <ClCompile Include="..\_Interface\WndPvp.cpp" />
+    <ClCompile Include="..\_Interface\WndQuest.cpp" />
+    <ClCompile Include="..\_Interface\WndQuestQuickInfo.cpp" />
+    <ClCompile Include="..\_Interface\WndQuitRoom.cpp" />
+    <ClCompile Include="..\_Interface\WndQuizEvent.cpp" />
+    <ClCompile Include="..\_Interface\WndRainbowRace.cpp" />
+    <ClCompile Include="..\_Interface\WndRankGuild.cpp" />
+    <ClCompile Include="..\_Interface\WndRankInfo.cpp" />
+    <ClCompile Include="..\_Interface\WndRankWar.cpp" />
+    <ClCompile Include="..\_interface\WndRegVend.cpp" />
+    <ClCompile Include="..\_Interface\WndRepairItem.cpp" />
+    <ClCompile Include="..\_Interface\WndRepairItemCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndRoomList.cpp" />
+    <ClCompile Include="..\_Interface\WndSealChar.cpp" />
+    <ClCompile Include="..\_Interface\WndSecretRoom.cpp" />
+    <ClCompile Include="..\_Interface\WndSelectCh.cpp" />
+    <ClCompile Include="..\_Interface\WndSelectVillage.cpp" />
+    <ClCompile Include="..\_Interface\WndShop.cpp" />
+    <ClCompile Include="..\_Interface\WndSummonAngel.cpp" />
+    <ClCompile Include="..\_Interface\WndSummonFriend.cpp" />
+    <ClCompile Include="..\_Interface\WndTaskBar.cpp" />
+    <ClCompile Include="..\_Interface\WndText.cpp" />
+    <ClCompile Include="..\_Interface\WndTitle.cpp" />
+    <ClCompile Include="..\_Interface\WndTooltip.cpp" />
+    <ClCompile Include="..\_Interface\WndTradeCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndTutorial.cpp" />
+    <ClCompile Include="..\_Interface\WndUpgradeBase.cpp" />
+    <ClCompile Include="..\_Interface\WndUserMarkNameChanger.cpp" />
+    <ClCompile Include="..\_interface\WndVendor.cpp" />
+    <ClCompile Include="..\_interface\WndVendorBuy.cpp" />
+    <ClCompile Include="..\_interface\WndVendorCtrl.cpp" />
+    <ClCompile Include="..\_Interface\WndWebBox.cpp" />
+    <ClCompile Include="..\_Interface\WndWorld.cpp" />
+    <ClCompile Include="..\_Interface\WndWorldControlPlayer.cpp" />
+    <ClCompile Include="..\_Multimedia\WRITEAVI.CPP" />
+    <ClCompile Include="..\_Network\tools.cpp" />
+    <ClCompile Include="..\_UnhandledException\ExceptionHandler.cpp" />
+    <ClCompile Include="CampusHelper.cpp" />
+    <ClCompile Include="clord.cpp" />
+    <ClCompile Include="Cloth.cpp" />
+    <ClCompile Include="couplehelper.cpp" />
+    <ClCompile Include="DPCertified.cpp" />
+    <ClCompile Include="DPClient.cpp" />
+    <ClCompile Include="DPClientGuildWar.cpp" />
+    <ClCompile Include="DPLoginClient.cpp" />
+    <ClCompile Include="FLApplyItemEffect.cpp" />
+    <ClCompile Include="FLExchangeEvent.cpp" />
+    <ClCompile Include="HelperWebBox.cpp" />
+    <ClCompile Include="Network.cpp" />
+    <ClCompile Include="Neuz.cpp" />
+    <ClCompile Include="NeuzEnemy.cpp" />
+    <ClCompile Include="NeuzMsgProc.cpp" />
+    <ClCompile Include="NPGameLib.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TexturePool.cpp" />
+    <ClCompile Include="TimeLimit.cpp" />
+    <ClCompile Include="WebBox.cpp" />
+    <ClCompile Include="WebCtrl.cpp" />
+    <ClCompile Include="WorldMap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_AIInterface\Action.h" />
+    <ClInclude Include="..\_AIInterface\ActionMover.h" />
+    <ClInclude Include="..\_AIInterface\ActionShip.h" />
+    <ClInclude Include="..\_AIInterface\AIInterface.h" />
+    <ClInclude Include="..\_CommonDefine\FLFileCompare.h" />
+    <ClInclude Include="..\_CommonDefine\FLFileData.h" />
+    <ClInclude Include="..\_CommonDefine\FLFileEncryption.h" />
+    <ClInclude Include="..\_CommonDefine\FLFlyffConfig.h" />
+    <ClInclude Include="..\_CommonDefine\FLItemContainer.h" />
+    <ClInclude Include="..\_CommonDefine\FLMakeFileData.h" />
+    <ClInclude Include="..\_CommonDefine\FLPacketStruct.h" />
+    <ClInclude Include="..\_CommonDefine\FLResourceDefines.h" />
+    <ClInclude Include="..\_CommonDefine\FLReturnStateCode.h" />
+    <ClInclude Include="..\_CommonDefine\FLTm.h" />
+    <ClInclude Include="..\_CommonDefine\FLTypes.h" />
+    <ClInclude Include="..\_CommonDefine\FlyffCommonDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketAllDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketBroadCastMessage.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketChargeZoneTicket.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketEventArena.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketFlyffPieceEvent.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemExchange.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemOption.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemUpgrade.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketMadrigalGift.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketServerDescription.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketTeleportMap.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketTreasureChest.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketUserAuth.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketWBD_ConsignmentSale.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.h" />
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecManager.h" />
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecStruct.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLKeyGenerator.h" />
+    <ClInclude Include="..\_Common\2DRender.h" />
+    <ClInclude Include="..\_Common\accessory.h" />
+    <ClInclude Include="..\_Common\authorization.h" />
+    <ClInclude Include="..\_Common\billboard.h" />
+    <ClInclude Include="..\_Common\Bone.h" />
+    <ClInclude Include="..\_Common\BsCommon.h" />
+    <ClInclude Include="..\_Common\buff.h" />
+    <ClInclude Include="..\_Common\Camera.h" />
+    <ClInclude Include="..\_Common\Campus.h" />
+    <ClInclude Include="..\_Common\Chatting.h" />
+    <ClInclude Include="..\_Common\ClientMsg.h" />
+    <ClInclude Include="..\_Common\collecting.h" />
+    <ClInclude Include="..\_Common\CommonCtrl.h" />
+    <ClInclude Include="..\_Common\Console.h" />
+    <ClInclude Include="..\_Common\ConsoleCommon.h" />
+    <ClInclude Include="..\_Common\Continent.h" />
+    <ClInclude Include="..\_Common\CooltimeMgr.h" />
+    <ClInclude Include="..\_Common\couple.h" />
+    <ClInclude Include="..\_Common\CreateObj.h" />
+    <ClInclude Include="..\_Common\Ctrl.h" />
+    <ClInclude Include="..\_Common\data.h" />
+    <ClInclude Include="..\_Common\DefineCommon.h" />
+    <ClInclude Include="..\_Common\DialogMsg.h" />
+    <ClInclude Include="..\_Common\EditString.h" />
+    <ClInclude Include="..\_common\eveschool.h" />
+    <ClInclude Include="..\_Common\File.h" />
+    <ClInclude Include="..\_Common\FLCommonFunction.h" />
+    <ClInclude Include="..\_Common\FLContentSwitch.h" />
+    <ClInclude Include="..\_Common\FLCooperativeContributions_Common.h" />
+    <ClInclude Include="..\_Common\FLExchange.h" />
+    <ClInclude Include="..\_Common\FLGameTimer.h" />
+    <ClInclude Include="..\_Common\FLItemBase.h" />
+    <ClInclude Include="..\_Common\FLItemElem.h" />
+    <ClInclude Include="..\_Common\FLPiercingOption.h" />
+    <ClInclude Include="..\_Common\FLRandomOption.h" />
+    <ClInclude Include="..\_Common\FLServerDescription.h" />
+    <ClInclude Include="..\_Common\FLShortcutKeyManager.h" />
+    <ClInclude Include="..\_Common\FLSkillSystem.h" />
+    <ClInclude Include="..\_common\flyffevent.h" />
+    <ClInclude Include="..\_Common\GlobalTickManager.h" />
+    <ClInclude Include="..\_Common\Graphic3D.h" />
+    <ClInclude Include="..\_common\guild.h" />
+    <ClInclude Include="..\_Common\GuildCombat1to1.h" />
+    <ClInclude Include="..\_Common\GuildHouse.h" />
+    <ClInclude Include="..\_common\guildquest.h" />
+    <ClInclude Include="..\_Common\GuildRender.h" />
+    <ClInclude Include="..\_common\guildwar.h" />
+    <ClInclude Include="..\_Common\honor.h" />
+    <ClInclude Include="..\_Common\Housing.h" />
+    <ClInclude Include="..\_Common\HwOption.h" />
+    <ClInclude Include="..\_Common\Item.h" />
+    <ClInclude Include="..\_Common\landscape.h" />
+    <ClInclude Include="..\_Common\langman.h" />
+    <ClInclude Include="..\_Common\Light.h" />
+    <ClInclude Include="..\_Common\lord.h" />
+    <ClInclude Include="..\_Common\lordskill.h" />
+    <ClInclude Include="..\_Common\LuaBase.h" />
+    <ClInclude Include="..\_Common\MapComboBoxData.h" />
+    <ClInclude Include="..\_Common\MapInformationManager.h" />
+    <ClInclude Include="..\_Common\MapMonsterInformation.h" />
+    <ClInclude Include="..\_Common\MapMonsterInformationPack.h" />
+    <ClInclude Include="..\_Common\Material.h" />
+    <ClInclude Include="..\_Common\MiniGame.h" />
+    <ClInclude Include="..\_Common\Model.h" />
+    <ClInclude Include="..\_Common\ModelGlobal.h" />
+    <ClInclude Include="..\_Common\ModelMng.h" />
+    <ClInclude Include="..\_Common\ModelObject.h" />
+    <ClInclude Include="..\_Common\Mover.h" />
+    <ClInclude Include="..\_Common\MoverMsg.h" />
+    <ClInclude Include="..\_Common\Music.h" />
+    <ClInclude Include="..\_Common\Obj.h" />
+    <ClInclude Include="..\_Common\Object3D.h" />
+    <ClInclude Include="..\_Common\Particle.h" />
+    <ClInclude Include="..\_Common\ParticleMng.h" />
+    <ClInclude Include="..\_Common\party.h" />
+    <ClInclude Include="..\_Common\partyquest.h" />
+    <ClInclude Include="..\_Common\patch.h" />
+    <ClInclude Include="..\_Common\path.h" />
+    <ClInclude Include="..\_Common\PathObj.h" />
+    <ClInclude Include="..\_Common\PCBang.h" />
+    <ClInclude Include="..\_Common\playerdata.h" />
+    <ClInclude Include="..\_Common\pocket.h" />
+    <ClInclude Include="..\_Common\post.h" />
+    <ClInclude Include="..\_Common\Project.h" />
+    <ClInclude Include="..\_Common\ProjectCmn.h" />
+    <ClInclude Include="..\_Common\RainbowNPCInformation.h" />
+    <ClInclude Include="..\_Common\RainbowNPCInformationPack.h" />
+    <ClInclude Include="..\_Common\Region.h" />
+    <ClInclude Include="..\_Common\ResManager.h" />
+    <ClInclude Include="..\_Common\Respawn.h" />
+    <ClInclude Include="..\_Common\rtmessenger.h" />
+    <ClInclude Include="..\_Common\scanner.h" />
+    <ClInclude Include="..\_Common\Script.h" />
+    <ClInclude Include="..\_Common\SeasonEffect.h" />
+    <ClInclude Include="..\_Common\SecretRoom.h" />
+    <ClInclude Include="..\_Common\serialnumber.h" />
+    <ClInclude Include="..\_Common\Sfx.h" />
+    <ClInclude Include="..\_Common\sfxbase.h" />
+    <ClInclude Include="..\_Common\Shader.h" />
+    <ClInclude Include="..\_Common\Ship.h" />
+    <ClInclude Include="..\_Common\SkillInfluence.h" />
+    <ClInclude Include="..\_Common\SkyBox.h" />
+    <ClInclude Include="..\_Common\spevent.h" />
+    <ClInclude Include="..\_Common\Stat.h" />
+    <ClInclude Include="..\_Common\Synchronizer.h" />
+    <ClInclude Include="..\_Common\TailEffectMng.h" />
+    <ClInclude Include="..\_Common\targa.h" />
+    <ClInclude Include="..\_Common\Tax.h" />
+    <ClInclude Include="..\_Common\TeleportationIconInfo.h" />
+    <ClInclude Include="..\_Common\TerrainMng.h" />
+    <ClInclude Include="..\_Common\TextureManager.h" />
+    <ClInclude Include="..\_Common\timer.h" />
+    <ClInclude Include="..\_Common\TreeInformation.h" />
+    <ClInclude Include="..\_Common\UltimateWeapon.h" />
+    <ClInclude Include="..\_Common\UserMarkPositionInfo.h" />
+    <ClInclude Include="..\_Common\vutil.h" />
+    <ClInclude Include="..\_Common\weather.h" />
+    <ClInclude Include="..\_Common\World.h" />
+    <ClInclude Include="..\_Common\worldmng.h" />
+    <ClInclude Include="..\_Common\xUtil.h" />
+    <ClInclude Include="..\_Common\xUtil3D.h" />
+    <ClInclude Include="..\_Common\xuzhu.h" />
+    <ClInclude Include="..\_Common\yUtil.h" />
+    <ClInclude Include="..\_DirectX\d3dapp.h" />
+    <ClInclude Include="..\_DirectX\d3denumeration.h" />
+    <ClInclude Include="..\_DirectX\d3dfont.h" />
+    <ClInclude Include="..\_DirectX\d3dres.h" />
+    <ClInclude Include="..\_DirectX\d3dsettings.h" />
+    <ClInclude Include="..\_DirectX\d3dutil.h" />
+    <ClInclude Include="..\_DirectX\dsutil.h" />
+    <ClInclude Include="..\_DirectX\dxutil.h" />
+    <ClInclude Include="..\_Interface\AppDefine.h" />
+    <ClInclude Include="..\_Interface\Clipboard.h" />
+    <ClInclude Include="..\_Interface\FLColor.h" />
+    <ClInclude Include="..\_Interface\FLColorInfo.h" />
+    <ClInclude Include="..\_Interface\FLColorManager.h" />
+    <ClInclude Include="..\_Interface\FLWndCancellation.h" />
+    <ClInclude Include="..\_Interface\FLWndCharServerMovement.h" />
+    <ClInclude Include="..\_Interface\FLWndCostume.h" />
+    <ClInclude Include="..\_Interface\FLWndInventorySlotProc.h" />
+    <ClInclude Include="..\_Interface\FLWndTeleporterMng.h" />
+    <ClInclude Include="..\_Interface\FLWndTeleporter_General.h" />
+    <ClInclude Include="..\_Interface\FLWndTeleporter_Use.h" />
+    <ClInclude Include="..\_Interface\FLWndTreasurechest.h" />
+    <ClInclude Include="..\_Interface\FuncTextCmd.h" />
+    <ClInclude Include="..\_Interface\ITheme.h" />
+    <ClInclude Include="..\_Interface\tooltip.h" />
+    <ClInclude Include="..\_Interface\Wnd2ndPassword.h" />
+    <ClInclude Include="..\_Interface\WndAdminCreateItem.h" />
+    <ClInclude Include="..\_Interface\WndAwakening.h" />
+    <ClInclude Include="..\_Interface\WndBagEx.h" />
+    <ClInclude Include="..\_Interface\WndBank.h" />
+    <ClInclude Include="..\_Interface\WndBase.h" />
+    <ClInclude Include="..\_Interface\WndBlessingCancel.h" />
+    <ClInclude Include="..\_interface\WndChangeFace.h" />
+    <ClInclude Include="..\_Interface\WndChangeName.h" />
+    <ClInclude Include="..\_interface\WndChatFilter.h" />
+    <ClInclude Include="..\_Interface\WndChattingBlockingList.h" />
+    <ClInclude Include="..\_interface\WndCloseExistingConnection.h" />
+    <ClInclude Include="..\_Interface\WndCollecting.h" />
+    <ClInclude Include="..\_Interface\WndCommand.h" />
+    <ClInclude Include="..\_Interface\WndCommItem.h" />
+    <ClInclude Include="..\_Interface\WndCommonInputCount.h" />
+    <ClInclude Include="..\_Interface\WndCommonItemExchange.h" />
+    <ClInclude Include="..\_Interface\WndCommonItemExchangeConfirm.h" />
+    <ClInclude Include="..\_Interface\WndCommunication.h" />
+    <ClInclude Include="..\_Interface\WndControl.h" />
+    <ClInclude Include="..\_Interface\WndControl_Button.h" />
+    <ClInclude Include="..\_Interface\WndControl_ComboBox.h" />
+    <ClInclude Include="..\_Interface\WndControl_ListBox.h" />
+    <ClInclude Include="..\_Interface\WndControl_Menu.h" />
+    <ClInclude Include="..\_Interface\WndControl_ScrollBar.h" />
+    <ClInclude Include="..\_Interface\WndControl_Tab.h" />
+    <ClInclude Include="..\_Interface\WndControl_Text.h" />
+    <ClInclude Include="..\_Interface\WndControl_Tree.h" />
+    <ClInclude Include="..\_Interface\WndCredit.h" />
+    <ClInclude Include="..\_Interface\WndDebugInfo.h" />
+    <ClInclude Include="..\_Interface\WndDialog.h" />
+    <ClInclude Include="..\_Interface\WndDuelConfirm.h" />
+    <ClInclude Include="..\_Interface\WndEditCtrl.h" />
+    <ClInclude Include="..\_Interface\WndElldinsJar.h" />
+    <ClInclude Include="..\_Interface\WndEnchantBaruna.h" />
+    <ClInclude Include="..\_Interface\WndExtra.h" />
+    <ClInclude Include="..\_Interface\WndField.h" />
+    <ClInclude Include="..\_Interface\WndField2.h" />
+    <ClInclude Include="..\_Interface\WndField3.h" />
+    <ClInclude Include="..\_Interface\WndFlyffPieceSystem.h" />
+    <ClInclude Include="..\_Interface\WndFontColor.h" />
+    <ClInclude Include="..\_Interface\WndFontColorInfo.h" />
+    <ClInclude Include="..\_Interface\WndFontColorManager.h" />
+    <ClInclude Include="..\_Interface\WndFriendConFirm.h" />
+    <ClInclude Include="..\_Interface\WndFriendCtrl.h" />
+    <ClInclude Include="..\_Interface\WndGold.h" />
+    <ClInclude Include="..\_Interface\WndGuideSystem.h" />
+    <ClInclude Include="..\_Interface\WndGuild.h" />
+    <ClInclude Include="..\_interface\WndGuildBank.h" />
+    <ClInclude Include="..\_Interface\WndGuildCombat1to1.h" />
+    <ClInclude Include="..\_Interface\WndGuildCtrl.h" />
+    <ClInclude Include="..\_Interface\WndGuildHouse.h" />
+    <ClInclude Include="..\_Interface\WndGuildMerit.h" />
+    <ClInclude Include="..\_Interface\WndGuildName.h" />
+    <ClInclude Include="..\_Interface\WndGuildTabApp.h" />
+    <ClInclude Include="..\_Interface\WndGuildTabInfo.h" />
+    <ClInclude Include="..\_Interface\WndGuildTabMember.h" />
+    <ClInclude Include="..\_Interface\WndGuildTabPower.h" />
+    <ClInclude Include="..\_Interface\WndGuildTabWar.h" />
+    <ClInclude Include="..\_Interface\WndGuildVote.h" />
+    <ClInclude Include="..\_Interface\WndGuildWarDecl.h" />
+    <ClInclude Include="..\_Interface\WndGuildWarGiveUp.h" />
+    <ClInclude Include="..\_Interface\WndGuildWarPeace.h" />
+    <ClInclude Include="..\_Interface\WndGuildWarPeaceConfirm.h" />
+    <ClInclude Include="..\_Interface\WndGuildWarRequest.h" />
+    <ClInclude Include="..\_Interface\WndHelp.h" />
+    <ClInclude Include="..\_Interface\WndHelperWebBox.h" />
+    <ClInclude Include="..\_Interface\WndHousing.h" />
+    <ClInclude Include="..\_Interface\WndIndirectTalk.h" />
+    <ClInclude Include="..\_Interface\WndInvenRemoveItem.h" />
+    <ClInclude Include="..\_Interface\WndInventoryItem.h" />
+    <ClInclude Include="..\_Interface\WndInventoryWear.h" />
+    <ClInclude Include="..\_Interface\WndItemCtrl.h" />
+    <ClInclude Include="..\_Interface\WndLord.h" />
+    <ClInclude Include="..\_Interface\WndLvReqDown.h" />
+    <ClInclude Include="..\_Interface\WndMadrigalGift.h" />
+    <ClInclude Include="..\_Interface\WndMailRequestingBox.h" />
+    <ClInclude Include="..\_Interface\WndManager.h" />
+    <ClInclude Include="..\_Interface\WndMap.h" />
+    <ClInclude Include="..\_Interface\WndMapEx.h" />
+    <ClInclude Include="..\_Interface\WndMessageBox.h" />
+    <ClInclude Include="..\_Interface\WndMessenger.h" />
+    <ClInclude Include="..\_Interface\WndMessengerCtrl.h" />
+    <ClInclude Include="..\_Interface\WndMessengerSearch.h" />
+    <ClInclude Include="..\_Interface\WndMiniGame.h" />
+    <ClInclude Include="..\_Interface\WndMotion.h" />
+    <ClInclude Include="..\_Interface\WndNavigator.h" />
+    <ClInclude Include="..\_Interface\WndNeuz.h" />
+    <ClInclude Include="..\_Interface\WndNotice.h" />
+    <ClInclude Include="..\_Interface\WndOption.h" />
+    <ClInclude Include="..\_Interface\WndOptionGame.h" />
+    <ClInclude Include="..\_Interface\WndParty.h" />
+    <ClInclude Include="..\_Interface\WndPartyChangeTroup.h" />
+    <ClInclude Include="..\_Interface\WndPartyConfirm.h" />
+    <ClInclude Include="..\_Interface\WndPartyCtrl.h" />
+    <ClInclude Include="..\_Interface\WndPartyQuick.h" />
+    <ClInclude Include="..\_Interface\WndPetLootOption.h" />
+    <ClInclude Include="..\_Interface\WndPetRes.h" />
+    <ClInclude Include="..\_Interface\WndPetSys.h" />
+    <ClInclude Include="..\_Interface\WndPiercing.h" />
+    <ClInclude Include="..\_Interface\WndPvp.h" />
+    <ClInclude Include="..\_Interface\WndQuest.h" />
+    <ClInclude Include="..\_Interface\WndQuestQuickInfo.h" />
+    <ClInclude Include="..\_Interface\WndQuitRoom.h" />
+    <ClInclude Include="..\_Interface\WndQuizEvent.h" />
+    <ClInclude Include="..\_Interface\WndRainbowRace.h" />
+    <ClInclude Include="..\_Interface\WndRankGuild.h" />
+    <ClInclude Include="..\_Interface\WndRankInfo.h" />
+    <ClInclude Include="..\_Interface\WndRankWar.h" />
+    <ClInclude Include="..\_interface\WndRegVend.h" />
+    <ClInclude Include="..\_Interface\WndRepairItem.h" />
+    <ClInclude Include="..\_Interface\WndRepairItemCtrl.h" />
+    <ClInclude Include="..\_Interface\WndRoomList.h" />
+    <ClInclude Include="..\_Interface\WndSealChar.h" />
+    <ClInclude Include="..\_Interface\WndSecretRoom.h" />
+    <ClInclude Include="..\_Interface\WndSelectCh.h" />
+    <ClInclude Include="..\_Interface\WndSelectVillage.h" />
+    <ClInclude Include="..\_Interface\WndShop.h" />
+    <ClInclude Include="..\_Interface\WndSummonAngel.h" />
+    <ClInclude Include="..\_Interface\WndSummonFriend.h" />
+    <ClInclude Include="..\_Interface\WndTaskBar.h" />
+    <ClInclude Include="..\_Interface\WndText.h" />
+    <ClInclude Include="..\_Interface\WndTitle.h" />
+    <ClInclude Include="..\_Interface\WndTooltip.h" />
+    <ClInclude Include="..\_Interface\WndTradeCtrl.h" />
+    <ClInclude Include="..\_Interface\WndTutorial.h" />
+    <ClInclude Include="..\_Interface\WndUpgradeBase.h" />
+    <ClInclude Include="..\_Interface\WndUserMarkNameChanger.h" />
+    <ClInclude Include="..\_interface\WndVendor.h" />
+    <ClInclude Include="..\_interface\WndVendorBuy.h" />
+    <ClInclude Include="..\_interface\WndVendorCtrl.h" />
+    <ClInclude Include="..\_Interface\WndWebBox.h" />
+    <ClInclude Include="..\_Interface\WndWorld.h" />
+    <ClInclude Include="..\_Multimedia\WriteAVI.h" />
+    <ClInclude Include="..\_network\CmnHdr.h" />
+    <ClInclude Include="..\_Network\ErrorCode.h" />
+    <ClInclude Include="..\_network\misc\include\Misc.h" />
+    <ClInclude Include="..\_network\misc\include\ObjMap.h" />
+    <ClInclude Include="..\_network\MsgHdr.h" />
+    <ClInclude Include="..\_Network\tools.h" />
+    <ClInclude Include="..\_UnhandledException\ExceptionHandler.h" />
+    <ClInclude Include="CampusHelper.h" />
+    <ClInclude Include="clord.h" />
+    <ClInclude Include="Cloth.h" />
+    <ClInclude Include="CNTREVNT.h" />
+    <ClInclude Include="couplehelper.h" />
+    <ClInclude Include="DPCertified.h" />
+    <ClInclude Include="DPClient.h" />
+    <ClInclude Include="DPLoginClient.h" />
+    <ClInclude Include="FLApplyItemEffect.h" />
+    <ClInclude Include="FLExchangeEvent.h" />
+    <ClInclude Include="HelperWebBox.h" />
+    <ClInclude Include="Network.h" />
+    <ClInclude Include="Neuz.h" />
+    <ClInclude Include="NeuzEnemy.h" />
+    <ClInclude Include="NPGameLib.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TexturePool.h" />
+    <ClInclude Include="TimeLimit.h" />
+    <ClInclude Include="VersionCommon.h" />
+    <ClInclude Include="WebBox.h" />
+    <ClInclude Include="WebCtrl.h" />
+    <ClInclude Include="WorldMap.h" />
+    <ClInclude Include="XTrapLib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\_UnhandledException\neuzd.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resource\Masquerade.prj" />
+    <None Include="..\..\resource\mss32.dll" />
+    <None Include="..\..\resource\mssmp3.asi" />
+    <None Include="..\..\resource\Music\default.bgm" />
+    <None Include="..\..\resource\neuz.ini" />
+    <None Include="res\anvil.cur" />
+    <None Include="res\cur00001.cur" />
+    <None Include="res\cur00002.cur" />
+    <None Include="res\cur00003.cur" />
+    <None Include="res\curAttack.cur" />
+    <None Include="res\curBase.cur" />
+    <None Include="res\curCamera.cur" />
+    <None Include="res\curControl.cur" />
+    <None Include="res\curDelay.cur" />
+    <None Include="res\curDoor.cur" />
+    <None Include="res\curGate.cur" />
+    <None Include="res\curGetItem.cur" />
+    <None Include="res\curHelp.cur" />
+    <None Include="res\curLever.cur" />
+    <None Include="res\curNo.cur" />
+    <None Include="res\curNPC.cur" />
+    <None Include="res\curSelect.cur" />
+    <None Include="res\cursor2.cur" />
+    <None Include="res\cursor3.cur" />
+    <None Include="res\edit.cur" />
+    <None Include="res\hori.cur" />
+    <None Include="res\resize_h.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinMain.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\resource\credit.txt" />
+    <Text Include="..\..\resource\serverIPList.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\main_ico.ico" />
+    <Image Include="res\Omg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\resource\Music\morrowind title.mp3" />
+    <Media Include="..\..\resource\Music\music1007.mp3" />
+    <Media Include="..\..\resource\Music\track13.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

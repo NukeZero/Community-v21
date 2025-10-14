@@ -1,0 +1,74 @@
+/*
+RANDOM_RESPAWN_EXAMPLE
+{
+	//기간
+	LANG_KOR( "2010-10-10", "2999-10-12" );
+	LANG_CHR( "2010-10-11", "2010-10-13" );
+
+	//시간
+	SetRealTimeRespawn( LANG_KOR, MI_ASF, "18:00:00", "19:00:00" );
+	
+	//위치
+	AddRandomPos( 1, 100, 100, 100 );		//AddRandomPos( worldID, x, y, z );
+	AddRandomPos( 1, 100, 100, 100 );
+	AddRandomPos( 1, 100, 100, 100 );
+}
+
+*/
+
+//LANG_REGISTED_ALL -> LANG_MAX로 변경 ( 있는 define 쓰기 위해 ) 
+
+/*
+RANDOM_RESPAWN_EXAMPLE1
+{
+	//기간
+	Period( LANG_KOR, "2010-10-31", "2010-11-20" );
+	Period( LANG_CHI, "2010-11-01", "2010-11-03" );
+
+	//시간
+	//AddDialogNPC_RealTime( LANG_MAX, MI_PET_SMELTPIYO, "Pet_Seltpiyo", "18:00:00", "19:00:00" );
+//	AddDialogNPC_GameTime( LANG_MAX,  MI_PET_SMELTPIYO, "Pet_Seltpiyo", "18:00:00", "19:00:00" );
+
+	//AddMonster_RealTime( LANG_MAX,  MI_PUPPETWOLF, 1, "18:00:00", "20:00:00" );
+	AddMonster_GameTime( LANG_KOR,  MI_PUPPETWOLF, 1, "08:00:00", "23:00:00" );
+
+	//위치
+	AddRandomPos( 1, 6000, 0, 4000 );		//AddRandomPos( worldID, x, y, z );
+	AddRandomPos( 1, 6000, 0, 4020 );
+	AddRandomPos( 1, 6020, 0, 4000 );
+	AddRandomPos( 1, 6020, 0, 4020 );
+}*/
+
+/*
+RANDOM_RESPAWN_EXAMPLE2
+{
+	//기간
+	Period( LANG_KOR, LANG_2, "2010-10-10", "2010-10-12" );
+	Period( LANG_CHI, LANG_2, "2010-10-11", "2010-10-13" );
+
+	//시간
+	AddDialogNPC_RealTime( LANG_JAP,  MI_PUPPETWOLF, "Per", "18:00:00", "19:00:00" );
+	AddDialogNPC_GameTime( LANG_CHI,  MI_PUPPETWOLF, "Pet2", "18:00:00", "19:00:00" );
+
+	AddMonster_RealTime( LANG_MAX,  MI_PUPPETWOLF, 1, "18:00:00", "19:00:00" );
+	AddMonster_GameTime( LANG_CHI,  MI_PUPPETWOLF, 0, "12:00:00", "14:00:00" );
+
+	//위치
+	AddRandomPos( 4, 4, 4, 4 );		//AddRandomPos( worldID, x, y, z );
+	AddRandomPos( 5, 5, 5, 5 );
+	AddRandomPos( 6, 6, 6, 6 );
+}
+*/
+
+RANDOM_RESPAWN_BAHARA01
+{
+	//기간
+	Period( LANG_MAX, "2010-10-10", "3000-01-01" );
+
+	//시간
+	AddDialogNPC_GameTime( LANG_MAX, MI_MaEw_GIGAKA, "MaEw_Gigaka", "18:00:00", "06:00:00" );
+
+	//위치
+	AddRandomPos( 1, 5758, 88, 8165 );		
+
+}

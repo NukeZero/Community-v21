@@ -1,0 +1,945 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SFXEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SFXEditor.ico"
+IDR_SFXEDITYPE          ICON    DISCARDABLE     "res\\SFXEditorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_OPENSFX
+    BUTTON      ID_SAVESFX
+    SEPARATOR
+    BUTTON      ID_FILE_OPENSFX
+    BUTTON      ID_FILE_SAVESFX
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_PLAY
+    BUTTON      ID_EDIT_STOP
+    SEPARATOR
+    BUTTON      ID_VIEWCHRMODEL
+    BUTTON      ID_VIEWAXIS
+    BUTTON      ID_VIEWBG
+    BUTTON      ID_FLAT
+    BUTTON      ID_MODEL_SETTING
+    SEPARATOR
+    BUTTON      ID_INFO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",         ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                    ID_APP_EXIT
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "SFXEditor 정보(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_SFXEDITYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "New(&N)\tCtrl+N",             ID_FILE_NEW
+        MENUITEM "Open(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "Close(&C)",                   ID_FILE_CLOSE
+        MENUITEM "Merge(&M)...\tCtrl+M",        IDC_BUTTONLOADSFX2
+        MENUITEM "Save(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "Save As(&A)...",              ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "Edit(&E)"
+    BEGIN
+        MENUITEM "Undo(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cut(&T)\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "Copy(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "Paste(&P)\tCtrl+V",           ID_EDIT_PASTE
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "Toolbar(&T)",                 ID_VIEW_TOOLBAR
+        MENUITEM "Status Bar(&S)",              ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Character Model",             ID_VIEWCHRMODEL, CHECKED
+        MENUITEM "Axis",                        ID_VIEWAXIS, CHECKED
+        MENUITEM "BackGround",                  ID_VIEWBG, CHECKED
+        MENUITEM "Flat",                        ID_FLAT, CHECKED
+        MENUITEM "SFX File Info",               ID_INFO
+    END
+    POPUP "Window(&W)"
+    BEGIN
+        MENUITEM "Next(&N)",                    ID_WINDOW_NEW
+        MENUITEM "Cascade(&C)",                 ID_WINDOW_CASCADE
+        MENUITEM "Tile(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "Arrange Icons(&A)",           ID_WINDOW_ARRANGE
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "About SFXEditor(&A)...",      ID_APP_ABOUT
+    END
+END
+
+IDR_POPUPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "PopUp"
+    BEGIN
+        MENUITEM "Layer Active",                ID_POPUPMENU, CHECKED
+        MENUITEM "Change Name",                 ID_NAMECHANGE
+    END
+END
+
+IDR_POPUPMENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "POPUP2"
+    BEGIN
+        MENUITEM "Change Value",                ID_VALUTCHANGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SFXEditor 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SFXEditor 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_WORKPANEL DIALOG DISCARDABLE  0, 0, 168, 398
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "Tab1",IDC_WORKTAB,"SysTabControl32",0x0,7,267,154,124
+END
+
+IDD_FRAMEPANEL DIALOG DISCARDABLE  0, 0, 214, 108
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+END
+
+IDD_1OBJ DIALOG DISCARDABLE  0, 0, 197, 112
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_OBJLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,50,30,140,75
+END
+
+IDD_1TEX DIALOG DISCARDABLE  0, 0, 221, 558
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+    EDITTEXT        IDC_X,48,21,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,93,21,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z,139,21,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROTX,48,41,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROTY,93,41,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROTZ,139,41,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SX,48,61,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SY,93,61,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SZ,139,61,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ANGX,48,81,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ANGY,93,81,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ANGZ,139,81,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A,48,103,40,14,ES_AUTOHSCROLL
+    CONTROL         "Billboard",IDC_RADIOBILL,"Button",BS_AUTORADIOBUTTON,
+                    103,153,41,10
+    CONTROL         "Floor",IDC_RADIOBOTTOM,"Button",BS_AUTORADIOBUTTON,103,
+                    163,32,10
+    CONTROL         "Pillar",IDC_RADIOPOLE,"Button",BS_AUTORADIOBUTTON,103,
+                    173,32,10
+    CONTROL         "Board",IDC_RADIONORMAL,"Button",BS_AUTORADIOBUTTON,103,
+                    183,46,12
+    CONTROL         "Blend",IDC_RADIOBLEND,"Button",BS_AUTORADIOBUTTON,145,
+                    153,34,10
+    CONTROL         "Glow",IDC_RADIOGLOW,"Button",BS_AUTORADIOBUTTON,145,163,
+                    32,10
+    LTEXT           "Alpha",IDC_STATIC,7,103,36,8
+    LTEXT           "Angle",IDC_STATIC,7,81,32,8
+    LTEXT           "Texture",IDC_STATIC,7,142,39,8
+    LTEXT           "Type",IDC_STATIC,103,142,17,8
+    LTEXT           "Alpha",IDC_STATIC,145,142,27,8
+    LTEXT           "X",IDC_STATIC,63,7,8,8
+    LTEXT           "Y",IDC_STATIC,108,7,8,8
+    LTEXT           "Z",IDC_STATIC,154,7,8,8
+    LTEXT           "Position",IDC_STATIC,7,21,27,8
+    LTEXT           "Scale",IDC_STATIC,7,61,19,8
+    PUSHBUTTON      "Texture Change",IDC_BUTTONTEX,7,160,57,14
+    LTEXT           "PositionRot",IDC_STATIC,7,41,37,8
+    PUSHBUTTON      "Texture Disable",IDC_BUTTONTEXNULL,7,179,57,14
+    PUSHBUTTON      "Save",IDC_BUTTONSAVESFX,95,104,39,14
+    PUSHBUTTON      "Load",IDC_BUTTONLOADSFX,50,122,39,14
+    EDITTEXT        IDC_PCREATE,48,203,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PCREATENUM,139,203,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PAPPEAR,48,223,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PKEEP,93,223,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PDISAPPEAR,139,223,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PPOSVAR,48,243,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PPOSVARY,138,243,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PYLOW,48,262,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PYHIGH,105,262,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PXZLOW,48,280,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PXZHIGH,105,280,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PACCELX,48,297,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PACCELY,93,297,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PACCELZ,139,297,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSCALEX,48,316,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSCALEY,93,316,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSCALEZ,139,316,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSCALESPEEDX,51,430,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSCALESPEEDY,96,430,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSCALESPEEDZ,139,430,40,14,ES_AUTOHSCROLL
+    LTEXT           "Interval",IDC_STATIC,7,203,24,8
+    LTEXT           "Counter",IDC_STATIC,110,203,26,8
+    LTEXT           "Radius",IDC_STATIC,7,243,23,8
+    LTEXT           "Height",IDC_STATIC,115,243,21,8
+    LTEXT           "Y_Speed",IDC_STATIC,7,262,36,12
+    LTEXT           "XZ_Speed",IDC_STATIC,7,281,37,8
+    LTEXT           "~",IDC_STATIC,91,262,8,8
+    LTEXT           "~",IDC_STATIC,91,280,8,8
+    LTEXT           "Acc",IDC_STATIC,7,297,39,8
+    LTEXT           "Scale",IDC_STATIC,7,316,38,8
+    LTEXT           "Scale Speed",IDC_STATIC,7,430,42,8
+    EDITTEXT        IDC_TEXFRAME,67,142,33,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXLOOP,67,160,33,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Quick Save",IDC_BUTTONQSAVESFX,137,104,42,14
+    PUSHBUTTON      "Quick Load",IDC_BUTTONQLOADSFX,137,122,42,14
+    LTEXT           "X_Rotation Range",IDC_STATIC,7,457,61,8
+    EDITTEXT        IDC_PARTICLE_ROT_X_LOW,73,457,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PARTICLE_ROT_X_HIGH,131,457,40,14,ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,118,457,8,8
+    LTEXT           "Y_Rotation Range",IDC_STATIC,7,477,61,8
+    EDITTEXT        IDC_PARTICLE_ROT_Y_LOW,73,477,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PARTICLE_ROT_Y_HIGH,131,477,40,14,ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,118,477,8,8
+    LTEXT           "Z_Rotation Range",IDC_STATIC,7,498,58,8
+    EDITTEXT        IDC_PARTICLE_ROT_Z_LOW,73,498,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PARTICLE_ROT_Z_HIGH,131,498,40,14,ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,118,498,8,8
+    CONTROL         "Repeat Scale",IDC_SCAL_REPEAT_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,337,75,10
+    EDITTEXT        IDC_XSCALREPEATLOW,66,354,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XSCALREPEATHIGH,123,354,40,14,ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,109,354,8,8
+    EDITTEXT        IDC_PSCALEENDX,51,408,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSCALEENDY,96,408,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PSCALEENDZ,139,408,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Scale",IDC_STATIC,7,408,34,8
+    LTEXT           "X_RepeatSpeed",IDC_STATIC,7,354,54,12
+    PUSHBUTTON      "Merge",IDC_BUTTONLOADSFX2,95,122,39,14
+    EDITTEXT        IDC_YSCALREPEATLOW,66,372,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YSCALREPEATHIGH,123,372,40,14,ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,109,372,8,8
+    LTEXT           "Y_RepeatSpeed",IDC_STATIC,7,372,53,12
+    EDITTEXT        IDC_ZSCALREPEATLOW,66,390,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZSCALREPEATHIGH,123,390,40,14,ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,109,390,8,8
+    LTEXT           "Z_RepeatSpeed",IDC_STATIC,7,390,53,12
+    CONTROL         "Repeat Particle",IDC_PRT_REPEAT_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,102,337,75,10
+END
+
+IDD_ADDPART DIALOG DISCARDABLE  0, 0, 143, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Part"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,58,35,70,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,13,62,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,62,50,14
+    CONTROL         "Billboard",IDC_RADIO_DAP_BILL,"Button",
+                    BS_AUTORADIOBUTTON,7,7,46,10
+    CONTROL         "Particle",IDC_RADIO_DAP_PARTICLE,"Button",
+                    BS_AUTORADIOBUTTON,7,18,41,10
+    CONTROL         "Mesh",IDC_RADIO_DAP_MESH,"Button",BS_AUTORADIOBUTTON,76,
+                    7,34,10
+    CONTROL         "Special Mesh",IDC_RADIO_DAP_CUSTOMMESH,"Button",
+                    BS_AUTORADIOBUTTON,76,18,60,10
+    LTEXT           "Layer Name :",IDC_STATIC,9,37,45,8
+END
+
+IDD_EDIT_DIALOG DIALOG DISCARDABLE  0, 0, 213, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 10, "굴림"
+BEGIN
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,
+                    29,8,8
+    EDITTEXT        IDC_X,64,27,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,
+                    29,8,8
+    EDITTEXT        IDC_Y,113,27,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,154,
+                    29,8,8
+    EDITTEXT        IDC_Z,163,27,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,
+                    52,8,8
+    EDITTEXT        IDC_PROTX,64,50,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,
+                    52,8,8
+    EDITTEXT        IDC_PROTY,113,50,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,154,
+                    52,8,8
+    EDITTEXT        IDC_PROTZ,163,50,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,
+                    75,8,8
+    EDITTEXT        IDC_SX,64,73,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,
+                    75,8,8
+    EDITTEXT        IDC_SY,113,73,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,154,
+                    75,8,8
+    EDITTEXT        IDC_SZ,163,73,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,
+                    99,8,8
+    EDITTEXT        IDC_ANGX,64,97,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,
+                    99,8,8
+    EDITTEXT        IDC_ANGY,113,97,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,154,
+                    99,8,8
+    EDITTEXT        IDC_ANGZ,163,97,35,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,114,131,50,14
+    PUSHBUTTON      "Apply",IDOK,50,131,50,14
+    LTEXT           "Angle",IDC_STATIC,14,97,26,8
+    LTEXT           "X",IDC_STATIC,77,16,8,8
+    LTEXT           "Y",IDC_STATIC,126,16,8,8
+    LTEXT           "Z",IDC_STATIC,176,16,8,8
+    LTEXT           "Position",IDC_STATIC,14,27,29,8
+    LTEXT           "Scale",IDC_STATIC,14,73,27,8
+    LTEXT           "Position Rot",IDC_STATIC,14,50,41,8
+END
+
+IDD_NAME_DIALOG DIALOG DISCARDABLE  0, 0, 140, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,63,14,67,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,22,39,42,15
+    PUSHBUTTON      "Cancel",IDCANCEL,72,39,42,15
+    LTEXT           "Layer Name :",IDC_STATIC,9,14,45,8
+END
+
+IDD_MODEL_DIALOG DIALOG DISCARDABLE  0, 0, 96, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,88,26,14
+    PUSHBUTTON      "Cancel",IDCANCEL,53,88,26,14
+    PUSHBUTTON      "Bone Load",IDC_BUTTON1,23,22,50,14
+    PUSHBUTTON      "Model Load",IDC_BUTTON2,23,40,50,14,WS_DISABLED
+    PUSHBUTTON      "Motion Load",IDC_BUTTON3,23,58,50,14
+END
+
+IDD_MODELDIALOGBAR DIALOG DISCARDABLE  0, 0, 246, 17
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MODELROTY,77,2,24,13,ES_AUTOHSCROLL
+    LTEXT           "Y :",IDC_STATIC,64,5,10,8
+    EDITTEXT        IDC_MODELROTX,32,2,24,13,ES_AUTOHSCROLL
+    LTEXT           "Rot X :",IDC_STATIC,4,5,23,8
+    EDITTEXT        IDC_MODELROTZ,123,2,24,13,ES_AUTOHSCROLL
+    LTEXT           "Z :",IDC_STATIC,110,5,10,8
+    LTEXT           "BG Color :",IDC_STATIC,157,4,33,8
+    EDITTEXT        IDC_BGCOLOREDIT,192,1,48,14,ES_AUTOHSCROLL
+END
+
+IDD_INFO_DIALOG DIALOGEX 0, 0, 371, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Dialog"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,211,152,50,14
+    LISTBOX         IDC_LIST1,8,32,195,135,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Useing Texture",IDC_STATIC,207,22,51,8
+    LISTBOX         IDC_LIST2,208,32,156,67,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Total File Info",IDC_STATIC,8,8,45,8
+    CTEXT           "Index",IDC_STATIC,8,21,23,11,SS_CENTERIMAGE | SS_SUNKEN,
+                    WS_EX_STATICEDGE
+    CTEXT           "Kind",IDC_STATIC,31,21,21,11,SS_CENTERIMAGE | SS_SUNKEN,
+                    WS_EX_STATICEDGE
+    CTEXT           "Texture Name",IDC_STATIC,52,21,151,11,SS_CENTERIMAGE | 
+                    SS_SUNKEN,WS_EX_STATICEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SFXEditor MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SFXEditor\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SFXEditor.EXE\0"
+            VALUE "ProductName", "SFXEditor 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_WORKPANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 391
+    END
+
+    IDD_1OBJ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_1TEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 551
+    END
+
+    IDD_ADDPART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_EDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_NAME_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_MODEL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 89
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_INFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+IDR_DATA1 RCDATA DISCARDABLE 
+BEGIN
+    0x7376, 0x312e, 0x312e, 0x0a0d, 0x2d3b, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x0d2d, 0x3b0a, 
+    0x4320, 0x6e6f, 0x7473, 0x6e61, 0x7374, 0x7320, 0x6570, 0x6963, 0x6966, 
+    0x6465, 0x6220, 0x2079, 0x6874, 0x2065, 0x7061, 0x0d70, 0x3b0a, 0x2020, 
+    0x2020, 0x3063, 0x632d, 0x3338, 0x2020, 0x203d, 0x6f62, 0x656e, 0x6d20, 
+    0x7461, 0x6972, 0x2078, 0x6e69, 0x6564, 0x2078, 0x2030, 0x207e, 0x3832, 
+    0x0a0d, 0x203b, 0x2020, 0x6320, 0x3438, 0x632d, 0x3738, 0x3d20, 0x6d20, 
+    0x7461, 0x6956, 0x7765, 0x7250, 0x6a6f, 0x0a0d, 0x203b, 0x2020, 0x6320, 
+    0x3838, 0x632d, 0x3139, 0x3d20, 0x7220, 0x7365, 0x7265, 0x6576, 0x0d64, 
+    0x3b0a, 0x2020, 0x2020, 0x3963, 0x2032, 0x2020, 0x2020, 0x203d, 0x696c, 
+    0x6867, 0x2074, 0x6964, 0x6572, 0x7463, 0x6f69, 0x0d6e, 0x3b0a, 0x2020, 
+    0x2020, 0x3963, 0x2033, 0x2020, 0x2020, 0x203d, 0x616d, 0x6574, 0x6972, 
+    0x6c61, 0x6420, 0x6669, 0x7566, 0x6573, 0x6320, 0x6c6f, 0x726f, 0x2a20, 
+    0x6c20, 0x6769, 0x7468, 0x6420, 0x6669, 0x7566, 0x6573, 0x6320, 0x6c6f, 
+    0x726f, 0x0a0d, 0x203b, 0x2020, 0x6320, 0x3439, 0x2020, 0x2020, 0x3d20, 
+    0x6d20, 0x7461, 0x7265, 0x6169, 0x206c, 0x6d61, 0x6962, 0x6e65, 0x2074, 
+    0x6f63, 0x6f6c, 0x0d72, 0x3b0a, 0x2020, 0x2020, 0x3963, 0x2035, 0x2020, 
+    0x2020, 0x203d, 0x6f63, 0x736e, 0x2074, 0x2e31, 0x6630, 0x202c, 0x2e31, 
+    0x6630, 0x202c, 0x2e31, 0x6630, 0x202c, 0x3031, 0x2e30, 0x6630, 0x0a0d, 
+    0x093b, 0x0a0d, 0x0d3b, 0x3b0a, 0x5620, 0x7265, 0x6574, 0x2078, 0x6f63, 
+    0x706d, 0x6e6f, 0x6e65, 0x7374, 0x2820, 0x7361, 0x7320, 0x6570, 0x6963, 
+    0x6966, 0x6465, 0x6920, 0x206e, 0x6874, 0x2065, 0x6576, 0x7472, 0x7865, 
+    0x4420, 0x4345, 0x294c, 0x0a0d, 0x203b, 0x2020, 0x3076, 0x2020, 0x2020, 
+    0x203d, 0x6f50, 0x6973, 0x6974, 0x6e6f, 0x0a0d, 0x093b, 0x3176, 0x2009, 
+    0x3d20, 0x7720, 0x2c31, 0x7720, 0x0d32, 0x3b0a, 0x7609, 0x2e32, 0x2078, 
+    0x3d20, 0x6d20, 0x7461, 0x6972, 0x2078, 0x6469, 0x0d78, 0x3b0a, 0x7609, 
+    0x2033, 0x2020, 0x3d20, 0x4e20, 0x726f, 0x616d, 0x0d6c, 0x3b0a, 0x7609, 
+    0x2034, 0x2020, 0x3d20, 0x5420, 0x7865, 0x6f63, 0x726f, 0x7364, 0x0a0d, 
+    0x2d3b, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x0d2d, 0x0d0a, 0x640a, 0x6c63, 0x705f, 0x736f, 
+    0x7469, 0x6f69, 0x206e, 0x3076, 0x0d3b, 0x640a, 0x6c63, 0x625f, 0x656c, 
+    0x646e, 0x6577, 0x6769, 0x7468, 0x7620, 0x3b31, 0x0a0d, 0x6364, 0x5f6c, 
+    0x6c62, 0x6e65, 0x6964, 0x646e, 0x6369, 0x7365, 0x7620, 0x3b32, 0x0a0d, 
+    0x6364, 0x5f6c, 0x6f6e, 0x6d72, 0x6c61, 0x7620, 0x3b33, 0x0a0d, 0x6364, 
+    0x5f6c, 0x6574, 0x6378, 0x6f6f, 0x6472, 0x2030, 0x3476, 0x0d3b, 0x0d0a, 
+    0x0d0a, 0x3b0a, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x0a0d, 0x203b, 0x6556, 0x7472, 
+    0x7865, 0x6220, 0x656c, 0x646e, 0x6e69, 0x0d67, 0x3b0a, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x0a0d, 0x0a0d, 0x203b, 0x7254, 0x6e61, 0x6673, 0x726f, 0x206d, 
+    0x6f70, 0x6973, 0x6974, 0x6e6f, 0x6620, 0x726f, 0x7720, 0x726f, 0x646c, 
+    0x2030, 0x616d, 0x7274, 0x7869, 0x0a0d, 0x6f6d, 0x2076, 0x3061, 0x782e, 
+    0x202c, 0x3276, 0x782e, 0x0909, 0x0909, 0x203b, 0x616d, 0x7274, 0x7869, 
+    0x6920, 0x646e, 0x7865, 0x3120, 0x0a0d, 0x346d, 0x3378, 0x7220, 0x2c30, 
+    0x7620, 0x2c30, 0x6320, 0x615b, 0x2e30, 0x5d78, 0x0909, 0x203b, 0x3072, 
+    0x3d20, 0x7020, 0x736f, 0x2a20, 0x2820, 0x6e49, 0x5476, 0x204d, 0x202a, 
+    0x6e41, 0x5469, 0x294d, 0x0a0d, 0x336d, 0x3378, 0x7220, 0x2c33, 0x7620, 
+    0x2c33, 0x6320, 0x615b, 0x2e30, 0x5d78, 0x0909, 0x6e3b, 0x726f, 0x616d, 
+    0x206c, 0x7274, 0x6e61, 0x6673, 0x726f, 0x0d6d, 0x6d0a, 0x6c75, 0x2020, 
+    0x3172, 0x202c, 0x3072, 0x782e, 0x7a79, 0x202c, 0x3176, 0x782e, 0x0909, 
+    0x203b, 0x3172, 0x3d20, 0x7220, 0x2030, 0x202a, 0x3177, 0x0a0d, 0x756d, 
+    0x206c, 0x7220, 0x2c34, 0x7220, 0x2e33, 0x7978, 0x2c7a, 0x7620, 0x2e31, 
+    0x0978, 0x0d09, 0x0d0a, 0x6d0a, 0x766f, 0x2020, 0x3061, 0x782e, 0x202c, 
+    0x3276, 0x792e, 0x0909, 0x0909, 0x203b, 0x616d, 0x7274, 0x7869, 0x6920, 
+    0x646e, 0x7865, 0x3220, 0x0a0d, 0x346d, 0x3378, 0x7220, 0x2c30, 0x7620, 
+    0x2c30, 0x6320, 0x615b, 0x2e30, 0x5d78, 0x0909, 0x203b, 0x3072, 0x3d20, 
+    0x7020, 0x736f, 0x2a20, 0x2820, 0x6e49, 0x5476, 0x204d, 0x202a, 0x6e41, 
+    0x5469, 0x294d, 0x0a0d, 0x336d, 0x3378, 0x7220, 0x2c33, 0x7620, 0x2c33, 
+    0x6320, 0x615b, 0x2e30, 0x5d78, 0x0909, 0x6e3b, 0x726f, 0x616d, 0x206c, 
+    0x7274, 0x6e61, 0x6673, 0x726f, 0x0d6d, 0x6d0a, 0x6461, 0x2020, 0x3172, 
+    0x202c, 0x3072, 0x782e, 0x7a79, 0x202c, 0x3176, 0x792e, 0x202c, 0x3172, 
+    0x782e, 0x7a79, 0x3b20, 0x7720, 0xb032, 0xc7f6, 0xb0cf, 0x20ed, 0xa7c0, 
+    0xa1bf, 0xc5b0, 0xfbb6, 0xb420, 0xc7f5, 0x0dd4, 0x6d0a, 0x6461, 0x2020, 
+    0x3372, 0x202c, 0x3372, 0x782e, 0x7a79, 0x202c, 0x3176, 0x792e, 0x202c, 
+    0x3472, 0x782e, 0x7a79, 0x3b20, 0x7720, 0xb032, 0xc7f6, 0xb0cf, 0x20ed, 
+    0xa7c0, 0xa1bf, 0xc5b0, 0xfbb6, 0xb420, 0xc7f5, 0x0dd4, 0x0d0a, 0x6d0a, 
+    0x766f, 0x2020, 0x3172, 0x772e, 0x202c, 0x3963, 0x2e35, 0x0978, 0x0909, 
+    0x203b, 0x3172, 0x772e, 0x3d20, 0x3120, 0x302e, 0x0d66, 0x0d0a, 0x3b0a, 
+    0x346d, 0x3478, 0x7220, 0x2c30, 0x7220, 0x2c30, 0x6320, 0x3838, 0x0a0d, 
+    0x346d, 0x3478, 0x6f20, 0x6f50, 0x2c73, 0x7220, 0x2c31, 0x6320, 0x3438, 
+    0x0909, 0x3b09, 0x6f20, 0x6f50, 0x2073, 0x203d, 0xe1b0, 0xfab0, 0xa4ba, 
+    0xcdc5, 0x2a20, 0x6d20, 0x7461, 0x6956, 0x7765, 0x7250, 0x6a6f, 0x0a0d, 
+    0x6d3b, 0x766f, 0x7220, 0x2c30, 0x7620, 0x0d30, 0x3b0a, 0x6f6d, 0x2076, 
+    0x3072, 0x772e, 0x202c, 0x3963, 0x2e35, 0x0d78, 0x3b0a, 0x6f6d, 0x2076, 
+    0x506f, 0x736f, 0x202c, 0x3072, 0x0a0d, 0x0a0d, 0x0a0d, 0x2d3b, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x0d2d, 0x3b0a, 0x4c20, 0x6769, 0x7468, 0x6e69, 0x2067, 0x6163, 
+    0x636c, 0x6c75, 0x7461, 0x6f69, 0x0d6e, 0x3b0a, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x0a0d, 0x203b, 0x6964, 0x6572, 0x7463, 0x6f69, 0x616e, 0x206c, 0x696c, 
+    0x6867, 0x0d74, 0x640a, 0x3370, 0x7220, 0x2e31, 0x2c78, 0x7220, 0x2c33, 
+    0x2d20, 0x3963, 0x2032, 0x2020, 0x203b, 0x204e, 0xcdbf, 0x4c20, 0xc020, 
+    0x20c7, 0xbbb3, 0xfbc0, 0x0a0d, 0x696c, 0x2074, 0x3172, 0x202c, 0x3172, 
+    0x0a0d, 0x756d, 0x206c, 0x3272, 0x202c, 0x3172, 0x792e, 0x202c, 0x3963, 
+    0x0933, 0x203b, 0x206e, 0x202a, 0x6964, 0x6666, 0x7375, 0x0d65, 0x610a, 
+    0x6464, 0x7220, 0x2c32, 0x7220, 0x2c32, 0x6320, 0x3439, 0x0909, 0x203b, 
+    0x202b, 0x6d61, 0x6962, 0x6e65, 0x0d74, 0x6d0a, 0x6e69, 0x6f20, 0x3044, 
+    0x202c, 0x3272, 0x202c, 0x3963, 0x2e35, 0x2078, 0x2020, 0x2020, 0x203b, 
+    0x6c63, 0x6d61, 0x2070, 0x6669, 0x3e20, 0x3120, 0x0a0d, 0x6d3b, 0x766f, 
+    0x6f20, 0x3044, 0x202c, 0x3272, 0x0a0d, 0x0a0d, 0x6d3b, 0x766f, 0x6f20, 
+    0x3044, 0x202c, 0x3963, 0x2e35, 0x7878, 0x7878, 0x3b09, 0x6e20, 0x206f, 
+    0x696c, 0x6867, 0x6974, 0x676e, 0x0a0d, 0x0a0d, 0x643b, 0x3370, 0x7220, 
+    0x2e30, 0x2c78, 0x7220, 0x2c33, 0x2d20, 0x3963, 0x0932, 0x203b, 0x4c76, 
+    0x6769, 0x7468, 0x6420, 0x746f, 0x6e20, 0x726f, 0x616d, 0x0d6c, 0x3b0a, 
+    0x7573, 0x2062, 0x3172, 0x202c, 0x3863, 0x2c38, 0x7620, 0x0930, 0x3b09, 
+    0x7620, 0x7265, 0x6574, 0x2078, 0x3e2d, 0x6520, 0x6579, 0x6f70, 0x0d73, 
+    0x3b0a, 0x7064, 0x2033, 0x3172, 0x772e, 0x202c, 0x3172, 0x202c, 0x3172, 
+    0x3b09, 0x7620, 0x7265, 0x6574, 0x2d78, 0x653e, 0x6579, 0x6f70, 0x2073, 
+    0x6576, 0x7463, 0x726f, 0x6e20, 0x726f, 0x616d, 0x696c, 0x657a, 0x0a0d, 
+    0x723b, 0x7173, 0x7220, 0x2e31, 0x2c77, 0x7220, 0x2e31, 0x0d77, 0x3b0a, 
+    0x756d, 0x206c, 0x3172, 0x202c, 0x3172, 0x202c, 0x3172, 0x772e, 0x0a0d, 
+    0x0a0d, 0x613b, 0x6464, 0x7220, 0x2c32, 0x7220, 0x2c31, 0x2d20, 0x3963, 
+    0x0d32, 0x3b0a, 0x7064, 0x2033, 0x3272, 0x772e, 0x202c, 0x3272, 0x202c, 
+    0x3272, 0x0a0d, 0x723b, 0x7173, 0x7220, 0x2e32, 0x2c77, 0x7220, 0x2e32, 
+    0x0d77, 0x3b0a, 0x756d, 0x206c, 0x3272, 0x202c, 0x3272, 0x202c, 0x3272, 
+    0x772e, 0x0a0d, 0x0a0d, 0x643b, 0x3370, 0x7220, 0x2e30, 0x2c79, 0x7220, 
+    0x2c32, 0x7220, 0x0d33, 0x0d0a, 0x3b0a, 0x6f6d, 0x2076, 0x3072, 0x772e, 
+    0x202c, 0x3863, 0x2e39, 0x0977, 0x3b09, 0x7320, 0x6570, 0x7563, 0x616c, 
+    0x2072, 0x6f70, 0x6577, 0x0d72, 0x0d0a, 0x3b0a, 0x696c, 0x2074, 0x3472, 
+    0x202c, 0x3072, 0x0a0d, 0x0a0d, 0x6d3b, 0x6c75, 0x7220, 0x2c35, 0x7220, 
+    0x2e34, 0x2c7a, 0x6320, 0x3938, 0x3b09, 0x7320, 0x6570, 0x7563, 0x616c, 
+    0x0d72, 0x3b0a, 0x756d, 0x206c, 0x3672, 0x202c, 0x3472, 0x792e, 0x202c, 
+    0x3963, 0x0930, 0x203b, 0x3963, 0xc030, 0x20bb, 0x696c, 0x6867, 0x2074, 
+    0x6f63, 0x6f6c, 0xb772, 0x20ce, 0xe1c0, 0xc3bd, 0xbd20, 0xb4e8, 0x2ed9, 
+    0x3120, 0x202c, 0x2c31, 0x3120, 0x202c, 0x0d31, 0x3b0a, 0x756d, 0x206c, 
+    0x3672, 0x202c, 0x3672, 0x202c, 0x3963, 0x0d33, 0x3b0a, 0x6461, 0x2064, 
+    0x3672, 0x202c, 0x3672, 0x202c, 0x3963, 0x0934, 0x3b09, 0x2a20, 0x6420, 
+    0x6669, 0x7566, 0x6573, 0x2b20, 0x6120, 0x626d, 0x6569, 0x746e, 0x0a0d, 
+    0x613b, 0x6464, 0x6f20, 0x3044, 0x202c, 0x3572, 0x202c, 0x3672, 0x0a0d, 
+    0x0a0d, 0x2d3b, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x0d2d, 0x3b0a, 0x5420, 0x7865, 0x7574, 
+    0x6572, 0x6320, 0x6f6f, 0x6472, 0x6e69, 0x7461, 0x7365, 0x0a0d, 0x2d3b, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 0x2d2d, 
+    0x2d2d, 0x2d2d, 0x0d2d, 0x0d0a, 0x3b0a, 0x4a20, 0x7375, 0x2074, 0x6f63, 
+    0x7970, 0x7420, 0x6568, 0x7420, 0x7865, 0x7574, 0x6572, 0x6320, 0x6f6f, 
+    0x6472, 0x6e69, 0x7461, 0x7365, 0x0a0d, 0x6f6d, 0x2076, 0x546f, 0x2e30, 
+    0x7978, 0x202c, 0x7620, 0x2e34, 0x7978, 0x0a0d, 0x6d3b, 0x766f, 0x6f20, 
+    0x3154, 0x782e, 0x2c79, 0x2020, 0x3476, 0x782e, 0x0d79, 0x0d0a, 0x6d0a, 
+    0x766f, 0x6f20, 0x6f46, 0x2c67, 0x6320, 0x3539, 0x772e, 0x0a0d, 0x0a0d, 
+    0x0a0d
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SFXEditor"
+    IDR_SFXEDITYPE          "\nSFXEdi\nSFXEdi\n\n\nSFXEditor.Document\nSFXEdi Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SFXEditor"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다\n열기"
+    ID_FILE_CLOSE           "현재 열린 문서를 닫습니다\n닫기"
+    ID_FILE_SAVE            "현재 열린 문서를 저장합니다\n저장"
+    ID_FILE_SAVE_AS         "현재 열린 문서를 다른 이름으로 저장합니다\n다른 이름으로 저장"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보와 버전 정보, 저작권 정보를 표시합니다\n정보"
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE2       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE3       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE4       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE5       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE6       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE7       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE8       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE9       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE10      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE11      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE12      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE13      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE14      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE15      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE16      "이 문서를 엽니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "현재 열린 문서를 위해 또 다른 창을 엽니다\n새 창"
+    ID_WINDOW_ARRANGE       "창 아래쪽에 아이콘을 정렬합니다\n아이콘 정렬"
+    ID_WINDOW_CASCADE       "서로 겹쳐지도록 창을 정렬합니다\n계단식 창"
+    ID_WINDOW_TILE_HORZ     "서로 겹치지 않는 바둑판 모양으로 창을 정렬합니다\n바둑판식 창"
+    ID_WINDOW_TILE_VERT     "서로 겹치지 않는 바둑판 모양으로 창을 정렬합니다\n바둑판식 창"
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 수행합니다\n다시 실행"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+    AFX_IDS_MDICHILD        "이 창을 활성화합니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEWCHRMODEL         "중심좌표에 1.5미터의 케릭터 모델을 표시"
+    ID_VIEWAXIS             "중심좌표에 중심축 X, Y, Z 표시"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\SFXEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

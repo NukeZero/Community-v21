@@ -1,0 +1,9 @@
+
+since 2011_01_21 fri
+author gmpbigsun
+
+2011_01_21 : 텍스쳐 패널에 Billboard 래디오버튼에 관한 EnableRadio가 두가지 버젼이 존재하는데
+인자에 관한것이다. ( BOOL ), ( BYTE ) 가 그것인데 정확히 분석은 하지 않았지만 대부분의 argument type 이 int이기때문에
+EnableRadio( BOOL ) 만 호출되고 있따.
+EnableRadio( BYTE )가 호출되어야만 빌보드 파트의 속성을 제대로 표시해줄수 있는데 말이다.
+해서 EnableRadio( BOOL ) 함수의 이름을 EnableRadio_All로 바껏다.

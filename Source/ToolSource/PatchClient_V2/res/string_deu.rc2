@@ -1,0 +1,21 @@
+STRINGTABLE DISCARDABLE
+BEGIN
+	IDS_REINSTALL		"Sie müssen es erneut installieren, weil das installierte Flyff ein Problem hat. Bitte installieren Sie es erneut nach dem Herunterladen von der Homepage."
+	IDS_RUNNING_NEUZ		"Flyff wurde gestartet"
+	IDS_RUNNING_PATCH		"Das Patch Programm wird geladen"
+	IDS_OPTION			"Option"
+	IDS_CLOSE			"Schließen"
+	IDS_RESOLUTION		"Auflösung"
+	IDS_VIEW			"Sichtweite"
+	IDS_TEXTURE			"Texturqualität"
+	IDS_SHADOW			"Schatten"
+	IDS_OBJECTDETAIL		"Objektdetails"
+	IDS_FAR			"Hoch"
+	IDS_MEDIUM			"Mittel"
+	IDS_NEAR			"Niedrig"
+	IDS_HIGH			"Hoch"
+	IDS_LOW			"Niedrig"
+	IDS_DIRECTX_INSTALL		"DirectX9 ist noch nicht installiert"
+	IDS_UPDATE_PATCH		"Patch Client läuft wieder. Wenn Sie Ok drücke, läuft es automatisch."
+	IDS_RETRY			"Wollen Sie es nochmal versuchen?"
+END

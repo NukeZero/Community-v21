@@ -1,0 +1,65 @@
+project    "MUDRA"
+
+define     "define.h"
+define     "defineNeuz.h"
+define     "defineQuest.h"
+define     "defineJob.h"
+define     "defineItem.h"
+define     "defineWorld.h"
+define     "defineItemkind.h"
+define     "lang.h"
+
+localDef   "defineObj.h"
+localDef   "defineAttribute.h"
+localDef   "defineSkill.h"
+localDef   "defineText.h"
+localDef   "defineSound.h"
+
+textClient "textClient.inc" 
+textServer "textServer.inc" 
+model      "mdlObj.inc" 
+model      "mdlDyna.inc" 
+billboard  "billboard.csv"
+world      "world.inc"
+terrain    "terrain.inc" 
+beginItem  "beginItem.inc" 
+/*
+propMover  "propMover.csv"
+propItem   "propItem.csv"
+propSkill  "propSkill.csv"
+propMotion "propMotion.csv"
+//property   "property.inc"
+//propObj    "propObj.csv"
+*/
+propMover  "propMover.txt"
+propItem   "propItem.txt"
+propSkill  "propSkill.txt"
+propMotion "propMotion.txt"
+propTroupeSkill "propTroupeSkill.txt"
+propKarma  "propKarma.txt"
+
+
+propJob   "propJob.txt"
+propCtrl   "propCtrl.csv"
+propSkillAdd "propSkillAdd.csv"
+
+character "character.inc"
+character "character-etc.inc"
+character "character-school.inc"
+
+propQuest "propQuest.inc"
+propQuest "propQuest-RequestBox.inc"
+propQuest "propQuest-Scenario.inc"
+propQuest "propQuest-RequestBox2.inc"
+// 누가 아이디 충돌한 상태로 넣어놓으라고 했어!!!!!!!!!!
+// RequestBox2에 있는 id랑 똑같아서 문제 생겼자나!! 그래서 한시간 동안 삽질했어!!!
+// 누구야 대체!!!!!!
+propQuest "propQuest-DungeonandPK.inc" 
+
+
+//parts      "parts.inc"
+expTable   "ExpTable.inc"
+help       "Client\help.inc"
+
+// Event
+Event_LevelUp_ItemList "Event_LevelUp_ItemList.txt"

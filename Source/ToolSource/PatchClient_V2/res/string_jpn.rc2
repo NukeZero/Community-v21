@@ -1,0 +1,22 @@
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_REINSTALL		"インストールされたフリフオンラインではエラーが発生します。再インストールを行う必要があります。\n ホームページからダウンロードしてください。"
+	IDS_RUNNING_NEUZ		"フリフオンラインはすでに実行中です。"
+	IDS_RUNNING_PATCH		"パッチプログラムはすでに実行中です。"
+	IDS_OPTION			"オプション設定"
+	IDS_CLOSE			"終了"
+	IDS_RESOLUTION		"解像度"
+	IDS_VIEW			"視界"
+	IDS_TEXTURE			"テクスチャー品質"
+	IDS_SHADOW			"影"
+	IDS_OBJECTDETAIL		"オブジェクト表示品質"
+	IDS_FAR			"遠い"
+	IDS_MEDIUM			"普通"
+	IDS_NEAR			"近い"
+	IDS_HIGH			"高い"
+	IDS_LOW			"低い"
+	IDS_DIRECTX_INSTALL		"DirectX 9がインストールされていません。"
+	IDS_UPDATE_PATCH		"パッチクライアントを再度実行します。"
+	IDS_RETRY			"もう一回トライしてみますか？"
+END
+

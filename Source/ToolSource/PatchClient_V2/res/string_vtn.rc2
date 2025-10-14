@@ -1,0 +1,21 @@
+STRINGTABLE DISCARDABLE
+BEGIN
+	IDS_REINSTALL		"Flyff b? l?i. Vui l?ng t?i b? c?i t? trang ch? v? c?i l?i."
+	IDS_RUNNING_NEUZ		"Flyff ©¢ang ch?y."
+	IDS_RUNNING_PATCH		"Ch??ng tr?nh c?p nh?t ©¢ang ch?y."
+	IDS_OPTION		"T?y ch?n"
+	IDS_CLOSE		"??ng"
+	IDS_RESOLUTION		"Gi?i ph?p"
+	IDS_VIEW		"T?m nh?n"
+	IDS_TEXTURE		"Ch?t l??ng k?t c?u"
+	IDS_SHADOW		"B?ng"
+	IDS_OBJECTDETAIL		"M?c ©¢? chi ti?t"
+	IDS_FAR		"Cao"
+	IDS_MEDIUM		"Trung b?nh"
+	IDS_NEAR		"Th?p"
+	IDS_HIGH		"Cao"
+	IDS_LOW		"Th?p"
+	IDS_DIRECTX_INSTALL		"DirectX 9 ch?a ©¢??c c?i ©¢?t. Vui l?ng c?i ©¢?t DirectX 9 tr??c ti?n."
+	IDS_UPDATE_PATCH		"Ch??ng tr?nh c?p nh?t c?n ©¢??c ch?y l?i. Nh?n OK ho?c ??ng ? ©¢? ch?y l?i."
+	IDS_RETRY		"B?n c? mu?n l?m l?i kh?ng?"
+END

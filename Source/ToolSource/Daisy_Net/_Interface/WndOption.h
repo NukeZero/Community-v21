@@ -1,0 +1,206 @@
+// WndOption.h: interface for the CWndNeuz class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_WNDOPTION_H__A93F3186_63D6_43C1_956F_EC8691E0C7D9__INCLUDED_)
+#define AFX_WNDOPTION_H__A93F3186_63D6_43C1_956F_EC8691E0C7D9__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+class CWndOption : public CWndNeuz 
+{ 
+public: 
+	CWndOption(); 
+	~CWndOption(); 
+
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+}; 
+
+//////////////////////////////////////////////////////////////////////////////////////
+// Sound
+//
+
+class CWndOptSound : public CWndNeuz 
+{ 
+public: 
+	CWndOptSound(); 
+	~CWndOptSound(); 
+
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+}; 
+class CWndOptVideo : public CWndNeuz 
+{ 
+public: 
+	CPoint GetStepPos( int nStep, int nWidth, int nDivision );
+	CWndOptVideo(); 
+	~CWndOptVideo(); 
+
+	int				 m_nStep[2];
+
+	CTexture         m_Texture;
+	CTexture         m_TexturePt;
+	BOOL			 m_bLButtonClick;
+	BOOL			 m_bLButtonClick2;
+	virtual void OnMouseMove(UINT nFlags, CPoint point);
+	virtual void OnMouseWndSurface( CPoint point );
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+	
+	virtual HRESULT RestoreDeviceObjects();
+	virtual HRESULT InvalidateDeviceObjects();
+}; 
+
+class CWndOptSlang : public CWndNeuz 
+{ 
+public: 
+	CWndOptSlang(); 
+	~CWndOptSlang(); 
+
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+};
+class CWndOptPassword : public CWndNeuz 
+{ 
+public: 
+	CWndOptPassword(); 
+	~CWndOptPassword(); 
+
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+}; 
+class CWndOptMyInfo : public CWndNeuz 
+{ 
+public: 
+	CWndOptMyInfo(); 
+	~CWndOptMyInfo(); 
+
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+}; 
+
+class CWndOptWindow : public CWndNeuz 
+{ 
+public: 
+	CWndOptWindow(); 
+	~CWndOptWindow(); 
+
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+}; 
+
+#ifdef __N_OPTIONUNITY_041209
+#include "WndOptionGame.h"	 // 게임 옵션
+class CWndTotalOption : public CWndNeuz
+{
+public:
+	CWndOptVideo		m_OptTabVideoSnd;
+	CWndOption			m_OptTabEtc;
+	CWndOptionGame		m_OptTabGame;
+
+	CWndTotalOption(); 
+	~CWndTotalOption(); 
+
+	void UpdateDataAll();
+
+	virtual BOOL Initialize( CWndBase* pWndParent = NULL, DWORD nType = MB_OK ); 
+	virtual BOOL OnChildNotify( UINT message, UINT nID, LRESULT* pLResult ); 
+	virtual void OnDraw( C2DRender* p2DRender ); 
+	virtual	void OnInitialUpdate(); 
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase ); 
+	virtual void OnSize( UINT nType, int cx, int cy ); 
+	virtual void OnLButtonUp( UINT nFlags, CPoint point ); 
+	virtual void OnLButtonDown( UINT nFlags, CPoint point ); 
+};
+#endif//__N_OPTIONUNITY_041209
+
+//BEGIN_WNDCLASS( CWndOptVideo )
+//END_WNDCLASS
+
+BEGIN_WNDCLASS( CWndOptTheme )
+	CWndButton    m_wndPaper1;
+	CWndButton    m_wndPaper2;
+	CWndButton    m_wndPaper3;
+	CWndButton    m_wndPaper4;
+	CWndButton    m_wndPaper5;
+END_WNDCLASS
+
+//BEGIN_WNDCLASS( CWndOptSound )
+//END_WNDCLASS
+
+BEGIN_WNDCLASS( CWndOptMusic )
+END_WNDCLASS
+
+
+BEGIN_WNDCLASS( CWndOptMouse )
+END_WNDCLASS
+
+BEGIN_WNDCLASS( CWndOptHotkey )
+END_WNDCLASS
+
+/*
+class CWndSound : public CWndNeuz
+{
+	CWndButton m_wndMusic;
+	CWndButton m_wndSound;
+public:
+	CWndSound(); 
+	virtual ~CWndSound();
+//	virtual CItem* GetFocusItem() { return NULL; }
+	virtual void OnDraw(C2DRender* p2DRender);
+	virtual	void OnInitialUpdate();
+	virtual BOOL Initialize(CWndBase* pWndParent = NULL,DWORD dwWndId = 0);
+	// message
+	virtual BOOL OnCommand( UINT nID, DWORD dwMessage, CWndBase* pWndBase );
+	virtual void OnSize(UINT nType, int cx, int cy);
+	virtual void OnLButtonUp(UINT nFlags, CPoint point);
+	virtual void OnLButtonDown(UINT nFlags, CPoint point);
+};
+
+*/
+#endif // !defined(AFX_WNDOPTION_H__A93F3186_63D6_43C1_956F_EC8691E0C7D9__INCLUDED_)

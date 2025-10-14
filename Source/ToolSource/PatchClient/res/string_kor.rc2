@@ -1,0 +1,22 @@
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_REINSTALL			"설치된 Flyff가 잘못되어 다시 설치 하셔야 합니다\n홈페이지에서 다운받아서 다시 설치하십시요."
+	IDS_RUNNING_NEUZ		"프리프가 실행 중입니다."
+	IDS_RUNNING_PATCH		"패치 프로그램이 실행 중입니다."
+	IDS_OPTION			"옵션"
+	IDS_CLOSE			"닫기"
+	IDS_RESOLUTION			"해상도"
+	IDS_VIEW			"시야범위"
+	IDS_TEXTURE			"텍스쳐품질"
+	IDS_SHADOW			"그림자"
+	IDS_OBJECTDETAIL		"오브젝트 표현수준"
+	IDS_FAR				"멀리"
+	IDS_MEDIUM			"중간"
+	IDS_NEAR			"가깝게"
+	IDS_HIGH			"높음"
+	IDS_LOW				"낮음"
+	IDS_DIRECTX_INSTALL		"DirectX9가 설치되어 있지 않습니다.\n먼저 DirectX9를 설치해주십시요."
+	IDS_UPDATE_PATCH		"패치클라이언트를 다시 실행합니다.\n확인 버튼을 누르면 자동으로 다시 실행됩니다."
+	IDS_RETRY			"다시 시도하시겠습니까?"
+END
+

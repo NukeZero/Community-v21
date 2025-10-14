@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>WorldServer</ProjectName>
+    <ProjectGuid>{A64D197A-67C7-4F5D-A4E4-0CFC499FC645}</ProjectGuid>
+    <RootNamespace>WorldServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27205.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>.\..\..\..\Output\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Output\WorldServer\Debug/WorldServer.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\_aiinterface;..\_Network\Misc\Include;..\_DirectX;..\_Common;..\_network;..\_Interface;..\_AIInterface;..\_CommonDefine\Util;..\..\..\ThirdParty\directX\$(Platform)\include;..\..\..\Data\Resource;..\..\..\ThirdParty\;..\..\..\ThirdParty\Lua\Include;..\..\LibrarySource\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;VERSION.LIB;d3dx9dt.lib;Dxerr9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\7. $(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\ThirdParty\BugTrap\libs;..\..\..\ThirdParty\Lua\Lib\$(Platform)\;..\..\..\ThirdParty\directX\$(Platform)\lib;..\..\..\Bins\LibraryBins\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+      <FixedBaseAddress>true</FixedBaseAddress>
+      <ProgramDatabaseFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Output\WorldServer\Release/WorldServer.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>..\_aiinterface;..\_Network\Misc\Include;..\_DirectX;..\_Common;..\_network;..\_Interface;..\_AIInterface;..\_CommonDefine\Util;..\..\..\ThirdParty\directX\$(Platform)\include;..\..\..\Data\Resource;..\..\..\ThirdParty\;..\..\..\ThirdParty\Lua\Include;..\..\LibrarySource\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput />
+      <AssemblerListingLocation />
+      <BrowseInformationFile />
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;VERSION.LIB;d3dx9.lib;lua53.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\7. $(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\ThirdParty\BugTrap\libs;..\..\..\ThirdParty\Lua\Lib\$(Platform)\;..\..\..\ThirdParty\directX\$(Platform)\lib;..\..\..\Bins\LibraryBins\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\..\..\Bins\ServerBins\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_aiinterface\action.cpp" />
+    <ClCompile Include="..\_aiinterface\actionmover.cpp" />
+    <ClCompile Include="..\_aiinterface\ActionMoverCollision.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverDmg.cpp" />
+    <ClCompile Include="..\_aiinterface\ActionMoverMsg.cpp" />
+    <ClCompile Include="..\_aiinterface\ActionMoverMsg2.cpp" />
+    <ClCompile Include="..\_aiinterface\ActionMoverState.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionMoverState2.cpp" />
+    <ClCompile Include="..\_AIInterface\ActionShip.cpp" />
+    <ClCompile Include="..\_AIInterface\AIAggroNormal.cpp" />
+    <ClCompile Include="..\_AIInterface\AIBear.cpp" />
+    <ClCompile Include="..\_AIInterface\AIBigMuscle.cpp" />
+    <ClCompile Include="..\_AIInterface\AIClockWorks.cpp" />
+    <ClCompile Include="..\_AIInterface\AIGuard.cpp" />
+    <ClCompile Include="..\_aiinterface\aiinterface.cpp" />
+    <ClCompile Include="..\_AIInterface\AIKrrr.cpp" />
+    <ClCompile Include="..\_AIInterface\aimeteonyker.cpp" />
+    <ClCompile Include="..\_aiinterface\aimonster.cpp" />
+    <ClCompile Include="..\_AIInterface\AIMonster2.cpp" />
+    <ClCompile Include="..\_AIInterface\AIPet.cpp" />
+    <ClCompile Include="..\_AIInterface\FLAggroNormalFSM.cpp" />
+    <ClCompile Include="..\_AIInterface\FLArenaReaper.cpp" />
+    <ClCompile Include="..\_AIInterface\FLBehaviorFunction.cpp" />
+    <ClCompile Include="..\_AIInterface\FLFSM.cpp" />
+    <ClCompile Include="..\_AIInterface\FLPartyAggroFSM.cpp" />
+    <ClCompile Include="..\_AIInterface\FLStalkerFSM.cpp" />
+    <ClCompile Include="..\_AIInterface\FSM.cpp" />
+    <ClCompile Include="..\_AIInterface\FSMstate.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLFileEncryption.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLFlyffConfig.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLLFH.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLScriptFileManager.cpp" />
+    <ClCompile Include="..\_CommonDefine\FLTm.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketBroadCastMessage.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketChargeZoneTicket.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketEventArena.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketFlyffPieceEvent.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketGuildBankUpdate.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemExchange.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemOption.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketItemUpgrade.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketMadrigalGift.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketServerDescription.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketTeleportMap.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketTreasureChest.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketUserAuth.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacketWDB_ConsignmentSale.cpp" />
+    <ClCompile Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecManager_Load.cpp" />
+    <ClCompile Include="..\_CommonDefine\Spec\FLSpecStruct.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLCSVParser.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLIniFile.cpp" />
+    <ClCompile Include="..\_CommonDefine\UTIL\FLKeyGenerator.cpp" />
+    <ClCompile Include="..\_Common\accessory.cpp" />
+    <ClCompile Include="..\_Common\auction.cpp" />
+    <ClCompile Include="..\_Common\Bone.cpp" />
+    <ClCompile Include="..\_Common\buff.cpp" />
+    <ClCompile Include="..\_Common\Campus.cpp" />
+    <ClCompile Include="..\_Common\Chatting.cpp" />
+    <ClCompile Include="..\_Common\collecting.cpp" />
+    <ClCompile Include="..\_common\CommonCtrl.cpp" />
+    <ClCompile Include="..\_Common\Continent.cpp" />
+    <ClCompile Include="..\_Common\CooltimeMgr.cpp" />
+    <ClCompile Include="..\_Common\couple.cpp" />
+    <ClCompile Include="..\_Common\CreateMonster.cpp" />
+    <ClCompile Include="..\_Common\CreateObj.cpp" />
+    <ClCompile Include="..\_Common\ctrl.cpp" />
+    <ClCompile Include="..\_Common\CtrlObjs.cpp" />
+    <ClCompile Include="..\_Common\DefineCommon.cpp" />
+    <ClCompile Include="..\_Common\EventLua.cpp" />
+    <ClCompile Include="..\_Common\EventMonster.cpp" />
+    <ClCompile Include="..\_common\eveschool.cpp" />
+    <ClCompile Include="..\_Common\file.cpp" />
+    <ClCompile Include="..\_Common\FLAggro.cpp" />
+    <ClCompile Include="..\_Common\FLCommonCheck.cpp" />
+    <ClCompile Include="..\_Common\FLCommonFunction.cpp" />
+    <ClCompile Include="..\_Common\FLContentSwitch.cpp" />
+    <ClCompile Include="..\_Common\FLCooperativeContributions_Common.cpp" />
+    <ClCompile Include="..\_Common\FLExchange.cpp" />
+    <ClCompile Include="..\_Common\FLGameTimer.cpp" />
+    <ClCompile Include="..\_Common\FLItemBase.cpp" />
+    <ClCompile Include="..\_Common\FLItemElem.cpp" />
+    <ClCompile Include="..\_Common\FLPeriodRepetitionAlarm.cpp" />
+    <ClCompile Include="..\_Common\FLPiercingOption.cpp" />
+    <ClCompile Include="..\_Common\FLRandomOption.cpp" />
+    <ClCompile Include="..\_Common\FLServerDescription.cpp" />
+    <ClCompile Include="..\_Common\FLShutdownRule.cpp" />
+    <ClCompile Include="..\_Common\FLSkillSystem.cpp" />
+    <ClCompile Include="..\_common\flyffevent.cpp" />
+    <ClCompile Include="..\_Common\FunnyCoin.cpp" />
+    <ClCompile Include="..\_common\guild.cpp" />
+    <ClCompile Include="..\_Common\GuildCombat1to1.cpp" />
+    <ClCompile Include="..\_Common\GuildHouse.cpp" />
+    <ClCompile Include="..\_common\guildquest.cpp" />
+    <ClCompile Include="..\_common\guildwar.cpp" />
+    <ClCompile Include="..\_Common\honor.cpp" />
+    <ClCompile Include="..\_Common\Housing.cpp" />
+    <ClCompile Include="..\_Common\InstanceDungeonBase.cpp" />
+    <ClCompile Include="..\_Common\InstanceDungeonParty.cpp" />
+    <ClCompile Include="..\_Common\Item.cpp" />
+    <ClCompile Include="..\_Common\langman.cpp" />
+    <ClCompile Include="..\_Common\lord.cpp" />
+    <ClCompile Include="..\_Common\lordskill.cpp" />
+    <ClCompile Include="..\_Common\LuaBase.cpp" />
+    <ClCompile Include="..\_Common\MiniGame.cpp" />
+    <ClCompile Include="..\_Common\MiniGameBase.cpp" />
+    <ClCompile Include="..\_Common\Model.cpp" />
+    <ClCompile Include="..\_Common\ModelMng.cpp" />
+    <ClCompile Include="..\_Common\modelobject.cpp" />
+    <ClCompile Include="..\_common\mover.cpp" />
+    <ClCompile Include="..\_Common\MoverActEvent.cpp" />
+    <ClCompile Include="..\_Common\MoverAttack.cpp" />
+    <ClCompile Include="..\_Common\moverbuff.cpp" />
+    <ClCompile Include="..\_common\MoverEquip.cpp" />
+    <ClCompile Include="..\_Common\MoverItem.cpp" />
+    <ClCompile Include="..\_Common\MoverMove.cpp" />
+    <ClCompile Include="..\_Common\MoverMsg.cpp" />
+    <ClCompile Include="..\_Common\MoverParam.cpp" />
+    <ClCompile Include="..\_Common\MoverSkill.cpp" />
+    <ClCompile Include="..\_Common\NpcProperty.cpp" />
+    <ClCompile Include="..\_Common\NPCSummoner.cpp" />
+    <ClCompile Include="..\_Common\Obj.cpp" />
+    <ClCompile Include="..\_Common\object3d.cpp" />
+    <ClCompile Include="..\_Common\ObjSerialize.cpp" />
+    <ClCompile Include="..\_common\ObjSerializeOpt.cpp" />
+    <ClCompile Include="..\_common\party.cpp" />
+    <ClCompile Include="..\_Common\partyquest.cpp" />
+    <ClCompile Include="..\_Common\path.cpp" />
+    <ClCompile Include="..\_Common\PathObj.cpp" />
+    <ClCompile Include="..\_Common\PCBang.cpp" />
+    <ClCompile Include="..\_Common\pet.cpp" />
+    <ClCompile Include="..\_Common\playerdata.cpp" />
+    <ClCompile Include="..\_Common\pocket.cpp" />
+    <ClCompile Include="..\_Common\post.cpp" />
+    <ClCompile Include="..\_Common\Project.cpp" />
+    <ClCompile Include="..\_Common\ProjectCmn.cpp" />
+    <ClCompile Include="..\_Common\ProjectLux.cpp" />
+    <ClCompile Include="..\_Common\Quiz.cpp" />
+    <ClCompile Include="..\_Common\RainbowRace.cpp" />
+    <ClCompile Include="..\_Common\Respawn.cpp" />
+    <ClCompile Include="..\_Common\rtmessenger.cpp" />
+    <ClCompile Include="..\_Common\scanner.cpp" />
+    <ClCompile Include="..\_Common\script.cpp" />
+    <ClCompile Include="..\_Common\scriptdialog.cpp" />
+    <ClCompile Include="..\_Common\ScriptHelper.cpp" />
+    <ClCompile Include="..\_Common\scriptlib.cpp" />
+    <ClCompile Include="..\_Common\SeasonEffect.cpp" />
+    <ClCompile Include="..\_Common\SecretRoom.cpp" />
+    <ClCompile Include="..\_Common\serialnumber.cpp" />
+    <ClCompile Include="..\_Common\Ship.cpp" />
+    <ClCompile Include="..\_Common\spevent.cpp" />
+    <ClCompile Include="..\_Common\Stat.cpp" />
+    <ClCompile Include="..\_Common\Synchronizer.cpp" />
+    <ClCompile Include="..\_Common\Tax.cpp" />
+    <ClCompile Include="..\_Common\testcase.cpp" />
+    <ClCompile Include="..\_Common\timer.cpp" />
+    <ClCompile Include="..\_Common\UltimateWeapon.cpp" />
+    <ClCompile Include="..\_Common\vutil.cpp" />
+    <ClCompile Include="..\_Common\World.cpp" />
+    <ClCompile Include="..\_Common\worldfile.cpp" />
+    <ClCompile Include="..\_Common\worldintersect.cpp" />
+    <ClCompile Include="..\_Common\worldmng.cpp" />
+    <ClCompile Include="..\_Common\xUtil.cpp" />
+    <ClCompile Include="..\_Common\xutil3d.cpp" />
+    <ClCompile Include="..\_DirectX\d3dutil.cpp" />
+    <ClCompile Include="..\_DirectX\dxutil.cpp" />
+    <ClCompile Include="..\_Interface\FuncTextCmd.cpp" />
+    <ClCompile Include="..\_Interface\UserTaskBar.cpp" />
+    <ClCompile Include="..\_network\misc\src\ServerDesc.cpp" />
+    <ClCompile Include="..\_Network\tools.cpp" />
+    <ClCompile Include="AttackArbiter.cpp" />
+    <ClCompile Include="CampusHelper.cpp" />
+    <ClCompile Include="couplehelper.cpp" />
+    <ClCompile Include="DPCoreClient.cpp" />
+    <ClCompile Include="DPDatabaseClient.cpp" />
+    <ClCompile Include="DPSrvr.cpp" />
+    <ClCompile Include="DPSrvrLux.cpp" />
+    <ClCompile Include="FLApplyItemEffect.cpp" />
+    <ClCompile Include="FLBarunaUpgradeNpc.cpp" />
+    <ClCompile Include="FLCC_Condition.cpp" />
+    <ClCompile Include="FLCC_Contribution.cpp" />
+    <ClCompile Include="FLCC_Reward.cpp" />
+    <ClCompile Include="FLCharacterServerTransform.cpp" />
+    <ClCompile Include="FLChargeZoneTicket.cpp" />
+    <ClCompile Include="FLConsignmentSale.cpp" />
+    <ClCompile Include="FLCooperativeContributions.cpp" />
+    <ClCompile Include="FLDPServer_MSGHandler.cpp" />
+    <ClCompile Include="FLDropItemCommon.cpp" />
+    <ClCompile Include="FLDropPenalty_ByLevelDist.cpp" />
+    <ClCompile Include="FLEventArena.cpp" />
+    <ClCompile Include="FLEventArenaAlarm.cpp" />
+    <ClCompile Include="FLEventArenaGame.cpp" />
+    <ClCompile Include="FLEventArenaGlobal.cpp" />
+    <ClCompile Include="FLEventArenaHelper.cpp" />
+    <ClCompile Include="FLEventArenaSpec.cpp" />
+    <ClCompile Include="FLEventArenaSpecLoader.cpp" />
+    <ClCompile Include="FLEventArenaStartPos.cpp" />
+    <ClCompile Include="FLEventArenaTeam.cpp" />
+    <ClCompile Include="FLEventArenaTeamManager.cpp" />
+    <ClCompile Include="FLEventArenaTeamMember.cpp" />
+    <ClCompile Include="FLEventDropItem.cpp" />
+    <ClCompile Include="FLExchangeEvent.cpp" />
+    <ClCompile Include="FLExchangeItem.cpp" />
+    <ClCompile Include="FLFlyffPieceDailyPayment.cpp" />
+    <ClCompile Include="FLFlyffPieceEvent.cpp" />
+    <ClCompile Include="FLGoldIconSet.cpp" />
+    <ClCompile Include="FLItemAction.cpp" />
+    <ClCompile Include="FLItemAction_PartyLevel.cpp" />
+    <ClCompile Include="FLItemAction_PK_Penalty.cpp" />
+    <ClCompile Include="FLItemAction_SavePotion.cpp" />
+    <ClCompile Include="FLItemExtract.cpp" />
+    <ClCompile Include="FLItemMergeBase.cpp" />
+    <ClCompile Include="FLItemMergeManager.cpp" />
+    <ClCompile Include="FLItemMergeRandomOption.cpp" />
+    <ClCompile Include="FLItemShopping.cpp" />
+    <ClCompile Include="FLItemUpgradeAccessory.cpp" />
+    <ClCompile Include="FLItemUpgradeBaruna.cpp" />
+    <ClCompile Include="FLItemUpgradeBase.cpp" />
+    <ClCompile Include="FLItemUpgradeCostume.cpp" />
+    <ClCompile Include="FLItemUpgradeEatPet.cpp" />
+    <ClCompile Include="FLItemUpgradeGeneral.cpp" />
+    <ClCompile Include="FLItemUpgradeManager.cpp" />
+    <ClCompile Include="FLItemUpgradeMaterial.cpp" />
+    <ClCompile Include="FLItemUpgradeSystemPet.cpp" />
+    <ClCompile Include="FLItemUsing.cpp" />
+    <ClCompile Include="FLItemUsingActiveUI.cpp" />
+    <ClCompile Include="FLLevelDropItem.cpp" />
+    <ClCompile Include="FLMadrigalGift.cpp" />
+    <ClCompile Include="FLMapGrid.cpp" />
+    <ClCompile Include="FLMonsterDropItem.cpp" />
+    <ClCompile Include="FLShutdownRule_Mng.cpp" />
+    <ClCompile Include="FLTeleportMapUserPointManager.cpp" />
+    <ClCompile Include="FLTeleportMapUserPoints.cpp" />
+    <ClCompile Include="FLTreasureChest.cpp" />
+    <ClCompile Include="FLUseActiveItem.cpp" />
+    <ClCompile Include="FLUseEffectItem.cpp" />
+    <ClCompile Include="GlobalGameValueCalculator.cpp" />
+    <ClCompile Include="ItemUpgrade.cpp" />
+    <ClCompile Include="layeredlinkmap.cpp" />
+    <ClCompile Include="LinkMap.cpp" />
+    <ClCompile Include="lordskillexecutable.cpp" />
+    <ClCompile Include="MiniGameArithmetic.cpp" />
+    <ClCompile Include="MiniGameDiceplay.cpp" />
+    <ClCompile Include="MiniGameGawibawibo.cpp" />
+    <ClCompile Include="MiniGameLadder.cpp" />
+    <ClCompile Include="MiniGamePairgame.cpp" />
+    <ClCompile Include="MiniGameStopwatch.cpp" />
+    <ClCompile Include="MiniGameTyping.cpp" />
+    <ClCompile Include="MySplashWnd.cpp" />
+    <ClCompile Include="NetSerialNumberRequest.cpp" />
+    <ClCompile Include="npchecker.cpp" />
+    <ClCompile Include="rangda.cpp" />
+    <ClCompile Include="SfxHitArray.cpp" />
+    <ClCompile Include="slord.cpp" />
+    <ClCompile Include="Snapshot.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ThreadMng.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserLux.cpp" />
+    <ClCompile Include="WantedListSnapshot.cpp" />
+    <ClCompile Include="WorldDialog.cpp" />
+    <ClCompile Include="WorldServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lua\lua.hpp" />
+    <ClInclude Include="..\_aiinterface\action.h" />
+    <ClInclude Include="..\_aiinterface\actionmover.h" />
+    <ClInclude Include="..\_AIInterface\ActionShip.h" />
+    <ClInclude Include="..\_AIInterface\AIAggroNormal.h" />
+    <ClInclude Include="..\_AIInterface\AIBear.h" />
+    <ClInclude Include="..\_AIInterface\AIBigMuscle.h" />
+    <ClInclude Include="..\_AIInterface\AIClockWorks.h" />
+    <ClInclude Include="..\_AIInterface\AIGuard.h" />
+    <ClInclude Include="..\_aiinterface\aiinterface.h" />
+    <ClInclude Include="..\_AIInterface\AIKrrr.h" />
+    <ClInclude Include="..\_AIInterface\aimeteonyker.h" />
+    <ClInclude Include="..\_aiinterface\aimonster.h" />
+    <ClInclude Include="..\_AIInterface\AIMonster2.h" />
+    <ClInclude Include="..\_AIInterface\AIPet.h" />
+    <ClInclude Include="..\_AIInterface\FLAggroNormalFSM.h" />
+    <ClInclude Include="..\_AIInterface\FLArenaReaper.h" />
+    <ClInclude Include="..\_AIInterface\FLBehaviorFunction.h" />
+    <ClInclude Include="..\_AIInterface\FLFSM.h" />
+    <ClInclude Include="..\_AIInterface\FLPartyAggroFSM.h" />
+    <ClInclude Include="..\_AIInterface\FLStalkerFSM.h" />
+    <ClInclude Include="..\_AIInterface\FSM.h" />
+    <ClInclude Include="..\_AIInterface\FSMstate.h" />
+    <ClInclude Include="..\_CommonDefine\FLCommonContentDefine.h" />
+    <ClInclude Include="..\_CommonDefine\FLCommonCount.h" />
+    <ClInclude Include="..\_CommonDefine\FLCommonDumper.h" />
+    <ClInclude Include="..\_CommonDefine\FLCommonLength.h" />
+    <ClInclude Include="..\_CommonDefine\FLDeleter.h" />
+    <ClInclude Include="..\_CommonDefine\FLFileEncryption.h" />
+    <ClInclude Include="..\_CommonDefine\FLFlyffConfig.h" />
+    <ClInclude Include="..\_CommonDefine\FLItemContainer.h" />
+    <ClInclude Include="..\_CommonDefine\FLLFH.h" />
+    <ClInclude Include="..\_CommonDefine\FLPacketStruct.h" />
+    <ClInclude Include="..\_CommonDefine\FLPriorityQueue.h" />
+    <ClInclude Include="..\_CommonDefine\FLPriorityQueue.hpp" />
+    <ClInclude Include="..\_CommonDefine\FLResourceDefines.h" />
+    <ClInclude Include="..\_CommonDefine\FLReturnStateCode.h" />
+    <ClInclude Include="..\_CommonDefine\FLRing.h" />
+    <ClInclude Include="..\_CommonDefine\FLRing.hpp" />
+    <ClInclude Include="..\_CommonDefine\FLScriptFileManager.h" />
+    <ClInclude Include="..\_CommonDefine\FLSingleton.h" />
+    <ClInclude Include="..\_CommonDefine\FLStdContainer.h" />
+    <ClInclude Include="..\_CommonDefine\FLTm.h" />
+    <ClInclude Include="..\_CommonDefine\FLTypes.h" />
+    <ClInclude Include="..\_CommonDefine\FlyffCommonDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Log\FLItemLogStruct.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketAllDefine.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketBroadCastMessage.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketCharacterServerTransform.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketChargeZoneTicket.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketCommon.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketEventArena.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketFlyffPieceEvent.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketGuildBankUpdate.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemExchange.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemOption.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketItemUpgrade.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketMadrigalGift.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketServerDescription.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketTeleportMap.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketTreasureChest.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketUserAuth.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacketWDB_ConsignmentSale.h" />
+    <ClInclude Include="..\_CommonDefine\Packet\FLPacket_ConsignmentSale.h" />
+    <ClInclude Include="..\_CommonDefine\Spec\FLShutDownRule_Spec.h" />
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecManager.h" />
+    <ClInclude Include="..\_CommonDefine\Spec\FLSpecStruct.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLCSVParser.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLFileKeyGenerator.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLIniFile.h" />
+    <ClInclude Include="..\_CommonDefine\UTIL\FLKeyGenerator.h" />
+    <ClInclude Include="..\_Common\accessory.h" />
+    <ClInclude Include="..\_Common\auction.h" />
+    <ClInclude Include="..\_Common\authorization.h" />
+    <ClInclude Include="..\_Common\Bone.h" />
+    <ClInclude Include="..\_Common\buff.h" />
+    <ClInclude Include="..\_common\buyinginfo.h" />
+    <ClInclude Include="..\_Common\Campus.h" />
+    <ClInclude Include="..\_Common\Chatting.h" />
+    <ClInclude Include="..\_Common\collecting.h" />
+    <ClInclude Include="..\_common\CommonCtrl.h" />
+    <ClInclude Include="..\_Common\Continent.h" />
+    <ClInclude Include="..\_Common\CooltimeMgr.h" />
+    <ClInclude Include="..\_Common\couple.h" />
+    <ClInclude Include="..\_Common\CreateMonster.h" />
+    <ClInclude Include="..\_Common\CreateObj.h" />
+    <ClInclude Include="..\_Common\ctrl.h" />
+    <ClInclude Include="..\_Common\CtrlObjs.h" />
+    <ClInclude Include="..\_Common\data.h" />
+    <ClInclude Include="..\_Common\DefineCommon.h" />
+    <ClInclude Include="..\_common\dialogmsg.h" />
+    <ClInclude Include="..\_Common\EventLua.h" />
+    <ClInclude Include="..\_Common\EventMonster.h" />
+    <ClInclude Include="..\_common\eveschool.h" />
+    <ClInclude Include="..\_Common\file.h" />
+    <ClInclude Include="..\_Common\FLAggro.h" />
+    <ClInclude Include="..\_Common\FLAlarmClock.h" />
+    <ClInclude Include="..\_Common\FLAlarmClock.hpp" />
+    <ClInclude Include="..\_Common\FLCommonCheck.h" />
+    <ClInclude Include="..\_Common\FLCommonFunction.h" />
+    <ClInclude Include="..\_Common\FLContentSwitch.h" />
+    <ClInclude Include="..\_Common\FLCooperativeContributions_Common.h" />
+    <ClInclude Include="..\_Common\FLExchange.h" />
+    <ClInclude Include="..\_Common\FLGameTimer.h" />
+    <ClInclude Include="..\_Common\FLItemBase.h" />
+    <ClInclude Include="..\_Common\FLItemElem.h" />
+    <ClInclude Include="..\_Common\FLPeriodRepetitionAlarm.h" />
+    <ClInclude Include="..\_Common\FLPiercingOption.h" />
+    <ClInclude Include="..\_Common\FLRandomOption.h" />
+    <ClInclude Include="..\_Common\FLServerDescription.h" />
+    <ClInclude Include="..\_Common\FLShutdownRule.h" />
+    <ClInclude Include="..\_Common\FLSkillSystem.h" />
+    <ClInclude Include="..\_common\flyffevent.h" />
+    <ClInclude Include="..\_Common\FunnyCoin.h" />
+    <ClInclude Include="..\_common\guild.h" />
+    <ClInclude Include="..\_Common\GuildCombat1to1.h" />
+    <ClInclude Include="..\_Common\GuildHouse.h" />
+    <ClInclude Include="..\_common\guildquest.h" />
+    <ClInclude Include="..\_common\guildwar.h" />
+    <ClInclude Include="..\_Common\Housing.h" />
+    <ClInclude Include="..\_Common\InstanceDungeonBase.h" />
+    <ClInclude Include="..\_Common\InstanceDungeonParty.h" />
+    <ClInclude Include="..\_Common\Item.h" />
+    <ClInclude Include="..\_Common\landscape.h" />
+    <ClInclude Include="..\_Common\langman.h" />
+    <ClInclude Include="..\_Common\lord.h" />
+    <ClInclude Include="..\_Common\lordskill.h" />
+    <ClInclude Include="..\_Common\LuaBase.h" />
+    <ClInclude Include="..\_Common\MiniGame.h" />
+    <ClInclude Include="..\_Common\MiniGameBase.h" />
+    <ClInclude Include="..\_Common\Model.h" />
+    <ClInclude Include="..\_Common\ModelMng.h" />
+    <ClInclude Include="..\_Common\modelobject.h" />
+    <ClInclude Include="..\_Common\Mover.h" />
+    <ClInclude Include="..\_Common\MoverMsg.h" />
+    <ClInclude Include="..\_Common\NpcProperty.h" />
+    <ClInclude Include="..\_Common\NPCSummoner.h" />
+    <ClInclude Include="..\_Common\Obj.h" />
+    <ClInclude Include="..\_Common\object3d.h" />
+    <ClInclude Include="..\_common\party.h" />
+    <ClInclude Include="..\_Common\partyquest.h" />
+    <ClInclude Include="..\_Common\patch.h" />
+    <ClInclude Include="..\_Common\path.h" />
+    <ClInclude Include="..\_Common\PathObj.h" />
+    <ClInclude Include="..\_Common\PCBang.h" />
+    <ClInclude Include="..\_Common\pet.h" />
+    <ClInclude Include="..\_Common\playerdata.h" />
+    <ClInclude Include="..\_Common\pocket.h" />
+    <ClInclude Include="..\_Common\post.h" />
+    <ClInclude Include="..\_Common\Project.h" />
+    <ClInclude Include="..\_Common\ProjectCmn.h" />
+    <ClInclude Include="..\_Common\Quiz.h" />
+    <ClInclude Include="..\_Common\RainbowRace.h" />
+    <ClInclude Include="..\_Common\region.h" />
+    <ClInclude Include="..\_Common\Respawn.h" />
+    <ClInclude Include="..\_Common\rtmessenger.h" />
+    <ClInclude Include="..\_Common\scanner.h" />
+    <ClInclude Include="..\_Common\script.h" />
+    <ClInclude Include="..\_Common\scriptdialog.h" />
+    <ClInclude Include="..\_Common\ScriptHelper.h" />
+    <ClInclude Include="..\_Common\SeasonEffect.h" />
+    <ClInclude Include="..\_Common\SecretRoom.h" />
+    <ClInclude Include="..\_Common\serialnumber.h" />
+    <ClInclude Include="..\_Common\Ship.h" />
+    <ClInclude Include="..\_Common\SkillInfluence.h" />
+    <ClInclude Include="..\_Common\spevent.h" />
+    <ClInclude Include="..\_Common\Stat.h" />
+    <ClInclude Include="..\_Common\Synchronizer.h" />
+    <ClInclude Include="..\_Common\Tax.h" />
+    <ClInclude Include="..\_Common\testcase.h" />
+    <ClInclude Include="..\_Common\timer.h" />
+    <ClInclude Include="..\_Common\UltimateWeapon.h" />
+    <ClInclude Include="..\_Common\vutil.h" />
+    <ClInclude Include="..\_common\weather.h" />
+    <ClInclude Include="..\_Common\World.h" />
+    <ClInclude Include="..\_Common\worldmng.h" />
+    <ClInclude Include="..\_Common\xUtil.h" />
+    <ClInclude Include="..\_Common\xutil3d.h" />
+    <ClInclude Include="..\_Common\xuzhu.h" />
+    <ClInclude Include="..\_DirectX\d3dutil.h" />
+    <ClInclude Include="..\_DirectX\dsutil.h" />
+    <ClInclude Include="..\_DirectX\dxutil.h" />
+    <ClInclude Include="..\_interface\FuncTextCmd.h" />
+    <ClInclude Include="..\_Interface\UserTaskBar.h" />
+    <ClInclude Include="..\_network\CmnHdr.h" />
+    <ClInclude Include="..\_Network\ErrorCode.h" />
+    <ClInclude Include="..\_network\misc\include\Misc.h" />
+    <ClInclude Include="..\_network\misc\include\ObjMap.h" />
+    <ClInclude Include="..\_network\misc\include\ServerDesc.h" />
+    <ClInclude Include="..\_network\MsgHdr.h" />
+    <ClInclude Include="..\_Network\tools.h" />
+    <ClInclude Include="AttackArbiter.h" />
+    <ClInclude Include="CampusHelper.h" />
+    <ClInclude Include="couplehelper.h" />
+    <ClInclude Include="dpaccountclient.h" />
+    <ClInclude Include="DPCoreClient.h" />
+    <ClInclude Include="DPDatabaseClient.h" />
+    <ClInclude Include="DPSrvr.h" />
+    <ClInclude Include="FLApplyItemEffect.h" />
+    <ClInclude Include="FLBarunaUpgradeNpc.h" />
+    <ClInclude Include="FLCC_Condition.h" />
+    <ClInclude Include="FLCC_Contribution.h" />
+    <ClInclude Include="FLCC_Reward.h" />
+    <ClInclude Include="FLCharacterServerTransform.h" />
+    <ClInclude Include="FLChargeZoneTicket.h" />
+    <ClInclude Include="FLConsignmentSale.h" />
+    <ClInclude Include="FLCooperativeContributions.h" />
+    <ClInclude Include="FLDropItemCommon.h" />
+    <ClInclude Include="FLDropPenalty_ByLevelDist.h" />
+    <ClInclude Include="FLEventArena.h" />
+    <ClInclude Include="FLEventArenaAlarm.h" />
+    <ClInclude Include="FLEventArenaGame.h" />
+    <ClInclude Include="FLEventArenaGlobal.h" />
+    <ClInclude Include="FLEventArenaHelper.h" />
+    <ClInclude Include="FLEventArenaSpec.h" />
+    <ClInclude Include="FLEventArenaSpecLoader.h" />
+    <ClInclude Include="FLEventArenaSpecStruct.h" />
+    <ClInclude Include="FLEventArenaStartPos.h" />
+    <ClInclude Include="FLEventArenaTeam.h" />
+    <ClInclude Include="FLEventArenaTeamManager.h" />
+    <ClInclude Include="FLEventArenaTeamMember.h" />
+    <ClInclude Include="FLEventDropItem.h" />
+    <ClInclude Include="FLExchangeEvent.h" />
+    <ClInclude Include="FLExchangeItem.h" />
+    <ClInclude Include="FLFlyffPieceDailyPayment.h" />
+    <ClInclude Include="FLFlyffPieceEvent.h" />
+    <ClInclude Include="FLGoldIconSet.h" />
+    <ClInclude Include="FLItemAction.h" />
+    <ClInclude Include="FLItemAction_PartyLevel.h" />
+    <ClInclude Include="FLItemAction_PK_Penalty.h" />
+    <ClInclude Include="FLItemAction_SavePotion.h" />
+    <ClInclude Include="FLItemExtract.h" />
+    <ClInclude Include="FLItemMergeBase.h" />
+    <ClInclude Include="FLItemMergeManager.h" />
+    <ClInclude Include="FLItemMergeRandomOption.h" />
+    <ClInclude Include="FLItemShopping.h" />
+    <ClInclude Include="FLItemUpgradeAccessory.h" />
+    <ClInclude Include="FLItemUpgradeBaruna.h" />
+    <ClInclude Include="FLItemUpgradeBase.h" />
+    <ClInclude Include="FLItemUpgradeCostume.h" />
+    <ClInclude Include="FLItemUpgradeDataStruct.h" />
+    <ClInclude Include="FLItemUpgradeEatPet.h" />
+    <ClInclude Include="FLItemUpgradeGeneral.h" />
+    <ClInclude Include="FLItemUpgradeManager.h" />
+    <ClInclude Include="FLItemUpgradeMaterial.h" />
+    <ClInclude Include="FLItemUpgradeSystemPet.h" />
+    <ClInclude Include="FLItemUsing.h" />
+    <ClInclude Include="FLItemUsingActiveUI.h" />
+    <ClInclude Include="FLLevelDropItem.h" />
+    <ClInclude Include="FLMadrigalGift.h" />
+    <ClInclude Include="FLMapGrid.h" />
+    <ClInclude Include="FLMonsterDropItem.h" />
+    <ClInclude Include="FLQuestInterface.h" />
+    <ClInclude Include="FLRainbowRaceData.h" />
+    <ClInclude Include="FLRandomRespawnNPC.h" />
+    <ClInclude Include="FLRandomRespawnNPC.hpp" />
+    <ClInclude Include="FLShutdownRule_Mng.h" />
+    <ClInclude Include="FLTeleportMapUserPointManager.h" />
+    <ClInclude Include="FLTeleportMapUserPoints.h" />
+    <ClInclude Include="FLTreasureChest.h" />
+    <ClInclude Include="FLUseActiveItem.h" />
+    <ClInclude Include="FLUseEffectItem.h" />
+    <ClInclude Include="FunctionsInfo.h" />
+    <ClInclude Include="GlobalGameValueCalculator.h" />
+    <ClInclude Include="GlobalTime.h" />
+    <ClInclude Include="IItemAction.h" />
+    <ClInclude Include="ItemUpgrade.h" />
+    <ClInclude Include="layeredlinkmap.h" />
+    <ClInclude Include="LinkMap.h" />
+    <ClInclude Include="lordskillexecutable.h" />
+    <ClInclude Include="MiniGameArithmetic.h" />
+    <ClInclude Include="MiniGameDiceplay.h" />
+    <ClInclude Include="MiniGameGawibawibo.h" />
+    <ClInclude Include="MiniGameLadder.h" />
+    <ClInclude Include="MiniGamePairgame.h" />
+    <ClInclude Include="MiniGameStopwatch.h" />
+    <ClInclude Include="MiniGameTyping.h" />
+    <ClInclude Include="MySplashWnd.h" />
+    <ClInclude Include="NetSerialNumberRequest.h" />
+    <ClInclude Include="npchecker.h" />
+    <ClInclude Include="rangda.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SfxHitArray.h" />
+    <ClInclude Include="slord.h" />
+    <ClInclude Include="Snapshot.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="ThreadMng.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserMacro.h" />
+    <ClInclude Include="VersionCommon.h" />
+    <ClInclude Include="WantedListSnapshot.h" />
+    <ClInclude Include="WorldDialog.h" />
+    <ClInclude Include="WorldServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WorldServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cursor1.cur" />
+    <None Include="WorldServer.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="MySplash.bmp" />
+    <Image Include="small.ico" />
+    <Image Include="WorldServer.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

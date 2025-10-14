@@ -1,0 +1,21 @@
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_REINSTALL			"La version de Flyff installée est endommagée. Une réinstallation du jeu est nécessaire."
+	IDS_RUNNING_NEUZ		"Flyff est déjà en cours d'exécution"
+	IDS_RUNNING_PATCH		"Le lanceur Flyff est déjà en cours d'exécution"
+	IDS_OPTION			"Options"
+	IDS_CLOSE			"Fermer"
+	IDS_RESOLUTION		        "Résolution"
+	IDS_VIEW			"Distance d'affichage"
+	IDS_TEXTURE			"Détails des textures"
+	IDS_SHADOW			"Détails des ombres"
+	IDS_OBJECTDETAIL		"Détails des objets"
+	IDS_FAR			        "Max"
+	IDS_MEDIUM			" "
+	IDS_NEAR			"Min"
+	IDS_HIGH			"Max"
+	IDS_LOW		        	"Min"
+	IDS_DIRECTX_INSTALL		"DirectX9.0c n'est pas installé. Merci d'installer DirectX9.0c et réessayer."
+	IDS_UPDATE_PATCH		"Le lanceur doit redemarrer pour continuer la mise à jour"
+	IDS_RETRY			"Voulez-vous réessayer ?"
+END

@@ -1,0 +1,22 @@
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_REINSTALL			"您所安裝的Flyff發生問題，必須要重新安裝。\n請在官方網站重新下載安裝程式"
+	IDS_RUNNING_NEUZ		""
+	IDS_RUNNING_PATCH		""
+	IDS_OPTION			"Option設定"
+	IDS_CLOSE			"關閉"
+	IDS_RESOLUTION			"解析度"
+	IDS_VIEW			"視野範圍"
+	IDS_TEXTURE			"像素品質"
+	IDS_SHADOW			"影子"
+	IDS_OBJECTDETAIL		"物件表現水準"
+	IDS_FAR				"遠"
+	IDS_MEDIUM			"普通"
+	IDS_NEAR			"近"
+	IDS_HIGH			"高"
+	IDS_LOW				"低"
+	IDS_DIRECTX_INSTALL		"必須安裝DirectX 9.0b"
+	IDS_UPDATE_PATCH		"請重新執行更新的client程式。\r\n按下確認將會自動執行"
+	IDS_RETRY			""
+END
+

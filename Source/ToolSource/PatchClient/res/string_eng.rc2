@@ -1,0 +1,21 @@
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_REINSTALL			"You should reinstall FLYFF because FLYFF you installed is not working properly now \n Please download the setup files from homepage and reinstall."
+	IDS_RUNNING_NEUZ		"FLYFF is running"
+	IDS_RUNNING_PATCH		"Patch program is running"
+	IDS_OPTION			"Option"
+	IDS_CLOSE			"Close"
+	IDS_RESOLUTION		        "Resolution"
+	IDS_VIEW			"Range of sight"
+	IDS_TEXTURE			"Texture quality"
+	IDS_SHADOW			"Shadow"
+	IDS_OBJECTDETAIL		"Degree of object expression"
+	IDS_FAR			        "Far"
+	IDS_MEDIUM			"Medium"
+	IDS_NEAR			"Near"
+	IDS_HIGH			"High"
+	IDS_LOW		        	"Low"
+	IDS_DIRECTX_INSTALL		"You have not installed DirectX.\n Please install DirectX9.0b first"
+	IDS_UPDATE_PATCH		"Execute the patch client again \n If you press Confirmation Button, it will run automatically."
+	IDS_RETRY			"Do you want to try again?"
+END

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header\Facade">
+      <UniqueIdentifier>{3dc0110f-999c-43c7-a68f-ee4a3cca595c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Facade">
+      <UniqueIdentifier>{8d24ec7e-8526-4610-956f-4e754dd15be1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FLLogCommon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogContext.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogEvent.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogFileName.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogFilter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogFlush.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogFormat.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogFormatEtc.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogLevelFilter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogModule.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogPubEtc.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogPubFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogPublisher.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLMyTrace.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogFacade.cpp">
+      <Filter>Source\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogGenericPubFactory.cpp">
+      <Filter>Source\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogPoster.cpp">
+      <Filter>Source\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogPubFactory.cpp">
+      <Filter>Source\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="FLLogPubLoggingDialog.cpp">
+      <Filter>Source\Facade</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FLLogCommon.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogContext.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogDefine.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogEvent.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogFacade.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogFileName.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogFilter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogFlush.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogFormat.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogFormatEtc.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogGenericPubFactory.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogLevelFilter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogModule.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogPoster.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLMyTrace.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogPubEtc.h">
+      <Filter>Header\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogPubFactory.h">
+      <Filter>Header\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogPubFile.h">
+      <Filter>Header\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogPublisher.h">
+      <Filter>Header\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="FLLogPubLoggingDialog.h">
+      <Filter>Header\Facade</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
